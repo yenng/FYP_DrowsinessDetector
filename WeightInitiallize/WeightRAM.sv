@@ -1,11 +1,11 @@
 module	WeightRAM(
 	input	Clock,In,
 	input 	[9:0] D[0:9],
-	input 	[4:0] Address,
-	input 	WE,
+	input 	[5:0] Address,
+	input 	WE,//'1' write data, '0' read data
 	output 	reg	[9:0] Q[0:9]);
 
-	reg [9:0] REGISTER [29:0];
+	reg [9:0] REGISTER [59:0];
 	
 	always @(posedge Clock)begin
 	if(In) begin
