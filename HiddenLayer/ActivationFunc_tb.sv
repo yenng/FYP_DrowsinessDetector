@@ -1,20 +1,20 @@
 module ActivationFunc_tb;
 
 //input
-reg [9:0]in;
+reg signed [23:0]in;
 
 //output
 wire [9:0]out;
-wire [9:0]out1;
-wire [9:0]out2;
-wire [9:0]out3;
 initial begin
-	in = 10'b1111111111;
-	forever #5 in = in - 1'b1;
+	in = 416798;
+	#1 in = 0;
+	forever #5 in = in + 1'b1;
 	
 
 end
-
-ActivationFunc test(in,out,out1,out2,out3);
+initial begin
+ $monitor("in = %d\tout = %d",in,out);
+end
+ActivationFunc test(in,out);
 
 endmodule

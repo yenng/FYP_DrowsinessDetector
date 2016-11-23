@@ -1,5 +1,35 @@
-module HiddenNueron(
-	input [9:0] inVal[9:0],
-	input [9:0] weight[9:0],
-	output [9:0]outVal
+module HiddenNeuron(
+	input [9:0] inVal[0:9],
+	input signed [9:0] weight[0:9],
+	output reg signed [9:0]mulVal[0:19],
+	output reg signed [0:19]addVal,
+	output signed [0:23]outVal
 );
+
+int t=0;
+//reg signed [9:0]mulVal[0:19];
+//reg signed [0:19]addVal;
+
+//multiply input and weight then get the first 10 bits of data.
+assign mulVal[0] = inVal[0]*weight[0];
+assign mulVal[1] = inVal[1]*weight[1];
+assign mulVal[2] = inVal[2]*weight[2];
+assign mulVal[3] = inVal[3]*weight[3];
+assign mulVal[4] = inVal[4]*weight[4];
+assign mulVal[5] = inVal[5]*weight[5];
+assign mulVal[6] = inVal[6]*weight[6];
+assign mulVal[7] = inVal[7]*weight[7];
+assign mulVal[8] = inVal[8]*weight[8];
+assign mulVal[9] = inVal[9]*weight[9];
+
+assign addVal = mulVal[0] + mulVal[1] + mulVal[2] + mulVal[3] + mulVal[4] + mulVal[5] + mulVal[6] + mulVal[7] + mulVal[8] + mulVal[9];
+
+ActivationFunc callAF(addVal,outVal);
+
+/*********************************************
+ * activation function done here,				*
+ * the formula is f(X) = 0.5[X/(1+|X|)+1]		*
+ *********************************************/
+
+
+endmodule 

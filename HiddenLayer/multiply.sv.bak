@@ -1,0 +1,7 @@
+module multiply(
+input [9:0] in1,
+input [9:0] in2,
+output reg signed [19:0]mulVal
+);
+
+assign mulVal = in1*in2;

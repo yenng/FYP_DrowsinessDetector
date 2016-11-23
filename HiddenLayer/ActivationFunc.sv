@@ -1,19 +1,17 @@
 module ActivationFunc(
-	input [9:0]in,
-	output reg [9:0]out,
-	output reg [1024:0]out1,
-	output reg [1024:0]out2,
-	output reg [9:0]out3
+	input  signed [23:0]in,
+	output reg [9:0]out
 	);
-reg [9:0]inPos;
+real in_abs,out_T;
 
 always@(*) begin
-	//the formula of activation function is f(X) = 0.5[X/(1+|X|)+1]
-	out1 = (1000 * in);
-	out2 = out1/(out+1);
-	out3 = (out2+1)/2'b10;
-	
 	//get absolute value of the in
-	out = in[9] ? in : in;
+	in_abs = in[23] ? -in : in;
+	
+	//the formula of activation function is f(X) = 0.5[X/(1+|X|)+1]
+	out_T = 500*(in/(1+in_abs)+1);
+	
 	end 
+	
+assign out = out_T;
 endmodule 
