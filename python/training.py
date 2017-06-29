@@ -44,14 +44,18 @@ class NeuralNetwork:
         for k in range(epochs):            
             i = np.random.randint(X.shape[0])
             a = [X[i]]
+            '''
             if k % 10000 == 0:
                 print 'a', a
+            '''
             for l in range(len(self.weights)):
                     dot_value = np.dot(a[l], self.weights[l])
                     activation = self.activation(dot_value)
                     a.append(activation)
+                    '''
                     if k % 10000 == 0:
                         print 'a', a
+                    '''
             # output layer, a[-1] is the last element in a
             error = y[i] - a[-1]
             deltas = [error * self.activation_prime(a[-1])]
@@ -73,14 +77,17 @@ class NeuralNetwork:
                 delta = np.atleast_2d(deltas[i])
                 #self.weights[i] += learning_rate * layer.T.dot(delta)
                 self.weights[i] += layer.T.dot(delta)
-            
+            '''
             if k % 10000 == 0:
                 print 'deltas', deltas
                 print 'a', a
-                print 'layer', layer
                 print 'weights', self.weights, '\n'
-
-                
+            '''
+    def predict(self, x): 
+        a = np.concatenate((np.ones(1).T, np.array(x)), axis=0)      
+        for l in range(0, len(self.weights)):
+            a = self.activation(np.dot(a, self.weights[l]))
+        return a     
 if __name__ == '__main__':
 
     nn = NeuralNetwork([2,2,1])

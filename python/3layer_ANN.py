@@ -74,9 +74,13 @@ class NeuralNetwork:
                 self.weights[i] += learning_rate * layer.T.dot(delta)
 
     def predict(self, x): 
-        a = np.concatenate((np.ones(1).T, np.array(x)), axis=0)      
+        a = np.concatenate((np.ones(1).T, np.array(x)), axis=0)
+        print np.ones(1).T
+        print x
+        print a
         for l in range(0, len(self.weights)):
             a = self.activation(np.dot(a, self.weights[l]))
+        print a
         return a
 
 if __name__ == '__main__':
