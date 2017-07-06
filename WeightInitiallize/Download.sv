@@ -1,4 +1,4 @@
-module download(
+module Download(
 	input [17:0] SW,
 	input [0:0]KEY,
 	output [9:0] LEDR

@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\user3\Desktop\FYP_DrowsinessDetector\WeightInitiallize
+vLFSR
+Z1 Mx1 6 sv_std 3 std
+Z2 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+IM8Iaz]0_XOed7Zhb7Xf?@1
+VYE3B39RY`Wa7<c?iF<J^`0
+S1
+w1499331420
+8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv
+FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv
+L0 1
+Z3 OV;L;6.5e;42
+r1
+31
+Z4 !s102 -nocovercells
+Z5 o-work work -sv -nocovercells -O0
+n@l@f@s@r
+!s100 ^eHKo9`7[F0zaK3lj3<QR0
+!s85 0
+!s101 -O0
+vLFSR_tb
+R1
+R2
+!s100 3IXGVmzU;kZ:;JnzKnE7l1
+IR7I@>TzPdb2L:@=`=5O=d3
+VH5ZP@MNSQCEhWZR?CKSoO0
+S1
+w1499331187
+8C:/Users/user3/Desktop/FYP_DrowsinessDetector/LFSR/LFSP_tb.sv
+FC:/Users/user3/Desktop/FYP_DrowsinessDetector/LFSR/LFSP_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s101 -O0
+R4
+R5
+n@l@f@s@r_tb
