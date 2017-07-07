@@ -19,6 +19,6 @@ end
 
 LFSR test(Clock, Reset, data);
 initial begin
-$display("Data = %b \n", data);
+$monitor("Data = %b \n", data);
 end 
 endmodule 

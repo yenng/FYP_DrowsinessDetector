@@ -4,7 +4,7 @@ module LFSR_tb;
 reg Clock, Reset;
 
 //output
-wire data;
+wire [9:0] data;
 
 initial begin
 	Clock = 0;

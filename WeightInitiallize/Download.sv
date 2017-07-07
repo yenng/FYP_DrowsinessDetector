@@ -14,7 +14,7 @@ always@(posedge KEY[0]) begin
 end
 
 
-WeighInitiallize test(SW[17],SW[16],SW[15],SW[4:0],weight);
-//WeighInitiallize test(Clock,WE,In,address,weight);
+WeighInitiallize test(SW[17],SW[16],SW[15],SW[14],SW[4:0],weight);
+//WeighInitiallize test(Clock,WE,In,Rst,address,weight);
 
 endmodule

@@ -1,5 +1,5 @@
 module WeighInitiallize(
-	input Clock, WE,In,
+	input Clock, WE,In,Rst,
 	input [4:0] address,
 	output reg [9:0]weight [0:9]
 );
@@ -10,5 +10,5 @@ always@(posedge Clock)begin
 	weight = Y;
 end
 
-WeightRAM	part2(Clock,In,X,address,WE,Y);
+WeightRAM	part2(Clock,In,Rst,X,address,WE,Y);
 endmodule
