@@ -17,7 +17,7 @@ Slack          : N/A
 Required Time  : None
 Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
 From           : data[6]~reg0
-To             : data[7]~reg0
+To             : data[0]~reg0
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0

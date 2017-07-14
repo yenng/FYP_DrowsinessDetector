@@ -1,4 +1,4 @@
-module	WeightRAM#(parameter N=10)(
+module	WeightInitialise#(parameter N=10)(
 	input		Clock,In, Rst,
 	input 	[9:0] D[0:N-1],
 	input 	[6:0] Address,
@@ -10,8 +10,10 @@ module	WeightRAM#(parameter N=10)(
 	wire [9:0] data;
 	integer i = 0;
 	always @(posedge Clock)begin
-	if(In)	//Initialise the weight.
-		REGISTER[i] <= data;
+	if(In)	begin//Initialise the weight.
+		for(i=0;i<N;i=i+1)
+    		REGISTER[i] <= data;
+	end
 	else begin
 		if(!WE)	begin
 			for(i=0;i<N;i=i+1)

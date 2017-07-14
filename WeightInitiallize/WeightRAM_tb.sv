@@ -1,4 +1,4 @@
-module WeightRAM_tb;
+module WeightInitialise_tb;
 //input
 reg Clock, In, WE, Rst;
 reg [9:0] D1[0:9];
@@ -27,8 +27,9 @@ initial begin
 
 end
 
-WeightRAM #(10)test1(Clock, In, Rst, D1, Address, WE, weight);
+WeightRAM test1(Clock, In, Rst, D1, Address, WE, weight);
 initial begin
-  $monitor("Address = %d\n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b ",Address, weight[0],weight[1],weight[2],weight[3],weight[4],weight[5],weight[6],weight[7],weight[8],weight[9]);
+  $monitor("Address = %d\n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b \n %b ",
+  Address, weight[0],weight[1],weight[2],weight[3],weight[4],weight[5],weight[6],weight[7],weight[8],weight[9]);
   end 
 endmodule 
