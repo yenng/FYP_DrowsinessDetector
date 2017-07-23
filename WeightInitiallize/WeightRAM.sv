@@ -6,10 +6,10 @@ module	WeightInitialise#(parameter N=10)(
 	output 	reg	[9:0] Q[0:N-1]);
 
 	reg [9:0] REGISTER [64:0];
-	reg clk = 0;
+	wire clk;
 	wire [9:0] data;
 	integer i = 0;
-	always @(posedge Clock)begin
+	always @(posedge clk)begin
 	if(In)	begin//Initialise the weight.
 		for(i=0;i<N;i=i+1)
     		REGISTER[i] <= data;
@@ -26,4 +26,5 @@ module	WeightInitialise#(parameter N=10)(
 		end
 	end
 	LFSR rndnm(Clock, Rst, data);
+	clk_div clk1(Clock, Rst, clk)
 endmodule
