@@ -49,9 +49,6 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# hierarchies {
-WeighInitiallize:test|WeightRAM:part2|LFSR:rndnm
-}
 # macro_sequence
 
 # end
@@ -86,10 +83,8 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # include_file {
-weightram.sv
-a2b84402d37b13a383983f0dd5873b6
 weighinitiallize.sv
-56ac7521c2563160861a64a68f96c2
+eedc2b9ce4863dcdad6fea61ff3ce8
 }
 # hierarchies {
 |
@@ -109,7 +104,7 @@ ON
 # case_sensitive
 # source_file
 weighinitiallize.sv
-56ac7521c2563160861a64a68f96c2
+eedc2b9ce4863dcdad6fea61ff3ce8
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -126,55 +121,9 @@ VERILOG_CONSTANT_LOOP_LIMIT
 5000
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
-}
-# include_file {
-weightram.sv
-a2b84402d37b13a383983f0dd5873b6
 }
 # hierarchies {
 WeighInitiallize:test
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
-# storage
-db|WeighInitiallize.(2).cnf
-db|WeighInitiallize.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-weightram.sv
-a2b84402d37b13a383983f0dd5873b6
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-10
-PARAMETER_SIGNED_DEC
-DEF
-}
-# hierarchies {
-WeighInitiallize:test|WeightRAM:part2
 }
 # macro_sequence
 

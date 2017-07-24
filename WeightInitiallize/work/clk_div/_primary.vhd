@@ -3,7 +3,7 @@ use verilog.vl_types.all;
 entity clk_div is
     generic(
         WIDTH           : integer := 4;
-        N               : integer := 10
+        N               : integer := 5
     );
     port(
         clk             : in     vl_logic;

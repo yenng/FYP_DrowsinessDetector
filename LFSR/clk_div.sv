@@ -1,7 +1,7 @@
 module clk_div
 #(
 parameter WIDTH = 4,
-parameter N = 10)(
+parameter N = 5)(
 input clk, rst,
 output clk_out);
 

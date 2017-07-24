@@ -9,8 +9,8 @@ reg[WIDTH-1:0] r_reg;
 wire [WIDTH-1:0] r_nxt;
 reg clk_track;
  
-always @(posedge clk or posedge reset)begin
-	if (reset)begin
+always @(posedge clk or posedge rst)begin
+	if (rst)begin
 		r_reg <= 0;
 		clk_track <= 1'b0;
 	end

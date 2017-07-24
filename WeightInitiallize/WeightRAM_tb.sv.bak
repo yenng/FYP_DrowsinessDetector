@@ -1,4 +1,4 @@
-module WeightRAM_tb;
+module WeightInitialise_tb;
 //input
 reg Clock, In, WE, Rst;
 reg [9:0] D1[0:9];

@@ -10,5 +10,5 @@ always@(posedge Clock)begin
 	weight = Y;
 end
 
-WeightRAM	part2(Clock,In,Rst,X,address,WE,Y);
+//WeightRAM	part2(Clock,In,Rst,X,address,WE,Y);
 endmodule

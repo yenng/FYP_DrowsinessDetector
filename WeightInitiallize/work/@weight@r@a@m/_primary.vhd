@@ -11,6 +11,7 @@ entity WeightRAM is
         D               : in     vl_logic;
         Address         : in     vl_logic_vector(6 downto 0);
         WE              : in     vl_logic;
-        Q               : out    vl_logic
+        Q               : out    vl_logic;
+        clk             : out    vl_logic
     );
 end WeightRAM;
