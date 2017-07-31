@@ -1,6 +1,6 @@
 # -------------------------------------------------------------------------- #
 #
-# Copyright (C) 1991-2010 Altera Corporation
+# Copyright (C) 1991-2013 Altera Corporation
 # Your use of Altera Corporation's design tools, logic functions 
 # and other software and tools, and its AMPP partner logic 
 # functions, and any output files from any of the foregoing 
@@ -16,9 +16,9 @@
 #
 # -------------------------------------------------------------------------- #
 #
-# Quartus II
-# Version 10.0 Build 218 06/27/2010 SJ Web Edition
-# Date created = 16:17:43  July 31, 2017
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 11:46:26  October 26, 2016
 #
 # -------------------------------------------------------------------------- #
 #
@@ -36,10 +36,25 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Stratix II"
-set_global_assignment -name DEVICE auto
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F23C7
 set_global_assignment -name TOP_LEVEL_ENTITY HiddenLayer
-set_global_assignment -name ORIGINAL_QUARTUS_VERSION 10.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:17:43  JULY 31, 2017"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:46:26  OCTOBER 26, 2016"
 set_global_assignment -name LAST_QUARTUS_VERSION 10.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/WeightRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ActivationFunc_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE HiddenLayer.sv
+set_global_assignment -name SYSTEMVERILOG_FILE HiddenNeuron.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ActivationFunc.sv
+set_global_assignment -name SYSTEMVERILOG_FILE HiddenNeuron_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE multiply.sv
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
