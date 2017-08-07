@@ -30,7 +30,7 @@ initial begin
 
 end
 
-WeightRAM	test1(Clock, In, Rst, D1, Address, WE, weight,clk);
+WeightRAM	test1(Clock, In, Rst, D1, Address, WE, weight);
 LFSR			rndnm(Clock, Rst, data);
 //clk_div		clk1(Clock, Rst, clk);
 initial begin

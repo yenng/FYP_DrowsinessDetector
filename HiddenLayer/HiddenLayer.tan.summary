@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.911 ns
+From           : Rst
+To             : WeightRAM:getWeight0_0|REGISTER[7][5]
+From Clock     : --
+To Clock       : Clock
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 90.174 ns
+From           : WeightRAM:getWeight0_1|Q[6][0]
+To             : outVal[1][9]
+From Clock     : Clock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 90.729 ns
+From           : inVal[8][0]
+To             : outVal[1][9]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -1.791 ns
+From           : In
+To             : WeightRAM:getWeight0_4|count[23]
+From Clock     : --
+To Clock       : Clock
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 208.25 MHz ( period = 4.802 ns )
+From           : WeightRAM:getWeight0_4|count[28]
+To             : WeightRAM:getWeight0_1|REGISTER[15][8]
+From Clock     : Clock
+To Clock       : Clock
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

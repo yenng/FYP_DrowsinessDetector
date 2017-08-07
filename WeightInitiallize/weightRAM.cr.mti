@@ -12,6 +12,13 @@ Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 Top level modules:
 	LFSR
 
+} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module WeightRAM
+
+Top level modules:
+	WeightRAM
+
 } {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 -- Compiling module clk_div

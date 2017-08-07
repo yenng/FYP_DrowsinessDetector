@@ -1,1 +1,2 @@
-Warning (10268): Verilog HDL information at WeightRAM.sv(16): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at WeighInitiallize.sv(15): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at WeightRAM.sv(15): always construct contains both blocking and non-blocking assignments

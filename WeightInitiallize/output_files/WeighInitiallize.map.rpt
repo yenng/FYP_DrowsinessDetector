@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WeighInitiallize
-Mon Jul 24 11:11:23 2017
+Mon Aug 07 14:49:20 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -14,11 +14,9 @@ Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Port Connectivity Checks: "WeighInitiallize:test"
- 12. Analysis & Synthesis Messages
- 13. Analysis & Synthesis Suppressed Messages
+  9. General Register Statistics
+ 10. Analysis & Synthesis Messages
+ 11. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -44,7 +42,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 24 11:11:23 2017    ;
+; Analysis & Synthesis Status        ; Successful - Mon Aug 07 14:49:20 2017    ;
 ; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
 ; Revision Name                      ; WeighInitiallize                         ;
 ; Top-level Entity Name              ; Download                                 ;
@@ -155,14 +153,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+
-; WeighInitiallize.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeighInitiallize.sv ;
-; Download.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/Download.sv         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+
+; Download.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/Download.sv ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -208,16 +205,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; WeighInitiallize:test|weight[9][0]     ; Stuck at GND due to stuck port data_in ;
-; WeighInitiallize:test|weight[9][1]     ; Stuck at GND due to stuck port data_in ;
-; WeighInitiallize:test|weight[9][2]     ; Stuck at GND due to stuck port data_in ;
-; WeighInitiallize:test|weight[9][3]     ; Stuck at GND due to stuck port data_in ;
-; WeighInitiallize:test|weight[9][4]     ; Stuck at GND due to stuck port data_in ;
-; WeighInitiallize:test|weight[9][5]     ; Stuck at GND due to stuck port data_in ;
-; WeighInitiallize:test|weight[9][6]     ; Stuck at GND due to stuck port data_in ;
-; WeighInitiallize:test|weight[9][7]     ; Stuck at GND due to stuck port data_in ;
-; WeighInitiallize:test|weight[9][8]     ; Stuck at GND due to stuck port data_in ;
-; WeighInitiallize:test|weight[9][9]     ; Stuck at GND due to stuck port data_in ;
 ; LEDR[9]~reg0                           ; Stuck at GND due to stuck port data_in ;
 ; LEDR[8]~reg0                           ; Stuck at GND due to stuck port data_in ;
 ; LEDR[7]~reg0                           ; Stuck at GND due to stuck port data_in ;
@@ -228,36 +215,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[2]~reg0                           ; Stuck at GND due to stuck port data_in ;
 ; LEDR[1]~reg0                           ; Stuck at GND due to stuck port data_in ;
 ; LEDR[0]~reg0                           ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 20 ;                                        ;
+; Total Number of Removed Registers = 10 ;                                        ;
 +----------------------------------------+----------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                             ;
-+------------------------------------+---------------------------+----------------------------------------+
-; Register name                      ; Reason for Removal        ; Registers Removed due to This Register ;
-+------------------------------------+---------------------------+----------------------------------------+
-; WeighInitiallize:test|weight[9][0] ; Stuck at GND              ; LEDR[0]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-; WeighInitiallize:test|weight[9][1] ; Stuck at GND              ; LEDR[1]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-; WeighInitiallize:test|weight[9][2] ; Stuck at GND              ; LEDR[2]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-; WeighInitiallize:test|weight[9][3] ; Stuck at GND              ; LEDR[3]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-; WeighInitiallize:test|weight[9][4] ; Stuck at GND              ; LEDR[4]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-; WeighInitiallize:test|weight[9][5] ; Stuck at GND              ; LEDR[5]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-; WeighInitiallize:test|weight[9][6] ; Stuck at GND              ; LEDR[6]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-; WeighInitiallize:test|weight[9][7] ; Stuck at GND              ; LEDR[7]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-; WeighInitiallize:test|weight[9][8] ; Stuck at GND              ; LEDR[8]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-; WeighInitiallize:test|weight[9][9] ; Stuck at GND              ; LEDR[9]~reg0                           ;
-;                                    ; due to stuck port data_in ;                                        ;
-+------------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -275,27 +234,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "WeighInitiallize:test"                                                                      ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; weight[0..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Mon Jul 24 11:11:22 2017
+    Info: Processing started: Mon Aug 07 14:49:19 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WeighInitiallize -c WeighInitiallize
 Info: Found 1 design units, including 1 entities, in source file clk_div.sv
     Info: Found entity 1: clk_div
 Info: Found 1 design units, including 1 entities, in source file weighinitiallize.sv
-    Info: Found entity 1: WeighInitiallize
+    Info: Found entity 1: WeighInitiallizemodule
 Info: Found 1 design units, including 1 entities, in source file weighinitiallize_tb.sv
     Info: Found entity 1: WeightInitiallize_tb
 Info: Found 1 design units, including 1 entities, in source file weightram.sv
@@ -306,10 +256,11 @@ Info: Found 1 design units, including 1 entities, in source file lfsr.sv
     Info: Found entity 1: LFSR
 Info: Found 1 design units, including 1 entities, in source file weightram_tb.sv
     Info: Found entity 1: WeightRAM_tb
+Warning (10236): Verilog HDL Implicit Net warning at WeighInitiallize.sv(45): created implicit net for "clk"
+Warning (10236): Verilog HDL Implicit Net warning at WeightRAM.sv(45): created implicit net for "clk"
 Info: Elaborating entity "Download" for the top level hierarchy
-Info: Elaborating entity "WeighInitiallize" for hierarchy "WeighInitiallize:test"
-Warning (10858): Verilog HDL warning at WeighInitiallize.sv(7): object Y used but never assigned
-Warning (10030): Net "Y" at WeighInitiallize.sv(7) has no driver or initial value, using a default initial value '0'
+Warning (10858): Verilog HDL warning at Download.sv(7): object weight used but never assigned
+Warning (10030): Net "weight[9]" at Download.sv(7) has no driver or initial value, using a default initial value '0'
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[0]" is stuck at GND
     Warning (13410): Pin "LEDR[1]" is stuck at GND
@@ -346,9 +297,9 @@ Warning: Design contains 19 input pin(s) that do not drive logic
 Info: Implemented 29 device resources after synthesis - the final resource count might be different
     Info: Implemented 19 input pins
     Info: Implemented 10 output pins
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 33 warnings
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 35 warnings
     Info: Peak virtual memory: 273 megabytes
-    Info: Processing ended: Mon Jul 24 11:11:23 2017
+    Info: Processing ended: Mon Aug 07 14:49:20 2017
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
