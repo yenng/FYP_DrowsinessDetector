@@ -1,14 +1,14 @@
 module	WeightRAM#(parameter N=10)(
 	input		Clock,In, Rst, // In'1' randomize all weight.
-	input 	[9:0] D[0:N-1],
+	input 	signed[9:0] D[0:N-1],
 	input 	[6:0] Address,
 	input 	WE,//'1' write data, '0' read data
-	output 	reg	signed[9:0] Q[0:N-1]);
+	output 	signed reg	[9:0] Q[0:N-1]);
 	//output	reg [9:0] REGISTER [64:0]);
 
 	reg [9:0] REGISTER [64:0];
 	wire clk;
-	wire [9:0] data;
+	wire signed[9:0] data;
 	integer i = 0;
 	integer count = 0;
 /*	

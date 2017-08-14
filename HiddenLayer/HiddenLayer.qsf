@@ -18,7 +18,7 @@
 #
 # Quartus II
 # Version 10.0 Build 218 06/27/2010 SJ Web Edition
-# Date created = 16:17:43  July 31, 2017
+# Date created = 14:53:52  August 14, 2017
 #
 # -------------------------------------------------------------------------- #
 #
@@ -36,17 +36,12 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Stratix II"
-set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY HiddenLayer
+
+# Project-Wide Assignments
+# ========================
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 10.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:17:43  JULY 31, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 10.0
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name SYSTEMVERILOG_FILE HiddenLayer_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/LFSR.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/clk_div.sv
@@ -55,4 +50,44 @@ set_global_assignment -name SYSTEMVERILOG_FILE multiply.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/WeightRAM.sv
 set_global_assignment -name SYSTEMVERILOG_FILE HiddenLayer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE HiddenNeuron.sv
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Stratix II"
+set_global_assignment -name TOP_LEVEL_ENTITY HiddenLayer
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE auto
+
+# -------------------------
+# start ENTITY(HiddenLayer)
+
+	# start LOGICLOCK_REGION(Root Region)
+	# -----------------------------------
+
+		# LogicLock Region Assignments
+		# ============================
+		set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+		set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+
+	# end LOGICLOCK_REGION(Root Region)
+	# ---------------------------------
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+		set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+		set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+		set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(HiddenLayer)
+# -----------------------
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name FITTER_EFFORT "FAST FIT"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

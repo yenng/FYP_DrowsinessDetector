@@ -7,6 +7,7 @@ entity HiddenLayer is
         WE              : in     vl_logic;
         \In\            : in     vl_logic;
         inVal           : in     vl_logic;
-        outVal          : out    vl_logic
+        outVal          : out    vl_logic;
+        weight          : out    vl_logic
     );
 end HiddenLayer;

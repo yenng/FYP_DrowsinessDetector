@@ -5,6 +5,13 @@ Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 Top level modules:
 	HiddenLayer_tb
 
+} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module ActivationFunc
+
+Top level modules:
+	ActivationFunc
+
 } {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenNeuron.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenNeuron.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 -- Compiling module HiddenNeuron

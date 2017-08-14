@@ -2,7 +2,7 @@ module LFSR(
   input  clk,
   input  rst_n,
 
-  output reg [9:0] data
+  output reg signed [9:0] data
 );
 
 wire feedback = data[9] ^ data[6] ;
