@@ -20,999 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-LFSR
-# storage
-db|HiddenLayer.(5).cnf
-db|HiddenLayer.(5).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
-da8949ecf537cae1453714079ca8965
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-WeightRAM:getWeight0_0|LFSR:rndnm
-WeightRAM:getWeight0_1|LFSR:rndnm
-WeightRAM:getWeight0_2|LFSR:rndnm
-WeightRAM:getWeight0_3|LFSR:rndnm
-WeightRAM:getWeight0_4|LFSR:rndnm
-WeightRAM:getWeight1_0|LFSR:rndnm
-WeightRAM:getWeight1_1|LFSR:rndnm
-WeightRAM:getWeight1_2|LFSR:rndnm
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(6).cnf
-db|HiddenLayer.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(7).cnf
-db|HiddenLayer.(7).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(8).cnf
-db|HiddenLayer.(8).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(9).cnf
-db|HiddenLayer.(9).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(10).cnf
-db|HiddenLayer.(10).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(11).cnf
-db|HiddenLayer.(11).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(12).cnf
-db|HiddenLayer.(12).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(13).cnf
-db|HiddenLayer.(13).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(14).cnf
-db|HiddenLayer.(14).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(15).cnf
-db|HiddenLayer.(15).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
-# storage
-db|HiddenLayer.(4).cnf
-db|HiddenLayer.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-64b243cefb7a1faf7888426a7d553638
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-10
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-WeightRAM:getWeight0_0
-WeightRAM:getWeight0_1
-WeightRAM:getWeight0_2
-WeightRAM:getWeight0_3
-WeightRAM:getWeight0_4
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(16).cnf
-db|HiddenLayer.(16).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(17).cnf
-db|HiddenLayer.(17).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(18).cnf
-db|HiddenLayer.(18).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(19).cnf
-db|HiddenLayer.(19).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(20).cnf
-db|HiddenLayer.(20).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
-# storage
-db|HiddenLayer.(21).cnf
-db|HiddenLayer.(21).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-64b243cefb7a1faf7888426a7d553638
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-WeightRAM:getWeight1_0
-WeightRAM:getWeight1_1
-WeightRAM:getWeight1_2
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(22).cnf
-db|HiddenLayer.(22).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(23).cnf
-db|HiddenLayer.(23).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(24).cnf
-db|HiddenLayer.(24).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(25).cnf
-db|HiddenLayer.(25).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(26).cnf
-db|HiddenLayer.(26).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
 lpm_mult
 # storage
 db|HiddenLayer.(27).cnf
@@ -6009,951 +5016,6 @@ dataa0
 
 # end
 # entity
-clk_div
-# storage
-db|HiddenLayer.(49).cnf
-db|HiddenLayer.(49).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(50).cnf
-db|HiddenLayer.(50).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(51).cnf
-db|HiddenLayer.(51).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(52).cnf
-db|HiddenLayer.(52).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(53).cnf
-db|HiddenLayer.(53).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(54).cnf
-db|HiddenLayer.(54).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(55).cnf
-db|HiddenLayer.(55).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(56).cnf
-db|HiddenLayer.(56).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(57).cnf
-db|HiddenLayer.(57).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(58).cnf
-db|HiddenLayer.(58).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(59).cnf
-db|HiddenLayer.(59).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(60).cnf
-db|HiddenLayer.(60).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(61).cnf
-db|HiddenLayer.(61).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(62).cnf
-db|HiddenLayer.(62).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(63).cnf
-db|HiddenLayer.(63).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-multiply
-# storage
-db|HiddenLayer.(2).cnf
-db|HiddenLayer.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-multiply.sv
-57a67cd234835e1aa6cb82e9e935309a
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenNeuron:neuron0|multiply:mul0
-HiddenNeuron:neuron0|multiply:mul1
-HiddenNeuron:neuron0|multiply:mul2
-HiddenNeuron:neuron0|multiply:mul3
-HiddenNeuron:neuron0|multiply:mul4
-HiddenNeuron:neuron0|multiply:mul5
-HiddenNeuron:neuron0|multiply:mul6
-HiddenNeuron:neuron0|multiply:mul7
-HiddenNeuron:neuron0|multiply:mul8
-HiddenNeuron:neuron0|multiply:mul9
-HiddenNeuron:neuron1|multiply:mul0
-HiddenNeuron:neuron1|multiply:mul1
-HiddenNeuron:neuron1|multiply:mul2
-HiddenNeuron:neuron1|multiply:mul3
-HiddenNeuron:neuron1|multiply:mul4
-HiddenNeuron:neuron1|multiply:mul5
-HiddenNeuron:neuron1|multiply:mul6
-HiddenNeuron:neuron1|multiply:mul7
-HiddenNeuron:neuron1|multiply:mul8
-HiddenNeuron:neuron1|multiply:mul9
-HiddenNeuron:neuron2|multiply:mul0
-HiddenNeuron:neuron2|multiply:mul1
-HiddenNeuron:neuron2|multiply:mul2
-HiddenNeuron:neuron2|multiply:mul3
-HiddenNeuron:neuron2|multiply:mul4
-HiddenNeuron:neuron2|multiply:mul5
-HiddenNeuron:neuron2|multiply:mul6
-HiddenNeuron:neuron2|multiply:mul7
-HiddenNeuron:neuron2|multiply:mul8
-HiddenNeuron:neuron2|multiply:mul9
-HiddenNeuron:neuron3|multiply:mul0
-HiddenNeuron:neuron3|multiply:mul1
-HiddenNeuron:neuron3|multiply:mul2
-HiddenNeuron:neuron3|multiply:mul3
-HiddenNeuron:neuron3|multiply:mul4
-HiddenNeuron:neuron3|multiply:mul5
-HiddenNeuron:neuron3|multiply:mul6
-HiddenNeuron:neuron3|multiply:mul7
-HiddenNeuron:neuron3|multiply:mul8
-HiddenNeuron:neuron3|multiply:mul9
-HiddenNeuron:neuron4|multiply:mul0
-HiddenNeuron:neuron4|multiply:mul1
-HiddenNeuron:neuron4|multiply:mul2
-HiddenNeuron:neuron4|multiply:mul3
-HiddenNeuron:neuron4|multiply:mul4
-HiddenNeuron:neuron4|multiply:mul5
-HiddenNeuron:neuron4|multiply:mul6
-HiddenNeuron:neuron4|multiply:mul7
-HiddenNeuron:neuron4|multiply:mul8
-HiddenNeuron:neuron4|multiply:mul9
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(64).cnf
-db|HiddenLayer.(64).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(65).cnf
-db|HiddenLayer.(65).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(66).cnf
-db|HiddenLayer.(66).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(67).cnf
-db|HiddenLayer.(67).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(68).cnf
-db|HiddenLayer.(68).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
 lpm_mult
 # storage
 db|HiddenLayer.(69).cnf
@@ -11063,773 +9125,6 @@ MULTABSATURATE
 
 # end
 # entity
-clk_div
-# storage
-db|HiddenLayer.(85).cnf
-db|HiddenLayer.(85).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(86).cnf
-db|HiddenLayer.(86).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(87).cnf
-db|HiddenLayer.(87).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(88).cnf
-db|HiddenLayer.(88).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(89).cnf
-db|HiddenLayer.(89).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(90).cnf
-db|HiddenLayer.(90).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(91).cnf
-db|HiddenLayer.(91).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(92).cnf
-db|HiddenLayer.(92).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(93).cnf
-db|HiddenLayer.(93).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(94).cnf
-db|HiddenLayer.(94).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-HiddenLayer
-# storage
-db|HiddenLayer.(0).cnf
-db|HiddenLayer.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-hiddenlayer.sv
-116976dba2a16b8e5ea5bab51a854081
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# include_file {
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-64b243cefb7a1faf7888426a7d553638
-hiddenneuron.sv
-f356fade75ce40fb6cdc16b26b4c9c
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-HiddenNeuron
-# storage
-db|HiddenLayer.(1).cnf
-db|HiddenLayer.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-hiddenneuron.sv
-f356fade75ce40fb6cdc16b26b4c9c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenNeuron:neuron0
-HiddenNeuron:neuron1
-HiddenNeuron:neuron2
-HiddenNeuron:neuron3
-HiddenNeuron:neuron4
-}
-# macro_sequence
-
-# end
-# entity
-ActivationFunc
-# storage
-db|HiddenLayer.(3).cnf
-db|HiddenLayer.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-activationfunc.sv
-5e9f10941b4078ca61bdc09c55671547
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenNeuron:neuron0|ActivationFunc:callAF
-HiddenNeuron:neuron1|ActivationFunc:callAF
-HiddenNeuron:neuron2|ActivationFunc:callAF
-HiddenNeuron:neuron3|ActivationFunc:callAF
-HiddenNeuron:neuron4|ActivationFunc:callAF
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(95).cnf
-db|HiddenLayer.(95).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(96).cnf
-db|HiddenLayer.(96).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(97).cnf
-db|HiddenLayer.(97).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(98).cnf
-db|HiddenLayer.(98).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(99).cnf
-db|HiddenLayer.(99).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
 lpm_mult
 # storage
 db|HiddenLayer.(100).cnf
@@ -13434,18 +10729,290 @@ denominator0
 
 # end
 # entity
-clk_div
+HiddenNeuron
 # storage
-db|HiddenLayer.(105).cnf
-db|HiddenLayer.(105).cnf
+db|HiddenLayer.(1).cnf
+db|HiddenLayer.(1).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+hiddenneuron.sv
+4a8430637244a70e68cd2d4d51e454
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+HiddenNeuron:hNeuron0
+HiddenNeuron:hNeuron1
+HiddenNeuron:hNeuron2
+HiddenNeuron:hNeuron3
+HiddenNeuron:hNeuron4
+}
+# macro_sequence
+
+# end
+# entity
+multiply
+# storage
+db|HiddenLayer.(2).cnf
+db|HiddenLayer.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+multiply.sv
+90d5503149137cfff83f481e33ae689f
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+HiddenNeuron:hNeuron0|multiply:mul0
+HiddenNeuron:hNeuron0|multiply:mul1
+HiddenNeuron:hNeuron0|multiply:mul2
+HiddenNeuron:hNeuron0|multiply:mul3
+HiddenNeuron:hNeuron0|multiply:mul4
+HiddenNeuron:hNeuron0|multiply:mul5
+HiddenNeuron:hNeuron0|multiply:mul6
+HiddenNeuron:hNeuron0|multiply:mul7
+HiddenNeuron:hNeuron0|multiply:mul8
+HiddenNeuron:hNeuron0|multiply:mul9
+HiddenNeuron:hNeuron1|multiply:mul0
+HiddenNeuron:hNeuron1|multiply:mul1
+HiddenNeuron:hNeuron1|multiply:mul2
+HiddenNeuron:hNeuron1|multiply:mul3
+HiddenNeuron:hNeuron1|multiply:mul4
+HiddenNeuron:hNeuron1|multiply:mul5
+HiddenNeuron:hNeuron1|multiply:mul6
+HiddenNeuron:hNeuron1|multiply:mul7
+HiddenNeuron:hNeuron1|multiply:mul8
+HiddenNeuron:hNeuron1|multiply:mul9
+HiddenNeuron:hNeuron2|multiply:mul0
+HiddenNeuron:hNeuron2|multiply:mul1
+HiddenNeuron:hNeuron2|multiply:mul2
+HiddenNeuron:hNeuron2|multiply:mul3
+HiddenNeuron:hNeuron2|multiply:mul4
+HiddenNeuron:hNeuron2|multiply:mul5
+HiddenNeuron:hNeuron2|multiply:mul6
+HiddenNeuron:hNeuron2|multiply:mul7
+HiddenNeuron:hNeuron2|multiply:mul8
+HiddenNeuron:hNeuron2|multiply:mul9
+HiddenNeuron:hNeuron3|multiply:mul0
+HiddenNeuron:hNeuron3|multiply:mul1
+HiddenNeuron:hNeuron3|multiply:mul2
+HiddenNeuron:hNeuron3|multiply:mul3
+HiddenNeuron:hNeuron3|multiply:mul4
+HiddenNeuron:hNeuron3|multiply:mul5
+HiddenNeuron:hNeuron3|multiply:mul6
+HiddenNeuron:hNeuron3|multiply:mul7
+HiddenNeuron:hNeuron3|multiply:mul8
+HiddenNeuron:hNeuron3|multiply:mul9
+HiddenNeuron:hNeuron4|multiply:mul0
+HiddenNeuron:hNeuron4|multiply:mul1
+HiddenNeuron:hNeuron4|multiply:mul2
+HiddenNeuron:hNeuron4|multiply:mul3
+HiddenNeuron:hNeuron4|multiply:mul4
+HiddenNeuron:hNeuron4|multiply:mul5
+HiddenNeuron:hNeuron4|multiply:mul6
+HiddenNeuron:hNeuron4|multiply:mul7
+HiddenNeuron:hNeuron4|multiply:mul8
+HiddenNeuron:hNeuron4|multiply:mul9
+OutputNeuron:oNeuron0|multiply:mul0
+OutputNeuron:oNeuron0|multiply:mul1
+OutputNeuron:oNeuron0|multiply:mul2
+OutputNeuron:oNeuron0|multiply:mul3
+OutputNeuron:oNeuron0|multiply:mul4
+OutputNeuron:oNeuron1|multiply:mul0
+OutputNeuron:oNeuron1|multiply:mul1
+OutputNeuron:oNeuron1|multiply:mul2
+OutputNeuron:oNeuron1|multiply:mul3
+OutputNeuron:oNeuron1|multiply:mul4
+OutputNeuron:oNeuron2|multiply:mul0
+OutputNeuron:oNeuron2|multiply:mul1
+OutputNeuron:oNeuron2|multiply:mul2
+OutputNeuron:oNeuron2|multiply:mul3
+OutputNeuron:oNeuron2|multiply:mul4
+}
+# macro_sequence
+
+# end
+# entity
+ActivationFunc
+# storage
+db|HiddenLayer.(3).cnf
+db|HiddenLayer.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+activationfunc.sv
+f919128960d7d481647246c4f2d69
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+HiddenNeuron:hNeuron0|ActivationFunc:callAF
+HiddenNeuron:hNeuron1|ActivationFunc:callAF
+HiddenNeuron:hNeuron2|ActivationFunc:callAF
+HiddenNeuron:hNeuron3|ActivationFunc:callAF
+HiddenNeuron:hNeuron4|ActivationFunc:callAF
+OutputNeuron:oNeuron0|ActivationFunc:callAF
+OutputNeuron:oNeuron1|ActivationFunc:callAF
+OutputNeuron:oNeuron2|ActivationFunc:callAF
+}
+# macro_sequence
+
+# end
+# entity
+WeightRAM
+# storage
+db|HiddenLayer.(4).cnf
+db|HiddenLayer.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+8bcf223899e78898d706659ecf79a75
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+N
+10
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight0_0
+WeightRAM:getWeight0_1
+WeightRAM:getWeight0_2
+WeightRAM:getWeight0_3
+WeightRAM:getWeight0_4
+}
+# macro_sequence
+
+# end
+# entity
+LFSR
+# storage
+db|HiddenLayer.(5).cnf
+db|HiddenLayer.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
+a7f685c6e25118781c2119c701b3d43
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+WeightRAM:getWeight0_0|LFSR:rndnm
+WeightRAM:getWeight0_1|LFSR:rndnm
+WeightRAM:getWeight0_2|LFSR:rndnm
+WeightRAM:getWeight0_3|LFSR:rndnm
+WeightRAM:getWeight0_4|LFSR:rndnm
+WeightRAM:getWeight1_0|LFSR:rndnm
+WeightRAM:getWeight1_1|LFSR:rndnm
+WeightRAM:getWeight1_2|LFSR:rndnm
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|HiddenLayer.(6).cnf
+db|HiddenLayer.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13479,16 +11046,16 @@ USR
 # entity
 clk_div
 # storage
-db|HiddenLayer.(106).cnf
-db|HiddenLayer.(106).cnf
+db|HiddenLayer.(7).cnf
+db|HiddenLayer.(7).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13522,16 +11089,16 @@ USR
 # entity
 clk_div
 # storage
-db|HiddenLayer.(107).cnf
-db|HiddenLayer.(107).cnf
+db|HiddenLayer.(8).cnf
+db|HiddenLayer.(8).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13565,16 +11132,16 @@ USR
 # entity
 clk_div
 # storage
-db|HiddenLayer.(108).cnf
-db|HiddenLayer.(108).cnf
+db|HiddenLayer.(9).cnf
+db|HiddenLayer.(9).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13608,16 +11175,16 @@ USR
 # entity
 clk_div
 # storage
-db|HiddenLayer.(109).cnf
-db|HiddenLayer.(109).cnf
+db|HiddenLayer.(10).cnf
+db|HiddenLayer.(10).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13649,18 +11216,2659 @@ USR
 
 # end
 # entity
-clk_div
+WeightRAM
 # storage
-db|HiddenLayer.(110).cnf
-db|HiddenLayer.(110).cnf
+db|HiddenLayer.(11).cnf
+db|HiddenLayer.(11).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+8bcf223899e78898d706659ecf79a75
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight1_0
+WeightRAM:getWeight1_1
+WeightRAM:getWeight1_2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mult
+# storage
+db|HiddenLayer.(12).cnf
+db|HiddenLayer.(12).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_mult.tdf
+76c17addbb593e967e0934923357685
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTHA
+16
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHB
+11
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHP
+27
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHR
+27
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LATENCY
+0
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+USR
+INPUT_B_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+APEX20K_TECHNOLOGY_MAPPER
+LUT
+TECH_MAPPER_APEX20K
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+AUTO
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+INPUT_B_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+USE_AHDL_IMPLEMENTATION
+OFF
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa15
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+datab4
+-1
+1
+datab2
+-1
+1
+datab10
+-1
+1
+datab1
+-1
+1
+datab0
+-1
+1
+datab9
+-1
+2
+datab8
+-1
+2
+datab7
+-1
+2
+datab6
+-1
+2
+datab5
+-1
+2
+datab3
+-1
+2
+}
+# macro_sequence
+
+# end
+# entity
+multcore
+# storage
+db|HiddenLayer.(13).cnf
+db|HiddenLayer.(13).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|multcore.tdf
+d260db32eb51fb129b154a994b5
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+widtha
+16
+PARAMETER_UNKNOWN
+USR
+widthb
+11
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LATENCY
+1
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+OP_MODE
+0
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+YES
+PARAMETER_UNKNOWN
+DEF
+SUB_DEDICATED_MULTIPLIER_CIRCUITRY
+NO
+PARAMETER_UNKNOWN
+USR
+DSP_BLOCK_BALANCING
+AUTO
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa15
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+mpar_add
+# storage
+db|HiddenLayer.(14).cnf
+db|HiddenLayer.(14).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|mpar_add.tdf
+7cbf24afda73e2f88a1def44e2e3f4c0
+7
+# user_parameter {
+size
+15
+PARAMETER_UNKNOWN
+USR
+width
+4
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LEVEL
+3
+PARAMETER_UNKNOWN
+USR
+TOT_LEVELS
+5
+PARAMETER_UNKNOWN
+USR
+STAGE
+1
+PARAMETER_UNKNOWN
+USR
+TOT_STAGES
+3
+PARAMETER_UNKNOWN
+USR
+INT_LATENCY
+1
+PARAMETER_UNKNOWN
+USR
+PREV_SING_SIZE
+15
+PARAMETER_UNKNOWN
+USR
+BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+DEF
+CREATE_MS_BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+DEF
+MPARADD_OP_MODE
+0
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data3_9
+-1
+3
+data3_8
+-1
+3
+data3_7
+-1
+3
+data3_6
+-1
+3
+data3_5
+-1
+3
+data3_4
+-1
+3
+data3_3
+-1
+3
+data3_2
+-1
+3
+data3_14
+-1
+3
+data3_13
+-1
+3
+data3_12
+-1
+3
+data3_11
+-1
+3
+data3_10
+-1
+3
+data3_1
+-1
+3
+data3_0
+-1
+3
+data2_9
+-1
+3
+data2_8
+-1
+3
+data2_7
+-1
+3
+data2_6
+-1
+3
+data2_5
+-1
+3
+data2_4
+-1
+3
+data2_3
+-1
+3
+data2_2
+-1
+3
+data2_14
+-1
+3
+data2_13
+-1
+3
+data2_12
+-1
+3
+data2_11
+-1
+3
+data2_10
+-1
+3
+data2_1
+-1
+3
+data2_0
+-1
+3
+data1_9
+-1
+3
+data1_8
+-1
+3
+data1_7
+-1
+3
+data1_6
+-1
+3
+data1_5
+-1
+3
+data1_4
+-1
+3
+data1_3
+-1
+3
+data1_2
+-1
+3
+data1_14
+-1
+3
+data1_13
+-1
+3
+data1_12
+-1
+3
+data1_11
+-1
+3
+data1_10
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_9
+-1
+3
+data0_8
+-1
+3
+data0_7
+-1
+3
+data0_6
+-1
+3
+data0_5
+-1
+3
+data0_4
+-1
+3
+data0_3
+-1
+3
+data0_2
+-1
+3
+data0_14
+-1
+3
+data0_13
+-1
+3
+data0_12
+-1
+3
+data0_11
+-1
+3
+data0_10
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|HiddenLayer.(15).cnf
+db|HiddenLayer.(15).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
+a26eeedf4a909a6fabdbb54abbdaaf24
+7
+# user_parameter {
+LPM_WIDTH
+15
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+REGISTERED_AT_END
+1
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_vgh
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cin
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_vgh
+# storage
+db|HiddenLayer.(16).cnf
+db|HiddenLayer.(16).cnf
+# case_insensitive
+# source_file
+db|add_sub_vgh.tdf
+90ff7c6b9c2d32d6a631f9c189412054
+7
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cin
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|HiddenLayer.(17).cnf
+db|HiddenLayer.(17).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
+a26eeedf4a909a6fabdbb54abbdaaf24
+7
+# user_parameter {
+LPM_WIDTH
+15
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+REGISTERED_AT_END
+1
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_56h
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_56h
+# storage
+db|HiddenLayer.(18).cnf
+db|HiddenLayer.(18).cnf
+# case_insensitive
+# source_file
+db|add_sub_56h.tdf
+4a6f9354f52d56729e907f4eedeac8
+7
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+mpar_add
+# storage
+db|HiddenLayer.(19).cnf
+db|HiddenLayer.(19).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|mpar_add.tdf
+7cbf24afda73e2f88a1def44e2e3f4c0
+7
+# user_parameter {
+size
+19
+PARAMETER_UNKNOWN
+USR
+width
+2
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LEVEL
+4
+PARAMETER_UNKNOWN
+USR
+TOT_LEVELS
+5
+PARAMETER_UNKNOWN
+USR
+STAGE
+2
+PARAMETER_UNKNOWN
+USR
+TOT_STAGES
+3
+PARAMETER_UNKNOWN
+USR
+INT_LATENCY
+1
+PARAMETER_UNKNOWN
+USR
+PREV_SING_SIZE
+19
+PARAMETER_UNKNOWN
+USR
+BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+USR
+CREATE_MS_BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+USR
+MPARADD_OP_MODE
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data1_9
+-1
+3
+data1_8
+-1
+3
+data1_7
+-1
+3
+data1_6
+-1
+3
+data1_5
+-1
+3
+data1_4
+-1
+3
+data1_3
+-1
+3
+data1_2
+-1
+3
+data1_18
+-1
+3
+data1_17
+-1
+3
+data1_16
+-1
+3
+data1_15
+-1
+3
+data1_14
+-1
+3
+data1_13
+-1
+3
+data1_12
+-1
+3
+data1_11
+-1
+3
+data1_10
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_9
+-1
+3
+data0_8
+-1
+3
+data0_7
+-1
+3
+data0_6
+-1
+3
+data0_5
+-1
+3
+data0_4
+-1
+3
+data0_3
+-1
+3
+data0_2
+-1
+3
+data0_18
+-1
+3
+data0_17
+-1
+3
+data0_16
+-1
+3
+data0_15
+-1
+3
+data0_14
+-1
+3
+data0_13
+-1
+3
+data0_12
+-1
+3
+data0_11
+-1
+3
+data0_10
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|HiddenLayer.(20).cnf
+db|HiddenLayer.(20).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
+a26eeedf4a909a6fabdbb54abbdaaf24
+7
+# user_parameter {
+LPM_WIDTH
+19
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+REGISTERED_AT_END
+1
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_3hh
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab18
+-1
+3
+datab17
+-1
+3
+datab16
+-1
+3
+datab15
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa18
+-1
+3
+dataa17
+-1
+3
+dataa16
+-1
+3
+dataa15
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cin
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_3hh
+# storage
+db|HiddenLayer.(21).cnf
+db|HiddenLayer.(21).cnf
+# case_insensitive
+# source_file
+db|add_sub_3hh.tdf
+5488f84426e0b4b34935966971e0a1
+7
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab18
+-1
+3
+datab17
+-1
+3
+datab16
+-1
+3
+datab15
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa18
+-1
+3
+dataa17
+-1
+3
+dataa16
+-1
+3
+dataa15
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cin
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|HiddenLayer.(22).cnf
+db|HiddenLayer.(22).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|altshift.tdf
+b8bc81f1957aafc1f0eb4e736694d2
+7
+# user_parameter {
+WIDTH
+27
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data26
+-1
+3
+data25
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+HiddenLayer
+# storage
+db|HiddenLayer.(0).cnf
+db|HiddenLayer.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hiddenlayer.sv
+b5f8c76fca2327337dc34cb0319f5aad
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# include_file {
+outputneuron.sv
+44263ec5a3c218ee4e2161b421e9dc96
+hiddenneuron.sv
+4a8430637244a70e68cd2d4d51e454
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+8bcf223899e78898d706659ecf79a75
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+OutputNeuron
+# storage
+db|HiddenLayer.(23).cnf
+db|HiddenLayer.(23).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+outputneuron.sv
+44263ec5a3c218ee4e2161b421e9dc96
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+OutputNeuron:oNeuron0
+OutputNeuron:oNeuron1
+OutputNeuron:oNeuron2
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|HiddenLayer.(24).cnf
+db|HiddenLayer.(24).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13700,16 +13908,16 @@ WeightRAM:getWeight1_2|clk_div:clk1
 # entity
 clk_div
 # storage
-db|HiddenLayer.(111).cnf
-db|HiddenLayer.(111).cnf
+db|HiddenLayer.(25).cnf
+db|HiddenLayer.(25).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13746,16 +13954,16 @@ WeightRAM:getWeight0_1|clk_div:clk1
 # entity
 clk_div
 # storage
-db|HiddenLayer.(112).cnf
-db|HiddenLayer.(112).cnf
+db|HiddenLayer.(26).cnf
+db|HiddenLayer.(26).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13792,16 +14000,16 @@ WeightRAM:getWeight0_2|clk_div:clk1
 # entity
 clk_div
 # storage
-db|HiddenLayer.(113).cnf
-db|HiddenLayer.(113).cnf
+db|HiddenLayer.(49).cnf
+db|HiddenLayer.(49).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13838,16 +14046,16 @@ WeightRAM:getWeight0_3|clk_div:clk1
 # entity
 clk_div
 # storage
-db|HiddenLayer.(114).cnf
-db|HiddenLayer.(114).cnf
+db|HiddenLayer.(50).cnf
+db|HiddenLayer.(50).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-caaa3a55ab56df5de6c56a981da945c
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -13877,6 +14085,2085 @@ USR
 }
 # hierarchies {
 WeightRAM:getWeight0_4|clk_div:clk1
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mult
+# storage
+db|HiddenLayer.(51).cnf
+db|HiddenLayer.(51).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_mult.tdf
+76c17addbb593e967e0934923357685
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTHA
+14
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHB
+11
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHP
+25
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHR
+25
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LATENCY
+0
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+USR
+INPUT_B_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+6
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+APEX20K_TECHNOLOGY_MAPPER
+LUT
+TECH_MAPPER_APEX20K
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+AUTO
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+INPUT_B_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+USE_AHDL_IMPLEMENTATION
+OFF
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+datab4
+-1
+1
+datab2
+-1
+1
+datab10
+-1
+1
+datab1
+-1
+1
+datab0
+-1
+1
+datab9
+-1
+2
+datab8
+-1
+2
+datab7
+-1
+2
+datab6
+-1
+2
+datab5
+-1
+2
+datab3
+-1
+2
+}
+# macro_sequence
+
+# end
+# entity
+multcore
+# storage
+db|HiddenLayer.(52).cnf
+db|HiddenLayer.(52).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|multcore.tdf
+d260db32eb51fb129b154a994b5
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+widtha
+14
+PARAMETER_UNKNOWN
+USR
+widthb
+11
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LATENCY
+1
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+6
+PARAMETER_UNKNOWN
+USR
+OP_MODE
+0
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+YES
+PARAMETER_UNKNOWN
+DEF
+SUB_DEDICATED_MULTIPLIER_CIRCUITRY
+NO
+PARAMETER_UNKNOWN
+USR
+DSP_BLOCK_BALANCING
+AUTO
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+mpar_add
+# storage
+db|HiddenLayer.(53).cnf
+db|HiddenLayer.(53).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|mpar_add.tdf
+7cbf24afda73e2f88a1def44e2e3f4c0
+7
+# user_parameter {
+size
+15
+PARAMETER_UNKNOWN
+USR
+width
+4
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LEVEL
+3
+PARAMETER_UNKNOWN
+USR
+TOT_LEVELS
+5
+PARAMETER_UNKNOWN
+USR
+STAGE
+1
+PARAMETER_UNKNOWN
+USR
+TOT_STAGES
+3
+PARAMETER_UNKNOWN
+USR
+INT_LATENCY
+1
+PARAMETER_UNKNOWN
+USR
+PREV_SING_SIZE
+15
+PARAMETER_UNKNOWN
+USR
+BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+DEF
+CREATE_MS_BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+DEF
+MPARADD_OP_MODE
+0
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data3_9
+-1
+3
+data3_8
+-1
+3
+data3_7
+-1
+3
+data3_6
+-1
+3
+data3_5
+-1
+3
+data3_4
+-1
+3
+data3_3
+-1
+3
+data3_2
+-1
+3
+data3_14
+-1
+3
+data3_13
+-1
+3
+data3_12
+-1
+3
+data3_11
+-1
+3
+data3_10
+-1
+3
+data3_1
+-1
+3
+data3_0
+-1
+3
+data2_9
+-1
+3
+data2_8
+-1
+3
+data2_7
+-1
+3
+data2_6
+-1
+3
+data2_5
+-1
+3
+data2_4
+-1
+3
+data2_3
+-1
+3
+data2_2
+-1
+3
+data2_14
+-1
+3
+data2_13
+-1
+3
+data2_12
+-1
+3
+data2_11
+-1
+3
+data2_10
+-1
+3
+data2_1
+-1
+3
+data2_0
+-1
+3
+data1_9
+-1
+3
+data1_8
+-1
+3
+data1_7
+-1
+3
+data1_6
+-1
+3
+data1_5
+-1
+3
+data1_4
+-1
+3
+data1_3
+-1
+3
+data1_2
+-1
+3
+data1_14
+-1
+3
+data1_13
+-1
+3
+data1_12
+-1
+3
+data1_11
+-1
+3
+data1_10
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_9
+-1
+3
+data0_8
+-1
+3
+data0_7
+-1
+3
+data0_6
+-1
+3
+data0_5
+-1
+3
+data0_4
+-1
+3
+data0_3
+-1
+3
+data0_2
+-1
+3
+data0_14
+-1
+3
+data0_13
+-1
+3
+data0_12
+-1
+3
+data0_11
+-1
+3
+data0_10
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|HiddenLayer.(54).cnf
+db|HiddenLayer.(54).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
+a26eeedf4a909a6fabdbb54abbdaaf24
+7
+# user_parameter {
+LPM_WIDTH
+15
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+6
+PARAMETER_UNKNOWN
+USR
+REGISTERED_AT_END
+1
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_vgh
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cin
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|HiddenLayer.(55).cnf
+db|HiddenLayer.(55).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
+a26eeedf4a909a6fabdbb54abbdaaf24
+7
+# user_parameter {
+LPM_WIDTH
+15
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+6
+PARAMETER_UNKNOWN
+USR
+REGISTERED_AT_END
+1
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_56h
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|HiddenLayer.(56).cnf
+db|HiddenLayer.(56).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
+a26eeedf4a909a6fabdbb54abbdaaf24
+7
+# user_parameter {
+LPM_WIDTH
+19
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+6
+PARAMETER_UNKNOWN
+USR
+REGISTERED_AT_END
+1
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_3hh
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab18
+-1
+3
+datab17
+-1
+3
+datab16
+-1
+3
+datab15
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa18
+-1
+3
+dataa17
+-1
+3
+dataa16
+-1
+3
+dataa15
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cin
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|HiddenLayer.(57).cnf
+db|HiddenLayer.(57).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|altshift.tdf
+b8bc81f1957aafc1f0eb4e736694d2
+7
+# user_parameter {
+WIDTH
+25
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide
+# storage
+db|HiddenLayer.(58).cnf
+db|HiddenLayer.(58).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_divide.tdf
+b81d72a497fd388e8a45f25f43652bd1
+7
+# user_parameter {
+LPM_WIDTHN
+32
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHD
+32
+PARAMETER_UNKNOWN
+USR
+LPM_NREPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DREPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_REMAINDERPOSITIVE
+FALSE
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+lpm_divide_puo
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+quotient9
+-1
+3
+quotient8
+-1
+3
+quotient7
+-1
+3
+quotient6
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient31
+-1
+3
+quotient30
+-1
+3
+quotient3
+-1
+3
+quotient29
+-1
+3
+quotient28
+-1
+3
+quotient27
+-1
+3
+quotient26
+-1
+3
+quotient25
+-1
+3
+quotient24
+-1
+3
+quotient23
+-1
+3
+quotient22
+-1
+3
+quotient21
+-1
+3
+quotient20
+-1
+3
+quotient2
+-1
+3
+quotient19
+-1
+3
+quotient18
+-1
+3
+quotient17
+-1
+3
+quotient16
+-1
+3
+quotient15
+-1
+3
+quotient14
+-1
+3
+quotient13
+-1
+3
+quotient12
+-1
+3
+quotient11
+-1
+3
+quotient10
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer9
+-1
+3
+numer8
+-1
+3
+numer7
+-1
+3
+numer6
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer31
+-1
+3
+numer30
+-1
+3
+numer3
+-1
+3
+numer29
+-1
+3
+numer28
+-1
+3
+numer27
+-1
+3
+numer26
+-1
+3
+numer25
+-1
+3
+numer24
+-1
+3
+numer23
+-1
+3
+numer22
+-1
+3
+numer21
+-1
+3
+numer20
+-1
+3
+numer19
+-1
+3
+numer18
+-1
+3
+numer17
+-1
+3
+numer16
+-1
+3
+numer15
+-1
+3
+numer14
+-1
+3
+numer13
+-1
+3
+numer12
+-1
+3
+numer11
+-1
+3
+numer10
+-1
+3
+denom9
+-1
+3
+denom8
+-1
+3
+denom7
+-1
+3
+denom6
+-1
+3
+denom5
+-1
+3
+denom4
+-1
+3
+denom31
+-1
+3
+denom30
+-1
+3
+denom3
+-1
+3
+denom29
+-1
+3
+denom28
+-1
+3
+denom27
+-1
+3
+denom26
+-1
+3
+denom25
+-1
+3
+denom24
+-1
+3
+denom23
+-1
+3
+denom22
+-1
+3
+denom21
+-1
+3
+denom20
+-1
+3
+denom2
+-1
+3
+denom19
+-1
+3
+denom18
+-1
+3
+denom17
+-1
+3
+denom16
+-1
+3
+denom15
+-1
+3
+denom14
+-1
+3
+denom13
+-1
+3
+denom12
+-1
+3
+denom11
+-1
+3
+denom10
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+numer2
+-1
+1
+numer1
+-1
+1
+numer0
+-1
+1
 }
 # macro_sequence
 

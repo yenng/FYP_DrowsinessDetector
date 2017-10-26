@@ -7,7 +7,7 @@ module WeighInitiallizemodule#(parameter N=10)(
 	//output	reg [9:0] REGISTER [64:0]);
 
 	reg [9:0] REGISTER [64:0];
-	//wire clk;
+	wire clk;
 	wire [9:0] data;
 	integer i = 0;
 	integer count = 0;

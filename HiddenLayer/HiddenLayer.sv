@@ -1,20 +1,11 @@
 module HiddenLayer(
 	input		Clock,Rst,WE,In,
 	input		[9:0] inVal[0:9],
-	//output	[2:0]out,
 	output outVal[0:4],
+	output outVal1[0:2],
 	output signed[9:0] weight[0:64]
 	);
-	/*
-	reg	[6:0] Address0;
-	reg	[6:0] Address1;
-	reg	[6:0] Address2;
-	reg	[6:0] Address3;
-	reg	[6:0] Address4;
-	reg	[6:0] Address5;
-	reg	[6:0] Address6;
-	reg	[6:0] Address7;
-	*/
+	
 	reg	signed[9:0] weight0_0[0:9];
 	reg	signed[9:0] weight0_1[0:9];
 	reg	signed[9:0] weight0_2[0:9];
@@ -32,19 +23,16 @@ module HiddenLayer(
 	reg	[19:0]mulVal[0:14];
 	reg	[23:0]addVal[0:4];
 	
-	/*
-	assign Address0 = 7'b0000000;
-	assign Address1 = 7'b0001010;
-	assign Address2 = 7'b0010100;
-	assign Address3 = 7'b0011110;
-	assign Address4 = 7'b0101000;
-	*/
+	// Call HiddenNueron to get the outVal from HiddenNueron
+	HiddenNeuron hNeuron0(inVal, weight0_0, outVal[0]);
+	HiddenNeuron hNeuron1(inVal, weight0_1, outVal[1]);
+	HiddenNeuron hNeuron2(inVal, weight0_2, outVal[2]);
+	HiddenNeuron hNeuron3(inVal, weight0_3, outVal[3]);
+	HiddenNeuron hNeuron4(inVal, weight0_4, outVal[4]);
 	
-	HiddenNeuron neuron0(inVal, weight0_0, outVal[0]);
-	HiddenNeuron neuron1(inVal, weight0_1, outVal[1]);
-	HiddenNeuron neuron2(inVal, weight0_2, outVal[2]);
-	HiddenNeuron neuron3(inVal, weight0_3, outVal[3]);
-	HiddenNeuron neuron4(inVal, weight0_4, outVal[4]);
+	OutputNeuron oNeuron0(outVal, weight1_0, outVal1[0]);
+	OutputNeuron oNeuron1(outVal, weight1_1, outVal1[1]);
+	OutputNeuron oNeuron2(outVal, weight1_2, outVal1[2]);
 /*  
   $display("Weight0_0 = %d", weight0_0);
   $display("Weight0_1 = %d", weight0_1);
@@ -73,17 +61,5 @@ module HiddenLayer(
 	assign weight[55:59] = weight1_1;
 	assign weight[60:64] = weight1_2;
 	
-	/*
-	//call weight for hidden neuron
-	WeightRAM	#(10) getWeight0_0(Clock, Rst, 1'b0, weight0_0, 7'b0000000, WE, weight0_0);
-	WeightRAM	#(10) getWeight0_1(Clock, Rst, 1'b0, weight0_1, 7'b0001010, WE, weight0_1);
-	WeightRAM	#(10) getWeight0_2(Clock, Rst, 1'b0, weight0_2, 7'b0010100, WE, weight0_2);
-	WeightRAM	#(10) getWeight0_3(Clock, Rst, 1'b0, weight0_3, 7'b0011110, WE, weight0_3);
-	WeightRAM	#(10) getWeight0_4(Clock, Rst, 1'b0, weight0_4, 7'b0101000, WE, weight0_4);
-
-	//call weight for output neuron
-	WeightRAM	#(5) getWeight1_0(Clock, Rst, 1'b0, weight1_0, 7'b0110010, WE, weight1_0);
-	WeightRAM	#(5) getWeight1_1(Clock, Rst, 1'b0, weight1_1, 7'b0110111, WE, weight1_1);
-	WeightRAM	#(5) getWeight1_2(Clock, Rst, 1'b0, weight1_2, 7'b0111100, WE, weight1_2);
-	*/
+	
 endmodule 

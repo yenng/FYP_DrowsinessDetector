@@ -34,15 +34,18 @@ class NeuralNetwork:
         w2 = 2*np.random.random((5,3)) - 1
         self.weight.append(w1)
         self.weight.append(w2)
+        print self.weight
 
     def training(self, inputs, outputs, count = 100000):
         for l in range(count):
             # structure for ANN
             # input layer -> hidden layer
             out1 = sigmoid(np.dot(inputs,self.weight[0]))
+            #print out1
 
             # hidden layer -> output layer
             out2 = sigmoid(np.dot(out1,self.weight[1]))
+            #print out2
 
             # compare calculated output with expected output
             out2_error = outputs - out2
@@ -70,3 +73,4 @@ nn = NeuralNetwork()
 for l in range(len(X)):
     nn.training(X[l],Y[0])
 nn.predict(x)
+print nn.weight
