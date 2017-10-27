@@ -3,17 +3,24 @@ module OutputNeuron(
 	input signed[9:0] weight[0:4],
 	output outVal);
 	
-reg signed[9:0]mulVal[0:4];
+reg signed[19:0]mulVal[0:4];
 reg signed[23:0]addVal;
+reg [0:9]inVal_t[4:0];
 
 assign addVal = mulVal[0] + mulVal[1] + mulVal[2]+ mulVal[3]+ mulVal[4];
 
+assign inVal_t[0] = 10'b0000000000 + inVal[0];
+assign inVal_t[1] = 10'b0000000000 + inVal[1];
+assign inVal_t[2] = 10'b0000000000 + inVal[2];
+assign inVal_t[3] = 10'b0000000000 + inVal[3];
+assign inVal_t[4] = 10'b0000000000 + inVal[4];
+
 //multiply input and weight
-multiply mul0(inVal[0],weight[0],mulVal[0]);
-multiply mul1(inVal[1],weight[1],mulVal[1]);
-multiply mul2(inVal[2],weight[2],mulVal[2]);
-multiply mul3(inVal[2],weight[3],mulVal[3]);
-multiply mul4(inVal[2],weight[4],mulVal[4]);
+multiply oMul0(inVal_t[0],weight[0],mulVal[0]);
+multiply oMul1(inVal_t[1],weight[1],mulVal[1]);
+multiply oMul2(inVal_t[2],weight[2],mulVal[2]);
+multiply oMul3(inVal_t[3],weight[3],mulVal[3]);
+multiply oMul4(inVal_t[4],weight[4],mulVal[4]);
 
 ActivationFunc callAF(addVal,outVal);
 

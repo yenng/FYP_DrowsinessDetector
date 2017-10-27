@@ -12,13 +12,9 @@ module HiddenLayer(
 	reg	signed[9:0] weight0_3[0:9];
 	reg	signed[9:0] weight0_4[0:9];
 	
-	reg	[9:0] D[0:9];
-	
 	reg	signed[9:0] weight1_0[0:4];
 	reg	signed[9:0] weight1_1[0:4];
 	reg	signed[9:0] weight1_2[0:4];
-	
-	reg	[9:0] D1[0:4];
 	
 	reg	[19:0]mulVal[0:14];
 	reg	[23:0]addVal[0:4];
@@ -33,13 +29,6 @@ module HiddenLayer(
 	OutputNeuron oNeuron0(outVal, weight1_0, outVal1[0]);
 	OutputNeuron oNeuron1(outVal, weight1_1, outVal1[1]);
 	OutputNeuron oNeuron2(outVal, weight1_2, outVal1[2]);
-/*  
-  $display("Weight0_0 = %d", weight0_0);
-  $display("Weight0_1 = %d", weight0_1);
-  $display("Weight0_2 = %d", weight0_2);
-  $display("Weight0_3 = %d", weight0_3);
-  $display("Weight0_4 = %d", weight0_4);
-*/
 	//call weight for hidden neuron
 	WeightRAM	#(10) getWeight0_0(Clock, In, Rst, weight0_0, 7'b0000000, WE, weight0_0);
 	WeightRAM	#(10) getWeight0_1(Clock, In, Rst, weight0_1, 7'b0001010, WE, weight0_1);

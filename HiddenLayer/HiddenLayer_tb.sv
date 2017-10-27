@@ -2,9 +2,10 @@ module HiddenLayer_tb;
 reg	Clock,Rst,WE,In;
 reg	[9:0] inVal[0:9];
 wire	outVal[0:4];
+wire outVal1[0:2];
 wire [9:0] weight[0:64];
 
-HiddenLayer	test(Clock, Rst, WE, In, inVal, outVal,weight);
+HiddenLayer	test(Clock, Rst, WE, In, inVal, outVal,outVal1,weight);
 
 initial begin
 	Clock = 0;
