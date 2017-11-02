@@ -85,7 +85,6 @@ n@hidden@layer
 vHiddenLayer_tb
 R6
 R1
-!s100 jcDfNC1jPI^bKZTFRIZBR3
 IG[HU=V9fFNXZ5S>kcQfZ_3
 Vl>@<:_zKMD2=1lI5Aj?;R1
 S1
@@ -96,12 +95,13 @@ FC:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenLayer_tb.sv
 L0 1
 R3
 r1
-!s85 0
 31
-!s101 -O0
 R4
 R5
 n@hidden@layer_tb
+!s100 jcDfNC1jPI^bKZTFRIZBR3
+!s85 0
+!s101 -O0
 vHiddenNeuron
 R6
 R1
@@ -164,6 +164,7 @@ R5
 vOutputNeuron
 R6
 R1
+!s100 HF>Pf>oh^fN8UCAO3aWl>2
 IoAXOg_bf5_i`TOCL6NdNa3
 VU4Nj_F=EUU7a6YJznQUo12
 S1
@@ -174,13 +175,12 @@ FC:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/OutputNeuron.sv
 L0 1
 R3
 r1
+!s85 0
 31
+!s101 -O0
 R4
 R5
 n@output@neuron
-!s100 HF>Pf>oh^fN8UCAO3aWl>2
-!s85 0
-!s101 -O0
 vWeightRAM
 R6
 R1

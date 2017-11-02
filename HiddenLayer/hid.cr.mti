@@ -12,12 +12,12 @@ Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 Top level modules:
 	HiddenNeuron
 
-} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/OutputNeuron.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/OutputNeuron.sv
+} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
--- Compiling module OutputNeuron
+-- Compiling module multiply
 
 Top level modules:
-	OutputNeuron
+	multiply
 
 } {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
@@ -26,19 +26,19 @@ Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 Top level modules:
 	LFSR
 
-} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv
+} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/OutputNeuron.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/OutputNeuron.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
--- Compiling module multiply
+-- Compiling module OutputNeuron
 
 Top level modules:
-	multiply
+	OutputNeuron
 
-} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenLayer.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenLayer.sv
+} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
--- Compiling module HiddenLayer
+-- Compiling module WeightRAM
 
 Top level modules:
-	HiddenLayer
+	WeightRAM
 
 } {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
@@ -47,11 +47,11 @@ Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 Top level modules:
 	clk_div
 
-} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv
+} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenLayer.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenLayer.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
--- Compiling module WeightRAM
+-- Compiling module HiddenLayer
 
 Top level modules:
-	WeightRAM
+	HiddenLayer
 
 } {} {}}
