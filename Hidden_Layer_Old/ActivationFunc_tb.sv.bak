@@ -4,14 +4,13 @@ module ActivationFunc_tb;
 reg signed [23:0]in;
 
 //output
-wire [9:0]out;
+wire [10:0]out;
 initial begin
 	in = 416798;
 	#1 in = 1000;
-	#5010 $finish;
+	
 	forever #5 in = in - 1'b1;
 	
-
 end
 initial begin
  $monitor("in = %d\tout = %d",in,out);

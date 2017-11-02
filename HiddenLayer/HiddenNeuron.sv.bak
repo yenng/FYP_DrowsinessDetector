@@ -1,7 +1,7 @@
 module HiddenNeuron(
 	input [9:0] inVal[0:9],
 	input signed[9:0] weight[0:9],
-	output signed outVal
+	output outVal
 );
 
 reg signed [19:0]mulVal[0:9];

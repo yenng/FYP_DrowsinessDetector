@@ -1,8 +1,8 @@
 module HiddenLayer(
 	input		Clock,Rst,WE,In,
 	input		[9:0] inVal[0:9],
-	output outVal[0:4],
-	output outVal1[0:2],
+	output [9:0]outVal[0:4],
+	output [9:0]outVal1[0:2],
 	output signed[9:0] weight[0:64]
 	);
 	

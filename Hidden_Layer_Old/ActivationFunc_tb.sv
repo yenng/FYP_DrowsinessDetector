@@ -11,7 +11,6 @@ initial begin
 	
 	forever #5 in = in - 1'b1;
 	
-
 end
 initial begin
  $monitor("in = %d\tout = %d",in,out);

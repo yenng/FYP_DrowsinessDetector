@@ -1,7 +1,7 @@
 module OutputNeuron(
-	input inVal[0:4],
+	input [9:0]inVal[0:4],
 	input signed[9:0] weight[0:4],
-	output outVal);
+	output [9:0]outVal);
 	
 reg signed[19:0]mulVal[0:4];
 reg signed[23:0]addVal;
