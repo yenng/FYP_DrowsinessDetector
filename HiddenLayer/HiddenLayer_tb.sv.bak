@@ -37,8 +37,8 @@ end
 initial begin
 #200
   $display("Input value = %p", inVal);
-  $monitor("Weight0_0 = %p\nWeight0_1 = %p\nWeight0_2 = %p\nWeight0_3 = %p\nWeight0_4 = %p\nOutput = %p", 
-  weight[0:9], weight[10:19], weight[20:29], weight[30:39], weight[40:49]?outVal1);
+  $monitor("Weight0_0 = %p\nWeight0_1 = %p\nWeight0_2 = %p\nWeight0_3 = %p\nWeight0_4 = %p\nOutput (Hidden Layer) = %p\n
+  Output(Output Layer) = %p", weight[0:9], weight[10:19], weight[20:29], weight[30:39], weight[40:49], outVal, outVal1);
   
 end 
 endmodule 
