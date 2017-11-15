@@ -41,7 +41,7 @@ class NeuralNetwork:
             # structure for ANN
             # input layer -> hidden layer
             out1 = sigmoid(np.dot(inputs,self.weight[0]))
-            #print out1
+            #print 'Out1', out1
 
             # hidden layer -> output layer
             out2 = sigmoid(np.dot(out1,self.weight[1]))
@@ -53,9 +53,12 @@ class NeuralNetwork:
             out1_delta = np.dot(out2_delta,self.weight[1].T) * sigmoid_prime(out1)
             self.weight[0] += np.dot(inputs.T,out1_delta)
             self.weight[1] += np.dot(out1.T,out2_delta)
-            '''if (l == 50000 or l == 1):
-                print w2
-        print w2'''
+            if (l == 50000 or l == 1):
+                print self.weight[1].T
+                print '==================='
+                print out2_delta
+                print 'xxxxxxxxxxxxxxxxx'
+                print np.dot(out2_delta,self.weight[1].T)
 
     def predict(self,x):
         out = x
