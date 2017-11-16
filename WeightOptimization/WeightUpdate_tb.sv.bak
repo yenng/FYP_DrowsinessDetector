@@ -1,0 +1,7 @@
+module WeightUpdate_tb;
+
+reg [9:0]weight;
+reg [9:0]delta;
+reg sign;
+wire [9:0]weight_new;
+

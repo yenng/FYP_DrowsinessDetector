@@ -42,3 +42,21 @@ set_global_assignment -name TOP_LEVEL_ENTITY WeightOptimization
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 10.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:48:32  NOVEMBER 15, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 10.0
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/clk_div.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/LFSR.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/WeightRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE WeightOptimization.sv
+set_global_assignment -name SYSTEMVERILOG_FILE WeightOptimization_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Substraction.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SigmoidPrime.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SigmoidPrime_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Delta.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Delta_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE WeightUpdate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE WeightUpdate_tb.sv
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

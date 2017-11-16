@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="WeightOptimization">
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|Delta:delta1_1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_ofm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|Delta:delta1_1|lpm_mult:Mult0" CBX_FILE_NAME="mult_68t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|SigmoidPrime:sig1_0|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_2gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|SigmoidPrime:sig1_1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_2gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|Delta:delta1_0|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_ofm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|Delta:delta1_0|lpm_mult:Mult0" CBX_FILE_NAME="mult_68t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|Delta:delta1_2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_ofm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|Delta:delta1_2|lpm_mult:Mult0" CBX_FILE_NAME="mult_68t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|SigmoidPrime:sig1_0|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_2gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|SigmoidPrime:sig1_1|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_2gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|SigmoidPrime:sig1_2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_2gm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|WeightOptimization|SigmoidPrime:sig1_2|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_2gm.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

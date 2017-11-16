@@ -57,6 +57,7 @@ class NeuralNetwork:
                 print self.weight[1].T
                 print '==================='
                 print out2_delta
+                print out2_error
                 print 'xxxxxxxxxxxxxxxxx'
                 print np.dot(out2_delta,self.weight[1].T)
 
