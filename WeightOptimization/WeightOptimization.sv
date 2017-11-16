@@ -14,6 +14,10 @@ module WeightOptimization(
 	reg	signed[9:0] weight1_1[0:4];
 	reg	signed[9:0] weight1_2[0:4];
 	
+	wire	signed[9:0] weight1_0_new[0:4];
+	wire	signed[9:0] weight1_1_new[0:4];
+	wire	signed[9:0] weight1_2_new[0:4];
+	
 	Subtraction sub1_0(out1_actual[0],out1_cal[0],out1_err[0],sign1[0]);
 	Subtraction sub1_1(out1_actual[1],out1_cal[1],out1_err[1],sign1[1]);
 	Subtraction sub1_2(out1_actual[2],out1_cal[2],out1_err[2],sign1[2]);
@@ -33,6 +37,6 @@ module WeightOptimization(
 	WeightRAM	#(5) getWeight1_1(Clock, 1, Rst, weight1_1, 7'b0110111, 0, weight1_1);
 	WeightRAM	#(5) getWeight1_2(Clock, 1, Rst, weight1_2, 7'b0111100, 0, weight1_2);
 	
-//  WeightUpdate updateWeight1_0(weight1_0,delta1[0]
+  WeightUpdate updateWeight1_0(weight1_0[0],delta1[0],sign1[0],weight1_0_new[0]);
 	
 endmodule
