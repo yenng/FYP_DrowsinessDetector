@@ -29,6 +29,7 @@ module HiddenLayer(
 	OutputNeuron oNeuron0(outVal, weight1_0, outVal1[0]);
 	OutputNeuron oNeuron1(outVal, weight1_1, outVal1[1]);
 	OutputNeuron oNeuron2(outVal, weight1_2, outVal1[2]);
+	
 	//call weight for hidden neuron
 	WeightRAM	#(10) getWeight0_0(Clock, In, Rst, weight0_0, 7'b0000000, WE, weight0_0);
 	WeightRAM	#(10) getWeight0_1(Clock, In, Rst, weight0_1, 7'b0001010, WE, weight0_1);

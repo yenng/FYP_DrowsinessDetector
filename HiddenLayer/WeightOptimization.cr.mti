@@ -33,33 +33,12 @@ Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 Top level modules:
 	clk_div
 
-} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization_tb.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization_tb.sv
-Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
--- Compiling module WeightOptimization_tb
-
-Top level modules:
-	WeightOptimization_tb
-
 } {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime_tb.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime_tb.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 -- Compiling module SigmoidPrime_tb
 
 Top level modules:
 	SigmoidPrime_tb
-
-} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta_tb.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta_tb.sv
-Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
--- Compiling module Delta_tb
-
-Top level modules:
-	Delta_tb
-
-} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.sv
-Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
--- Compiling module WeightOptimization
-
-Top level modules:
-	WeightOptimization
 
 } {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
@@ -68,12 +47,12 @@ Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 Top level modules:
 	WeightRAM
 
-} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime.sv
+} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta_tb.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta_tb.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
--- Compiling module SigmoidPrime
+-- Compiling module Delta_tb
 
 Top level modules:
-	SigmoidPrime
+	Delta_tb
 
 } {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Substraction.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Substraction.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
@@ -81,5 +60,12 @@ Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 
 Top level modules:
 	Subtraction
+
+} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module multiply
+
+Top level modules:
+	multiply
 
 } {} {}}

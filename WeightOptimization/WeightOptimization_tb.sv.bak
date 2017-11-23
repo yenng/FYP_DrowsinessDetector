@@ -22,7 +22,7 @@ end
 
 initial begin
 	$monitor("out1_actual:	%p\nout1_cal:	%p\ndelta1:	%p\nWeight_old:\n%p\nWeight_new:\n%p", 
-	out1_actual[0:2], out1_cal[0:2],delta1[0:2],);
+	out1_actual[0:2], out1_cal[0:2],delta1[0:2],weight_old,weight_new);
 end
 
 endmodule	

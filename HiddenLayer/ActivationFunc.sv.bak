@@ -1,9 +1,9 @@
 module ActivationFunc(
 	input  signed [23:0]in,
-	output reg [10:0]out
+	output reg [9:0]out
 	);
 reg signed[23:0] in_abs;
-reg [10:0] out_T;
+reg [9:0] out_T;
 
 always@(*) begin
 	//get absolute value of the in

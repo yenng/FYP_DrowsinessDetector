@@ -11,19 +11,7 @@ module	WeightRAM#(parameter N=10)(
 	wire signed[9:0] data;
 	integer i = 0;
 	integer count = 0;
-/*	
-	always @(posedge Clock)begin
-		if(In) begin
-			if(count < 65) begin
-				REGISTER[count] <= data;
-				count = count +1;
-			end
-			else
-				count = 0;
-		end
-	end
 	
-*/
 always @(posedge Clock or negedge Rst)begin
 	if(~Rst) begin
 		for(i=0;i<N;i=i+1)

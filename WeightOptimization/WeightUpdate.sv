@@ -14,4 +14,6 @@ module WeightUpdate#(parameter N=10)(
 			 weight_new[i] <= weight[i] - delta;
 			end
 		end
+	
+	
 endmodule 
