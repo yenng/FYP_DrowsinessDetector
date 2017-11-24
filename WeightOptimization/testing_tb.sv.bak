@@ -2,7 +2,7 @@
 module testing_tb;
   reg clk, rst;
   reg [4:0]in;
-  wire [4:0] out;
+  reg [4:0] out;
   wire [4:0] out1;
   
   initial begin 
@@ -10,6 +10,7 @@ module testing_tb;
     #500
     rst = 0;
     in = 5'b00010;
+    out = 5'b00000;
     #500
     in = 5'b00001;
     
