@@ -4,8 +4,7 @@ module WeightOptimization(
 	input [9:0]out1_cal[0:2],		//Calculated output on output layer
 	input [9:0]out0_cal[0:4],			//Calculated output on hidden layer
 	output [9:0]delta1[0:2],
-	output [9:0]delta0[0:4],
-	output reg signed[9:0]delta0[0:4]
+	output [9:0]delta0[0:4]
 	);	
 	
 	//Calculated output was calculated by HiddenLayer module.

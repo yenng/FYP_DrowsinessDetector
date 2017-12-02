@@ -72,6 +72,6 @@ module WeightOptimization(
 	WeightRAM	#(10) getWeight0_4(Clock, In, Rst, weight0_4_new, 7'b0101000, WE, weight0_4);
   
   // Get the sum of production of delta1 and weight0 for each hidden neuron.
-  HiddenNeuronWeightOptimization getErr0_0(delta1,weight0_0,weight0_1,weight0_2,out0_cal,delta0,sign0);  
+  HiddenNeuronWeightOptimization getErr0_0(delta1,weight1_0,weight1_1,weight1_2,out0_cal,delta0,sign0);  
 	
 endmodule
