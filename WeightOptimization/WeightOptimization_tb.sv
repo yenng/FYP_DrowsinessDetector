@@ -2,14 +2,15 @@ module WeightOptimization_tb;
 reg	Clock,Rst,WE,In;
 reg [9:0]out1_actual[0:2];
 reg [9:0]out1_cal[0:2];
-reg [9:0]out_cal[0:4];
+reg [9:0]out0_cal[0:4];
 wire [9:0]out1_err[0:2];
 wire [2:0]sign;
 wire [9:0]delta1[0:2];
+wire [9:0]delta0[0:4];
 reg signed[9:0]weight_old[0:4];
 wire signed[9:0]weight_new[0:4];
 
-WeightOptimization	test(Clock, Rst, WE, In, out1_actual, out1_cal,out_cal,delta1);
+WeightOptimization	test(Clock, Rst, WE, In, out1_actual, out1_cal,out0_cal,delta1,delta0);
 
 initial begin
 	out1_actual[0] = 10'b0111010010;

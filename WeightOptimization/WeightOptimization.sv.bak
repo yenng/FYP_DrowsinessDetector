@@ -4,6 +4,7 @@ module WeightOptimization(
 	input [9:0]out1_cal[0:2],		//Calculated output on output layer
 	input [9:0]out0_cal[0:4],			//Calculated output on hidden layer
 	output [9:0]delta1[0:2],
+	output [9:0]delta0[0:4],
 	output reg signed[9:0]delta0[0:4]
 	);	
 	
@@ -12,6 +13,7 @@ module WeightOptimization(
 	wire [9:0]out1_err[0:2];
 	wire [9:0]out0_err[0:4];
 	wire [2:0]sign1;
+	wire [4:0]sign0;
 	
 	// Weight for hidden layer
 	wire	signed[9:0] weight0_0[0:9];
@@ -71,11 +73,6 @@ module WeightOptimization(
 	WeightRAM	#(10) getWeight0_4(Clock, In, Rst, weight0_4_new, 7'b0101000, WE, weight0_4);
   
   // Get the sum of production of delta1 and weight0 for each hidden neuron.
-  HiddenNeuronWeightOptimization getErr0_0(delta1,weight0_0,weight0_1,weight0_2,out0_cal,delta0);
-  
-  
-	assign weight_old = weight1_0;
-	assign weight_new = weight1_0_new;
-  
+  HiddenNeuronWeightOptimization getErr0_0(delta1,weight0_0,weight0_1,weight0_2,out0_cal,delta0,sign0);  
 	
 endmodule

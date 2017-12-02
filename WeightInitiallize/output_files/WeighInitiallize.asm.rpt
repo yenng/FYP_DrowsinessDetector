@@ -1,5 +1,5 @@
 Assembler report for WeighInitiallize
-Mon Aug 07 14:49:41 2017
+Sat Dec 02 20:52:25 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.sof
+  5. Assembler Device Options: C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.sof
   6. Assembler Messages
 
 
@@ -37,9 +37,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Aug 07 14:49:41 2017 ;
+; Assembler Status      ; Successful - Sat Dec 02 20:52:25 2017 ;
 ; Revision Name         ; WeighInitiallize                      ;
-; Top-level Entity Name ; Download                              ;
+; Top-level Entity Name ; WeightRAM                             ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                         ;
-+---------------------------------------------------------------------------------------------------+
-; File Name                                                                                         ;
-+---------------------------------------------------------------------------------------------------+
-; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.sof ;
-+---------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                           ;
++-----------------------------------------------------------------------------------------------------+
+; File Name                                                                                           ;
++-----------------------------------------------------------------------------------------------------+
+; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.sof ;
++-----------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.sof ;
-+----------------+------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                    ;
-+----------------+------------------------------------------------------------------------------------------------------------+
-; Device         ; EP4CE115F29C7                                                                                              ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                                                 ;
-; Checksum       ; 0x00562F07                                                                                                 ;
-+----------------+------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.sof ;
++----------------+--------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                      ;
++----------------+--------------------------------------------------------------------------------------------------------------+
+; Device         ; EP4CE115F29C7                                                                                                ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                                                   ;
+; Checksum       ; 0x009C489F                                                                                                   ;
++----------------+--------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Mon Aug 07 14:49:35 2017
+    Info: Processing started: Sat Dec 02 20:52:19 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off WeighInitiallize -c WeighInitiallize
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 485 megabytes
-    Info: Processing ended: Mon Aug 07 14:49:41 2017
+    Info: Peak virtual memory: 530 megabytes
+    Info: Processing ended: Sat Dec 02 20:52:25 2017
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

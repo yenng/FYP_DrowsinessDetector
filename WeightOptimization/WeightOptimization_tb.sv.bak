@@ -9,7 +9,7 @@ wire [9:0]delta1[0:2];
 reg signed[9:0]weight_old[0:4];
 wire signed[9:0]weight_new[0:4];
 
-WeightOptimization	test(Clock, Rst, WE, In, out1_actual, out1_cal,out_cal,weight_old,delta1,weight_new);
+WeightOptimization	test(Clock, Rst, WE, In, out1_actual, out1_cal,out_cal,delta1);
 
 initial begin
 	out1_actual[0] = 10'b0111010010;

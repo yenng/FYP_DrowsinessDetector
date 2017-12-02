@@ -5,9 +5,10 @@ reg signed[9:0] weight0_0[0:4];
 reg signed[9:0] weight0_1[0:4];
 reg signed[9:0] weight0_2[0:4];
 reg [9:0] out0_cal[0:4];
-wire signed[9:0]delta0[0:4];
+wire [9:0]delta0[0:4];
+wire [4:0]sign0;
 
-HiddenNeuronWeightOptimization test(delta1,weight0_0,weight0_1,weight0_2,out0_cal,delta0);
+HiddenNeuronWeightOptimization test(delta1,weight0_0,weight0_1,weight0_2,out0_cal,delta0,sign0);
 
 initial begin
 	weight0_0[0] = 10'b1101011100;
@@ -40,6 +41,6 @@ initial begin
 end
 
 initial begin
-  $monitor("Delta0 = \n%p\n%p\n%p\n%p\n%p", delta0[0],delta0[1],delta0[2],delta0[3],delta0[4]);
+  $monitor("Delta0 = \n%p\n%p\n%p\n%p\n%p\nSign = %b", delta0[0],delta0[1],delta0[2],delta0[3],delta0[4],sign0);
 end
 endmodule
