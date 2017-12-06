@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WeighInitiallize
-Sat Dec 02 20:51:47 2017
+Thu Dec 07 01:15:38 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -16,9 +16,9 @@ Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
   8. General Register Statistics
   9. Inverted Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |WeightRAM
- 12. Parameter Settings for User Entity Instance: clk_div:clk1
- 13. Port Connectivity Checks: "clk_div:clk1"
+ 11. Parameter Settings for User Entity Instance: WeightRAM:download
+ 12. Parameter Settings for User Entity Instance: WeightRAM:download|clk_div:clk1
+ 13. Port Connectivity Checks: "WeightRAM:download|clk_div:clk1"
  14. Analysis & Synthesis Messages
  15. Analysis & Synthesis Suppressed Messages
 
@@ -46,16 +46,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 02 20:51:47 2017    ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 07 01:15:38 2017    ;
 ; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
 ; Revision Name                      ; WeighInitiallize                         ;
-; Top-level Entity Name              ; WeightRAM                                ;
+; Top-level Entity Name              ; WeightRAM_download                       ;
 ; Family                             ; Cyclone IV E                             ;
-; Total logic elements               ; 5,366                                    ;
-;     Total combinational functions  ; 5,358                                    ;
-;     Dedicated logic registers      ; 792                                      ;
-; Total registers                    ; 792                                      ;
-; Total pins                         ; 211                                      ;
+; Total logic elements               ; 5,565                                    ;
+;     Total combinational functions  ; 5,442                                    ;
+;     Dedicated logic registers      ; 917                                      ;
+; Total registers                    ; 917                                      ;
+; Total pins                         ; 41                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                        ;
@@ -69,7 +69,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; WeightRAM          ; WeighInitiallize   ;
+; Top-level entity name                                                      ; WeightRAM_download ; WeighInitiallize   ;
 ; Family name                                                                ; Cyclone IV E       ; Stratix II         ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -157,15 +157,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+
-; clk_div.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv   ;
-; WeightRAM.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv ;
-; LFSR.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv      ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                            ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+
+; clk_div.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv            ;
+; WeightRAM.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv          ;
+; LFSR.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv               ;
+; WeightRAM_download.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM_download.sv ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------+
@@ -173,38 +174,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 5,366       ;
+; Estimated Total logic elements              ; 5,565       ;
 ;                                             ;             ;
-; Total combinational functions               ; 5358        ;
+; Total combinational functions               ; 5442        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 4715        ;
-;     -- 3 input functions                    ; 518         ;
-;     -- <=2 input functions                  ; 125         ;
+;     -- 4 input functions                    ; 4700        ;
+;     -- 3 input functions                    ; 606         ;
+;     -- <=2 input functions                  ; 136         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 5327        ;
+;     -- normal mode                          ; 5411        ;
 ;     -- arithmetic mode                      ; 31          ;
 ;                                             ;             ;
-; Total registers                             ; 792         ;
-;     -- Dedicated logic registers            ; 792         ;
+; Total registers                             ; 917         ;
+;     -- Dedicated logic registers            ; 917         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 211         ;
-; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 792         ;
-; Total fan-out                               ; 24857       ;
-; Average fan-out                             ; 3.78        ;
+; I/O pins                                    ; 41          ;
+; Maximum fan-out node                        ; SW[0]~input ;
+; Maximum fan-out                             ; 816         ;
+; Total fan-out                               ; 25198       ;
+; Average fan-out                             ; 3.91        ;
 +---------------------------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
-; |WeightRAM                 ; 5358 (5352)       ; 792 (782)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 211  ; 0            ; |WeightRAM            ;              ;
-;    |LFSR:rndnm|            ; 6 (6)             ; 10 (10)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightRAM|LFSR:rndnm ;              ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                    ;
++----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Library Name ;
++----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
+; |WeightRAM_download        ; 5442 (76)         ; 917 (125)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 41   ; 0            ; |WeightRAM_download                               ;              ;
+;    |WeightRAM:download|    ; 5366 (5360)       ; 792 (782)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightRAM_download|WeightRAM:download            ;              ;
+;       |LFSR:rndnm|         ; 6 (6)             ; 10 (10)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightRAM_download|WeightRAM:download|LFSR:rndnm ;              ;
++----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -213,12 +215,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 792   ;
+; Total registers                              ; 917   ;
 ; Number of registers using Synchronous Clear  ; 32    ;
-; Number of registers using Synchronous Load   ; 690   ;
+; Number of registers using Synchronous Load   ; 700   ;
 ; Number of registers using Asynchronous Clear ; 110   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 782   ;
+; Number of registers using Clock Enable       ; 889   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -228,121 +230,122 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; LFSR:rndnm|data[0]                     ; 6       ;
-; LFSR:rndnm|data[1]                     ; 6       ;
-; LFSR:rndnm|data[2]                     ; 6       ;
-; LFSR:rndnm|data[3]                     ; 6       ;
+; WeightRAM:download|LFSR:rndnm|data[0]  ; 6       ;
+; WeightRAM:download|LFSR:rndnm|data[1]  ; 6       ;
+; WeightRAM:download|LFSR:rndnm|data[2]  ; 6       ;
+; WeightRAM:download|LFSR:rndnm|data[3]  ; 6       ;
 ; Total number of inverted registers = 4 ;         ;
 +----------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[0][4]  ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |WeightRAM|REGISTER[1][5]  ;
-; 8:1                ; 10 bits   ; 50 LEs        ; 20 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[2][8]  ;
-; 9:1                ; 10 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[3][8]  ;
-; 10:1               ; 10 bits   ; 60 LEs        ; 50 LEs               ; 10 LEs                 ; Yes        ; |WeightRAM|Q[9][3]~reg0    ;
-; 10:1               ; 10 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |WeightRAM|Q[0][0]~reg0    ;
-; 10:1               ; 10 bits   ; 60 LEs        ; 40 LEs               ; 20 LEs                 ; Yes        ; |WeightRAM|REGISTER[4][1]  ;
-; 11:1               ; 10 bits   ; 70 LEs        ; 40 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[5][7]  ;
-; 12:1               ; 10 bits   ; 80 LEs        ; 50 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[6][7]  ;
-; 13:1               ; 10 bits   ; 80 LEs        ; 60 LEs               ; 20 LEs                 ; Yes        ; |WeightRAM|REGISTER[7][8]  ;
-; 14:1               ; 10 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[8][8]  ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[64][6] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[63][6] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[62][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[61][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[60][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[59][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[58][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[57][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[56][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[55][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[54][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[53][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[52][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[51][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[50][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[49][2] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[48][6] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[47][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[46][9] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[45][6] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[44][3] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[43][1] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[42][9] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[41][1] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[40][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[39][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[38][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[37][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[36][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[35][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[34][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[33][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[32][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[31][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[30][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[29][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[28][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[27][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[26][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[25][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[24][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[23][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[22][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[21][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[20][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[19][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[18][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[17][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[16][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[15][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[14][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[13][0] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[12][9] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[11][7] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[10][2] ;
-; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM|REGISTER[9][4]  ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |WeightRAM|Mux94           ;
-; 5:1                ; 70 bits   ; 210 LEs       ; 210 LEs              ; 0 LEs                  ; No         ; |WeightRAM|Mux94           ;
-; 5:1                ; 40 bits   ; 120 LEs       ; 80 LEs               ; 40 LEs                 ; No         ; |WeightRAM|Mux91           ;
-; 6:1                ; 20 bits   ; 80 LEs        ; 60 LEs               ; 20 LEs                 ; No         ; |WeightRAM|Mux98           ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |WeightRAM|Mux99           ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |WeightRAM|Mux90           ;
-; 7:1                ; 40 bits   ; 160 LEs       ; 120 LEs              ; 40 LEs                 ; No         ; |WeightRAM|Mux96           ;
-; 8:1                ; 20 bits   ; 100 LEs       ; 80 LEs               ; 20 LEs                 ; No         ; |WeightRAM|Mux90           ;
-; 9:1                ; 10 bits   ; 60 LEs        ; 40 LEs               ; 20 LEs                 ; No         ; |WeightRAM|Mux96           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 17:1               ; 10 bits   ; 110 LEs       ; 70 LEs               ; 40 LEs                 ; Yes        ; |WeightRAM_download|LEDR[2]~reg0                       ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[0][8]  ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[1][2]  ;
+; 8:1                ; 10 bits   ; 50 LEs        ; 20 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[2][5]  ;
+; 9:1                ; 10 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[3][6]  ;
+; 10:1               ; 10 bits   ; 60 LEs        ; 50 LEs               ; 10 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|Q[9][6]         ;
+; 10:1               ; 10 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |WeightRAM_download|WeightRAM:download|Q[0][5]         ;
+; 10:1               ; 10 bits   ; 60 LEs        ; 40 LEs               ; 20 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[4][8]  ;
+; 11:1               ; 10 bits   ; 70 LEs        ; 40 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[5][3]  ;
+; 12:1               ; 10 bits   ; 80 LEs        ; 50 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[6][0]  ;
+; 13:1               ; 10 bits   ; 80 LEs        ; 60 LEs               ; 20 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[7][4]  ;
+; 14:1               ; 10 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[8][4]  ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[64][6] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[63][1] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[62][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[61][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[60][8] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[59][7] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[58][2] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[57][4] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[56][3] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[55][6] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[54][4] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[53][5] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[52][7] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[51][4] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[50][1] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[49][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[48][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[47][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[46][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[45][3] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[44][6] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[43][5] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[42][1] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[41][2] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[40][4] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[39][5] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[38][9] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[37][6] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[36][1] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[35][7] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[34][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[33][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[32][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[31][0] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[30][8] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[29][5] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[28][6] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[27][2] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[26][2] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[25][7] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[24][2] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[23][6] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[22][6] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[21][8] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[20][1] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[19][1] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[18][6] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[17][8] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[16][4] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[15][5] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[14][6] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[13][4] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[12][5] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[11][4] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[10][4] ;
+; 15:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; Yes        ; |WeightRAM_download|WeightRAM:download|REGISTER[9][9]  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |WeightRAM_download|WeightRAM:download|Mux8            ;
+; 5:1                ; 70 bits   ; 210 LEs       ; 210 LEs              ; 0 LEs                  ; No         ; |WeightRAM_download|WeightRAM:download|Mux7            ;
+; 5:1                ; 40 bits   ; 120 LEs       ; 80 LEs               ; 40 LEs                 ; No         ; |WeightRAM_download|WeightRAM:download|Mux9            ;
+; 6:1                ; 20 bits   ; 80 LEs        ; 60 LEs               ; 20 LEs                 ; No         ; |WeightRAM_download|WeightRAM:download|Mux2            ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |WeightRAM_download|WeightRAM:download|Mux2            ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |WeightRAM_download|WeightRAM:download|Mux7            ;
+; 7:1                ; 40 bits   ; 160 LEs       ; 120 LEs              ; 40 LEs                 ; No         ; |WeightRAM_download|WeightRAM:download|Mux6            ;
+; 8:1                ; 20 bits   ; 100 LEs       ; 80 LEs               ; 20 LEs                 ; No         ; |WeightRAM_download|WeightRAM:download|Mux0            ;
+; 9:1                ; 10 bits   ; 60 LEs        ; 40 LEs               ; 20 LEs                 ; No         ; |WeightRAM_download|WeightRAM:download|Mux2            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |WeightRAM ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; N              ; 10    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: WeightRAM:download ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 10    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: clk_div:clk1 ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; WIDTH          ; 4     ; Signed Integer                   ;
-; N              ; 5     ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: WeightRAM:download|clk_div:clk1 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
+; N              ; 5     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clk_div:clk1"                                                                          ;
+; Port Connectivity Checks: "WeightRAM:download|clk_div:clk1"                                                       ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
@@ -356,7 +359,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Sat Dec 02 20:51:27 2017
+    Info: Processing started: Thu Dec 07 01:15:18 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WeighInitiallize -c WeighInitiallize
 Info: Found 1 design units, including 1 entities, in source file clk_div.sv
     Info: Found entity 1: clk_div
@@ -368,24 +371,33 @@ Info: Found 1 design units, including 1 entities, in source file lfsr.sv
     Info: Found entity 1: LFSR
 Info: Found 1 design units, including 1 entities, in source file weightram_tb.sv
     Info: Found entity 1: WeightRAM_tb
-Info: Elaborating entity "WeightRAM" for the top level hierarchy
-Info: Elaborating entity "LFSR" for hierarchy "LFSR:rndnm"
-Info: Elaborating entity "clk_div" for hierarchy "clk_div:clk1"
+Info: Found 1 design units, including 1 entities, in source file weightram_download.sv
+    Info: Found entity 1: WeightRAM_download
+Info: Elaborating entity "WeightRAM_download" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at WeightRAM_download.sv(6): object "i" assigned a value but never read
+Info: Elaborating entity "WeightRAM" for hierarchy "WeightRAM:download"
+Info: Elaborating entity "LFSR" for hierarchy "WeightRAM:download|LFSR:rndnm"
+Info: Elaborating entity "clk_div" for hierarchy "WeightRAM:download|clk_div:clk1"
 Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info: Timing-Driven Synthesis is running
 Info: Generated suppressed messages file C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.map.smsg
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Info: Implemented 5657 device resources after synthesis - the final resource count might be different
-    Info: Implemented 111 input pins
-    Info: Implemented 100 output pins
-    Info: Implemented 5446 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 324 megabytes
-    Info: Processing ended: Sat Dec 02 20:51:47 2017
+Warning: Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50"
+    Warning (15610): No output dependent on input pin "KEY[2]"
+    Warning (15610): No output dependent on input pin "KEY[3]"
+    Warning (15610): No output dependent on input pin "SW[7]"
+Info: Implemented 5686 device resources after synthesis - the final resource count might be different
+    Info: Implemented 23 input pins
+    Info: Implemented 18 output pins
+    Info: Implemented 5645 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 325 megabytes
+    Info: Processing ended: Thu Dec 07 01:15:38 2017
     Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +------------------------------------------+

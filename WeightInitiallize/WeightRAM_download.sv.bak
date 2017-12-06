@@ -1,0 +1,28 @@
+WeightRAM_download(
+	input CLOCK_50,
+	input [3:0]KEY,
+	input [17:0]SW,
+	output [17:0]LEDR);
+	
+	
+	
+	
+	WeightRAM #(i)download(
+					.Clock
+					.In
+					.Rst(SW[0])
+					.D
+					.Address
+					.WE
+					.Q);
+	integer i=10;
+	
+	always@(SW)begin
+		if(SW)
+		
+module	WeightRAM#(parameter N=10)(
+	input		Clock,In, Rst, // In'1' randomize all weight.
+	input 	signed[9:0] D[0:N-1],
+	input 	[6:0] Address,
+	input 	WE,//'1' write data, '0' read data
+	output reg	signed[9:0] Q[0:N-1]);

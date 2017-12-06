@@ -1,0 +1,22 @@
+module counter_tb();
+	reg clk,rst;
+	wire [9:0]count;
+	
+	counter test(clk,rst,count);
+	
+	initial begin
+		rst = 0;
+		#100 rst = 1;
+		#100 rst = 0;
+	end
+	
+	initial begin
+		clk = 0;
+		forever #10 clk = !clk;
+	end
+	
+	initial begin
+		$monitor("Counter: %p", counter);
+	end
+	
+	endmodule 

@@ -1,7 +1,7 @@
 Quartus II
 Version 10.0 Build 218 06/27/2010 SJ Web Edition
-12
-4402
+13
+1247
 OFF
 OFF
 OFF
@@ -91,6 +91,615 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 SigmoidPrime:sig1_0
 SigmoidPrime:sig1_1
 SigmoidPrime:sig1_2
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp1
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp2
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp3
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp4
+}
+# macro_sequence
+
+# end
+# entity
+Delta
+# storage
+db|WeightOptimization.(3).cnf
+db|WeightOptimization.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+delta.sv
+43bfe745af6e9ea43dcde0158fa2262b
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Delta:delta1_0
+Delta:delta1_1
+Delta:delta1_2
+}
+# macro_sequence
+
+# end
+# entity
+WeightRAM
+# storage
+db|WeightOptimization.(4).cnf
+db|WeightOptimization.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+d735d79e4e117cc6a9c768433d5a73f8
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight1_0
+WeightRAM:getWeight1_1
+WeightRAM:getWeight1_2
+}
+# macro_sequence
+
+# end
+# entity
+LFSR
+# storage
+db|WeightOptimization.(5).cnf
+db|WeightOptimization.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
+a7f685c6e25118781c2119c701b3d43
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+WeightRAM:getWeight1_0|LFSR:rndnm
+WeightRAM:getWeight1_1|LFSR:rndnm
+WeightRAM:getWeight1_2|LFSR:rndnm
+WeightRAM:getWeight0_0|LFSR:rndnm
+WeightRAM:getWeight0_1|LFSR:rndnm
+WeightRAM:getWeight0_2|LFSR:rndnm
+WeightRAM:getWeight0_3|LFSR:rndnm
+WeightRAM:getWeight0_4|LFSR:rndnm
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(6).cnf
+db|WeightOptimization.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight1_0|clk_div:clk1
+WeightRAM:getWeight1_1|clk_div:clk1
+WeightRAM:getWeight1_2|clk_div:clk1
+}
+# macro_sequence
+
+# end
+# entity
+WeightUpdate
+# storage
+db|WeightOptimization.(7).cnf
+db|WeightOptimization.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+weightupdate.sv
+33b447e176bf52bacff39f664d61e3
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightUpdate:updateWeight1_0
+WeightUpdate:updateWeight1_1
+WeightUpdate:updateWeight1_2
+}
+# macro_sequence
+
+# end
+# entity
+WeightRAM
+# storage
+db|WeightOptimization.(8).cnf
+db|WeightOptimization.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+d735d79e4e117cc6a9c768433d5a73f8
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+N
+10
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight0_0
+WeightRAM:getWeight0_1
+WeightRAM:getWeight0_2
+WeightRAM:getWeight0_3
+WeightRAM:getWeight0_4
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(9).cnf
+db|WeightOptimization.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(10).cnf
+db|WeightOptimization.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(11).cnf
+db|WeightOptimization.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(12).cnf
+db|WeightOptimization.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(13).cnf
+db|WeightOptimization.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+HiddenNeuronWeightOptimization
+# storage
+db|WeightOptimization.(14).cnf
+db|WeightOptimization.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hiddenneuronweightoptimization.sv
+f832a419b02287cad4dd45794c3ea2f3
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# include_file {
+multiplydelta0.sv
+ece5aa5ef4ef35a732090756b88a0bc
+}
+# hierarchies {
+HiddenNeuronWeightOptimization:getErr0_0
+}
+# macro_sequence
+
+# end
+# entity
+multiply
+# storage
+db|WeightOptimization.(15).cnf
+db|WeightOptimization.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|hiddenlayer|multiply.sv
+8d73879bcaaf342696e29ed452106c
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_2
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_2
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_2
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_2
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_2
+}
+# macro_sequence
+
+# end
+# entity
+multiplyDelta0
+# storage
+db|WeightOptimization.(16).cnf
+db|WeightOptimization.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+multiplydelta0.sv
+ece5aa5ef4ef35a732090756b88a0bc
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0
 }
 # macro_sequence
 
@@ -98,8 +707,8 @@ SigmoidPrime:sig1_2
 # entity
 lpm_divide
 # storage
-db|WeightOptimization.(3).cnf
-db|WeightOptimization.(3).cnf
+db|WeightOptimization.(17).cnf
+db|WeightOptimization.(17).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_divide.tdf
@@ -135,7 +744,7 @@ MAXIMIZE_SPEED
 PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
-lpm_divide_2gm
+lpm_divide_kkm
 PARAMETER_UNKNOWN
 USR
 CARRY_CHAIN
@@ -376,14 +985,14 @@ numer10
 
 # end
 # entity
-lpm_divide_2gm
+lpm_divide_kkm
 # storage
-db|WeightOptimization.(4).cnf
-db|WeightOptimization.(4).cnf
+db|WeightOptimization.(18).cnf
+db|WeightOptimization.(18).cnf
 # case_insensitive
 # source_file
-db|lpm_divide_2gm.tdf
-fe1cad18dfe6fe9767b04670c268f44
+db|lpm_divide_kkm.tdf
+f5139ffa4744867424baf2c8ff1a084
 7
 # used_port {
 quotient9
@@ -600,8 +1209,8 @@ denom0
 # entity
 sign_div_unsign_cnh
 # storage
-db|WeightOptimization.(5).cnf
-db|WeightOptimization.(5).cnf
+db|WeightOptimization.(19).cnf
+db|WeightOptimization.(19).cnf
 # case_insensitive
 # source_file
 db|sign_div_unsign_cnh.tdf
@@ -855,8 +1464,8 @@ denominator0
 # entity
 alt_u_div_q5f
 # storage
-db|WeightOptimization.(6).cnf
-db|WeightOptimization.(6).cnf
+db|WeightOptimization.(20).cnf
+db|WeightOptimization.(20).cnf
 # case_insensitive
 # source_file
 db|alt_u_div_q5f.tdf
@@ -1110,12 +1719,12 @@ denominator0
 # entity
 add_sub_lkc
 # storage
-db|WeightOptimization.(7).cnf
-db|WeightOptimization.(7).cnf
+db|WeightOptimization.(21).cnf
+db|WeightOptimization.(21).cnf
 # case_insensitive
 # source_file
 db|add_sub_lkc.tdf
-3455748555104d98a4a5e9183fc8c6f
+794b20da538ef5f6639ba95c8d31433
 7
 # used_port {
 result0
@@ -1137,12 +1746,12 @@ cout
 # entity
 add_sub_mkc
 # storage
-db|WeightOptimization.(8).cnf
-db|WeightOptimization.(8).cnf
+db|WeightOptimization.(22).cnf
+db|WeightOptimization.(22).cnf
 # case_insensitive
 # source_file
 db|add_sub_mkc.tdf
-45f86e27e943c6fb6e3998e73d7be2c
+bfc2be72ed665e928477fe0ab217327
 7
 # used_port {
 result1
@@ -1173,8 +1782,8 @@ cout
 # entity
 lpm_divide
 # storage
-db|WeightOptimization.(9).cnf
-db|WeightOptimization.(9).cnf
+db|WeightOptimization.(23).cnf
+db|WeightOptimization.(23).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_divide.tdf
@@ -1210,7 +1819,7 @@ MAXIMIZE_SPEED
 PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
-lpm_divide_2gm
+lpm_divide_kkm
 PARAMETER_UNKNOWN
 USR
 CARRY_CHAIN
@@ -1394,218 +2003,10 @@ denom0
 
 # end
 # entity
-WeightOptimization
-# storage
-db|WeightOptimization.(0).cnf
-db|WeightOptimization.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-weightoptimization.sv
-fa17c939bf5d0c41d8bea7b0f56aca
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# include_file {
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-8bcf223899e78898d706659ecf79a75
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-Delta
-# storage
-db|WeightOptimization.(10).cnf
-db|WeightOptimization.(10).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-delta.sv
-43bfe745af6e9ea43dcde0158fa2262b
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Delta:delta1_0
-Delta:delta1_1
-Delta:delta1_2
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
-# storage
-db|WeightOptimization.(11).cnf
-db|WeightOptimization.(11).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-8bcf223899e78898d706659ecf79a75
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-WeightRAM:getWeight1_0
-WeightRAM:getWeight1_1
-WeightRAM:getWeight1_2
-}
-# macro_sequence
-
-# end
-# entity
-LFSR
-# storage
-db|WeightOptimization.(12).cnf
-db|WeightOptimization.(12).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
-a7f685c6e25118781c2119c701b3d43
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-WeightRAM:getWeight1_0|LFSR:rndnm
-WeightRAM:getWeight1_1|LFSR:rndnm
-WeightRAM:getWeight1_2|LFSR:rndnm
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(13).cnf
-db|WeightOptimization.(13).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-WeightRAM:getWeight1_0|clk_div:clk1
-WeightRAM:getWeight1_1|clk_div:clk1
-WeightRAM:getWeight1_2|clk_div:clk1
-}
-# macro_sequence
-
-# end
-# entity
 lpm_mult
 # storage
-db|WeightOptimization.(14).cnf
-db|WeightOptimization.(14).cnf
+db|WeightOptimization.(24).cnf
+db|WeightOptimization.(24).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_mult.tdf
@@ -1677,7 +2078,7 @@ MAXIMIZE_SPEED
 PARAMETER_UNKNOWN
 USR
 DEVICE_FAMILY
-Cyclone II
+Cyclone IV E
 PARAMETER_UNKNOWN
 USR
 CARRY_CHAIN
@@ -1701,7 +2102,7 @@ DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
 PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
-mult_68t
+mult_oct
 PARAMETER_UNKNOWN
 USR
 INPUT_A_FIXED_VALUE
@@ -1843,14 +2244,14 @@ dataa0
 
 # end
 # entity
-mult_68t
+mult_oct
 # storage
-db|WeightOptimization.(15).cnf
-db|WeightOptimization.(15).cnf
+db|WeightOptimization.(25).cnf
+db|WeightOptimization.(25).cnf
 # case_insensitive
 # source_file
-db|mult_68t.tdf
-ca68fef661b31a8edcd9e6b7d0a1a278
+db|mult_oct.tdf
+60f7988e80596c858480d044acdd76c6
 7
 # used_port {
 result9
@@ -1980,8 +2381,8 @@ dataa0
 # entity
 lpm_divide
 # storage
-db|WeightOptimization.(16).cnf
-db|WeightOptimization.(16).cnf
+db|WeightOptimization.(26).cnf
+db|WeightOptimization.(26).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_divide.tdf
@@ -2017,7 +2418,7 @@ MAXIMIZE_SPEED
 PARAMETER_UNKNOWN
 DEF
 CBXI_PARAMETER
-lpm_divide_ofm
+lpm_divide_akm
 PARAMETER_UNKNOWN
 USR
 CARRY_CHAIN
@@ -2171,14 +2572,14 @@ denom3
 
 # end
 # entity
-lpm_divide_ofm
+lpm_divide_akm
 # storage
-db|WeightOptimization.(17).cnf
-db|WeightOptimization.(17).cnf
+db|WeightOptimization.(27).cnf
+db|WeightOptimization.(27).cnf
 # case_insensitive
 # source_file
-db|lpm_divide_ofm.tdf
-7cff30f5209bf4e8f28fc3b8f83f1c15
+db|lpm_divide_akm.tdf
+ead53ee20923675429671222a23ca
 7
 # used_port {
 quotient9
@@ -2338,8 +2739,8 @@ denom0
 # entity
 sign_div_unsign_2nh
 # storage
-db|WeightOptimization.(18).cnf
-db|WeightOptimization.(18).cnf
+db|WeightOptimization.(28).cnf
+db|WeightOptimization.(28).cnf
 # case_insensitive
 # source_file
 db|sign_div_unsign_2nh.tdf
@@ -2533,8 +2934,8 @@ denominator0
 # entity
 alt_u_div_65f
 # storage
-db|WeightOptimization.(19).cnf
-db|WeightOptimization.(19).cnf
+db|WeightOptimization.(29).cnf
+db|WeightOptimization.(29).cnf
 # case_insensitive
 # source_file
 db|alt_u_div_65f.tdf
@@ -2721,6 +3122,1006 @@ denominator1
 denominator0
 -1
 3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|WeightOptimization.(30).cnf
+db|WeightOptimization.(30).cnf
+# case_insensitive
+# source_file
+|altera|10.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
+a26eeedf4a909a6fabdbb54abbdaaf24
+7
+# user_parameter {
+LPM_WIDTH
+10
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+REGISTERED_AT_END
+0
+PARAMETER_UNKNOWN
+DEF
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Cyclone IV E
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_lvi
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+add_sub
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_lvi
+# storage
+db|WeightOptimization.(31).cnf
+db|WeightOptimization.(31).cnf
+# case_insensitive
+# source_file
+db|add_sub_lvi.tdf
+1dc6efa321d65c18184bf8567a8cddf
+7
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+add_sub
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(32).cnf
+db|WeightOptimization.(32).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(33).cnf
+db|WeightOptimization.(33).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(34).cnf
+db|WeightOptimization.(34).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(35).cnf
+db|WeightOptimization.(35).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(36).cnf
+db|WeightOptimization.(36).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+WeightOptimization
+# storage
+db|WeightOptimization.(0).cnf
+db|WeightOptimization.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+weightoptimization.sv
+37dd13f2a8982bbaedfa98fb1cb2e50
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# include_file {
+hiddenneuronweightoptimization.sv
+f832a419b02287cad4dd45794c3ea2f3
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+d735d79e4e117cc6a9c768433d5a73f8
+weightupdate.sv
+33b447e176bf52bacff39f664d61e3
+multiplydelta0.sv
+ece5aa5ef4ef35a732090756b88a0bc
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(37).cnf
+db|WeightOptimization.(37).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(38).cnf
+db|WeightOptimization.(38).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(39).cnf
+db|WeightOptimization.(39).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(40).cnf
+db|WeightOptimization.(40).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(41).cnf
+db|WeightOptimization.(41).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(42).cnf
+db|WeightOptimization.(42).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight0_0|clk_div:clk1
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(43).cnf
+db|WeightOptimization.(43).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight0_1|clk_div:clk1
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(44).cnf
+db|WeightOptimization.(44).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight0_2|clk_div:clk1
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(45).cnf
+db|WeightOptimization.(45).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight0_3|clk_div:clk1
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeightOptimization.(46).cnf
+db|WeightOptimization.(46).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+ec78cfc77eaca28b51b811eeb38171
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight0_4|clk_div:clk1
 }
 # macro_sequence
 

@@ -1,0 +1,6 @@
+`define n = 1000
+module counter(
+	input clk,rst,
+	output enable
+);
+
