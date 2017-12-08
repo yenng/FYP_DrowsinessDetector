@@ -42,14 +42,6 @@
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 10.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:17:43  JULY 31, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 10.0
-set_global_assignment -name SYSTEMVERILOG_FILE HiddenLayer_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/LFSR.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/clk_div.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ActivationFunc.sv
-set_global_assignment -name SYSTEMVERILOG_FILE multiply.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/WeightRAM.sv
-set_global_assignment -name SYSTEMVERILOG_FILE HiddenLayer.sv
-set_global_assignment -name SYSTEMVERILOG_FILE HiddenNeuron.sv
 
 # Analysis & Synthesis Assignments
 # ================================
@@ -89,7 +81,6 @@ set_global_assignment -name DEVICE EP4CE115F29C7
 # end ENTITY(HiddenLayer)
 # -----------------------
 set_global_assignment -name FITTER_EFFORT "FAST FIT"
-set_global_assignment -name SYSTEMVERILOG_FILE OutputNeuron.sv
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_location_assignment PIN_D2 -to AUD_ADCDAT
@@ -1142,5 +1133,17 @@ set_location_assignment PIN_V24 -to HSMC_CLKOUT_N2
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_N2
 set_location_assignment PIN_G24 -to HSMC_CLKOUT_N1
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_N1
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightOptimization/counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE HiddenLayer_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/LFSR.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/clk_div.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ActivationFunc.sv
+set_global_assignment -name SYSTEMVERILOG_FILE multiply.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/WeightRAM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE HiddenLayer.sv
+set_global_assignment -name SYSTEMVERILOG_FILE HiddenNeuron.sv
+set_global_assignment -name SYSTEMVERILOG_FILE OutputNeuron.sv
 set_global_assignment -name SYSTEMVERILOG_FILE HiddenLayer_download.sv
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

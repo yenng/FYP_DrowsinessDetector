@@ -1,5 +1,5 @@
 Assembler report for HiddenLayer
-Fri Dec 08 13:32:47 2017
+Fri Dec 08 17:21:33 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Dec 08 13:32:47 2017 ;
+; Assembler Status      ; Successful - Fri Dec 08 17:21:33 2017 ;
 ; Revision Name         ; HiddenLayer                           ;
 ; Top-level Entity Name ; HiddenLayer                           ;
 ; Family                ; Cyclone IV E                          ;
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +----------------+---------------------------------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                                         ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                            ;
-; Checksum       ; 0x01541031                                                                            ;
+; Checksum       ; 0x00C13A32                                                                            ;
 +----------------+---------------------------------------------------------------------------------------+
 
 
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Fri Dec 08 13:32:41 2017
+    Info: Processing started: Fri Dec 08 17:21:27 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off HiddenLayer -c HiddenLayer
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 568 megabytes
-    Info: Processing ended: Fri Dec 08 13:32:47 2017
+    Info: Peak virtual memory: 538 megabytes
+    Info: Processing ended: Fri Dec 08 17:21:33 2017
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

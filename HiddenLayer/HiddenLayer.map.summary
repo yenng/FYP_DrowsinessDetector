@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri Dec 08 13:31:27 2017
+Analysis & Synthesis Status : Successful - Fri Dec 08 17:20:45 2017
 Quartus II Version : 10.0 Build 218 06/27/2010 SJ Web Edition
 Revision Name : HiddenLayer
 Top-level Entity Name : HiddenLayer
 Family : Cyclone IV E
-Total logic elements : 30,700
-    Total combinational functions : 30,692
-    Dedicated logic registers : 1,142
-Total registers : 1142
-Total pins : 184
+Total logic elements : 11,277
+    Total combinational functions : 11,149
+    Dedicated logic registers : 1,110
+Total registers : 1110
+Total pins : 194
 Total virtual pins : 0
 Total memory bits : 0
-Embedded Multiplier 9-bit elements : 110
+Embedded Multiplier 9-bit elements : 30
 Total PLLs : 0

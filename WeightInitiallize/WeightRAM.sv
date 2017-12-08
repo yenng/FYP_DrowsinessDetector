@@ -4,7 +4,6 @@ module	WeightRAM#(parameter N=10)(
 	input 	[6:0] Address,
 	input 	WE,//'1' write data, '0' read data
 	output reg	signed[9:0] Q[0:N-1]);
-	//output	reg [9:0] REGISTER [64:0]);
 
 	reg [9:0] REGISTER [64:0];
 	wire clk;
