@@ -3,8 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Ign)
-		Device PartName(EP4CE115F29) MfrSpec(OpMask(0));
+	P ActionCode(Cfg)
+		Device PartName(EP4CE115F29) Path("C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/") File("WeighInitiallize.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

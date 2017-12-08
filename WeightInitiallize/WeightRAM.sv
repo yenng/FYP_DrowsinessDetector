@@ -14,8 +14,8 @@ module	WeightRAM#(parameter N=10)(
 	
 always @(posedge Clock or negedge Rst)begin
 	if(~Rst) begin
-		for(i=0;i<N;i=i+1)
-			Q[i] <= 10'b0000000000;
+		for(count=0;count<65;count=count+1)
+			REGISTER[count] <= 10'b0000000000;
 	end
 	else begin
 		if(~In)	begin

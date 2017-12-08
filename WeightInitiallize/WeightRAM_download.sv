@@ -2,21 +2,23 @@ module WeightRAM_download(
 	input CLOCK_50,
 	input [3:0]KEY,
 	input [17:0]SW,
-	output [17:0]LEDR);
+	output [17:0]LEDR,
+	output [7:0]LEDG);
 	integer i=10;
 	
 	reg [9:0]D_t[0:9];
 	reg [6:0]Address_t;
 	wire [9:0]Q_t[0:9];
 	
-	always@(posedge SW[0]) begin
-if(SW[2]) begin
+	always@(posedge CLOCK_50) begin
+		if(SW[2]) begin
 			LEDR[17:0]=18'b111111111111111111;
 			Address_t = SW[17:11];
+			LEDG[6:0] = SW[17:11];
 		end
 		else begin //Give data to D, ready to write in data.
 			LEDR[17:0]=18'b0;
-			case(SW[6:3])
+			case(SW[6:3])	// Show address in LEDG
 				4'b0000: begin
 					D_t[0] = SW[17:8];
 					LEDR[9:0] = Q_t[0];
@@ -62,12 +64,10 @@ if(SW[2]) begin
 					LEDR[9:0] = Q_t[0];
 					end
 				endcase
-		end
-		
-			
+		end	
 	end
 	WeightRAM #(10)download(
-					.Clock(KEY[1]),
+					.Clock(CLOCK_50),
 					.In(SW[0]), //randomize all weight if SW[0] = 1.
 					.Rst(KEY[0]),
 					.D(D_t),
