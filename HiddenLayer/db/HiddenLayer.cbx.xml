@@ -2,46 +2,50 @@
 <LOG_ROOT>
 	<PROJECT NAME="HiddenLayer">
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul9|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul7|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul5|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul9|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul8|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul6|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron2|multiply:oMul1|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul9|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul7|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul0|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul9|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul8|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul0|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron2|multiply:oMul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul9|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron0|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_fkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_l9h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul2|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul1|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron0|ActivationFunc:callAF|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_b2p.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron2|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_fkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul4|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul2|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul1|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul0|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|ActivationFunc:callAF|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_b2p.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_fkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_l9h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron2|ActivationFunc:callAF|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_b2p.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul6|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul5|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul4|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul2|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|ActivationFunc:callAF|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_b2p.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_fkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_l9h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul8|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|ActivationFunc:callAF|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_b2p.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul7|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul6|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul5|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul4|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|ActivationFunc:callAF|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_b2p.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_fkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul9|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul8|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|ActivationFunc:callAF|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_b2p.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul7|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul6|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
@@ -71,7 +75,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron2|multiply:oMul1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul2|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul1|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul0|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron0|multiply:oMul4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jkh.tdf"/>
@@ -84,7 +87,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul5|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul0|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul4|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul2|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul1|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron2|multiply:oMul4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
@@ -92,22 +94,16 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_fkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_l9h.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul0|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul7|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul6|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul5|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul0|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul4|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jkh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_fkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_l9h.tdf"/>
@@ -116,8 +112,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul9|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul8|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul7|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul6|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
@@ -125,21 +119,17 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul5|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul6|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul5|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul7|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul6|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul5|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul9|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul8|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul7|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul8|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul7|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul6|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul5|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron4|multiply:mul4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron0|multiply:oMul1|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
@@ -150,18 +140,5 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul7|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron0|multiply:oMul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul8|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul9|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul0|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron2|multiply:oMul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron0|multiply:mul2|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron2|multiply:mul0|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul3|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron2|ActivationFunc:callAF|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_fkh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron1|multiply:mul3|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|HiddenNeuron:hNeuron3|multiply:mul1|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|ActivationFunc:callAF|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_b2p.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|HiddenLayer|OutputNeuron:oNeuron1|multiply:oMul4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

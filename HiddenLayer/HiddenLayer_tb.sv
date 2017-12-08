@@ -3,8 +3,10 @@ reg	Clock,Rst,WE,In;
 reg	[9:0] inVal[0:9];
 wire	[9:0]outVal[0:4];
 wire [9:0]outVal1[0:2];
+wire [6:0]address;
+wire [6:0]ii;
 
-HiddenLayer	test(Clock, Rst, WE, In, inVal, outVal,outVal1);
+HiddenLayer	test(Clock, Rst, WE, In, inVal, outVal,outVal1,address,ii);
 
 initial begin
 	Clock = 0;
@@ -34,9 +36,8 @@ end
 
 //clk_div		clk1(Clock, Rst, clk);
 initial begin
-#200
-  $display("Input value = %p", inVal);
-  $monitor("Output (Hidden Layer) = %pOutput(Output Layer) = %p",outVal, outVal1);
+  $monitor("Input value = %p\nOutput (Hidden Layer) = %p\nOutput(Output Layer) = %p\nAddress = %p\ni = %p", 
+  inVal,outVal, outVal1,address,ii);
   
 end 
 endmodule 

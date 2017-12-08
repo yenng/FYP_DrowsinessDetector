@@ -1,9 +1,14 @@
-module HiddenLayer(
+ module HiddenLayer(
 	input		Clock,Rst,WE,In,
 	input		[9:0] inVal[0:9],
 	output [9:0]outVal[0:4],
-	output [9:0]outVal1[0:2]
+	output [9:0]outVal1[0:2],
+	output reg [6:0]address,
+	output reg [9:0]count
 	);
+	integer i,j;
+	parameter n=10;
+	
 	reg	signed[9:0] weight0_0[0:9];
 	reg	signed[9:0] weight0_1[0:9];
 	reg	signed[9:0] weight0_2[0:9];
@@ -13,6 +18,20 @@ module HiddenLayer(
 	reg	signed[9:0] weight1_0[0:4];
 	reg	signed[9:0] weight1_1[0:4];
 	reg	signed[9:0] weight1_2[0:4];
+	
+	always@(posedge Clock) begin
+	  if(~Rst)begin
+	    address = 7'b0;
+	  end
+	  else begin
+	    case(count)
+	      10'd0: address=7'b0;
+	    endcase
+    end
+	end
+	
+	// Call counter.
+	counter counting(Clock, Rst, count);
 	
 	// Call HiddenNueron to get the outVal from HiddenNueron
 	HiddenNeuron hNeuron0(inVal, weight0_0, outVal[0]);
