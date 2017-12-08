@@ -4,8 +4,8 @@ module HiddenNeuron(
 	output [9:0]outVal
 );
 
-reg signed [19:0]mulVal[0:9];
-reg signed [23:0]addVal;
+reg signed [9:0]mulVal[0:9];
+reg signed [13:0]addVal;
 //reg signed [9:0]mulVal[0:19];
 //reg signed [0:19]addVal;
 

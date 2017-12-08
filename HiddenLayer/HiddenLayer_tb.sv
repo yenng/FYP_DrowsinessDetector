@@ -3,9 +3,8 @@ reg	Clock,Rst,WE,In;
 reg	[9:0] inVal[0:9];
 wire	[9:0]outVal[0:4];
 wire [9:0]outVal1[0:2];
-wire [9:0] weight[0:64];
 
-HiddenLayer	test(Clock, Rst, WE, In, inVal, outVal,outVal1,weight);
+HiddenLayer	test(Clock, Rst, WE, In, inVal, outVal,outVal1);
 
 initial begin
 	Clock = 0;
@@ -37,8 +36,7 @@ end
 initial begin
 #200
   $display("Input value = %p", inVal);
-  $monitor("Weight0_0 = %p\nWeight0_1 = %p\nWeight0_2 = %p\nWeight0_3 = %p\nWeight0_4 = %p\nOutput (Hidden Layer) = %p
-  Output(Output Layer) = %p", weight[0:9], weight[10:19], weight[20:29], weight[30:39], weight[40:49], outVal, outVal1);
+  $monitor("Output (Hidden Layer) = %pOutput(Output Layer) = %p",outVal, outVal1);
   
 end 
 endmodule 

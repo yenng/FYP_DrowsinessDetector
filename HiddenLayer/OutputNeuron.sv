@@ -3,8 +3,8 @@ module OutputNeuron(
 	input signed[9:0] weight[0:4],
 	output [9:0]outVal);
 	
-reg signed[19:0]mulVal[0:4];
-reg signed[23:0]addVal;
+reg signed[9:0]mulVal[0:4];
+reg signed[13:0]addVal;
 reg [0:9]inVal_t[4:0];
 
 assign addVal = mulVal[0] + mulVal[1] + mulVal[2]+ mulVal[3]+ mulVal[4];
