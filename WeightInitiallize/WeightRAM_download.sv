@@ -2,8 +2,8 @@ module WeightRAM_download(
 	input CLOCK_50,
 	input [3:0]KEY,
 	input [17:0]SW,
-	output [17:0]LEDR,
-	output [7:0]LEDG);
+	output reg[17:0]LEDR,
+	output reg[7:0]LEDG);
 	integer i=10;
 	
 	reg [9:0]D_t[0:9];

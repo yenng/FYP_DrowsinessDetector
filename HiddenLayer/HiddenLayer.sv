@@ -21,8 +21,9 @@
 	reg	signed[9:0] weight1[0:4];
 	
 	always@(posedge Clock, negedge Rst) begin
-		if(~Rst)
+		if(~Rst) begin
 			state = 4'd0;
+		end
 		else
 		  state = nextstate;
 	end

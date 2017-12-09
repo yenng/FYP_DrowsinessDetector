@@ -8,6 +8,7 @@
 	);
 	
 	reg [6:0]address1;
+	integer n;
 	
 	reg [9:0]max,count;
 	reg [3:0]nextstate;
@@ -21,8 +22,10 @@
 	reg	signed[9:0] weight1[0:4];
 	
 	always@(posedge Clock, negedge Rst) begin
-		if(~Rst)
+		if(~Rst) begin
 			state = 4'd0;
+			n = 10;
+		end
 		else
 		  state = nextstate;
 	end
@@ -85,7 +88,7 @@
 	OutputNeuron oNeuron0(outVal, weight1, out1);
 	
 	//call weight for hidden neuron
-	WeightRAM	#(10) getWeight0(Clock, In, Rst, weight0, address, WE, weight0);
+	WeightRAM	#(n) getWeight0(Clock, In, Rst, weight0, address, WE, weight0);
 
 	//call weight for output neuron
 	WeightRAM	#(5) getWeight1(Clock, In, Rst, weight1, address1, WE, weight1);
