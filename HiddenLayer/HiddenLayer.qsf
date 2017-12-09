@@ -1133,7 +1133,6 @@ set_location_assignment PIN_V24 -to HSMC_CLKOUT_N2
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_N2
 set_location_assignment PIN_G24 -to HSMC_CLKOUT_N1
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_N1
-set_global_assignment -name SYSTEMVERILOG_FILE ../WeightOptimization/counter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE HiddenLayer_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/LFSR.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/clk_div.sv

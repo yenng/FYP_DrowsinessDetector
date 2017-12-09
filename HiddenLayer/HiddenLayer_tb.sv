@@ -37,8 +37,8 @@ initial begin
 end
 
 initial begin
-  $monitor("Input value = %p\nOutput (Hidden Layer) = %p\nOutput(Output Layer) = %p\State = %p\nAddress = %p\n
-  Weight0 = \n%p",inVal,outVal, outVal1,state,address,weight0);
+  $monitor("Input value = %p\nOutput (Hidden Layer) = %p\nOutput(Output Layer) = %p\State = %p\nAddress = %p\n"
+  ,inVal,outVal, outVal1,state,address);
   
 end 
 endmodule 

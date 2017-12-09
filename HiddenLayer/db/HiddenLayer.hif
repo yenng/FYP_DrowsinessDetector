@@ -20,42 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-HiddenNeuron
-# storage
-db|HiddenLayer.(1).cnf
-db|HiddenLayer.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-hiddenneuron.sv
-3c50381fe7af733bc3b142070694e2
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenNeuron:hNeuron
-}
-# macro_sequence
-
-# end
-# entity
 multiply
 # storage
 db|HiddenLayer.(2).cnf
@@ -101,378 +65,6 @@ OutputNeuron:oNeuron0|multiply:oMul1
 OutputNeuron:oNeuron0|multiply:oMul2
 OutputNeuron:oNeuron0|multiply:oMul3
 OutputNeuron:oNeuron0|multiply:oMul4
-}
-# macro_sequence
-
-# end
-# entity
-OutputNeuron
-# storage
-db|HiddenLayer.(4).cnf
-db|HiddenLayer.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-outputneuron.sv
-5976b8f4a53bedf98bdf18ab49b44ca
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-OutputNeuron:oNeuron0
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
-# storage
-db|HiddenLayer.(5).cnf
-db|HiddenLayer.(5).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-b53461604fe57143e9222dc39ff0607b
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-10
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-WeightRAM:getWeight0
-}
-# macro_sequence
-
-# end
-# entity
-LFSR
-# storage
-db|HiddenLayer.(6).cnf
-db|HiddenLayer.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
-a7f685c6e25118781c2119c701b3d43
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-WeightRAM:getWeight0|LFSR:rndnm
-WeightRAM:getWeight1|LFSR:rndnm
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(7).cnf
-db|HiddenLayer.(7).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(8).cnf
-db|HiddenLayer.(8).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(9).cnf
-db|HiddenLayer.(9).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(10).cnf
-db|HiddenLayer.(10).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(11).cnf
-db|HiddenLayer.(11).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
-# storage
-db|HiddenLayer.(12).cnf
-db|HiddenLayer.(12).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-b53461604fe57143e9222dc39ff0607b
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-WeightRAM:getWeight1
 }
 # macro_sequence
 
@@ -6220,645 +5812,6 @@ denominator0
 
 # end
 # entity
-ActivationFunc
-# storage
-db|HiddenLayer.(3).cnf
-db|HiddenLayer.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-activationfunc.sv
-1b1394b213b8741f2822bb2c7b09f39
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenNeuron:hNeuron|ActivationFunc:callAF
-OutputNeuron:oNeuron0|ActivationFunc:callAF
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(37).cnf
-db|HiddenLayer.(37).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(38).cnf
-db|HiddenLayer.(38).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(39).cnf
-db|HiddenLayer.(39).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(40).cnf
-db|HiddenLayer.(40).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(41).cnf
-db|HiddenLayer.(41).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(42).cnf
-db|HiddenLayer.(42).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(43).cnf
-db|HiddenLayer.(43).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(44).cnf
-db|HiddenLayer.(44).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(45).cnf
-db|HiddenLayer.(45).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(46).cnf
-db|HiddenLayer.(46).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(47).cnf
-db|HiddenLayer.(47).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(48).cnf
-db|HiddenLayer.(48).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(49).cnf
-db|HiddenLayer.(49).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(50).cnf
-db|HiddenLayer.(50).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
 lpm_divide
 # storage
 db|HiddenLayer.(51).cnf
@@ -7173,85 +6126,6 @@ denom1
 denom0
 -1
 2
-}
-# macro_sequence
-
-# end
-# entity
-counter
-# storage
-db|HiddenLayer.(52).cnf
-db|HiddenLayer.(52).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightoptimization|counter.sv
-b6b844d54da6f794b9cf8e81ae49f3
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-counter:counting
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(53).cnf
-db|HiddenLayer.(53).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
 }
 # macro_sequence
 
@@ -8035,49 +6909,6 @@ denom5
 denom3
 -1
 2
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(57).cnf
-db|HiddenLayer.(57).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
 }
 # macro_sequence
 
@@ -9205,7 +8036,160 @@ ON
 # case_sensitive
 # source_file
 hiddenlayer.sv
-589bae3d9c7bf83e9df37b725984e3c2
+9d5530531252944f14da95be9a23f1
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# include_file {
+outputneuron.sv
+ece37e50e8246ff5dce41296d8c2a4
+hiddenneuron.sv
+a0df779b74c633afb6eaf77ca494dd4a
+|users|yen|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+502a569d7c5362d98bd4e19555bf7ec
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+HiddenNeuron
+# storage
+db|HiddenLayer.(1).cnf
+db|HiddenLayer.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hiddenneuron.sv
+a0df779b74c633afb6eaf77ca494dd4a
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+HiddenNeuron:hNeuron
+}
+# macro_sequence
+
+# end
+# entity
+ActivationFunc
+# storage
+db|HiddenLayer.(3).cnf
+db|HiddenLayer.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+activationfunc.sv
+aebae54ff5d079b1261f2bc9e162face
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+HiddenNeuron:hNeuron|ActivationFunc:callAF
+OutputNeuron:oNeuron0|ActivationFunc:callAF
+}
+# macro_sequence
+
+# end
+# entity
+OutputNeuron
+# storage
+db|HiddenLayer.(4).cnf
+db|HiddenLayer.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+outputneuron.sv
+ece37e50e8246ff5dce41296d8c2a4
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+OutputNeuron:oNeuron0
+}
+# macro_sequence
+
+# end
+# entity
+WeightRAM
+# storage
+db|HiddenLayer.(5).cnf
+db|HiddenLayer.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yen|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+502a569d7c5362d98bd4e19555bf7ec
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -9224,21 +8208,50 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # user_parameter {
-n
+N
 10
 PARAMETER_SIGNED_DEC
-DEF
-}
-# include_file {
-outputneuron.sv
-5976b8f4a53bedf98bdf18ab49b44ca
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-b53461604fe57143e9222dc39ff0607b
-hiddenneuron.sv
-3c50381fe7af733bc3b142070694e2
+USR
 }
 # hierarchies {
-|
+WeightRAM:getWeight0
+}
+# macro_sequence
+
+# end
+# entity
+LFSR
+# storage
+db|HiddenLayer.(6).cnf
+db|HiddenLayer.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yen|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
+a7f685c6e25118781c2119c701b3d43
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+WeightRAM:getWeight0|LFSR:rndnm
+WeightRAM:getWeight1|LFSR:rndnm
 }
 # macro_sequence
 
@@ -9246,16 +8259,16 @@ hiddenneuron.sv
 # entity
 clk_div
 # storage
-db|HiddenLayer.(63).cnf
-db|HiddenLayer.(63).cnf
+db|HiddenLayer.(7).cnf
+db|HiddenLayer.(7).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-2d47919dc1415853cf0643c8ebe5755
+|users|yen|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+6850c262f74b836c52c9e37dc01fb720
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -9286,6 +8299,48 @@ USR
 # hierarchies {
 WeightRAM:getWeight0|clk_div:clk1
 WeightRAM:getWeight1|clk_div:clk1
+}
+# macro_sequence
+
+# end
+# entity
+WeightRAM
+# storage
+db|HiddenLayer.(8).cnf
+db|HiddenLayer.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|yen|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+502a569d7c5362d98bd4e19555bf7ec
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+N
+5
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+WeightRAM:getWeight1
 }
 # macro_sequence
 
