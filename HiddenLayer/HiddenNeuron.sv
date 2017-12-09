@@ -6,8 +6,6 @@ module HiddenNeuron(
 
 reg signed [9:0]mulVal[0:9];
 reg signed [13:0]addVal;
-//reg signed [9:0]mulVal[0:19];
-//reg signed [0:19]addVal;
 
 assign addVal = mulVal[0] + mulVal[1] + mulVal[2] + mulVal[3] + mulVal[4] + mulVal[5] + mulVal[6] + mulVal[7] + mulVal[8] + mulVal[9];
 

@@ -4,12 +4,11 @@ reg	[9:0] inVal[0:9];
 wire	[9:0]outVal[0:4];
 wire [9:0]outVal1[0:2];
 wire [6:0]address;
-wire [9:0]count;
+wire [3:0]state;
 wire	signed[9:0] weight0[0:9];   
 wire	signed[9:0] weight1[0:4];
 
-HiddenLayer	test(Clock, Rst, WE, In, inVal, outVal,outVal1,count,address);
-WeightRAM #(10) getWeight0(Clock, 1'b0, Rst, weight0, address, 1'b0, weight0);
+HiddenLayer	test(Clock, Rst, WE, In, inVal, outVal,outVal1,state,address);
 
 initial begin
 	Clock = 0;
@@ -38,7 +37,7 @@ initial begin
 end
 
 initial begin
-  $monitor("Input value = %p\nOutput (Hidden Layer) = %p\nOutput(Output Layer) = %p\Count = %p\nAddress = %p\n
+  $monitor("Input value = %p\nOutput (Hidden Layer) = %p\nOutput(Output Layer) = %p\State = %p\nAddress = %p\n
   Weight0 = \n%p",inVal,outVal, outVal1,count,address,weight0);
   
 end 

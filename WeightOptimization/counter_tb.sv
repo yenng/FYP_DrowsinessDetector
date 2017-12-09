@@ -6,10 +6,10 @@ module counter_tb();
 	counter test(clk,rst,max,count);
 	
 	initial begin
-		rst = 0;
+		rst = 1;
 		max = 10'd10;
-		#100 rst = 1;
 		#100 rst = 0;
+		#100 rst = 1;
 	end
 	
 	initial begin
