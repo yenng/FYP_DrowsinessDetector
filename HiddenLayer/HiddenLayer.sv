@@ -29,12 +29,12 @@
 	end
 	
 	always@(state) begin
-	  case(state)
-	    4'd0: begin
-	      address = 7'b0;
-		    address1 = 7'b0110010;
-	      nextstate = 4'd1;
-	    end
+		case(state)
+			4'd0: begin
+				address = 7'b0;
+				address1 = 7'b0110010;
+				nextstate = 4'd1;
+			end
 	    4'd1: begin
 	      outVal[0] = out0;
 	      outVal1[0] = out1;

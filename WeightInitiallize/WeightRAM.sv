@@ -38,5 +38,4 @@ always @(posedge Clock or negedge Rst)begin
 	end
 end
 	LFSR rndnm(Clock, Rst, data);
-	clk_div clk1(Clock, Rst, clk);
 endmodule

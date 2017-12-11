@@ -3,7 +3,8 @@ module WeightRAM_download(
 	input [3:0]KEY,
 	input [17:0]SW,
 	output reg[17:0]LEDR,
-	output reg[7:0]LEDG);
+	output reg[7:0]LEDG,
+	output reg[7:0]HEX0);
 	integer i=10;
 	
 	reg [9:0]D_t[0:9];
@@ -74,4 +75,5 @@ module WeightRAM_download(
 					.Address(Address_t),
 					.WE(SW[1]), //1 write, 0 read
 					.Q(Q_t));
+	_7SegmentDisplay display(SW[6:3],HEX0);
 endmodule 

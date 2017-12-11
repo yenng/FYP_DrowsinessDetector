@@ -1,4 +1,573 @@
-|HiddenLayer
+|HiddenLayer_download
+CLOCK_50 => outVal_t[0][0].CLK
+CLOCK_50 => outVal_t[0][1].CLK
+CLOCK_50 => outVal_t[0][2].CLK
+CLOCK_50 => outVal_t[0][3].CLK
+CLOCK_50 => outVal_t[1][0].CLK
+CLOCK_50 => outVal_t[1][1].CLK
+CLOCK_50 => outVal_t[1][2].CLK
+CLOCK_50 => outVal_t[1][3].CLK
+CLOCK_50 => outVal_t[2][0].CLK
+CLOCK_50 => outVal_t[2][1].CLK
+CLOCK_50 => outVal_t[2][2].CLK
+CLOCK_50 => outVal_t[2][3].CLK
+CLOCK_50 => inVal[9][0].CLK
+CLOCK_50 => inVal[9][1].CLK
+CLOCK_50 => inVal[9][2].CLK
+CLOCK_50 => inVal[9][3].CLK
+CLOCK_50 => inVal[9][4].CLK
+CLOCK_50 => inVal[9][5].CLK
+CLOCK_50 => inVal[9][6].CLK
+CLOCK_50 => inVal[9][7].CLK
+CLOCK_50 => inVal[9][8].CLK
+CLOCK_50 => inVal[9][9].CLK
+CLOCK_50 => inVal[8][0].CLK
+CLOCK_50 => inVal[8][1].CLK
+CLOCK_50 => inVal[8][2].CLK
+CLOCK_50 => inVal[8][3].CLK
+CLOCK_50 => inVal[8][4].CLK
+CLOCK_50 => inVal[8][5].CLK
+CLOCK_50 => inVal[8][6].CLK
+CLOCK_50 => inVal[8][7].CLK
+CLOCK_50 => inVal[8][8].CLK
+CLOCK_50 => inVal[8][9].CLK
+CLOCK_50 => inVal[7][0].CLK
+CLOCK_50 => inVal[7][1].CLK
+CLOCK_50 => inVal[7][2].CLK
+CLOCK_50 => inVal[7][3].CLK
+CLOCK_50 => inVal[7][4].CLK
+CLOCK_50 => inVal[7][5].CLK
+CLOCK_50 => inVal[7][6].CLK
+CLOCK_50 => inVal[7][7].CLK
+CLOCK_50 => inVal[7][8].CLK
+CLOCK_50 => inVal[7][9].CLK
+CLOCK_50 => inVal[6][0].CLK
+CLOCK_50 => inVal[6][1].CLK
+CLOCK_50 => inVal[6][2].CLK
+CLOCK_50 => inVal[6][3].CLK
+CLOCK_50 => inVal[6][4].CLK
+CLOCK_50 => inVal[6][5].CLK
+CLOCK_50 => inVal[6][6].CLK
+CLOCK_50 => inVal[6][7].CLK
+CLOCK_50 => inVal[6][8].CLK
+CLOCK_50 => inVal[6][9].CLK
+CLOCK_50 => inVal[5][0].CLK
+CLOCK_50 => inVal[5][1].CLK
+CLOCK_50 => inVal[5][2].CLK
+CLOCK_50 => inVal[5][3].CLK
+CLOCK_50 => inVal[5][4].CLK
+CLOCK_50 => inVal[5][5].CLK
+CLOCK_50 => inVal[5][6].CLK
+CLOCK_50 => inVal[5][7].CLK
+CLOCK_50 => inVal[5][8].CLK
+CLOCK_50 => inVal[5][9].CLK
+CLOCK_50 => inVal[4][0].CLK
+CLOCK_50 => inVal[4][1].CLK
+CLOCK_50 => inVal[4][2].CLK
+CLOCK_50 => inVal[4][3].CLK
+CLOCK_50 => inVal[4][4].CLK
+CLOCK_50 => inVal[4][5].CLK
+CLOCK_50 => inVal[4][6].CLK
+CLOCK_50 => inVal[4][7].CLK
+CLOCK_50 => inVal[4][8].CLK
+CLOCK_50 => inVal[4][9].CLK
+CLOCK_50 => inVal[3][0].CLK
+CLOCK_50 => inVal[3][1].CLK
+CLOCK_50 => inVal[3][2].CLK
+CLOCK_50 => inVal[3][3].CLK
+CLOCK_50 => inVal[3][4].CLK
+CLOCK_50 => inVal[3][5].CLK
+CLOCK_50 => inVal[3][6].CLK
+CLOCK_50 => inVal[3][7].CLK
+CLOCK_50 => inVal[3][8].CLK
+CLOCK_50 => inVal[3][9].CLK
+CLOCK_50 => inVal[2][0].CLK
+CLOCK_50 => inVal[2][1].CLK
+CLOCK_50 => inVal[2][2].CLK
+CLOCK_50 => inVal[2][3].CLK
+CLOCK_50 => inVal[2][4].CLK
+CLOCK_50 => inVal[2][5].CLK
+CLOCK_50 => inVal[2][6].CLK
+CLOCK_50 => inVal[2][7].CLK
+CLOCK_50 => inVal[2][8].CLK
+CLOCK_50 => inVal[2][9].CLK
+CLOCK_50 => inVal[1][0].CLK
+CLOCK_50 => inVal[1][1].CLK
+CLOCK_50 => inVal[1][2].CLK
+CLOCK_50 => inVal[1][3].CLK
+CLOCK_50 => inVal[1][4].CLK
+CLOCK_50 => inVal[1][5].CLK
+CLOCK_50 => inVal[1][6].CLK
+CLOCK_50 => inVal[1][7].CLK
+CLOCK_50 => inVal[1][8].CLK
+CLOCK_50 => inVal[1][9].CLK
+CLOCK_50 => inVal[0][0].CLK
+CLOCK_50 => inVal[0][1].CLK
+CLOCK_50 => inVal[0][2].CLK
+CLOCK_50 => inVal[0][3].CLK
+CLOCK_50 => inVal[0][4].CLK
+CLOCK_50 => inVal[0][5].CLK
+CLOCK_50 => inVal[0][6].CLK
+CLOCK_50 => inVal[0][7].CLK
+CLOCK_50 => inVal[0][8].CLK
+CLOCK_50 => inVal[0][9].CLK
+CLOCK_50 => inVal_t[0].CLK
+CLOCK_50 => inVal_t[1].CLK
+CLOCK_50 => inVal_t[2].CLK
+CLOCK_50 => inVal_t[3].CLK
+CLOCK_50 => inVal_t[4].CLK
+CLOCK_50 => inVal_t[5].CLK
+CLOCK_50 => inVal_t[6].CLK
+CLOCK_50 => inVal_t[7].CLK
+CLOCK_50 => inVal_t[8].CLK
+CLOCK_50 => inVal_t[9].CLK
+SW[0] => HiddenLayer:download.In
+SW[1] => HiddenLayer:download.WE
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => outVal_t.OUTPUTSELECT
+SW[2] => inVal[9][4].ENA
+SW[2] => inVal[9][3].ENA
+SW[2] => inVal[9][2].ENA
+SW[2] => inVal[9][1].ENA
+SW[2] => inVal[9][0].ENA
+SW[2] => inVal[9][5].ENA
+SW[2] => inVal[9][6].ENA
+SW[2] => inVal[9][7].ENA
+SW[2] => inVal[9][8].ENA
+SW[2] => inVal[9][9].ENA
+SW[2] => inVal[8][0].ENA
+SW[2] => inVal[8][1].ENA
+SW[2] => inVal[8][2].ENA
+SW[2] => inVal[8][3].ENA
+SW[2] => inVal[8][4].ENA
+SW[2] => inVal[8][5].ENA
+SW[2] => inVal[8][6].ENA
+SW[2] => inVal[8][7].ENA
+SW[2] => inVal[8][8].ENA
+SW[2] => inVal[8][9].ENA
+SW[2] => inVal[7][0].ENA
+SW[2] => inVal[7][1].ENA
+SW[2] => inVal[7][2].ENA
+SW[2] => inVal[7][3].ENA
+SW[2] => inVal[7][4].ENA
+SW[2] => inVal[7][5].ENA
+SW[2] => inVal[7][6].ENA
+SW[2] => inVal[7][7].ENA
+SW[2] => inVal[7][8].ENA
+SW[2] => inVal[7][9].ENA
+SW[2] => inVal[6][0].ENA
+SW[2] => inVal[6][1].ENA
+SW[2] => inVal[6][2].ENA
+SW[2] => inVal[6][3].ENA
+SW[2] => inVal[6][4].ENA
+SW[2] => inVal[6][5].ENA
+SW[2] => inVal[6][6].ENA
+SW[2] => inVal[6][7].ENA
+SW[2] => inVal[6][8].ENA
+SW[2] => inVal[6][9].ENA
+SW[2] => inVal[5][0].ENA
+SW[2] => inVal[5][1].ENA
+SW[2] => inVal[5][2].ENA
+SW[2] => inVal[5][3].ENA
+SW[2] => inVal[5][4].ENA
+SW[2] => inVal[5][5].ENA
+SW[2] => inVal[5][6].ENA
+SW[2] => inVal[5][7].ENA
+SW[2] => inVal[5][8].ENA
+SW[2] => inVal[5][9].ENA
+SW[2] => inVal[4][0].ENA
+SW[2] => inVal[4][1].ENA
+SW[2] => inVal[4][2].ENA
+SW[2] => inVal[4][3].ENA
+SW[2] => inVal[4][4].ENA
+SW[2] => inVal[4][5].ENA
+SW[2] => inVal[4][6].ENA
+SW[2] => inVal[4][7].ENA
+SW[2] => inVal[4][8].ENA
+SW[2] => inVal[4][9].ENA
+SW[2] => inVal[3][0].ENA
+SW[2] => inVal[3][1].ENA
+SW[2] => inVal[3][2].ENA
+SW[2] => inVal[3][3].ENA
+SW[2] => inVal[3][4].ENA
+SW[2] => inVal[3][5].ENA
+SW[2] => inVal[3][6].ENA
+SW[2] => inVal[3][7].ENA
+SW[2] => inVal[3][8].ENA
+SW[2] => inVal[3][9].ENA
+SW[2] => inVal[2][0].ENA
+SW[2] => inVal[2][1].ENA
+SW[2] => inVal[2][2].ENA
+SW[2] => inVal[2][3].ENA
+SW[2] => inVal[2][4].ENA
+SW[2] => inVal[2][5].ENA
+SW[2] => inVal[2][6].ENA
+SW[2] => inVal[2][7].ENA
+SW[2] => inVal[2][8].ENA
+SW[2] => inVal[2][9].ENA
+SW[2] => inVal[1][0].ENA
+SW[2] => inVal[1][1].ENA
+SW[2] => inVal[1][2].ENA
+SW[2] => inVal[1][3].ENA
+SW[2] => inVal[1][4].ENA
+SW[2] => inVal[1][5].ENA
+SW[2] => inVal[1][6].ENA
+SW[2] => inVal[1][7].ENA
+SW[2] => inVal[1][8].ENA
+SW[2] => inVal[1][9].ENA
+SW[2] => inVal[0][0].ENA
+SW[2] => inVal[0][1].ENA
+SW[2] => inVal[0][2].ENA
+SW[2] => inVal[0][3].ENA
+SW[2] => inVal[0][4].ENA
+SW[2] => inVal[0][5].ENA
+SW[2] => inVal[0][6].ENA
+SW[2] => inVal[0][7].ENA
+SW[2] => inVal[0][8].ENA
+SW[2] => inVal[0][9].ENA
+SW[2] => inVal_t[0].ENA
+SW[2] => inVal_t[1].ENA
+SW[2] => inVal_t[2].ENA
+SW[2] => inVal_t[3].ENA
+SW[2] => inVal_t[4].ENA
+SW[2] => inVal_t[5].ENA
+SW[2] => inVal_t[6].ENA
+SW[2] => inVal_t[7].ENA
+SW[2] => inVal_t[8].ENA
+SW[2] => inVal_t[9].ENA
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal_t.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => inVal.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[3] => outVal_t.OUTPUTSELECT
+SW[4] => Decoder0.IN3
+SW[4] => Mux0.IN5
+SW[4] => Mux1.IN5
+SW[4] => Mux2.IN5
+SW[4] => Mux3.IN5
+SW[4] => Mux4.IN5
+SW[4] => Mux5.IN5
+SW[4] => Mux6.IN5
+SW[4] => Mux7.IN5
+SW[4] => Mux8.IN5
+SW[4] => Mux9.IN5
+SW[5] => Decoder0.IN2
+SW[5] => Mux0.IN4
+SW[5] => Mux1.IN4
+SW[5] => Mux2.IN4
+SW[5] => Mux3.IN4
+SW[5] => Mux4.IN4
+SW[5] => Mux5.IN4
+SW[5] => Mux6.IN4
+SW[5] => Mux7.IN4
+SW[5] => Mux8.IN4
+SW[5] => Mux9.IN4
+SW[6] => Decoder0.IN1
+SW[6] => Mux0.IN3
+SW[6] => Mux1.IN3
+SW[6] => Mux2.IN3
+SW[6] => Mux3.IN3
+SW[6] => Mux4.IN3
+SW[6] => Mux5.IN3
+SW[6] => Mux6.IN3
+SW[6] => Mux7.IN3
+SW[6] => Mux8.IN3
+SW[6] => Mux9.IN3
+SW[7] => Decoder0.IN0
+SW[8] => inVal_t.DATAB
+SW[9] => inVal_t.DATAB
+SW[10] => inVal_t.DATAB
+SW[11] => inVal_t.DATAB
+SW[12] => inVal_t.DATAB
+SW[13] => inVal_t.DATAB
+SW[14] => inVal_t.DATAB
+SW[15] => inVal_t.DATAB
+SW[16] => inVal_t.DATAB
+SW[17] => inVal_t.DATAB
+KEY[0] => HiddenLayer:download.Rst
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => HiddenLayer:download.Clock
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+LEDR[10] <= <GND>
+LEDR[11] <= <GND>
+LEDR[12] <= <GND>
+LEDR[13] <= <GND>
+LEDR[14] <= <GND>
+LEDR[15] <= <GND>
+LEDR[16] <= <GND>
+LEDR[17] <= <GND>
+LEDG[0] <= <GND>
+LEDG[1] <= <GND>
+LEDG[2] <= <GND>
+LEDG[3] <= <GND>
+LEDG[4] <= <GND>
+LEDG[5] <= <GND>
+LEDG[6] <= <GND>
+LEDG[7] <= <GND>
+HEX0[0] <= _7SegmentDisplay:out0.port1
+HEX0[1] <= _7SegmentDisplay:out0.port1
+HEX0[2] <= _7SegmentDisplay:out0.port1
+HEX0[3] <= _7SegmentDisplay:out0.port1
+HEX0[4] <= _7SegmentDisplay:out0.port1
+HEX0[5] <= _7SegmentDisplay:out0.port1
+HEX0[6] <= _7SegmentDisplay:out0.port1
+HEX0[7] <= _7SegmentDisplay:out0.port1
+HEX1[0] <= _7SegmentDisplay:out1.port1
+HEX1[1] <= _7SegmentDisplay:out1.port1
+HEX1[2] <= _7SegmentDisplay:out1.port1
+HEX1[3] <= _7SegmentDisplay:out1.port1
+HEX1[4] <= _7SegmentDisplay:out1.port1
+HEX1[5] <= _7SegmentDisplay:out1.port1
+HEX1[6] <= _7SegmentDisplay:out1.port1
+HEX1[7] <= _7SegmentDisplay:out1.port1
+HEX2[0] <= _7SegmentDisplay:out2.port1
+HEX2[1] <= _7SegmentDisplay:out2.port1
+HEX2[2] <= _7SegmentDisplay:out2.port1
+HEX2[3] <= _7SegmentDisplay:out2.port1
+HEX2[4] <= _7SegmentDisplay:out2.port1
+HEX2[5] <= _7SegmentDisplay:out2.port1
+HEX2[6] <= _7SegmentDisplay:out2.port1
+HEX2[7] <= _7SegmentDisplay:out2.port1
+HEX3[0] <= <GND>
+HEX3[1] <= <GND>
+HEX3[2] <= <GND>
+HEX3[3] <= <GND>
+HEX3[4] <= <GND>
+HEX3[5] <= <GND>
+HEX3[6] <= <GND>
+HEX3[7] <= <GND>
+HEX4[0] <= <GND>
+HEX4[1] <= <GND>
+HEX4[2] <= <GND>
+HEX4[3] <= <GND>
+HEX4[4] <= <GND>
+HEX4[5] <= <GND>
+HEX4[6] <= <GND>
+HEX4[7] <= <GND>
+HEX5[0] <= <GND>
+HEX5[1] <= <GND>
+HEX5[2] <= <GND>
+HEX5[3] <= <GND>
+HEX5[4] <= <GND>
+HEX5[5] <= <GND>
+HEX5[6] <= <GND>
+HEX5[7] <= <GND>
+HEX6[0] <= <GND>
+HEX6[1] <= <GND>
+HEX6[2] <= <GND>
+HEX6[3] <= <GND>
+HEX6[4] <= <GND>
+HEX6[5] <= <GND>
+HEX6[6] <= <GND>
+HEX6[7] <= <GND>
+HEX7[0] <= _7SegmentDisplay:stateShow.port1
+HEX7[1] <= _7SegmentDisplay:stateShow.port1
+HEX7[2] <= _7SegmentDisplay:stateShow.port1
+HEX7[3] <= _7SegmentDisplay:stateShow.port1
+HEX7[4] <= _7SegmentDisplay:stateShow.port1
+HEX7[5] <= _7SegmentDisplay:stateShow.port1
+HEX7[6] <= _7SegmentDisplay:stateShow.port1
+HEX7[7] <= _7SegmentDisplay:stateShow.port1
+
+
+|HiddenLayer_download|_7SegmentDisplay:out0
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+_7seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[7] <= <VCC>
+
+
+|HiddenLayer_download|_7SegmentDisplay:out1
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+_7seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[7] <= <VCC>
+
+
+|HiddenLayer_download|_7SegmentDisplay:out2
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+_7seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[7] <= <VCC>
+
+
+|HiddenLayer_download|_7SegmentDisplay:stateShow
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+_7seg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+_7seg[7] <= <VCC>
+
+
+|HiddenLayer_download|HiddenLayer:download
 Clock => WeightRAM:getWeight0.Clock
 Clock => WeightRAM:getWeight1.Clock
 Clock => state[0]~reg0.CLK
@@ -208,7 +777,7 @@ address[5] <= address[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
 address[6] <= <GND>
 
 
-|HiddenLayer|HiddenNeuron:hNeuron
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron
 inVal[9][0] => inVal[9][0].IN1
 inVal[9][1] => inVal[9][1].IN1
 inVal[9][2] => inVal[9][2].IN1
@@ -421,7 +990,7 @@ outVal[8] <= ActivationFunc:callAF.port1
 outVal[9] <= ActivationFunc:callAF.port1
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul0
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul0
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -483,7 +1052,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul1
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul1
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -545,7 +1114,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul2
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul2
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -607,7 +1176,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul3
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul3
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -669,7 +1238,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul4
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul4
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -731,7 +1300,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul5
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul5
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -793,7 +1362,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul6
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul6
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -855,7 +1424,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul7
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul7
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -917,7 +1486,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul8
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul8
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -979,7 +1548,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|multiply:mul9
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul9
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -1041,7 +1610,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|HiddenNeuron:hNeuron|ActivationFunc:callAF
+|HiddenLayer_download|HiddenLayer:download|HiddenNeuron:hNeuron|ActivationFunc:callAF
 in[0] => in_abs[0].DATAA
 in[0] => Mult0.IN24
 in[0] => Add0.IN15
@@ -1109,7 +1678,7 @@ out[8] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
 out[9] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|OutputNeuron:oNeuron0
+|HiddenLayer_download|HiddenLayer:download|OutputNeuron:oNeuron0
 inVal[4][0] => inVal_t[4][9].IN1
 inVal[4][1] => inVal_t[4][8].IN1
 inVal[4][2] => inVal_t[4][7].IN1
@@ -1222,7 +1791,7 @@ outVal[8] <= ActivationFunc:callAF.port1
 outVal[9] <= ActivationFunc:callAF.port1
 
 
-|HiddenLayer|OutputNeuron:oNeuron0|multiply:oMul0
+|HiddenLayer_download|HiddenLayer:download|OutputNeuron:oNeuron0|multiply:oMul0
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -1284,7 +1853,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|OutputNeuron:oNeuron0|multiply:oMul1
+|HiddenLayer_download|HiddenLayer:download|OutputNeuron:oNeuron0|multiply:oMul1
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -1346,7 +1915,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|OutputNeuron:oNeuron0|multiply:oMul2
+|HiddenLayer_download|HiddenLayer:download|OutputNeuron:oNeuron0|multiply:oMul2
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -1408,7 +1977,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|OutputNeuron:oNeuron0|multiply:oMul3
+|HiddenLayer_download|HiddenLayer:download|OutputNeuron:oNeuron0|multiply:oMul3
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -1470,7 +2039,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|OutputNeuron:oNeuron0|multiply:oMul4
+|HiddenLayer_download|HiddenLayer:download|OutputNeuron:oNeuron0|multiply:oMul4
 in1[0] => Mult0.IN9
 in1[1] => Mult0.IN8
 in1[2] => Mult0.IN7
@@ -1532,7 +2101,7 @@ mulVal[8] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 mulVal[9] <= mulVal.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|OutputNeuron:oNeuron0|ActivationFunc:callAF
+|HiddenLayer_download|HiddenLayer:download|OutputNeuron:oNeuron0|ActivationFunc:callAF
 in[0] => in_abs[0].DATAA
 in[0] => Mult0.IN24
 in[0] => Add0.IN15
@@ -1600,8 +2169,8 @@ out[8] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
 out[9] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|WeightRAM:getWeight0
-Clock => Clock.IN2
+|HiddenLayer_download|HiddenLayer:download|WeightRAM:getWeight0
+Clock => Clock.IN1
 In => Q.OUTPUTSELECT
 In => Q.OUTPUTSELECT
 In => Q.OUTPUTSELECT
@@ -2384,7 +2953,7 @@ In => count[3].ENA
 In => count[2].ENA
 In => count[1].ENA
 In => count[0].ENA
-Rst => Rst.IN2
+Rst => Rst.IN1
 D[9][0] => REGISTER.DATAB
 D[9][0] => REGISTER.DATAB
 D[9][0] => REGISTER.DATAB
@@ -9947,7 +10516,7 @@ Q[0][8] <= Q[0][8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[0][9] <= Q[0][9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|WeightRAM:getWeight0|LFSR:rndnm
+|HiddenLayer_download|HiddenLayer:download|WeightRAM:getWeight0|LFSR:rndnm
 clk => data[0]~reg0.CLK
 clk => data[1]~reg0.CLK
 clk => data[2]~reg0.CLK
@@ -9980,22 +10549,8 @@ data[8] <= data[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data[9] <= data[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|WeightRAM:getWeight0|clk_div:clk1
-clk => clk_track.CLK
-clk => r_reg[0].CLK
-clk => r_reg[1].CLK
-clk => r_reg[2].CLK
-clk => r_reg[3].CLK
-rst => clk_track.ACLR
-rst => r_reg[0].ACLR
-rst => r_reg[1].ACLR
-rst => r_reg[2].ACLR
-rst => r_reg[3].ACLR
-clk_out <= clk_track.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|HiddenLayer|WeightRAM:getWeight1
-Clock => Clock.IN2
+|HiddenLayer_download|HiddenLayer:download|WeightRAM:getWeight1
+Clock => Clock.IN1
 In => Q.OUTPUTSELECT
 In => Q.OUTPUTSELECT
 In => Q.OUTPUTSELECT
@@ -10728,7 +11283,7 @@ In => count[3].ENA
 In => count[2].ENA
 In => count[1].ENA
 In => count[0].ENA
-Rst => Rst.IN2
+Rst => Rst.IN1
 D[4][0] => REGISTER.DATAB
 D[4][0] => REGISTER.DATAB
 D[4][0] => REGISTER.DATAB
@@ -14866,7 +15421,7 @@ Q[0][8] <= Q[0][8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[0][9] <= Q[0][9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|HiddenLayer|WeightRAM:getWeight1|LFSR:rndnm
+|HiddenLayer_download|HiddenLayer:download|WeightRAM:getWeight1|LFSR:rndnm
 clk => data[0]~reg0.CLK
 clk => data[1]~reg0.CLK
 clk => data[2]~reg0.CLK
@@ -14897,19 +15452,5 @@ data[6] <= data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data[7] <= data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data[8] <= data[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data[9] <= data[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|HiddenLayer|WeightRAM:getWeight1|clk_div:clk1
-clk => clk_track.CLK
-clk => r_reg[0].CLK
-clk => r_reg[1].CLK
-clk => r_reg[2].CLK
-clk => r_reg[3].CLK
-rst => clk_track.ACLR
-rst => r_reg[0].ACLR
-rst => r_reg[1].ACLR
-rst => r_reg[2].ACLR
-rst => r_reg[3].ACLR
-clk_out <= clk_track.DB_MAX_OUTPUT_PORT_TYPE
 
 

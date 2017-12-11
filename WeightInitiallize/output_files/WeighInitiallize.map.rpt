@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WeighInitiallize
-Fri Dec 08 09:12:53 2017
+Sun Dec 10 16:13:48 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -17,10 +17,8 @@ Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
   9. Inverted Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Parameter Settings for User Entity Instance: WeightRAM:download
- 12. Parameter Settings for User Entity Instance: WeightRAM:download|clk_div:clk1
- 13. Port Connectivity Checks: "WeightRAM:download|clk_div:clk1"
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+ 12. Analysis & Synthesis Messages
+ 13. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -46,16 +44,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 08 09:12:53 2017    ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 10 16:13:48 2017    ;
 ; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
 ; Revision Name                      ; WeighInitiallize                         ;
 ; Top-level Entity Name              ; WeightRAM_download                       ;
 ; Family                             ; Cyclone IV E                             ;
-; Total logic elements               ; 5,646                                    ;
-;     Total combinational functions  ; 5,516                                    ;
+; Total logic elements               ; 5,649                                    ;
+;     Total combinational functions  ; 5,519                                    ;
 ;     Dedicated logic registers      ; 924                                      ;
 ; Total registers                    ; 924                                      ;
-; Total pins                         ; 49                                       ;
+; Total pins                         ; 57                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                        ;
@@ -157,16 +155,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+
-; clk_div.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv            ;
-; WeightRAM.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv          ;
-; LFSR.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv               ;
-; WeightRAM_download.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM_download.sv ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                            ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+
+; _7SegmentDisplay.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/_7SegmentDisplay.sv   ;
+; WeightRAM.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv          ;
+; LFSR.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv               ;
+; WeightRAM_download.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM_download.sv ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -174,39 +172,40 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 5,646          ;
+; Estimated Total logic elements              ; 5,649          ;
 ;                                             ;                ;
-; Total combinational functions               ; 5516           ;
+; Total combinational functions               ; 5519           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 4772           ;
-;     -- 3 input functions                    ; 557            ;
-;     -- <=2 input functions                  ; 187            ;
+;     -- 4 input functions                    ; 4763           ;
+;     -- 3 input functions                    ; 573            ;
+;     -- <=2 input functions                  ; 183            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 5485           ;
+;     -- normal mode                          ; 5488           ;
 ;     -- arithmetic mode                      ; 31             ;
 ;                                             ;                ;
 ; Total registers                             ; 924            ;
 ;     -- Dedicated logic registers            ; 924            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 49             ;
+; I/O pins                                    ; 57             ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 924            ;
-; Total fan-out                               ; 26027          ;
-; Average fan-out                             ; 3.98           ;
+; Total fan-out                               ; 26046          ;
+; Average fan-out                             ; 3.97           ;
 +---------------------------------------------+----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                    ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
-; |WeightRAM_download        ; 5516 (76)         ; 924 (132)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 49   ; 0            ; |WeightRAM_download                               ;              ;
-;    |WeightRAM:download|    ; 5440 (5434)       ; 792 (782)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightRAM_download|WeightRAM:download            ;              ;
-;       |LFSR:rndnm|         ; 6 (6)             ; 10 (10)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightRAM_download|WeightRAM:download|LFSR:rndnm ;              ;
-+----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++-------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
+; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Library Name ;
++-------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
+; |WeightRAM_download           ; 5519 (65)         ; 924 (132)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 57   ; 0            ; |WeightRAM_download                               ;              ;
+;    |WeightRAM:download|       ; 5436 (5430)       ; 792 (782)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightRAM_download|WeightRAM:download            ;              ;
+;       |LFSR:rndnm|            ; 6 (6)             ; 10 (10)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightRAM_download|WeightRAM:download|LFSR:rndnm ;              ;
+;    |_7SegmentDisplay:display| ; 18 (18)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightRAM_download|_7SegmentDisplay:display      ;              ;
++-------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -335,39 +334,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: WeightRAM:download|clk_div:clk1 ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                      ;
-; N              ; 5     ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "WeightRAM:download|clk_div:clk1"                                                       ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Fri Dec 08 09:12:32 2017
+    Info: Processing started: Sun Dec 10 16:13:21 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WeighInitiallize -c WeighInitiallize
+Info: Found 1 design units, including 1 entities, in source file _7segmentdisplay.sv
+    Info: Found entity 1: _7SegmentDisplay
 Info: Found 1 design units, including 1 entities, in source file clk_div.sv
     Info: Found entity 1: clk_div
 Info: Found 1 design units, including 1 entities, in source file weightram.sv
     Info: Found entity 1: WeightRAM
-Warning: Can't analyze file -- file Download.sv is missing
 Info: Found 1 design units, including 1 entities, in source file lfsr.sv
     Info: Found entity 1: LFSR
 Info: Found 1 design units, including 1 entities, in source file weightram_tb.sv
@@ -375,41 +355,41 @@ Info: Found 1 design units, including 1 entities, in source file weightram_tb.sv
 Info: Found 1 design units, including 1 entities, in source file weightram_download.sv
     Info: Found entity 1: WeightRAM_download
 Info: Elaborating entity "WeightRAM_download" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at WeightRAM_download.sv(7): object "i" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at WeightRAM_download.sv(8): object "i" assigned a value but never read
 Warning (10034): Output port "LEDG[7]" at WeightRAM_download.sv(6) has no driver
 Info: Elaborating entity "WeightRAM" for hierarchy "WeightRAM:download"
 Info: Elaborating entity "LFSR" for hierarchy "WeightRAM:download|LFSR:rndnm"
-Info: Elaborating entity "clk_div" for hierarchy "WeightRAM:download|clk_div:clk1"
-Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
+Info: Elaborating entity "_7SegmentDisplay" for hierarchy "_7SegmentDisplay:display"
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDG[7]" is stuck at GND
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC
 Critical Warning: Ignored Power-Up Level option on the following registers
     Critical Warning (18010): Register WeightRAM:download|count[6] will power up to High
     Critical Warning (18010): Register WeightRAM:download|count[0] will power up to High
 Info: Timing-Driven Synthesis is running
-Info: Generated suppressed messages file C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.map.smsg
+Info: Generated suppressed messages file C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.map.smsg
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
 Warning: Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]"
     Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
     Warning (15610): No output dependent on input pin "SW[7]"
-Info: Implemented 5775 device resources after synthesis - the final resource count might be different
+Info: Implemented 5786 device resources after synthesis - the final resource count might be different
     Info: Implemented 23 input pins
-    Info: Implemented 26 output pins
-    Info: Implemented 5726 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 325 megabytes
-    Info: Processing ended: Fri Dec 08 09:12:53 2017
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Implemented 34 output pins
+    Info: Implemented 5729 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 324 megabytes
+    Info: Processing ended: Sun Dec 10 16:13:48 2017
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.map.smsg.
+The suppressed messages can be found in C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/output_files/WeighInitiallize.map.smsg.
 
 
