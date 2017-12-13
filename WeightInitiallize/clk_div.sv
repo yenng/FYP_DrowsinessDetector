@@ -10,7 +10,7 @@ wire [WIDTH-1:0] r_nxt;
 reg clk_track;
  
 always @(posedge clk or negedge rst)begin
-	if (~rst)begin
+	if (rst)begin
 		r_reg <= 0;
 		clk_track <= 1'b0;
 	end

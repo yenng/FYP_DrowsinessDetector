@@ -50,13 +50,50 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-WeightRAM:download|LFSR:rndnm
+LFSR:rndnm
+WeightRAM:ram|LFSR:rndnm
 }
 # macro_sequence
 
 # end
 # entity
-WeightRAM
+WeighInitiallize
+# storage
+db|WeighInitiallize.(0).cnf
+db|WeighInitiallize.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+weighinitiallize.sv
+50f82752f1574cfe32238b5c45b9945
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+counter
 # storage
 db|WeighInitiallize.(2).cnf
 db|WeighInitiallize.(2).cnf
@@ -66,8 +103,44 @@ ON
 }
 # case_sensitive
 # source_file
-weightram.sv
-6c4dd3c4d849cb8165458fa07383fd9a
+|users|user3|desktop|fyp_drowsinessdetector|weightoptimization|counter.sv
+d6ab29633c208f9ffd9f4848b07a616a
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+counter:count65
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|WeighInitiallize.(3).cnf
+db|WeighInitiallize.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+clk_div.sv
+2d47919dc1415853cf0643c8ebe5755
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -86,70 +159,34 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # user_parameter {
-N
-10
+WIDTH
+4
 PARAMETER_SIGNED_DEC
-USR
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+DEF
 }
 # hierarchies {
-WeightRAM:download
+clk_div:t1
 }
 # macro_sequence
 
 # end
 # entity
-WeightRAM_download
+WeightRAM
 # storage
-db|WeighInitiallize.(0).cnf
-db|WeighInitiallize.(0).cnf
+db|WeighInitiallize.(4).cnf
+db|WeighInitiallize.(4).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-weightram_download.sv
-2a38e3d934d24cf480fae3d9062e5
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# include_file {
 weightram.sv
-6c4dd3c4d849cb8165458fa07383fd9a
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
-_7SegmentDisplay
-# storage
-db|WeighInitiallize.(3).cnf
-db|WeighInitiallize.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-_7segmentdisplay.sv
-1cba2fa1a575e8b9bf64adb8e1e5b8
+ab9f5d08a58c79667a01b23d3d5581a
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -168,7 +205,7 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-_7SegmentDisplay:display
+WeightRAM:ram
 }
 # macro_sequence
 

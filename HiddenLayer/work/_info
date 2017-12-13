@@ -3,28 +3,48 @@ K3
 13
 cModel Technology
 dC:\Users\user3\Desktop\FYP_DrowsinessDetector\WeightInitiallize
-vActivationFunc
+v_7SegmentDisplay
 Z0 Mx1 6 sv_std 3 std
 Z1 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
-Iam<?M<KmRc[eDc:e33cSJ3
-V;0zg?^2jj@0G7Z4iljfMN1
+IIfb9_kezCV4a<U_B6_h5P1
+VT10EKo;WQo4bNg0eB0LNJ3
 S1
 Z2 dC:\Users\user3\Desktop\FYP_DrowsinessDetector\HiddenLayer
-w1509598297
-8C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv
-FC:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv
+w1513135134
+8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/_7SegmentDisplay.sv
+FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/_7SegmentDisplay.sv
 L0 1
 Z3 OV;L;6.5e;42
 r1
 31
 Z4 !s102 -nocovercells
 Z5 o-work work -sv -nocovercells -O0
+n@_7@segment@display
+!s100 6H]hSm[gE7kga:nmf2=O80
+!s85 0
+!s101 -O0
+vActivationFunc
+Z6 Mx1 6 sv_std 3 std
+R1
+Iam<?M<KmRc[eDc:e33cSJ3
+V;0zg?^2jj@0G7Z4iljfMN1
+S1
+R2
+w1509598297
+8C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv
+FC:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv
+L0 1
+R3
+r1
+31
+R4
+R5
 n@activation@func
 !s100 PZWmWLaOOG^XO0RHTz2Di3
 !s85 0
 !s101 -O0
 vActivationFunc_tb
-Z6 Mx1 6 sv_std 3 std
+R6
 R1
 IIVhfb]6IM4QQ7F32`@Pe_1
 VbU`337Ni5Ba<AnV64mNLM3
@@ -46,11 +66,11 @@ n@activation@func_tb
 vclk_div
 R6
 R1
-I[zDOE]26LEIYcBm8cXdo_0
+IL_3f5z_1SEo_W]jNfV<Y92
 V9z@i4ZQXGVbgh>FkYV_iM3
 S1
 R2
-Z7 w1509062403
+w1513143635
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv
 L0 1
@@ -59,9 +79,47 @@ r1
 31
 R4
 R5
-!s100 =iGBok;AA_]GOhP`W[hn72
+!s100 >9bzfg]6AJoBXEE3K2WTz0
 !s85 0
 !s101 -O0
+vclk_div_tb
+R6
+R1
+IjcDiOUPB1:kdIW6XNCbI01
+VaKb;AFU4=hN`Ib6n9Pl^Y2
+S1
+R2
+Z7 w1513130068
+8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div_tb.sv
+FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div_tb.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!s100 7VEJ^FHf8<kIB15J@;eDm1
+!s85 0
+!s101 -O0
+vcounter
+R6
+R1
+!s100 zAe]oe2G6>2>kRHmiFc2N3
+IKHQM:X>z]8lYc^;`aDhV_1
+VJKU@F>L7RAcPZL3Uih97Z3
+S1
+R2
+w1513150016
+8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/counter.sv
+FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/counter.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s101 -O0
+R4
+R5
 vDelta
 R6
 R1
@@ -69,7 +127,7 @@ IKW0BhC]KHJ6bm^n2RWWi33
 VB=dP85:KgiYQkWb`LhU^62
 S1
 R2
-Z8 w1511327088
+R7
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta.sv
 L0 1
@@ -89,7 +147,7 @@ I6Rc[c0`_7iPUb^bEJDQR`2
 Vbg0RVRg>JhleI06eQSYg:2
 S1
 R2
-R8
+R7
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta_tb.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta_tb.sv
 L0 1
@@ -165,7 +223,6 @@ n@hidden@neuron
 vHiddenNeuronWeightOptimization
 R6
 R1
-!s100 H:g:akiCUeDT5Q2cKKCV^1
 IEaKaLHk>QgPjmX[[9;_`S1
 VH=]8eWc3MheNZf`CE`b`g0
 S1
@@ -176,12 +233,13 @@ FC:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenNeuronWeightOpt
 L0 1
 R3
 r1
-!s85 0
 31
-!s101 -O0
 R4
 R5
 n@hidden@neuron@weight@optimization
+!s100 H:g:akiCUeDT5Q2cKKCV^1
+!s85 0
+!s101 -O0
 vLFSR
 R6
 R1
@@ -205,8 +263,8 @@ n@l@f@s@r
 vmultiply
 R6
 R1
-IVQN?4NF8=Tgj:_oNYLLE30
-Vl?^3lXYnSIm1kSEWl;zSZ3
+I=bLIm996YjDO_0a2Ti5A[1
+VPBT50EFNd0:FRKN_i3HbY1
 S1
 R2
 R7
@@ -218,7 +276,7 @@ r1
 31
 R4
 R5
-!s100 BFzFZ`4Ta1T_GF:W9FRIn0
+!s100 BRB^GIiz81Q56Bk2PVUP`0
 !s85 0
 !s101 -O0
 vOutputNeuron
@@ -248,7 +306,7 @@ Ij:L3S0?3@I^F`9Nc9E22a2
 VBU<hVM[kMfcEb`3LT@<1:1
 S1
 R2
-R8
+R7
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime.sv
 L0 1
@@ -268,7 +326,7 @@ I3MLGM14k4WOe<loeAC4W23
 Vjj^AP0RQ8mDH4O^db3]J63
 S1
 R2
-R8
+R7
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime_tb.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime_tb.sv
 L0 1
@@ -288,7 +346,7 @@ IJBJo<KeFI7a71PWkV:fM[1
 V;azXR8nmjl7h8GjT]d8F?2
 S1
 R2
-R8
+R7
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Substraction.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Substraction.sv
 L0 1
@@ -301,14 +359,54 @@ n@subtraction
 !s100 Kz]RK3?3M9K>z7CODW>:D0
 !s85 0
 !s101 -O0
+vWeighInitiallize
+R6
+R1
+In6>?NEnY?b>0:L6Q]6Ig32
+VS=Q``V]:YXkJmogoZzN:z2
+S1
+R2
+w1513144130
+8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeighInitiallize.sv
+FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeighInitiallize.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@weigh@initiallize
+!s100 B`^[1K_kGEZFCEK`IE1M90
+!s85 0
+!s101 -O0
+vWeighInitiallize_tb
+R6
+R1
+I3hlhFPTj3FNOLhF:jiLVU1
+VniI9HT[gMmlODUoV3XEeA3
+S1
+R2
+w1513135612
+8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeighInitiallize_tb.sv
+FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeighInitiallize_tb.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@weigh@initiallize_tb
+!s100 fOHdC`XhV?jO2S7RInUc33
+!s85 0
+!s101 -O0
 vWeightOptimization
 R6
 R1
-ICL4>XS;VYc^fJBo=klTle2
-VXF9G]VVEPf8TT0zboG;:i0
+IWRAcVLQ=:LK@6;acUK7`]0
+V@3F7]=ZcUbLn1mcgDkIVz1
 S1
 R2
-w1511416970
+w1513130927
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.sv
 L0 1
@@ -318,17 +416,17 @@ r1
 R4
 R5
 n@weight@optimization
-!s100 G3FeE;kLe0^>_fAOjYBVk0
+!s100 >Y_c_XdI2<<eb22;dCKM21
 !s85 0
 !s101 -O0
 vWeightOptimization_tb
 R6
 R1
-IL]AS1;ThP<4O;[bTm<bGd2
+IHZlhX^b8Rn>TJNVXBJOWL3
 VYoa`U=Na=Sdn9ghNPdaPR1
 S1
 R2
-w1511327607
+R7
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization_tb.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization_tb.sv
 L0 1
@@ -338,17 +436,17 @@ r1
 R4
 R5
 n@weight@optimization_tb
-!s100 YL`;8DDfJD^XS5OiHIDhj0
+!s100 7TSfGFDik5_O:;FKLJR7=1
 !s85 0
 !s101 -O0
 vWeightRAM
 R6
 R1
-IBNEdFXU>hinJB=]J>Jm^;0
-Vi>;:Ta:mVnPXI>EH@LS>?3
+IJ3CN_3fzo1@>`USiY4[O]3
+V?_079h`:PGOAjEYDbXX6g0
 S1
 R2
-w1511415323
+w1513135845
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv
 L0 1
@@ -358,7 +456,7 @@ r1
 R4
 R5
 n@weight@r@a@m
-!s100 1G?1c=EBzb;8ZM]6_89BL2
+!s100 ]FWk90W`@O0M8PcnbMCa10
 !s85 0
 !s101 -O0
 vWeightUpdate
@@ -368,7 +466,7 @@ I@J?DIb:ecDc6oib><zPTU2
 Vh=NlPj>F3KKI_Cz@Uk_G83
 S1
 R2
-w1511415318
+R7
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightUpdate.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightUpdate.sv
 L0 1
@@ -388,7 +486,7 @@ I7[dl:c3I7ASo;jagU;Am22
 V3UmZODlY4[h]n`_]e:W@F3
 S1
 R2
-w1511414517
+R7
 8C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightUpdate_tb.sv
 FC:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightUpdate_tb.sv
 L0 1

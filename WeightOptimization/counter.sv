@@ -10,7 +10,7 @@ always@(posedge clk) begin
 		count = 10'b0;
 	end
 	else begin
-		if(count == max)begin
+		if(count == max-1)begin
 			count = 10'b0;
 		end
 		else begin

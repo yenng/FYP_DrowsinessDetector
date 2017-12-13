@@ -1,6 +1,6 @@
 module _7SegmentDisplay(
 	input [3:0]in,
-	output [7:0]_7seg
+	output reg [7:0]_7seg
 	);
 	
 	always@(in) begin

@@ -8,9 +8,8 @@ entity WeightOptimization is
         \In\            : in     vl_logic;
         out1_actual     : in     vl_logic;
         out1_cal        : in     vl_logic;
-        out_cal         : in     vl_logic;
-        weight_old      : in     vl_logic;
+        out0_cal        : in     vl_logic;
         delta1          : out    vl_logic;
-        weight_new      : out    vl_logic
+        delta0          : out    vl_logic
     );
 end WeightOptimization;

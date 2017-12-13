@@ -1,5 +1,5 @@
 Flow report for WeightOptimization
-Wed Dec 06 13:07:17 2017
+Wed Dec 13 10:06:38 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +------------------------------------+------------------------------------------+
-; Flow Status                        ; Successful - Wed Dec 06 13:06:57 2017    ;
+; Flow Status                        ; Successful - Wed Dec 13 10:06:23 2017    ;
 ; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
 ; Revision Name                      ; WeightOptimization                       ;
 ; Top-level Entity Name              ; WeightOptimization                       ;
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Device                             ; EP4CE115F29C7                            ;
 ; Timing Models                      ; Final                                    ;
 ; Met timing requirements            ; N/A                                      ;
-; Total logic elements               ; 17,460 / 114,480 ( 15 % )                ;
-;     Total combinational functions  ; 17,455 / 114,480 ( 15 % )                ;
+; Total logic elements               ; 17,485 / 114,480 ( 15 % )                ;
+;     Total combinational functions  ; 17,480 / 114,480 ( 15 % )                ;
 ;     Dedicated logic registers      ; 342 / 114,480 ( < 1 % )                  ;
 ; Total registers                    ; 342                                      ;
 ; Total pins                         ; 194 / 529 ( 37 % )                       ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/06/2017 13:05:00 ;
+; Start date & time ; 12/13/2017 10:04:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; WeightOptimization  ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------------------------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                                                                     ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+-------------------------------------------------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 30902515113511.151253669914980                                                            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 268891671972879.151313068713580                                                           ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                        ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                         ; --            ; --          ; --         ;
 ; MISC_FILE                           ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.dpf ; --            ; --          ; --         ;
@@ -89,11 +89,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:46     ; 1.0                     ; 384 MB              ; 00:00:39                           ;
-; Fitter                    ; 00:00:55     ; 1.0                     ; 588 MB              ; 00:00:47                           ;
-; Assembler                 ; 00:00:08     ; 1.0                     ; 547 MB              ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:28     ; 1.0                     ; 505 MB              ; 00:00:23                           ;
-; Total                     ; 00:02:17     ; --                      ; --                  ; 00:01:55                           ;
+; Analysis & Synthesis      ; 00:00:39     ; 1.0                     ; 354 MB              ; 00:00:36                           ;
+; Fitter                    ; 00:00:43     ; 1.0                     ; 555 MB              ; 00:00:41                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 514 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:22     ; 1.0                     ; 471 MB              ; 00:00:20                           ;
+; Total                     ; 00:01:51     ; --                      ; --                  ; 00:01:43                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -102,10 +102,10 @@ applicable agreement for further details.
 +---------------------------+------------------+---------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +---------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-3L6AK1F  ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-3L6AK1F  ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-3L6AK1F  ; Windows Vista ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-3L6AK1F  ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; D210-04          ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                    ; D210-04          ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler                 ; D210-04          ; Windows Vista ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; D210-04          ; Windows Vista ; 6.2        ; x86_64         ;
 +---------------------------+------------------+---------------+------------+----------------+
 
 

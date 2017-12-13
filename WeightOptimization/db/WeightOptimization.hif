@@ -20,260 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Subtraction
-# storage
-db|WeightOptimization.(1).cnf
-db|WeightOptimization.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-substraction.sv
-9667a36070ac9ff18f8fb9d781a8
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Subtraction:sub1_0
-Subtraction:sub1_1
-Subtraction:sub1_2
-}
-# macro_sequence
-
-# end
-# entity
-SigmoidPrime
-# storage
-db|WeightOptimization.(2).cnf
-db|WeightOptimization.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-sigmoidprime.sv
-4f4ac1bf943143557a08caf8259d2c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-SigmoidPrime:sig1_0
-SigmoidPrime:sig1_1
-SigmoidPrime:sig1_2
-HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0
-HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp1
-HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp2
-HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp3
-HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp4
-}
-# macro_sequence
-
-# end
-# entity
-Delta
-# storage
-db|WeightOptimization.(3).cnf
-db|WeightOptimization.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-delta.sv
-43bfe745af6e9ea43dcde0158fa2262b
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Delta:delta1_0
-Delta:delta1_1
-Delta:delta1_2
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
-# storage
-db|WeightOptimization.(4).cnf
-db|WeightOptimization.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-d735d79e4e117cc6a9c768433d5a73f8
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-WeightRAM:getWeight1_0
-WeightRAM:getWeight1_1
-WeightRAM:getWeight1_2
-}
-# macro_sequence
-
-# end
-# entity
-LFSR
-# storage
-db|WeightOptimization.(5).cnf
-db|WeightOptimization.(5).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
-a7f685c6e25118781c2119c701b3d43
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-WeightRAM:getWeight1_0|LFSR:rndnm
-WeightRAM:getWeight1_1|LFSR:rndnm
-WeightRAM:getWeight1_2|LFSR:rndnm
-WeightRAM:getWeight0_0|LFSR:rndnm
-WeightRAM:getWeight0_1|LFSR:rndnm
-WeightRAM:getWeight0_2|LFSR:rndnm
-WeightRAM:getWeight0_3|LFSR:rndnm
-WeightRAM:getWeight0_4|LFSR:rndnm
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(6).cnf
-db|WeightOptimization.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-WeightRAM:getWeight1_0|clk_div:clk1
-WeightRAM:getWeight1_1|clk_div:clk1
-WeightRAM:getWeight1_2|clk_div:clk1
-}
-# macro_sequence
-
-# end
-# entity
 WeightUpdate
 # storage
 db|WeightOptimization.(7).cnf
@@ -313,393 +59,6 @@ USR
 WeightUpdate:updateWeight1_0
 WeightUpdate:updateWeight1_1
 WeightUpdate:updateWeight1_2
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
-# storage
-db|WeightOptimization.(8).cnf
-db|WeightOptimization.(8).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-d735d79e4e117cc6a9c768433d5a73f8
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-10
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-WeightRAM:getWeight0_0
-WeightRAM:getWeight0_1
-WeightRAM:getWeight0_2
-WeightRAM:getWeight0_3
-WeightRAM:getWeight0_4
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(9).cnf
-db|WeightOptimization.(9).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(10).cnf
-db|WeightOptimization.(10).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(11).cnf
-db|WeightOptimization.(11).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(12).cnf
-db|WeightOptimization.(12).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(13).cnf
-db|WeightOptimization.(13).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-HiddenNeuronWeightOptimization
-# storage
-db|WeightOptimization.(14).cnf
-db|WeightOptimization.(14).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-hiddenneuronweightoptimization.sv
-f832a419b02287cad4dd45794c3ea2f3
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# include_file {
-multiplydelta0.sv
-ece5aa5ef4ef35a732090756b88a0bc
-}
-# hierarchies {
-HiddenNeuronWeightOptimization:getErr0_0
-}
-# macro_sequence
-
-# end
-# entity
-multiply
-# storage
-db|WeightOptimization.(15).cnf
-db|WeightOptimization.(15).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|hiddenlayer|multiply.sv
-8d73879bcaaf342696e29ed452106c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_1
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_2
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_0
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_1
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_2
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_0
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_1
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_2
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_0
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_1
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_2
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_0
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_1
-HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_2
-}
-# macro_sequence
-
-# end
-# entity
-multiplyDelta0
-# storage
-db|WeightOptimization.(16).cnf
-db|WeightOptimization.(16).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-multiplydelta0.sv
-ece5aa5ef4ef35a732090756b88a0bc
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0
 }
 # macro_sequence
 
@@ -3421,221 +2780,6 @@ add_sub
 
 # end
 # entity
-clk_div
-# storage
-db|WeightOptimization.(32).cnf
-db|WeightOptimization.(32).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(33).cnf
-db|WeightOptimization.(33).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(34).cnf
-db|WeightOptimization.(34).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(35).cnf
-db|WeightOptimization.(35).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(36).cnf
-db|WeightOptimization.(36).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
 WeightOptimization
 # storage
 db|WeightOptimization.(0).cnf
@@ -3647,7 +2791,7 @@ ON
 # case_sensitive
 # source_file
 weightoptimization.sv
-37dd13f2a8982bbaedfa98fb1cb2e50
+57b04ff104334d8b23c91e53060e7
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -3666,14 +2810,14 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # include_file {
-hiddenneuronweightoptimization.sv
-f832a419b02287cad4dd45794c3ea2f3
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-d735d79e4e117cc6a9c768433d5a73f8
 weightupdate.sv
 33b447e176bf52bacff39f664d61e3
+hiddenneuronweightoptimization.sv
+7ecf739f3d9e57c890b7bd62ea59b
+|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+515d329b3b3123a4a3c7e8f82095c84c
 multiplydelta0.sv
-ece5aa5ef4ef35a732090756b88a0bc
+9ea635673b3ffff850d5b87fcdbb60
 }
 # hierarchies {
 |
@@ -3682,18 +2826,18 @@ ece5aa5ef4ef35a732090756b88a0bc
 
 # end
 # entity
-clk_div
+Subtraction
 # storage
-db|WeightOptimization.(37).cnf
-db|WeightOptimization.(37).cnf
+db|WeightOptimization.(1).cnf
+db|WeightOptimization.(1).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
+substraction.sv
+357adf1cc415e0c224695ac129be325
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -3711,32 +2855,27 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
+# hierarchies {
+Subtraction:sub1_0
+Subtraction:sub1_1
+Subtraction:sub1_2
 }
 # macro_sequence
 
 # end
 # entity
-clk_div
+SigmoidPrime
 # storage
-db|WeightOptimization.(38).cnf
-db|WeightOptimization.(38).cnf
+db|WeightOptimization.(2).cnf
+db|WeightOptimization.(2).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
+sigmoidprime.sv
+6694443da9be2afc648b44c7d7dbd
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -3754,32 +2893,32 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
+# hierarchies {
+SigmoidPrime:sig1_0
+SigmoidPrime:sig1_1
+SigmoidPrime:sig1_2
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp1
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp2
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp3
+HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp4
 }
 # macro_sequence
 
 # end
 # entity
-clk_div
+Delta
 # storage
-db|WeightOptimization.(39).cnf
-db|WeightOptimization.(39).cnf
+db|WeightOptimization.(3).cnf
+db|WeightOptimization.(3).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
+delta.sv
+defefa9e7ad451f055af6298337af7f
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -3797,32 +2936,27 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
+# hierarchies {
+Delta:delta1_0
+Delta:delta1_1
+Delta:delta1_2
 }
 # macro_sequence
 
 # end
 # entity
-clk_div
+WeightRAM
 # storage
-db|WeightOptimization.(40).cnf
-db|WeightOptimization.(40).cnf
+db|WeightOptimization.(4).cnf
+db|WeightOptimization.(4).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
+|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+515d329b3b3123a4a3c7e8f82095c84c
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -3841,120 +2975,75 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(41).cnf
-db|WeightOptimization.(41).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|WeightOptimization.(42).cnf
-db|WeightOptimization.(42).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
 N
 5
 PARAMETER_SIGNED_DEC
 USR
 }
 # hierarchies {
-WeightRAM:getWeight0_0|clk_div:clk1
+WeightRAM:getWeight1_0
+WeightRAM:getWeight1_1
+WeightRAM:getWeight1_2
 }
 # macro_sequence
 
 # end
 # entity
-clk_div
+LFSR
 # storage
-db|WeightOptimization.(43).cnf
-db|WeightOptimization.(43).cnf
+db|WeightOptimization.(5).cnf
+db|WeightOptimization.(5).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
+|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
+a7f685c6e25118781c2119c701b3d43
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+WeightRAM:getWeight1_0|LFSR:rndnm
+WeightRAM:getWeight1_1|LFSR:rndnm
+WeightRAM:getWeight1_2|LFSR:rndnm
+WeightRAM:getWeight0_0|LFSR:rndnm
+WeightRAM:getWeight0_1|LFSR:rndnm
+WeightRAM:getWeight0_2|LFSR:rndnm
+WeightRAM:getWeight0_3|LFSR:rndnm
+WeightRAM:getWeight0_4|LFSR:rndnm
+}
+# macro_sequence
+
+# end
+# entity
+WeightRAM
+# storage
+db|WeightOptimization.(6).cnf
+db|WeightOptimization.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+515d329b3b3123a4a3c7e8f82095c84c
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -3973,34 +3062,34 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
 N
-5
+10
 PARAMETER_SIGNED_DEC
 USR
 }
 # hierarchies {
-WeightRAM:getWeight0_1|clk_div:clk1
+WeightRAM:getWeight0_0
+WeightRAM:getWeight0_1
+WeightRAM:getWeight0_2
+WeightRAM:getWeight0_3
+WeightRAM:getWeight0_4
 }
 # macro_sequence
 
 # end
 # entity
-clk_div
+HiddenNeuronWeightOptimization
 # storage
-db|WeightOptimization.(44).cnf
-db|WeightOptimization.(44).cnf
+db|WeightOptimization.(8).cnf
+db|WeightOptimization.(8).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
+hiddenneuronweightoptimization.sv
+7ecf739f3d9e57c890b7bd62ea59b
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -4018,35 +3107,29 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
+# include_file {
+multiplydelta0.sv
+9ea635673b3ffff850d5b87fcdbb60
 }
 # hierarchies {
-WeightRAM:getWeight0_2|clk_div:clk1
+HiddenNeuronWeightOptimization:getErr0_0
 }
 # macro_sequence
 
 # end
 # entity
-clk_div
+multiply
 # storage
-db|WeightOptimization.(45).cnf
-db|WeightOptimization.(45).cnf
+db|WeightOptimization.(9).cnf
+db|WeightOptimization.(9).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
+|users|user3|desktop|fyp_drowsinessdetector|hiddenlayer|multiply.sv
+7e92588616d0f9598d759ca7d5dc461
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -4064,35 +3147,39 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
 # hierarchies {
-WeightRAM:getWeight0_3|clk_div:clk1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_2
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_2
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_2
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_2
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_0
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_1
+HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_2
 }
 # macro_sequence
 
 # end
 # entity
-clk_div
+multiplyDelta0
 # storage
-db|WeightOptimization.(46).cnf
-db|WeightOptimization.(46).cnf
+db|WeightOptimization.(10).cnf
+db|WeightOptimization.(10).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-ec78cfc77eaca28b51b811eeb38171
+multiplydelta0.sv
+9ea635673b3ffff850d5b87fcdbb60
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -4110,18 +3197,8 @@ VERILOG_CONSTANT_LOOP_LIMIT
 VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
 # hierarchies {
-WeightRAM:getWeight0_4|clk_div:clk1
+HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0
 }
 # macro_sequence
 

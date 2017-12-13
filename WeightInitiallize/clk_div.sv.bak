@@ -22,7 +22,7 @@ always @(posedge clk or negedge rst)begin
 		r_reg <= r_nxt;
 end
  
-assign r_nxt = r_reg+1;   	      
+assign r_nxt = r_reg+1;
 assign clk_out = clk_track;
 endmodule
  

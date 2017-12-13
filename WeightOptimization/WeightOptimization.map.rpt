@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WeightOptimization
-Wed Dec 06 13:05:48 2017
+Wed Dec 13 10:05:28 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -19,112 +19,102 @@ Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
  11. Inverted Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: WeightRAM:getWeight1_0
- 14. Parameter Settings for User Entity Instance: WeightRAM:getWeight1_0|clk_div:clk1
- 15. Parameter Settings for User Entity Instance: WeightRAM:getWeight1_1
- 16. Parameter Settings for User Entity Instance: WeightRAM:getWeight1_1|clk_div:clk1
- 17. Parameter Settings for User Entity Instance: WeightRAM:getWeight1_2
- 18. Parameter Settings for User Entity Instance: WeightRAM:getWeight1_2|clk_div:clk1
- 19. Parameter Settings for User Entity Instance: WeightUpdate:updateWeight1_0
- 20. Parameter Settings for User Entity Instance: WeightUpdate:updateWeight1_1
- 21. Parameter Settings for User Entity Instance: WeightUpdate:updateWeight1_2
- 22. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_0
- 23. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_0|clk_div:clk1
- 24. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_1
- 25. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_1|clk_div:clk1
- 26. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_2
- 27. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_2|clk_div:clk1
- 28. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_3
- 29. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_3|clk_div:clk1
- 30. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_4
- 31. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_4|clk_div:clk1
- 32. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_2|lpm_divide:Div0
- 33. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_2|lpm_divide:Div1
- 34. Parameter Settings for Inferred Entity Instance: Delta:delta1_2|lpm_mult:Mult0
- 35. Parameter Settings for Inferred Entity Instance: Delta:delta1_2|lpm_divide:Div0
- 36. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_1|lpm_divide:Div0
- 37. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_1|lpm_divide:Div1
- 38. Parameter Settings for Inferred Entity Instance: Delta:delta1_1|lpm_mult:Mult0
- 39. Parameter Settings for Inferred Entity Instance: Delta:delta1_1|lpm_divide:Div0
- 40. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_0|lpm_divide:Div0
- 41. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_0|lpm_divide:Div1
- 42. Parameter Settings for Inferred Entity Instance: Delta:delta1_0|lpm_mult:Mult0
- 43. Parameter Settings for Inferred Entity Instance: Delta:delta1_0|lpm_divide:Div0
- 44. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp4|lpm_divide:Div0
- 45. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp4|lpm_divide:Div1
- 46. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_0|lpm_mult:Mult0
- 47. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_0|lpm_divide:Div0
- 48. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_0|lpm_add_sub:Add0
- 49. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_2|lpm_mult:Mult0
- 50. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_2|lpm_divide:Div0
- 51. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_2|lpm_add_sub:Add0
- 52. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult4
- 53. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div4
- 54. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp3|lpm_divide:Div0
- 55. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp3|lpm_divide:Div1
- 56. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_0|lpm_mult:Mult0
- 57. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_0|lpm_divide:Div0
- 58. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_0|lpm_add_sub:Add0
- 59. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_2|lpm_mult:Mult0
- 60. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_2|lpm_divide:Div0
- 61. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_2|lpm_add_sub:Add0
- 62. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult3
- 63. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div3
- 64. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp2|lpm_divide:Div0
- 65. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp2|lpm_divide:Div1
- 66. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_0|lpm_mult:Mult0
- 67. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_0|lpm_divide:Div0
- 68. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_0|lpm_add_sub:Add0
- 69. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_2|lpm_mult:Mult0
- 70. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_2|lpm_divide:Div0
- 71. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_2|lpm_add_sub:Add0
- 72. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult2
- 73. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div2
- 74. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp1|lpm_divide:Div0
- 75. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp1|lpm_divide:Div1
- 76. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_0|lpm_mult:Mult0
- 77. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_0|lpm_divide:Div0
- 78. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_0|lpm_add_sub:Add0
- 79. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_2|lpm_mult:Mult0
- 80. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_2|lpm_divide:Div0
- 81. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_2|lpm_add_sub:Add0
- 82. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult1
- 83. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div1
- 84. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0|lpm_divide:Div0
- 85. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0|lpm_divide:Div1
- 86. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0|lpm_mult:Mult0
- 87. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0|lpm_divide:Div0
- 88. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0|lpm_add_sub:Add0
- 89. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_2|lpm_mult:Mult0
- 90. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_2|lpm_divide:Div0
- 91. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_2|lpm_add_sub:Add0
- 92. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult0
- 93. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div0
- 94. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_1|lpm_mult:Mult0
- 95. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_1|lpm_divide:Div0
- 96. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_1|lpm_mult:Mult0
- 97. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_1|lpm_divide:Div0
- 98. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_1|lpm_mult:Mult0
- 99. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_1|lpm_divide:Div0
-100. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_1|lpm_mult:Mult0
-101. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_1|lpm_divide:Div0
-102. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_1|lpm_mult:Mult0
-103. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_1|lpm_divide:Div0
-104. lpm_mult Parameter Settings by Entity Instance
-105. Port Connectivity Checks: "HiddenNeuronWeightOptimization:getErr0_0"
-106. Port Connectivity Checks: "WeightRAM:getWeight0_4"
-107. Port Connectivity Checks: "WeightRAM:getWeight0_3"
-108. Port Connectivity Checks: "WeightRAM:getWeight0_2"
-109. Port Connectivity Checks: "WeightRAM:getWeight0_1"
-110. Port Connectivity Checks: "WeightRAM:getWeight0_0|clk_div:clk1"
-111. Port Connectivity Checks: "WeightRAM:getWeight0_0"
-112. Port Connectivity Checks: "WeightRAM:getWeight1_2"
-113. Port Connectivity Checks: "WeightRAM:getWeight1_1"
-114. Port Connectivity Checks: "WeightRAM:getWeight1_0|clk_div:clk1"
-115. Port Connectivity Checks: "WeightRAM:getWeight1_0"
-116. Port Connectivity Checks: "Subtraction:sub1_2"
-117. Port Connectivity Checks: "Subtraction:sub1_1"
-118. Analysis & Synthesis Messages
-119. Analysis & Synthesis Suppressed Messages
+ 14. Parameter Settings for User Entity Instance: WeightRAM:getWeight1_1
+ 15. Parameter Settings for User Entity Instance: WeightRAM:getWeight1_2
+ 16. Parameter Settings for User Entity Instance: WeightUpdate:updateWeight1_0
+ 17. Parameter Settings for User Entity Instance: WeightUpdate:updateWeight1_1
+ 18. Parameter Settings for User Entity Instance: WeightUpdate:updateWeight1_2
+ 19. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_0
+ 20. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_1
+ 21. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_2
+ 22. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_3
+ 23. Parameter Settings for User Entity Instance: WeightRAM:getWeight0_4
+ 24. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_2|lpm_divide:Div0
+ 25. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_2|lpm_divide:Div1
+ 26. Parameter Settings for Inferred Entity Instance: Delta:delta1_2|lpm_mult:Mult0
+ 27. Parameter Settings for Inferred Entity Instance: Delta:delta1_2|lpm_divide:Div0
+ 28. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_1|lpm_divide:Div0
+ 29. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_1|lpm_divide:Div1
+ 30. Parameter Settings for Inferred Entity Instance: Delta:delta1_1|lpm_mult:Mult0
+ 31. Parameter Settings for Inferred Entity Instance: Delta:delta1_1|lpm_divide:Div0
+ 32. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_0|lpm_divide:Div0
+ 33. Parameter Settings for Inferred Entity Instance: SigmoidPrime:sig1_0|lpm_divide:Div1
+ 34. Parameter Settings for Inferred Entity Instance: Delta:delta1_0|lpm_mult:Mult0
+ 35. Parameter Settings for Inferred Entity Instance: Delta:delta1_0|lpm_divide:Div0
+ 36. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp4|lpm_divide:Div0
+ 37. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp4|lpm_divide:Div1
+ 38. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_0|lpm_mult:Mult0
+ 39. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_0|lpm_divide:Div0
+ 40. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_0|lpm_add_sub:Add0
+ 41. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_2|lpm_mult:Mult0
+ 42. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_2|lpm_divide:Div0
+ 43. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_2|lpm_add_sub:Add0
+ 44. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult4
+ 45. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div4
+ 46. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp3|lpm_divide:Div0
+ 47. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp3|lpm_divide:Div1
+ 48. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_0|lpm_mult:Mult0
+ 49. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_0|lpm_divide:Div0
+ 50. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_0|lpm_add_sub:Add0
+ 51. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_2|lpm_mult:Mult0
+ 52. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_2|lpm_divide:Div0
+ 53. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_2|lpm_add_sub:Add0
+ 54. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult3
+ 55. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div3
+ 56. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp2|lpm_divide:Div0
+ 57. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp2|lpm_divide:Div1
+ 58. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_0|lpm_mult:Mult0
+ 59. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_0|lpm_divide:Div0
+ 60. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_0|lpm_add_sub:Add0
+ 61. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_2|lpm_mult:Mult0
+ 62. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_2|lpm_divide:Div0
+ 63. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_2|lpm_add_sub:Add0
+ 64. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult2
+ 65. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div2
+ 66. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp1|lpm_divide:Div0
+ 67. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp1|lpm_divide:Div1
+ 68. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_0|lpm_mult:Mult0
+ 69. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_0|lpm_divide:Div0
+ 70. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_0|lpm_add_sub:Add0
+ 71. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_2|lpm_mult:Mult0
+ 72. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_2|lpm_divide:Div0
+ 73. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_2|lpm_add_sub:Add0
+ 74. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult1
+ 75. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div1
+ 76. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0|lpm_divide:Div0
+ 77. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0|lpm_divide:Div1
+ 78. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0|lpm_mult:Mult0
+ 79. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0|lpm_divide:Div0
+ 80. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0|lpm_add_sub:Add0
+ 81. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_2|lpm_mult:Mult0
+ 82. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_2|lpm_divide:Div0
+ 83. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_2|lpm_add_sub:Add0
+ 84. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_mult:Mult0
+ 85. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiplyDelta0:getDelta0|lpm_divide:Div0
+ 86. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_1|lpm_mult:Mult0
+ 87. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr4_1|lpm_divide:Div0
+ 88. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_1|lpm_mult:Mult0
+ 89. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr3_1|lpm_divide:Div0
+ 90. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_1|lpm_mult:Mult0
+ 91. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr2_1|lpm_divide:Div0
+ 92. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_1|lpm_mult:Mult0
+ 93. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr1_1|lpm_divide:Div0
+ 94. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_1|lpm_mult:Mult0
+ 95. Parameter Settings for Inferred Entity Instance: HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_1|lpm_divide:Div0
+ 96. lpm_mult Parameter Settings by Entity Instance
+ 97. Port Connectivity Checks: "HiddenNeuronWeightOptimization:getErr0_0"
+ 98. Port Connectivity Checks: "WeightRAM:getWeight0_4"
+ 99. Port Connectivity Checks: "WeightRAM:getWeight0_3"
+100. Port Connectivity Checks: "WeightRAM:getWeight0_2"
+101. Port Connectivity Checks: "WeightRAM:getWeight0_1"
+102. Port Connectivity Checks: "WeightRAM:getWeight0_0"
+103. Port Connectivity Checks: "WeightRAM:getWeight1_2"
+104. Port Connectivity Checks: "WeightRAM:getWeight1_1"
+105. Port Connectivity Checks: "WeightRAM:getWeight1_0"
+106. Port Connectivity Checks: "Subtraction:sub1_2"
+107. Port Connectivity Checks: "Subtraction:sub1_1"
+108. Analysis & Synthesis Messages
+109. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -150,13 +140,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 06 13:05:47 2017    ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 13 10:05:28 2017    ;
 ; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
 ; Revision Name                      ; WeightOptimization                       ;
 ; Top-level Entity Name              ; WeightOptimization                       ;
 ; Family                             ; Cyclone IV E                             ;
-; Total logic elements               ; 17,701                                   ;
-;     Total combinational functions  ; 17,543                                   ;
+; Total logic elements               ; 17,726                                   ;
+;     Total combinational functions  ; 17,568                                   ;
 ;     Dedicated logic registers      ; 342                                      ;
 ; Total registers                    ; 342                                      ;
 ; Total pins                         ; 194                                      ;
@@ -261,36 +251,35 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+-----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path  ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                         ;
-+-----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+
-; multiplyDelta0.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/multiplyDelta0.sv                 ;
-; HiddenNeuronWeightOptimization.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/HiddenNeuronWeightOptimization.sv ;
-; ../HiddenLayer/multiply.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv                              ;
-; ../WeightInitiallize/clk_div.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv                         ;
-; ../WeightInitiallize/LFSR.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv                            ;
-; ../WeightInitiallize/WeightRAM.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv                       ;
-; WeightOptimization.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.sv             ;
-; Substraction.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/Substraction.sv                   ;
-; SigmoidPrime.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime.sv                   ;
-; Delta.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta.sv                          ;
-; WeightUpdate.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightUpdate.sv                   ;
-; lpm_divide.tdf                    ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_divide.tdf                                        ;
-; db/lpm_divide_kkm.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/lpm_divide_kkm.tdf             ;
-; db/sign_div_unsign_cnh.tdf        ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/sign_div_unsign_cnh.tdf        ;
-; db/alt_u_div_q5f.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/alt_u_div_q5f.tdf              ;
-; db/add_sub_lkc.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/add_sub_lkc.tdf                ;
-; db/add_sub_mkc.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/add_sub_mkc.tdf                ;
-; lpm_mult.tdf                      ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_mult.tdf                                          ;
-; db/mult_oct.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/mult_oct.tdf                   ;
-; db/lpm_divide_akm.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/lpm_divide_akm.tdf             ;
-; db/sign_div_unsign_2nh.tdf        ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/sign_div_unsign_2nh.tdf        ;
-; db/alt_u_div_65f.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/alt_u_div_65f.tdf              ;
-; lpm_add_sub.tdf                   ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_add_sub.tdf                                       ;
-; db/add_sub_lvi.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/add_sub_lvi.tdf                ;
-+-----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++-----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path  ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                       ;
++-----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+
+; multiplyDelta0.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/multiplyDelta0.sv                 ;
+; HiddenNeuronWeightOptimization.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/HiddenNeuronWeightOptimization.sv ;
+; ../HiddenLayer/multiply.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv                              ;
+; ../WeightInitiallize/LFSR.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv                            ;
+; ../WeightInitiallize/WeightRAM.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv                       ;
+; WeightOptimization.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.sv             ;
+; Substraction.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Substraction.sv                   ;
+; SigmoidPrime.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime.sv                   ;
+; Delta.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/Delta.sv                          ;
+; WeightUpdate.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightUpdate.sv                   ;
+; lpm_divide.tdf                    ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_divide.tdf                                      ;
+; db/lpm_divide_kkm.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/lpm_divide_kkm.tdf             ;
+; db/sign_div_unsign_cnh.tdf        ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/sign_div_unsign_cnh.tdf        ;
+; db/alt_u_div_q5f.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/alt_u_div_q5f.tdf              ;
+; db/add_sub_lkc.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/add_sub_lkc.tdf                ;
+; db/add_sub_mkc.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/add_sub_mkc.tdf                ;
+; lpm_mult.tdf                      ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_mult.tdf                                        ;
+; db/mult_oct.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/mult_oct.tdf                   ;
+; db/lpm_divide_akm.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/lpm_divide_akm.tdf             ;
+; db/sign_div_unsign_2nh.tdf        ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/sign_div_unsign_2nh.tdf        ;
+; db/alt_u_div_65f.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/alt_u_div_65f.tdf              ;
+; lpm_add_sub.tdf                   ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_add_sub.tdf                                     ;
+; db/add_sub_lvi.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/db/add_sub_lvi.tdf                ;
++-----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------+
@@ -298,16 +287,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 17,701      ;
+; Estimated Total logic elements              ; 17,726      ;
 ;                                             ;             ;
-; Total combinational functions               ; 17543       ;
+; Total combinational functions               ; 17568       ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 2900        ;
+;     -- 4 input functions                    ; 2898        ;
 ;     -- 3 input functions                    ; 9286        ;
-;     -- <=2 input functions                  ; 5357        ;
+;     -- <=2 input functions                  ; 5384        ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 10550       ;
+;     -- normal mode                          ; 10575       ;
 ;     -- arithmetic mode                      ; 6993        ;
 ;                                             ;             ;
 ; Total registers                             ; 342         ;
@@ -318,7 +307,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 46          ;
 ; Maximum fan-out node                        ; Clock~input ;
 ; Maximum fan-out                             ; 342         ;
-; Total fan-out                               ; 50937       ;
+; Total fan-out                               ; 50983       ;
 ; Average fan-out                             ; 2.78        ;
 +---------------------------------------------+-------------+
 
@@ -328,7 +317,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                    ; Library Name ;
 +-----------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |WeightOptimization                           ; 17543 (0)         ; 342 (0)      ; 0           ; 0          ; 46           ; 0       ; 23        ; 194  ; 0            ; |WeightOptimization                                                                                                                                                                    ;              ;
+; |WeightOptimization                           ; 17568 (0)         ; 342 (0)      ; 0           ; 0          ; 46           ; 0       ; 23        ; 194  ; 0            ; |WeightOptimization                                                                                                                                                                    ;              ;
 ;    |Delta:delta1_0|                           ; 309 (0)           ; 0 (0)        ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; |WeightOptimization|Delta:delta1_0                                                                                                                                                     ;              ;
 ;       |lpm_divide:Div0|                       ; 309 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|Delta:delta1_0|lpm_divide:Div0                                                                                                                                     ;              ;
 ;          |lpm_divide_akm:auto_generated|      ; 309 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|Delta:delta1_0|lpm_divide:Div0|lpm_divide_akm:auto_generated                                                                                                       ;              ;
@@ -582,10 +571,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |Subtraction:sub1_0|                       ; 40 (40)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|Subtraction:sub1_0                                                                                                                                                 ;              ;
 ;    |Subtraction:sub1_1|                       ; 40 (40)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|Subtraction:sub1_1                                                                                                                                                 ;              ;
 ;    |Subtraction:sub1_2|                       ; 40 (40)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|Subtraction:sub1_2                                                                                                                                                 ;              ;
-;    |WeightRAM:getWeight1_0|                   ; 70 (69)           ; 100 (100)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|WeightRAM:getWeight1_0                                                                                                                                             ;              ;
+;    |WeightRAM:getWeight1_0|                   ; 130 (129)         ; 100 (100)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|WeightRAM:getWeight1_0                                                                                                                                             ;              ;
 ;       |LFSR:rndnm|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|WeightRAM:getWeight1_0|LFSR:rndnm                                                                                                                                  ;              ;
-;    |WeightRAM:getWeight1_1|                   ; 66 (66)           ; 100 (100)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|WeightRAM:getWeight1_1                                                                                                                                             ;              ;
-;    |WeightRAM:getWeight1_2|                   ; 116 (111)         ; 142 (132)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|WeightRAM:getWeight1_2                                                                                                                                             ;              ;
+;    |WeightRAM:getWeight1_1|                   ; 67 (67)           ; 100 (100)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|WeightRAM:getWeight1_1                                                                                                                                             ;              ;
+;    |WeightRAM:getWeight1_2|                   ; 80 (75)           ; 142 (132)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|WeightRAM:getWeight1_2                                                                                                                                             ;              ;
 ;       |LFSR:rndnm|                            ; 5 (5)             ; 10 (10)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|WeightRAM:getWeight1_2|LFSR:rndnm                                                                                                                                  ;              ;
 ;    |WeightUpdate:updateWeight1_2|             ; 10 (10)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |WeightOptimization|WeightUpdate:updateWeight1_2                                                                                                                                       ;              ;
 +-----------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
@@ -615,7 +604,6 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +-------------------------------------------+-------------------------------------------------------+
 ; Register name                             ; Reason for Removal                                    ;
 +-------------------------------------------+-------------------------------------------------------+
-; WeightRAM:getWeight1_2|REGISTER[0][0]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_2|REGISTER[59][9]    ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_2|REGISTER[59][8]    ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_2|REGISTER[59][7]    ; Lost fanout                                           ;
@@ -1215,7 +1203,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; WeightRAM:getWeight1_2|REGISTER[0][3]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_2|REGISTER[0][2]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_2|REGISTER[0][1]     ; Lost fanout                                           ;
-; WeightRAM:getWeight1_1|REGISTER[0][0]     ; Lost fanout                                           ;
+; WeightRAM:getWeight1_2|REGISTER[0][0]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_1|REGISTER[64][9]    ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_1|REGISTER[64][8]    ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_1|REGISTER[64][7]    ; Lost fanout                                           ;
@@ -1815,7 +1803,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; WeightRAM:getWeight1_1|REGISTER[0][3]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_1|REGISTER[0][2]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_1|REGISTER[0][1]     ; Lost fanout                                           ;
-; WeightRAM:getWeight1_0|REGISTER[0][0]     ; Lost fanout                                           ;
+; WeightRAM:getWeight1_1|REGISTER[0][0]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_0|REGISTER[64][9]    ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_0|REGISTER[64][8]    ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_0|REGISTER[64][7]    ; Lost fanout                                           ;
@@ -2415,6 +2403,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; WeightRAM:getWeight1_0|REGISTER[0][3]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_0|REGISTER[0][2]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_0|REGISTER[0][1]     ; Lost fanout                                           ;
+; WeightRAM:getWeight1_0|REGISTER[0][0]     ; Lost fanout                                           ;
 ; WeightRAM:getWeight1_0|count[31]          ; Merged with WeightRAM:getWeight1_2|count[31]          ;
 ; WeightRAM:getWeight1_1|count[31]          ; Merged with WeightRAM:getWeight1_2|count[31]          ;
 ; WeightRAM:getWeight1_0|count[30]          ; Merged with WeightRAM:getWeight1_2|count[30]          ;
@@ -2509,9 +2498,9 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 342   ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 150   ;
-; Number of registers using Asynchronous Clear ; 160   ;
+; Number of registers using Asynchronous Clear ; 192   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 332   ;
 ; Number of registers using Preset             ; 0     ;
@@ -2523,11 +2512,13 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +-------------------------------------------+---------+
 ; Inverted Register                         ; Fan out ;
 +-------------------------------------------+---------+
+; WeightRAM:getWeight1_2|count[6]           ; 7       ;
+; WeightRAM:getWeight1_2|count[0]           ; 9       ;
 ; WeightRAM:getWeight1_2|LFSR:rndnm|data[3] ; 2       ;
 ; WeightRAM:getWeight1_2|LFSR:rndnm|data[2] ; 2       ;
 ; WeightRAM:getWeight1_2|LFSR:rndnm|data[1] ; 2       ;
 ; WeightRAM:getWeight1_2|LFSR:rndnm|data[0] ; 2       ;
-; Total number of inverted registers = 4    ;         ;
+; Total number of inverted registers = 6    ;         ;
 +-------------------------------------------+---------+
 
 
@@ -2536,21 +2527,21 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[64][7] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[59][3] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_0|REGISTER[54][6] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[63][9] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[58][0] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_0|REGISTER[53][9] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[62][3] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[57][8] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[64][9] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[59][6] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_0|REGISTER[54][5] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[63][7] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[58][5] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_0|REGISTER[53][0] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[62][5] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[57][6] ;
 ; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_0|REGISTER[52][0] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[61][0] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[56][0] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_0|REGISTER[51][9] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[60][9] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[55][6] ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_0|REGISTER[50][0] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[61][4] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[56][7] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_0|REGISTER[51][1] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_2|REGISTER[60][0] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_1|REGISTER[55][9] ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; Yes        ; |WeightOptimization|WeightRAM:getWeight1_0|REGISTER[50][9] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 
 
@@ -2564,17 +2555,6 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: WeightRAM:getWeight1_0|clk_div:clk1 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                          ;
-; N              ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: WeightRAM:getWeight1_1 ;
 +----------------+-------+--------------------------------------------+
@@ -2585,17 +2565,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: WeightRAM:getWeight1_1|clk_div:clk1 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                          ;
-; N              ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: WeightRAM:getWeight1_2 ;
 +----------------+-------+--------------------------------------------+
@@ -2603,17 +2572,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------+
 ; N              ; 5     ; Signed Integer                             ;
 +----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: WeightRAM:getWeight1_2|clk_div:clk1 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                          ;
-; N              ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2657,17 +2615,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: WeightRAM:getWeight0_0|clk_div:clk1 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                          ;
-; N              ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: WeightRAM:getWeight0_1 ;
 +----------------+-------+--------------------------------------------+
@@ -2675,17 +2622,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------+
 ; N              ; 10    ; Signed Integer                             ;
 +----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: WeightRAM:getWeight0_1|clk_div:clk1 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                          ;
-; N              ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2699,17 +2635,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: WeightRAM:getWeight0_2|clk_div:clk1 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                          ;
-; N              ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: WeightRAM:getWeight0_3 ;
 +----------------+-------+--------------------------------------------+
@@ -2720,17 +2645,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: WeightRAM:getWeight0_3|clk_div:clk1 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                          ;
-; N              ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: WeightRAM:getWeight0_4 ;
 +----------------+-------+--------------------------------------------+
@@ -2738,17 +2652,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------+
 ; N              ; 10    ; Signed Integer                             ;
 +----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: WeightRAM:getWeight0_4|clk_div:clk1 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                          ;
-; N              ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -5064,15 +4967,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "WeightRAM:getWeight0_0|clk_div:clk1"                                                   ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "WeightRAM:getWeight0_0"                                                                ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                             ;
@@ -5104,15 +4998,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Address[6]    ; Input ; Info     ; Stuck at GND    ;
 ; Address[3]    ; Input ; Info     ; Stuck at GND    ;
 +---------------+-------+----------+-----------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "WeightRAM:getWeight1_0|clk_div:clk1"                                                   ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------+
@@ -5152,19 +5037,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Wed Dec 06 13:04:59 2017
+    Info: Processing started: Wed Dec 13 10:04:47 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WeightOptimization -c WeightOptimization
 Info: Found 1 design units, including 1 entities, in source file multiplydelta0.sv
     Info: Found entity 1: multiplyDelta0
 Info: Found 1 design units, including 1 entities, in source file hiddenneuronweightoptimization.sv
     Info: Found entity 1: HiddenNeuronWeightOptimization
-Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/hiddenlayer/multiply.sv
+Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/hiddenlayer/multiply.sv
     Info: Found entity 1: multiply
-Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/weightinitiallize/clk_div.sv
+Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/weightinitiallize/clk_div.sv
     Info: Found entity 1: clk_div
-Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/weightinitiallize/lfsr.sv
+Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/weightinitiallize/lfsr.sv
     Info: Found entity 1: LFSR
-Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/weightinitiallize/weightram.sv
+Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/weightinitiallize/weightram.sv
     Info: Found entity 1: WeightRAM
 Info: Found 1 design units, including 1 entities, in source file weightoptimization.sv
     Info: Found entity 1: WeightOptimization
@@ -5186,22 +5071,24 @@ Info: Found 1 design units, including 1 entities, in source file weightupdate_tb
     Info: Found entity 1: WeightUpdate_tb
 Info: Found 1 design units, including 1 entities, in source file counter.sv
     Info: Found entity 1: counter
+Info: Found 1 design units, including 1 entities, in source file counter_tb.sv
+    Info: Found entity 1: counter_tb
 Info: Elaborating entity "WeightOptimization" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(19): object "weight0_0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(20): object "weight0_1" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(21): object "weight0_2" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(22): object "weight0_3" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(23): object "weight0_4" assigned a value but never read
-Warning (10858): Verilog HDL warning at WeightOptimization.sv(25): object weight0_0_new used but never assigned
-Warning (10858): Verilog HDL warning at WeightOptimization.sv(26): object weight0_1_new used but never assigned
-Warning (10858): Verilog HDL warning at WeightOptimization.sv(27): object weight0_2_new used but never assigned
-Warning (10858): Verilog HDL warning at WeightOptimization.sv(28): object weight0_3_new used but never assigned
-Warning (10858): Verilog HDL warning at WeightOptimization.sv(29): object weight0_4_new used but never assigned
-Warning (10030): Net "weight0_0_new" at WeightOptimization.sv(25) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "weight0_1_new" at WeightOptimization.sv(26) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "weight0_2_new" at WeightOptimization.sv(27) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "weight0_3_new" at WeightOptimization.sv(28) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "weight0_4_new" at WeightOptimization.sv(29) has no driver or initial value, using a default initial value '0'
+Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(18): object "weight0_0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(19): object "weight0_1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(20): object "weight0_2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(21): object "weight0_3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at WeightOptimization.sv(22): object "weight0_4" assigned a value but never read
+Warning (10858): Verilog HDL warning at WeightOptimization.sv(24): object weight0_0_new used but never assigned
+Warning (10858): Verilog HDL warning at WeightOptimization.sv(25): object weight0_1_new used but never assigned
+Warning (10858): Verilog HDL warning at WeightOptimization.sv(26): object weight0_2_new used but never assigned
+Warning (10858): Verilog HDL warning at WeightOptimization.sv(27): object weight0_3_new used but never assigned
+Warning (10858): Verilog HDL warning at WeightOptimization.sv(28): object weight0_4_new used but never assigned
+Warning (10030): Net "weight0_0_new" at WeightOptimization.sv(24) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "weight0_1_new" at WeightOptimization.sv(25) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "weight0_2_new" at WeightOptimization.sv(26) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "weight0_3_new" at WeightOptimization.sv(27) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "weight0_4_new" at WeightOptimization.sv(28) has no driver or initial value, using a default initial value '0'
 Info: Elaborating entity "Subtraction" for hierarchy "Subtraction:sub1_0"
 Info: Elaborating entity "SigmoidPrime" for hierarchy "SigmoidPrime:sig1_0"
 Warning (10230): Verilog HDL assignment warning at SigmoidPrime.sv(7): truncated value with size 32 to match size of target (10)
@@ -5209,20 +5096,8 @@ Info: Elaborating entity "Delta" for hierarchy "Delta:delta1_0"
 Warning (10230): Verilog HDL assignment warning at Delta.sv(8): truncated value with size 32 to match size of target (10)
 Info: Elaborating entity "WeightRAM" for hierarchy "WeightRAM:getWeight1_0"
 Info: Elaborating entity "LFSR" for hierarchy "WeightRAM:getWeight1_0|LFSR:rndnm"
-Info: Elaborating entity "clk_div" for hierarchy "WeightRAM:getWeight1_0|clk_div:clk1"
-Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
 Info: Elaborating entity "WeightUpdate" for hierarchy "WeightUpdate:updateWeight1_0"
 Info: Elaborating entity "WeightRAM" for hierarchy "WeightRAM:getWeight0_0"
-Info: Elaborating entity "clk_div" for hierarchy "WeightRAM:getWeight0_0|clk_div:clk1"
-Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
-Info: Elaborating entity "clk_div" for hierarchy "WeightRAM:getWeight0_1|clk_div:clk1"
-Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
-Info: Elaborating entity "clk_div" for hierarchy "WeightRAM:getWeight0_2|clk_div:clk1"
-Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
-Info: Elaborating entity "clk_div" for hierarchy "WeightRAM:getWeight0_3|clk_div:clk1"
-Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
-Info: Elaborating entity "clk_div" for hierarchy "WeightRAM:getWeight0_4|clk_div:clk1"
-Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
 Info: Elaborating entity "HiddenNeuronWeightOptimization" for hierarchy "HiddenNeuronWeightOptimization:getErr0_0"
 Info: Elaborating entity "multiply" for hierarchy "HiddenNeuronWeightOptimization:getErr0_0|multiply:getErr0_0"
 Warning (10230): Verilog HDL assignment warning at multiply.sv(9): truncated value with size 32 to match size of target (10)
@@ -5358,9 +5233,11 @@ Info: Found 1 design units, including 1 entities, in source file db/add_sub_lvi.
     Info: Found entity 1: add_sub_lvi
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Critical Warning: Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register WeightRAM:getWeight1_2|count[6] will power up to High
+    Critical Warning (18010): Register WeightRAM:getWeight1_2|count[0] will power up to High
 Info: Timing-Driven Synthesis is running
 Info: 1800 registers lost all their fanouts during netlist optimizations. The first 1800 are displayed below.
-    Info: Register "WeightRAM:getWeight1_2|REGISTER[0][0]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_2|REGISTER[59][9]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_2|REGISTER[59][8]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_2|REGISTER[59][7]" lost all its fanouts during netlist optimizations.
@@ -5960,7 +5837,7 @@ Info: 1800 registers lost all their fanouts during netlist optimizations. The fi
     Info: Register "WeightRAM:getWeight1_2|REGISTER[0][3]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_2|REGISTER[0][2]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_2|REGISTER[0][1]" lost all its fanouts during netlist optimizations.
-    Info: Register "WeightRAM:getWeight1_1|REGISTER[0][0]" lost all its fanouts during netlist optimizations.
+    Info: Register "WeightRAM:getWeight1_2|REGISTER[0][0]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_1|REGISTER[64][9]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_1|REGISTER[64][8]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_1|REGISTER[64][7]" lost all its fanouts during netlist optimizations.
@@ -6560,7 +6437,7 @@ Info: 1800 registers lost all their fanouts during netlist optimizations. The fi
     Info: Register "WeightRAM:getWeight1_1|REGISTER[0][3]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_1|REGISTER[0][2]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_1|REGISTER[0][1]" lost all its fanouts during netlist optimizations.
-    Info: Register "WeightRAM:getWeight1_0|REGISTER[0][0]" lost all its fanouts during netlist optimizations.
+    Info: Register "WeightRAM:getWeight1_1|REGISTER[0][0]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_0|REGISTER[64][9]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_0|REGISTER[64][8]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_0|REGISTER[64][7]" lost all its fanouts during netlist optimizations.
@@ -7160,6 +7037,7 @@ Info: 1800 registers lost all their fanouts during netlist optimizations. The fi
     Info: Register "WeightRAM:getWeight1_0|REGISTER[0][3]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_0|REGISTER[0][2]" lost all its fanouts during netlist optimizations.
     Info: Register "WeightRAM:getWeight1_0|REGISTER[0][1]" lost all its fanouts during netlist optimizations.
+    Info: Register "WeightRAM:getWeight1_0|REGISTER[0][0]" lost all its fanouts during netlist optimizations.
 Info: Found the following redundant logic cells in design
     Info (17048): Logic cell "SigmoidPrime:sig1_2|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_q5f:divider|add_sub_2_result_int[0]~6"
     Info (17048): Logic cell "SigmoidPrime:sig1_2|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_q5f:divider|add_sub_4_result_int[0]~10"
@@ -7249,23 +7127,23 @@ Info: Found the following redundant logic cells in design
     Info (17048): Logic cell "HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_q5f:divider|add_sub_15_result_int[0]~24"
     Info (17048): Logic cell "HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_q5f:divider|add_sub_18_result_int[0]~24"
     Info (17048): Logic cell "HiddenNeuronWeightOptimization:getErr0_0|SigmoidPrime:getOut0_exp0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_q5f:divider|add_sub_20_result_int[0]~24"
-Info: Generated suppressed messages file C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.map.smsg
+Info: Generated suppressed messages file C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.map.smsg
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Info: Implemented 17941 device resources after synthesis - the final resource count might be different
+Info: Implemented 17966 device resources after synthesis - the final resource count might be different
     Info: Implemented 114 input pins
     Info: Implemented 80 output pins
-    Info: Implemented 17701 logic cells
+    Info: Implemented 17726 logic cells
     Info: Implemented 46 DSP elements
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 384 megabytes
-    Info: Processing ended: Wed Dec 06 13:05:48 2017
-    Info: Elapsed time: 00:00:49
-    Info: Total CPU time (on all processors): 00:00:42
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 354 megabytes
+    Info: Processing ended: Wed Dec 13 10:05:28 2017
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:00:39
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.map.smsg.
+The suppressed messages can be found in C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/WeightOptimization.map.smsg.
 
 

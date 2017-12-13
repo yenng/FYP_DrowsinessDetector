@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Dec 10 16:13:48 2017
+Analysis & Synthesis Status : Successful - Wed Dec 13 11:23:05 2017
 Quartus II Version : 10.0 Build 218 06/27/2010 SJ Web Edition
 Revision Name : WeighInitiallize
-Top-level Entity Name : WeightRAM_download
+Top-level Entity Name : WeighInitiallize
 Family : Cyclone IV E
-Total logic elements : 5,649
-    Total combinational functions : 5,519
-    Dedicated logic registers : 924
-Total registers : 924
-Total pins : 57
+Total logic elements : 1,188
+    Total combinational functions : 790
+    Dedicated logic registers : 680
+Total registers : 680
+Total pins : 14
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
