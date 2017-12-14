@@ -82,6 +82,13 @@ Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 Top level modules:
 	SigmoidPrime_tb
 
+} {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/DrowsinessDetector.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/DrowsinessDetector.sv
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module DrowsinessDetector
+
+Top level modules:
+	DrowsinessDetector
+
 } {} {}} C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv {1 {vlog -work work -sv -nocovercells C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv
 Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
 -- Compiling module WeightRAM

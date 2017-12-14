@@ -5,14 +5,8 @@ module WeighInitiallize(
 	output [9:0]count);
 	reg [6:0] Address;
 	wire clk_slow;
-	/*
-	always@(posedge Clock or negedge Rst)begin
-		if(In) begin
-			
-		end
-	end*/
+	
 	LFSR rndnm(Clock, Rst, data);
 	counter count65(Clock, Rst, 10'd65,count);
-	//clk_div t1(Clock, Rst, clk_slow);
 	WeightRAM ram(Clock, In, Rst, data,count, WE, dataRead);
 endmodule 

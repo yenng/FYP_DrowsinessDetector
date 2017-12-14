@@ -1,21 +1,23 @@
 module counter(
-	input clk,rst,
+	input clk,start,
 	input [9:0]max,
+	inout reg stop,
 	output reg[9:0]count
 );
 
 
 always@(posedge clk) begin
-	if(~rst) begin
-		count = 10'b0;
-	end
-	else begin
-		if(count > max-1)begin
-			count = 10'b0;
+	if (start) begin
+		if(count == max-1)begin
+			stop = 1;
 		end
 		else begin
 			count++;
 		end
+	end
+	else begin
+		count = 10'b0;
+		stop = 0;
 	end
 end
 

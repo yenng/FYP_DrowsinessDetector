@@ -1,5 +1,5 @@
 module	WeightRAM(
-	input		Clock,In, Rst, // In'1' randomize all weight.
+	input		Clock, Rst, // In'1' randomize all weight.
 	input 	signed[9:0] D,
 	input 	[6:0] Address,
 	input 	WE,//'1' write data, '0' read data
@@ -24,5 +24,4 @@ module	WeightRAM(
 				end
 			end
 	end
-	LFSR rndnm(Clock, Rst, data);
 endmodule

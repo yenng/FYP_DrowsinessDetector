@@ -3,7 +3,6 @@ use verilog.vl_types.all;
 entity WeightRAM is
     port(
         Clock           : in     vl_logic;
-        \In\            : in     vl_logic;
         Rst             : in     vl_logic;
         D               : in     vl_logic_vector(9 downto 0);
         Address         : in     vl_logic_vector(6 downto 0);

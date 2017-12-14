@@ -1,5 +1,5 @@
 module	WeightRAM(
-	input		Clock,In, Rst, // In'1' randomize all weight.
+	input		Clock, Rst, // In'1' randomize all weight.
 	input 	signed[9:0] D,
 	input 	[6:0] Address,
 	input 	WE,//'1' write data, '0' read data
@@ -16,7 +16,6 @@ module	WeightRAM(
 				REGISTER[count] <= 10'b0000000000;
 		end
 		else begin
-			if(~In)	begin
 				if(!WE)	begin
 					Q <= REGISTER[Address];
 				end
@@ -24,7 +23,6 @@ module	WeightRAM(
 					REGISTER[Address]<= D;
 				end
 			end
-		end
 	end
 	LFSR rndnm(Clock, Rst, data);
 endmodule
