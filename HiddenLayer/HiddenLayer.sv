@@ -86,8 +86,8 @@
 	OutputNeuron oNeuron0(outVal, weight1, out1);
 	
 	//call weight for hidden neuron
-	WeightRAM	#(10) getWeight0(Clock, In, Rst, weight0, address, WE, weight0);
+	//WeightRAM	#(10) getWeight0(Clock, In, Rst, weight0, address, WE, weight0);
 
 	//call weight for output neuron
-	WeightRAM	#(5) getWeight1(Clock, In, Rst, weight1, address1, WE, weight1);
+	//WeightRAM	#(5) getWeight1(Clock, In, Rst, weight1, address1, WE, weight1);
 endmodule 

@@ -1,12 +1,1 @@
 v1
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul6|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul7|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul4|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul5|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul8|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul9|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul3|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul0|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul1|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul2|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
-PORT_SWAPPING,PORT_SWAPPING_FINISHED,HiddenLayer:download|HiddenNeuron:hNeuron|multiply:mul6|lpm_mult:Mult0|mult_oct:auto_generated|mac_mult1,

@@ -2,148 +2,88 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'HiddenLayer:download|state[0]'
-Slack : -181.674
-TNS   : -9041.585
-
 Type  : Slow 1200mV 85C Model Setup 'HiddenLayer:download|state[1]'
-Slack : -181.183
-TNS   : -9014.281
+Slack : -1.787
+TNS   : -6.539
 
 Type  : Slow 1200mV 85C Model Setup 'KEY[3]'
-Slack : -9.021
-TNS   : -5593.888
-
-Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -4.291
-TNS   : -196.485
+Slack : -0.188
+TNS   : -0.188
 
 Type  : Slow 1200mV 85C Model Hold 'HiddenLayer:download|state[1]'
-Slack : -4.736
-TNS   : -18.367
-
-Type  : Slow 1200mV 85C Model Hold 'HiddenLayer:download|state[0]'
-Slack : -4.390
-TNS   : -11.337
+Slack : -0.868
+TNS   : -2.431
 
 Type  : Slow 1200mV 85C Model Hold 'KEY[3]'
-Slack : 0.440
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 1.407
-TNS   : 0.000
+Slack : -0.365
+TNS   : -1.091
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY[3]'
 Slack : -3.000
-TNS   : -1025.860
+TNS   : -8.140
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -336.770
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'HiddenLayer:download|state[0]'
-Slack : 0.332
-TNS   : 0.000
+TNS   : -4.285
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'HiddenLayer:download|state[1]'
-Slack : 0.380
+Slack : 0.377
 TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'HiddenLayer:download|state[0]'
-Slack : -164.059
-TNS   : -8164.250
 
 Type  : Slow 1200mV 0C Model Setup 'HiddenLayer:download|state[1]'
-Slack : -163.589
-TNS   : -8137.408
+Slack : -1.709
+TNS   : -6.342
 
 Type  : Slow 1200mV 0C Model Setup 'KEY[3]'
-Slack : -8.217
-TNS   : -5034.045
-
-Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -3.784
-TNS   : -170.950
+Slack : 0.078
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'HiddenLayer:download|state[1]'
-Slack : -4.308
-TNS   : -16.101
-
-Type  : Slow 1200mV 0C Model Hold 'HiddenLayer:download|state[0]'
-Slack : -3.979
-TNS   : -10.108
+Slack : -0.653
+TNS   : -1.784
 
 Type  : Slow 1200mV 0C Model Hold 'KEY[3]'
-Slack : 0.394
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 1.305
-TNS   : 0.000
+Slack : -0.525
+TNS   : -1.572
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY[3]'
 Slack : -3.000
-TNS   : -1025.860
+TNS   : -8.140
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -334.320
+TNS   : -4.285
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'HiddenLayer:download|state[1]'
-Slack : 0.338
+Slack : 0.311
 TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'HiddenLayer:download|state[0]'
-Slack : 0.388
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'HiddenLayer:download|state[0]'
-Slack : -89.315
-TNS   : -4444.214
 
 Type  : Fast 1200mV 0C Model Setup 'HiddenLayer:download|state[1]'
-Slack : -89.115
-TNS   : -4423.541
+Slack : -0.200
+TNS   : -0.496
 
 Type  : Fast 1200mV 0C Model Setup 'KEY[3]'
-Slack : -4.354
-TNS   : -2556.537
-
-Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -2.124
-TNS   : -54.876
+Slack : 0.235
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'HiddenLayer:download|state[1]'
-Slack : -2.433
-TNS   : -10.568
-
-Type  : Fast 1200mV 0C Model Hold 'HiddenLayer:download|state[0]'
-Slack : -2.284
-TNS   : -6.155
+Slack : -0.637
+TNS   : -1.841
 
 Type  : Fast 1200mV 0C Model Hold 'KEY[3]'
-Slack : 0.205
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.664
-TNS   : 0.000
+Slack : -0.022
+TNS   : -0.064
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY[3]'
 Slack : -3.000
-TNS   : -1687.273
+TNS   : -12.148
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -173.246
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'HiddenLayer:download|state[0]'
-Slack : 0.213
-TNS   : 0.000
+TNS   : -4.951
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'HiddenLayer:download|state[1]'
-Slack : 0.248
+Slack : 0.451
 TNS   : 0.000
 
 ------------------------------------------------------------

@@ -7975,79 +7975,6 @@ data0
 
 # end
 # entity
-ActivationFunc
-# storage
-db|HiddenLayer.(3).cnf
-db|HiddenLayer.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-activationfunc.sv
-aebae54ff5d079b1261f2bc9e162face
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenLayer:download|HiddenNeuron:hNeuron|ActivationFunc:callAF
-HiddenLayer:download|OutputNeuron:oNeuron0|ActivationFunc:callAF
-}
-# macro_sequence
-
-# end
-# entity
-OutputNeuron
-# storage
-db|HiddenLayer.(4).cnf
-db|HiddenLayer.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-outputneuron.sv
-ece37e50e8246ff5dce41296d8c2a4
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenLayer:download|OutputNeuron:oNeuron0
-}
-# macro_sequence
-
-# end
-# entity
 HiddenNeuron
 # storage
 db|HiddenLayer.(1).cnf
@@ -8084,7 +8011,51 @@ HiddenLayer:download|HiddenNeuron:hNeuron
 
 # end
 # entity
-multiply
+HiddenLayer_download
+# storage
+db|HiddenLayer.(0).cnf
+db|HiddenLayer.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hiddenlayer_download.sv
+aa39ca1267a4c5f13bd431a718f73dde
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# include_file {
+hiddenlayer.sv
+ba16868436f4ce6dfc61bd959cc4e51
+hiddenneuron.sv
+b39d2bb1747a80cb5e2bff8c22281df1
+outputneuron.sv
+5976b8f4a53bedf98bdf18ab49b44ca
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+_7SegmentDisplay
 # storage
 db|HiddenLayer.(2).cnf
 db|HiddenLayer.(2).cnf
@@ -8094,8 +8065,89 @@ ON
 }
 # case_sensitive
 # source_file
+|users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|_7segmentdisplay.sv
+fdd1957c656c7a19a281b5e799cd3dc
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+_7SegmentDisplay:out0
+_7SegmentDisplay:out1
+_7SegmentDisplay:out2
+_7SegmentDisplay:stateShow
+}
+# macro_sequence
+
+# end
+# entity
+HiddenLayer
+# storage
+db|HiddenLayer.(3).cnf
+db|HiddenLayer.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+hiddenlayer.sv
+ba16868436f4ce6dfc61bd959cc4e51
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# include_file {
+hiddenneuron.sv
+b39d2bb1747a80cb5e2bff8c22281df1
+outputneuron.sv
+5976b8f4a53bedf98bdf18ab49b44ca
+}
+# hierarchies {
+HiddenLayer:download
+}
+# macro_sequence
+
+# end
+# entity
+multiply
+# storage
+db|HiddenLayer.(4).cnf
+db|HiddenLayer.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
 multiply.sv
-8d73879bcaaf342696e29ed452106c
+7e92588616d0f9598d759ca7d5dc461
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8134,131 +8186,7 @@ HiddenLayer:download|OutputNeuron:oNeuron0|multiply:oMul4
 
 # end
 # entity
-LFSR
-# storage
-db|HiddenLayer.(6).cnf
-db|HiddenLayer.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
-a7f685c6e25118781c2119c701b3d43
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-HiddenLayer:download|WeightRAM:getWeight0|LFSR:rndnm
-HiddenLayer:download|WeightRAM:getWeight1|LFSR:rndnm
-}
-# macro_sequence
-
-# end
-# entity
-clk_div
-# storage
-db|HiddenLayer.(7).cnf
-db|HiddenLayer.(7).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-6850c262f74b836c52c9e37dc01fb720
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# macro_sequence
-
-# end
-# entity
-HiddenLayer
-# storage
-db|HiddenLayer.(0).cnf
-db|HiddenLayer.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-hiddenlayer.sv
-f245538d8b04c62b51a1c4bb8eab97b
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# include_file {
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-6c4dd3c4d849cb8165458fa07383fd9a
-hiddenneuron.sv
-b39d2bb1747a80cb5e2bff8c22281df1
-outputneuron.sv
-ece37e50e8246ff5dce41296d8c2a4
-}
-# hierarchies {
-HiddenLayer:download
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
+ActivationFunc
 # storage
 db|HiddenLayer.(5).cnf
 db|HiddenLayer.(5).cnf
@@ -8268,92 +8196,8 @@ ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-6c4dd3c4d849cb8165458fa07383fd9a
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-10
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-HiddenLayer:download|WeightRAM:getWeight0
-}
-# macro_sequence
-
-# end
-# entity
-WeightRAM
-# storage
-db|HiddenLayer.(8).cnf
-db|HiddenLayer.(8).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-6c4dd3c4d849cb8165458fa07383fd9a
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-N
-5
-PARAMETER_SIGNED_DEC
-USR
-}
-# hierarchies {
-HiddenLayer:download|WeightRAM:getWeight1
-}
-# macro_sequence
-
-# end
-# entity
-_7SegmentDisplay
-# storage
-db|HiddenLayer.(10).cnf
-db|HiddenLayer.(10).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|_7segmentdisplay.sv
-6f3c9b55f12cac4ec06591bf633d3cb7
+activationfunc.sv
+1b1394b213b8741f2822bb2c7b09f39
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8372,56 +8216,44 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-_7SegmentDisplay:out0
-_7SegmentDisplay:out1
-_7SegmentDisplay:out2
-_7SegmentDisplay:stateShow
+HiddenLayer:download|HiddenNeuron:hNeuron|ActivationFunc:callAF
+HiddenLayer:download|OutputNeuron:oNeuron0|ActivationFunc:callAF
 }
 # macro_sequence
 
 # end
 # entity
-HiddenLayer_download
+OutputNeuron
 # storage
-db|HiddenLayer.(9).cnf
-db|HiddenLayer.(9).cnf
+db|HiddenLayer.(6).cnf
+db|HiddenLayer.(6).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-hiddenlayer_download.sv
-3c381fd9187b8c812a3e7afad845968
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# include_file {
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-6c4dd3c4d849cb8165458fa07383fd9a
 outputneuron.sv
-ece37e50e8246ff5dce41296d8c2a4
-hiddenneuron.sv
-b39d2bb1747a80cb5e2bff8c22281df1
-hiddenlayer.sv
-f245538d8b04c62b51a1c4bb8eab97b
+5976b8f4a53bedf98bdf18ab49b44ca
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
 }
 # hierarchies {
-|
+HiddenLayer:download|OutputNeuron:oNeuron0
 }
 # macro_sequence
 

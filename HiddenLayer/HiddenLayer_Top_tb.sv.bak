@@ -1,0 +1,5 @@
+module HiddenLayer_top_tb();
+	reg Clock, Rst;
+	reg [9:0]weight,inVal;
+	wire [9:0] outVal;
+	
