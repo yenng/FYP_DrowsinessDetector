@@ -1,12 +1,14 @@
 module DrowsinessDetector(
 	input Clock,Rst,Start,
-	output signed[9:0] dataRead,
-	output reg signed[9:0] dataIn);
+	input [9:0]in[0:9],
+	output signed[9:0] dataRead,dataIn,
+	output reg [9:0] outVal);
 	
 	// For counter.
 	reg [9:0]count;		// The number that count in counter.
 	reg startCounter;		// To start the counter.
 	wire stopCounter;		// To stop the counter.
+	reg [9:0]mex;			// Max value for counter.
 	
 	// For RAM to write/read weight.
 	reg WE;
@@ -26,6 +28,10 @@ module DrowsinessDetector(
 	parameter 	halt = 0,weightInitiallize = 1, readWeight = 2, halt1 = 3,
 					hiddenLayer_top = 4;
 	
+	// The variable for hidden layer.
+	reg [9:0]weight;
+	reg [9:0]inVal;
+	
 	always@(posedge Clock, negedge Rst) begin
 		if(~Rst) begin
 			state <= halt;
@@ -39,10 +45,11 @@ module DrowsinessDetector(
 		case(state)
 		  // The following state is for weightInitiallize module.
 			halt: begin
-				startCounter = 0;	// Off counter
+				startCounter = 0;	// Off and clear counter
 				on = 0;				// Off LFSR
+				Clear = 0;
 				if(Start) 
-					nextState = hiddenLayer;
+					nextState = hiddenLayer_top;
 				else
 					nextState = weightInitiallize;
 			end
@@ -50,6 +57,7 @@ module DrowsinessDetector(
 				WE = 1;				// Start counter
 				on = 1;				// Start LFSR
 				dataIn = data;
+				max = 10'd65;
 				startCounter = 1;
 				if (stopCounter) begin
 					nextState = halt;
@@ -58,10 +66,11 @@ module DrowsinessDetector(
 			// For reading weight in test bench.
 			readWeight: begin
 				WE = 0;
-				startCounter = 1;
+				on = 1;
+				startCounter = 1;	// Start counter
 			end
 			halt1: begin
-				startCounter = 0;
+				startCounter = 0;	// Off and clear counter
 				on = 0;
 				nextState = readWeight;
 			end
@@ -69,14 +78,20 @@ module DrowsinessDetector(
 			// ****************************************************************//
 			// Hidden Layer
 			hiddenLayer_top: begin
-				
+				max = $size(in);
+				startCounter = 1;
+				WE = 0;
+				inVal = in[count];
+				if (stopCounter) begin
+					nextState = halt;
+				end
 			end
 		endcase
 	end
 	
 	HiddenLayer_top getMul(Clock,Clear,weight,inVal,outVal);
 	LFSR rndnm(Clock, Rst, on, data);
-	counter count65(Clock, startCounter, 10'd65,stopCounter,count);
+	counter count65(Clock, startCounter, max,stopCounter,count);
 	WeightRAM ram(Clock, Rst, dataIn,count, WE, dataRead);
 	
 	

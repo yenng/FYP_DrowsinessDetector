@@ -20,60 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-DrowsinessDetector
-# storage
-db|DrowsinessDetector.(0).cnf
-db|DrowsinessDetector.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-drowsinessdetector.sv
-e71fbd8f7ba0cff783d2fa72f518dbe
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-halt
-0
-PARAMETER_SIGNED_DEC
-DEF
-weightInitiallize
-1
-PARAMETER_SIGNED_DEC
-DEF
-readWeight
-2
-PARAMETER_SIGNED_DEC
-DEF
-halt1
-3
-PARAMETER_SIGNED_DEC
-DEF
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 LFSR
 # storage
 db|DrowsinessDetector.(1).cnf
@@ -146,6 +92,136 @@ counter:count65
 
 # end
 # entity
+HiddenLayer_top
+# storage
+db|DrowsinessDetector.(4).cnf
+db|DrowsinessDetector.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|fyp_drowsinessdetector|hiddenlayer|hiddenlayer_top.sv
+137f02aec6fc1c97afc3d45ae76870
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+HiddenLayer_top:getMul
+}
+# macro_sequence
+
+# end
+# entity
+multiply
+# storage
+db|DrowsinessDetector.(5).cnf
+db|DrowsinessDetector.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|fyp_drowsinessdetector|hiddenlayer|multiply.sv
+7e92588616d0f9598d759ca7d5dc461
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+HiddenLayer_top:getMul|multiply:mul
+}
+# macro_sequence
+
+# end
+# entity
+DrowsinessDetector
+# storage
+db|DrowsinessDetector.(0).cnf
+db|DrowsinessDetector.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+drowsinessdetector.sv
+87a45df55b4adba35c56be4fe5adadb
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+halt
+0
+PARAMETER_SIGNED_DEC
+DEF
+weightInitiallize
+1
+PARAMETER_SIGNED_DEC
+DEF
+readWeight
+2
+PARAMETER_SIGNED_DEC
+DEF
+halt1
+3
+PARAMETER_SIGNED_DEC
+DEF
+hiddenLayer_top
+4
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 WeightRAM
 # storage
 db|DrowsinessDetector.(3).cnf
@@ -157,7 +233,7 @@ ON
 # case_sensitive
 # source_file
 |users|med203-8|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-5279ca2bc595ec169411afd815e359
+beb8c1b085729ec0ace2ea7369a9c72
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

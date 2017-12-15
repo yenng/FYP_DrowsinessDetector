@@ -1,7 +1,8 @@
 
 State Machine - |DrowsinessDetector|state
-Name state.halt1 state.readWeight state.weightInitiallize state.halt 
-state.halt 0 0 0 0 
-state.weightInitiallize 0 0 1 1 
-state.readWeight 0 1 0 1 
-state.halt1 1 0 0 1 
+Name state.halt1 state.readWeight state.weightInitiallize state.halt state.hiddenLayer_top 
+state.halt 0 0 0 0 0 
+state.weightInitiallize 0 0 1 1 0 
+state.readWeight 0 1 0 1 0 
+state.halt1 1 0 0 1 0 
+state.hiddenLayer_top 0 0 0 1 1 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DrowsinessDetector
-Fri Dec 15 14:02:01 2017
+Fri Dec 15 16:09:02 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -22,7 +22,8 @@ Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
  14. Parameter Settings for User Entity Instance: Top-level Entity: |DrowsinessDetector
  15. Port Connectivity Checks: "WeightRAM:ram"
  16. Port Connectivity Checks: "counter:count65"
- 17. Analysis & Synthesis Messages
+ 17. Port Connectivity Checks: "HiddenLayer_top:getMul"
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -48,16 +49,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 15 14:02:01 2017    ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 15 16:09:02 2017    ;
 ; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
 ; Revision Name                      ; DrowsinessDetector                       ;
 ; Top-level Entity Name              ; DrowsinessDetector                       ;
 ; Family                             ; Cyclone IV E                             ;
-; Total logic elements               ; 1,209                                    ;
-;     Total combinational functions  ; 560                                      ;
-;     Dedicated logic registers      ; 685                                      ;
-; Total registers                    ; 685                                      ;
-; Total pins                         ; 23                                       ;
+; Total logic elements               ; 2,327                                    ;
+;     Total combinational functions  ; 1,049                                    ;
+;     Dedicated logic registers      ; 1,314                                    ;
+; Total registers                    ; 1314                                     ;
+; Total pins                         ; 133                                      ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                        ;
@@ -164,6 +165,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+
 ; File Name with User-Entered Path  ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                              ;
 +-----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+
+; ../HiddenLayer/multiply.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv                  ;
+; ../HiddenLayer/HiddenLayer_Top.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenLayer_Top.sv           ;
 ; ../WeightOptimization/counter.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightOptimization/counter.sv            ;
 ; ../WeightInitiallize/LFSR.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv                ;
 ; ../WeightInitiallize/WeightRAM.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/MED203-8/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv           ;
@@ -176,27 +179,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,209       ;
+; Estimated Total logic elements              ; 2,327       ;
 ;                                             ;             ;
-; Total combinational functions               ; 560         ;
+; Total combinational functions               ; 1049        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 509         ;
-;     -- 3 input functions                    ; 30          ;
-;     -- <=2 input functions                  ; 21          ;
+;     -- 4 input functions                    ; 908         ;
+;     -- 3 input functions                    ; 29          ;
+;     -- <=2 input functions                  ; 112         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 551         ;
+;     -- normal mode                          ; 1040        ;
 ;     -- arithmetic mode                      ; 9           ;
 ;                                             ;             ;
-; Total registers                             ; 685         ;
-;     -- Dedicated logic registers            ; 685         ;
+; Total registers                             ; 1314        ;
+;     -- Dedicated logic registers            ; 1314        ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 23          ;
+; I/O pins                                    ; 133         ;
 ; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 685         ;
-; Total fan-out                               ; 4922        ;
-; Average fan-out                             ; 3.81        ;
+; Maximum fan-out                             ; 1314        ;
+; Total fan-out                               ; 9325        ;
+; Average fan-out                             ; 3.55        ;
 +---------------------------------------------+-------------+
 
 
@@ -205,25 +208,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
-; |DrowsinessDetector        ; 560 (18)          ; 685 (4)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 23   ; 0            ; |DrowsinessDetector                 ;              ;
+; |DrowsinessDetector        ; 1049 (22)         ; 1314 (3)     ; 0           ; 0          ; 0            ; 0       ; 0         ; 133  ; 0            ; |DrowsinessDetector                 ;              ;
 ;    |LFSR:rndnm|            ; 2 (2)             ; 10 (10)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|LFSR:rndnm      ;              ;
-;    |WeightRAM:ram|         ; 525 (525)         ; 660 (660)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|WeightRAM:ram   ;              ;
+;    |WeightRAM:ram|         ; 1010 (1010)       ; 1290 (1290)  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|WeightRAM:ram   ;              ;
 ;    |counter:count65|       ; 15 (15)           ; 11 (11)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|counter:count65 ;              ;
 +----------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------------------------+
-; State Machine - |DrowsinessDetector|state                                                       ;
-+-------------------------+-------------+------------------+-------------------------+------------+
-; Name                    ; state.halt1 ; state.readWeight ; state.weightInitiallize ; state.halt ;
-+-------------------------+-------------+------------------+-------------------------+------------+
-; state.halt              ; 0           ; 0                ; 0                       ; 0          ;
-; state.weightInitiallize ; 0           ; 0                ; 1                       ; 1          ;
-; state.readWeight        ; 0           ; 1                ; 0                       ; 1          ;
-; state.halt1             ; 1           ; 0                ; 0                       ; 1          ;
-+-------------------------+-------------+------------------+-------------------------+------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |DrowsinessDetector|state                                                                               ;
++-------------------------+-------------+------------------+-------------------------+------------+-----------------------+
+; Name                    ; state.halt1 ; state.readWeight ; state.weightInitiallize ; state.halt ; state.hiddenLayer_top ;
++-------------------------+-------------+------------------+-------------------------+------------+-----------------------+
+; state.halt              ; 0           ; 0                ; 0                       ; 0          ; 0                     ;
+; state.weightInitiallize ; 0           ; 0                ; 1                       ; 1          ; 0                     ;
+; state.readWeight        ; 0           ; 1                ; 0                       ; 1          ; 0                     ;
+; state.halt1             ; 1           ; 0                ; 0                       ; 1          ; 0                     ;
+; state.hiddenLayer_top   ; 0           ; 0                ; 0                       ; 1          ; 1                     ;
++-------------------------+-------------+------------------+-------------------------+------------+-----------------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -241,27 +245,31 @@ Encoding Type:  One-Hot
 ; dataIn[7]$latch                                     ; state.weightInitiallize ; yes                    ;
 ; dataIn[8]$latch                                     ; state.weightInitiallize ; yes                    ;
 ; dataIn[9]$latch                                     ; state.weightInitiallize ; yes                    ;
-; WE                                                  ; startCounter            ; yes                    ;
-; on                                                  ; state.readWeight        ; yes                    ;
-; nextState.weightInitiallize_168                     ; Selector6               ; yes                    ;
-; nextState.halt1_148                                 ; Selector6               ; yes                    ;
-; nextState.readWeight_158                            ; Selector6               ; yes                    ;
-; Number of user-specified and inferred latches = 15  ;                         ;                        ;
+; WE                                                  ; state.halt              ; yes                    ;
+; max                                                 ; WideOr0                 ; yes                    ;
+; on                                                  ; state.hiddenLayer_top   ; yes                    ;
+; nextState.weightInitiallize_287                     ; Selector9               ; yes                    ;
+; nextState.halt_297                                  ; Selector10              ; yes                    ;
+; nextState.hiddenLayer_top_267                       ; Selector9               ; yes                    ;
+; Number of user-specified and inferred latches = 16  ;                         ;                        ;
 +-----------------------------------------------------+-------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; state~4                               ; Lost fanout        ;
-; state~5                               ; Lost fanout        ;
-; state~6                               ; Lost fanout        ;
-; state~7                               ; Lost fanout        ;
-; Total Number of Removed Registers = 4 ;                    ;
-+---------------------------------------+--------------------+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++----------------------------------------+----------------------------------------------+
+; Register name                          ; Reason for Removal                           ;
++----------------------------------------+----------------------------------------------+
+; HiddenLayer_top:getMul|outVal[1..9]    ; Merged with HiddenLayer_top:getMul|outVal[0] ;
+; HiddenLayer_top:getMul|outVal[0]       ; Stuck at GND due to stuck port data_in       ;
+; state.readWeight                       ; Lost fanout                                  ;
+; state.halt1                            ; Lost fanout                                  ;
+; state~4                                ; Lost fanout                                  ;
+; state~5                                ; Lost fanout                                  ;
+; state~7                                ; Lost fanout                                  ;
+; Total Number of Removed Registers = 15 ;                                              ;
++----------------------------------------+----------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -269,12 +277,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 685   ;
-; Number of registers using Synchronous Clear  ; 10    ;
+; Total registers                              ; 1314  ;
+; Number of registers using Synchronous Clear  ; 11    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 664   ;
+; Number of registers using Asynchronous Clear ; 1293  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 670   ;
+; Number of registers using Clock Enable       ; 1300  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -297,7 +305,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 128:1              ; 10 bits   ; 850 LEs       ; 440 LEs              ; 410 LEs                ; Yes        ; |DrowsinessDetector|WeightRAM:ram|Q[0] ;
+; 128:1              ; 10 bits   ; 850 LEs       ; 850 LEs              ; 0 LEs                  ; Yes        ; |DrowsinessDetector|WeightRAM:ram|Q[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
@@ -310,6 +318,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; weightInitiallize ; 1     ; Signed Integer                                         ;
 ; readWeight        ; 2     ; Signed Integer                                         ;
 ; halt1             ; 3     ; Signed Integer                                         ;
+; hiddenLayer_top   ; 4     ; Signed Integer                                         ;
 +-------------------+-------+--------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -323,17 +332,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "counter:count65"                                                                           ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; max[9..7]   ; Input  ; Info     ; Stuck at GND                                                                        ;
-; max[5..1]   ; Input  ; Info     ; Stuck at GND                                                                        ;
-; max[6]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; max[0]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; count[9..7] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "counter:count65"                                                                                                                                    ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                      ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; max         ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (10 bits) it drives.  Extra input bit(s) "max[9..1]" will be connected to GND. ;
+; count[9..7] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "HiddenLayer_top:getMul" ;
++-------+-------+----------+-------------------------+
+; Port  ; Type  ; Severity ; Details                 ;
++-------+-------+----------+-------------------------+
+; Clear ; Input ; Info     ; Stuck at GND            ;
++-------+-------+----------+-------------------------+
 
 
 +-------------------------------+
@@ -342,8 +357,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Fri Dec 15 14:01:58 2017
+    Info: Processing started: Fri Dec 15 16:08:54 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DrowsinessDetector -c DrowsinessDetector
+Info: Found 1 design units, including 1 entities, in source file /users/med203-8/desktop/fyp_drowsinessdetector/hiddenlayer/multiply.sv
+    Info: Found entity 1: multiply
+Info: Found 1 design units, including 1 entities, in source file /users/med203-8/desktop/fyp_drowsinessdetector/hiddenlayer/hiddenlayer_top.sv
+    Info: Found entity 1: HiddenLayer_top
 Info: Found 1 design units, including 1 entities, in source file /users/med203-8/desktop/fyp_drowsinessdetector/weightoptimization/counter.sv
     Info: Found entity 1: counter
 Info: Found 1 design units, including 1 entities, in source file /users/med203-8/desktop/fyp_drowsinessdetector/weightinitiallize/lfsr.sv
@@ -352,54 +371,194 @@ Info: Found 1 design units, including 1 entities, in source file /users/med203-8
     Info: Found entity 1: WeightRAM
 Info: Found 1 design units, including 1 entities, in source file drowsinessdetector.sv
     Info: Found entity 1: DrowsinessDetector
+Warning (10236): Verilog HDL Implicit Net warning at DrowsinessDetector.sv(92): created implicit net for "Clear"
+Warning (10236): Verilog HDL Implicit Net warning at DrowsinessDetector.sv(94): created implicit net for "max"
 Info: Elaborating entity "DrowsinessDetector" for the top level hierarchy
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(38): inferring latch(es) for variable "on", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(38): inferring latch(es) for variable "nextState", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(38): inferring latch(es) for variable "WE", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(38): inferring latch(es) for variable "dataIn", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "dataIn[0]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "dataIn[1]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "dataIn[2]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "dataIn[3]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "dataIn[4]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "dataIn[5]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "dataIn[6]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "dataIn[7]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "dataIn[8]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "dataIn[9]" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "WE" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "nextState.halt1" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "nextState.readWeight" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "nextState.weightInitiallize" at DrowsinessDetector.sv(38)
-Info (10041): Inferred latch for "on" at DrowsinessDetector.sv(38)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector.sv(60): truncated value with size 10 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector.sv(81): truncated value with size 32 to match size of target (1)
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(45): inferring latch(es) for variable "on", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(45): inferring latch(es) for variable "Clear", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(45): inferring latch(es) for variable "nextState", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(45): inferring latch(es) for variable "WE", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(45): inferring latch(es) for variable "dataIn", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(45): inferring latch(es) for variable "max", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(45): inferring latch(es) for variable "inVal", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "inVal[0]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "inVal[1]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "inVal[2]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "inVal[3]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "inVal[4]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "inVal[5]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "inVal[6]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "inVal[7]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "inVal[8]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "inVal[9]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "max" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[0]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[1]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[2]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[3]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[4]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[5]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[6]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[7]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[8]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "dataIn[9]" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "WE" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "nextState.hiddenLayer_top" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "nextState.readWeight" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "nextState.weightInitiallize" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "nextState.halt" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "Clear" at DrowsinessDetector.sv(45)
+Info (10041): Inferred latch for "on" at DrowsinessDetector.sv(45)
+Info: Elaborating entity "HiddenLayer_top" for hierarchy "HiddenLayer_top:getMul"
+Info: Elaborating entity "multiply" for hierarchy "HiddenLayer_top:getMul|multiply:mul"
+Warning (10230): Verilog HDL assignment warning at multiply.sv(9): truncated value with size 32 to match size of target (10)
 Info: Elaborating entity "LFSR" for hierarchy "LFSR:rndnm"
 Info: Elaborating entity "counter" for hierarchy "counter:count65"
 Info: Elaborating entity "WeightRAM" for hierarchy "WeightRAM:ram"
+Warning (10027): Verilog HDL or VHDL warning at the WeightRAM.sv(20): index expression is not wide enough to address all of the elements in the array
+Warning (10230): Verilog HDL assignment warning at WeightRAM.sv(20): truncated value with size 480 to match size of target (10)
 Warning (10240): Verilog HDL Always Construct warning at WeightRAM.sv(13): inferring latch(es) for variable "count", which holds its previous value in one or more paths through the always construct
-Warning: 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning: Latch nextState.weightInitiallize_168 has unsafe behavior
+Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning: Latch max has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_top
+Warning: Latch nextState.weightInitiallize_287 has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal state.halt
-Warning: Latch nextState.halt1_148 has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.weightInitiallize
-Warning: Latch nextState.readWeight_158 has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.halt1
+Warning: Latch nextState.halt_297 has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.halt
+Warning: Latch nextState.hiddenLayer_top_267 has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.halt
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "outVal[0]" is stuck at GND
+    Warning (13410): Pin "outVal[1]" is stuck at GND
+    Warning (13410): Pin "outVal[2]" is stuck at GND
+    Warning (13410): Pin "outVal[3]" is stuck at GND
+    Warning (13410): Pin "outVal[4]" is stuck at GND
+    Warning (13410): Pin "outVal[5]" is stuck at GND
+    Warning (13410): Pin "outVal[6]" is stuck at GND
+    Warning (13410): Pin "outVal[7]" is stuck at GND
+    Warning (13410): Pin "outVal[8]" is stuck at GND
+    Warning (13410): Pin "outVal[9]" is stuck at GND
 Info: Timing-Driven Synthesis is running
-Info: 4 registers lost all their fanouts during netlist optimizations. The first 4 are displayed below.
+Info: 5 registers lost all their fanouts during netlist optimizations. The first 5 are displayed below.
+    Info: Register "state.readWeight" lost all its fanouts during netlist optimizations.
+    Info: Register "state.halt1" lost all its fanouts during netlist optimizations.
     Info: Register "state~4" lost all its fanouts during netlist optimizations.
     Info: Register "state~5" lost all its fanouts during netlist optimizations.
-    Info: Register "state~6" lost all its fanouts during netlist optimizations.
     Info: Register "state~7" lost all its fanouts during netlist optimizations.
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Info: Implemented 1245 device resources after synthesis - the final resource count might be different
-    Info: Implemented 3 input pins
-    Info: Implemented 20 output pins
-    Info: Implemented 1222 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 316 megabytes
-    Info: Processing ended: Fri Dec 15 14:02:01 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Warning: Design contains 100 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "in[9][0]"
+    Warning (15610): No output dependent on input pin "in[9][1]"
+    Warning (15610): No output dependent on input pin "in[9][2]"
+    Warning (15610): No output dependent on input pin "in[9][3]"
+    Warning (15610): No output dependent on input pin "in[9][4]"
+    Warning (15610): No output dependent on input pin "in[9][5]"
+    Warning (15610): No output dependent on input pin "in[9][6]"
+    Warning (15610): No output dependent on input pin "in[9][7]"
+    Warning (15610): No output dependent on input pin "in[9][8]"
+    Warning (15610): No output dependent on input pin "in[9][9]"
+    Warning (15610): No output dependent on input pin "in[8][0]"
+    Warning (15610): No output dependent on input pin "in[8][1]"
+    Warning (15610): No output dependent on input pin "in[8][2]"
+    Warning (15610): No output dependent on input pin "in[8][3]"
+    Warning (15610): No output dependent on input pin "in[8][4]"
+    Warning (15610): No output dependent on input pin "in[8][5]"
+    Warning (15610): No output dependent on input pin "in[8][6]"
+    Warning (15610): No output dependent on input pin "in[8][7]"
+    Warning (15610): No output dependent on input pin "in[8][8]"
+    Warning (15610): No output dependent on input pin "in[8][9]"
+    Warning (15610): No output dependent on input pin "in[7][0]"
+    Warning (15610): No output dependent on input pin "in[7][1]"
+    Warning (15610): No output dependent on input pin "in[7][2]"
+    Warning (15610): No output dependent on input pin "in[7][3]"
+    Warning (15610): No output dependent on input pin "in[7][4]"
+    Warning (15610): No output dependent on input pin "in[7][5]"
+    Warning (15610): No output dependent on input pin "in[7][6]"
+    Warning (15610): No output dependent on input pin "in[7][7]"
+    Warning (15610): No output dependent on input pin "in[7][8]"
+    Warning (15610): No output dependent on input pin "in[7][9]"
+    Warning (15610): No output dependent on input pin "in[6][0]"
+    Warning (15610): No output dependent on input pin "in[6][1]"
+    Warning (15610): No output dependent on input pin "in[6][2]"
+    Warning (15610): No output dependent on input pin "in[6][3]"
+    Warning (15610): No output dependent on input pin "in[6][4]"
+    Warning (15610): No output dependent on input pin "in[6][5]"
+    Warning (15610): No output dependent on input pin "in[6][6]"
+    Warning (15610): No output dependent on input pin "in[6][7]"
+    Warning (15610): No output dependent on input pin "in[6][8]"
+    Warning (15610): No output dependent on input pin "in[6][9]"
+    Warning (15610): No output dependent on input pin "in[5][0]"
+    Warning (15610): No output dependent on input pin "in[5][1]"
+    Warning (15610): No output dependent on input pin "in[5][2]"
+    Warning (15610): No output dependent on input pin "in[5][3]"
+    Warning (15610): No output dependent on input pin "in[5][4]"
+    Warning (15610): No output dependent on input pin "in[5][5]"
+    Warning (15610): No output dependent on input pin "in[5][6]"
+    Warning (15610): No output dependent on input pin "in[5][7]"
+    Warning (15610): No output dependent on input pin "in[5][8]"
+    Warning (15610): No output dependent on input pin "in[5][9]"
+    Warning (15610): No output dependent on input pin "in[4][0]"
+    Warning (15610): No output dependent on input pin "in[4][1]"
+    Warning (15610): No output dependent on input pin "in[4][2]"
+    Warning (15610): No output dependent on input pin "in[4][3]"
+    Warning (15610): No output dependent on input pin "in[4][4]"
+    Warning (15610): No output dependent on input pin "in[4][5]"
+    Warning (15610): No output dependent on input pin "in[4][6]"
+    Warning (15610): No output dependent on input pin "in[4][7]"
+    Warning (15610): No output dependent on input pin "in[4][8]"
+    Warning (15610): No output dependent on input pin "in[4][9]"
+    Warning (15610): No output dependent on input pin "in[3][0]"
+    Warning (15610): No output dependent on input pin "in[3][1]"
+    Warning (15610): No output dependent on input pin "in[3][2]"
+    Warning (15610): No output dependent on input pin "in[3][3]"
+    Warning (15610): No output dependent on input pin "in[3][4]"
+    Warning (15610): No output dependent on input pin "in[3][5]"
+    Warning (15610): No output dependent on input pin "in[3][6]"
+    Warning (15610): No output dependent on input pin "in[3][7]"
+    Warning (15610): No output dependent on input pin "in[3][8]"
+    Warning (15610): No output dependent on input pin "in[3][9]"
+    Warning (15610): No output dependent on input pin "in[2][0]"
+    Warning (15610): No output dependent on input pin "in[2][1]"
+    Warning (15610): No output dependent on input pin "in[2][2]"
+    Warning (15610): No output dependent on input pin "in[2][3]"
+    Warning (15610): No output dependent on input pin "in[2][4]"
+    Warning (15610): No output dependent on input pin "in[2][5]"
+    Warning (15610): No output dependent on input pin "in[2][6]"
+    Warning (15610): No output dependent on input pin "in[2][7]"
+    Warning (15610): No output dependent on input pin "in[2][8]"
+    Warning (15610): No output dependent on input pin "in[2][9]"
+    Warning (15610): No output dependent on input pin "in[1][0]"
+    Warning (15610): No output dependent on input pin "in[1][1]"
+    Warning (15610): No output dependent on input pin "in[1][2]"
+    Warning (15610): No output dependent on input pin "in[1][3]"
+    Warning (15610): No output dependent on input pin "in[1][4]"
+    Warning (15610): No output dependent on input pin "in[1][5]"
+    Warning (15610): No output dependent on input pin "in[1][6]"
+    Warning (15610): No output dependent on input pin "in[1][7]"
+    Warning (15610): No output dependent on input pin "in[1][8]"
+    Warning (15610): No output dependent on input pin "in[1][9]"
+    Warning (15610): No output dependent on input pin "in[0][0]"
+    Warning (15610): No output dependent on input pin "in[0][1]"
+    Warning (15610): No output dependent on input pin "in[0][2]"
+    Warning (15610): No output dependent on input pin "in[0][3]"
+    Warning (15610): No output dependent on input pin "in[0][4]"
+    Warning (15610): No output dependent on input pin "in[0][5]"
+    Warning (15610): No output dependent on input pin "in[0][6]"
+    Warning (15610): No output dependent on input pin "in[0][7]"
+    Warning (15610): No output dependent on input pin "in[0][8]"
+    Warning (15610): No output dependent on input pin "in[0][9]"
+Info: Implemented 2472 device resources after synthesis - the final resource count might be different
+    Info: Implemented 103 input pins
+    Info: Implemented 30 output pins
+    Info: Implemented 2339 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 136 warnings
+    Info: Peak virtual memory: 616 megabytes
+    Info: Processing ended: Fri Dec 15 16:09:02 2017
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 
