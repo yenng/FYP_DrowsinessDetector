@@ -3,147 +3,183 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'Clock'
-Slack : -4.339
-TNS   : -206.063
+Slack : -6.517
+TNS   : -2731.337
+
+Type  : Slow 1200mV 85C Model Setup 'state.readWeight'
+Slack : -0.739
+TNS   : -0.739
+
+Type  : Slow 1200mV 85C Model Setup 'state.weightInitiallize'
+Slack : -0.721
+TNS   : -1.629
 
 Type  : Slow 1200mV 85C Model Setup 'state.halt'
-Slack : -3.502
-TNS   : -3.549
+Slack : -0.713
+TNS   : -0.908
 
-Type  : Slow 1200mV 85C Model Setup 'state.start'
-Slack : -2.632
-TNS   : -3.349
+Type  : Slow 1200mV 85C Model Setup 'Start'
+Slack : 3.763
+TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'counter:count65|stop~reg0'
-Slack : -1.101
-TNS   : -1.639
+Type  : Slow 1200mV 85C Model Hold 'Start'
+Slack : -5.588
+TNS   : -15.727
 
-Type  : Slow 1200mV 85C Model Hold 'state.start'
-Slack : -0.890
-TNS   : -2.483
-
-Type  : Slow 1200mV 85C Model Hold 'counter:count65|stop~reg0'
-Slack : -0.753
-TNS   : -1.357
-
-Type  : Slow 1200mV 85C Model Hold 'Clock'
-Slack : -0.705
-TNS   : -0.705
+Type  : Slow 1200mV 85C Model Hold 'state.weightInitiallize'
+Slack : -1.200
+TNS   : -7.837
 
 Type  : Slow 1200mV 85C Model Hold 'state.halt'
-Slack : -0.338
-TNS   : -0.338
+Slack : -0.980
+TNS   : -2.801
+
+Type  : Slow 1200mV 85C Model Hold 'state.readWeight'
+Slack : -0.204
+TNS   : -0.204
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.339
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
-TNS   : -119.935
+TNS   : -883.225
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.start'
-Slack : 0.398
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Start'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.weightInitiallize'
+Slack : 0.363
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.halt'
-Slack : 0.420
+Slack : 0.416
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counter:count65|stop~reg0'
-Slack : 0.466
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.readWeight'
+Slack : 0.455
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'Clock'
-Slack : -3.820
-TNS   : -182.906
+Slack : -5.779
+TNS   : -2462.341
+
+Type  : Slow 1200mV 0C Model Setup 'state.weightInitiallize'
+Slack : -0.722
+TNS   : -1.879
 
 Type  : Slow 1200mV 0C Model Setup 'state.halt'
-Slack : -3.155
-TNS   : -3.155
+Slack : -0.680
+TNS   : -0.883
 
-Type  : Slow 1200mV 0C Model Setup 'state.start'
-Slack : -2.375
-TNS   : -3.048
+Type  : Slow 1200mV 0C Model Setup 'state.readWeight'
+Slack : -0.624
+TNS   : -0.624
 
-Type  : Slow 1200mV 0C Model Setup 'counter:count65|stop~reg0'
-Slack : -1.171
-TNS   : -1.725
+Type  : Slow 1200mV 0C Model Setup 'Start'
+Slack : 3.183
+TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'state.start'
-Slack : -0.704
-TNS   : -1.982
+Type  : Slow 1200mV 0C Model Hold 'Start'
+Slack : -4.880
+TNS   : -13.592
 
-Type  : Slow 1200mV 0C Model Hold 'Clock'
-Slack : -0.687
-TNS   : -0.687
-
-Type  : Slow 1200mV 0C Model Hold 'counter:count65|stop~reg0'
-Slack : -0.678
-TNS   : -1.145
+Type  : Slow 1200mV 0C Model Hold 'state.weightInitiallize'
+Slack : -1.035
+TNS   : -5.715
 
 Type  : Slow 1200mV 0C Model Hold 'state.halt'
-Slack : -0.304
-TNS   : -0.304
+Slack : -0.711
+TNS   : -2.117
+
+Type  : Slow 1200mV 0C Model Hold 'state.readWeight'
+Slack : -0.182
+TNS   : -0.182
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.290
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
-TNS   : -119.935
+TNS   : -883.225
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'state.start'
-Slack : 0.345
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counter:count65|stop~reg0'
-Slack : 0.390
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Start'
+Slack : -3.000
+TNS   : -3.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'state.halt'
-Slack : 0.421
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'state.weightInitiallize'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'state.readWeight'
+Slack : 0.492
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'Clock'
-Slack : -1.645
-TNS   : -62.953
+Slack : -3.612
+TNS   : -1064.303
 
 Type  : Fast 1200mV 0C Model Setup 'state.halt'
-Slack : -1.645
-TNS   : -1.645
+Slack : -0.240
+TNS   : -0.240
 
-Type  : Fast 1200mV 0C Model Setup 'state.start'
-Slack : -1.120
-TNS   : -1.298
+Type  : Fast 1200mV 0C Model Setup 'state.readWeight'
+Slack : -0.180
+TNS   : -0.180
 
-Type  : Fast 1200mV 0C Model Setup 'counter:count65|stop~reg0'
-Slack : -0.076
-TNS   : -0.076
+Type  : Fast 1200mV 0C Model Setup 'state.weightInitiallize'
+Slack : 0.031
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'state.start'
-Slack : -0.681
-TNS   : -1.588
+Type  : Fast 1200mV 0C Model Setup 'Start'
+Slack : 2.644
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Clock'
-Slack : -0.587
-TNS   : -0.803
-
-Type  : Fast 1200mV 0C Model Hold 'counter:count65|stop~reg0'
-Slack : -0.420
-TNS   : -0.699
+Type  : Fast 1200mV 0C Model Hold 'Start'
+Slack : -3.259
+TNS   : -9.109
 
 Type  : Fast 1200mV 0C Model Hold 'state.halt'
-Slack : -0.170
-TNS   : -0.170
+Slack : -0.646
+TNS   : -1.853
+
+Type  : Fast 1200mV 0C Model Hold 'state.weightInitiallize'
+Slack : -0.568
+TNS   : -3.127
+
+Type  : Fast 1200mV 0C Model Hold 'state.readWeight'
+Slack : -0.099
+TNS   : -0.099
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.069
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
-TNS   : -181.304
+TNS   : -1345.818
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counter:count65|stop~reg0'
-Slack : 0.358
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Start'
+Slack : -3.000
+TNS   : -6.153
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state.start'
-Slack : 0.390
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state.weightInitiallize'
+Slack : 0.265
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state.halt'
-Slack : 0.436
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state.readWeight'
+Slack : 0.423
 TNS   : 0.000
 
 ------------------------------------------------------------

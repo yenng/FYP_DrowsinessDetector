@@ -1,7 +1,7 @@
 
 State Machine - |DrowsinessDetector|state
-Name state.halt1 state.readWeight state.start state.halt 
+Name state.halt1 state.readWeight state.weightInitiallize state.halt 
 state.halt 0 0 0 0 
-state.start 0 0 1 1 
+state.weightInitiallize 0 0 1 1 
 state.readWeight 0 1 0 1 
 state.halt1 1 0 0 1 

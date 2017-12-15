@@ -1,13 +1,13 @@
 module HiddenLayer_top(
-	input Clock, Rst, 
+	input Clock, Clear, 
 	input [9:0]weight,
 	input [9:0]inVal,
 	output reg [9:0]outVal);
 	
 	reg [9:0]mulVal;
 	
-	always@(posedge Clock or negedge Rst) begin
-		if(~Rst) begin
+	always@(posedge Clock ) begin
+		if(Clear) begin
 			outVal = 10'b0;
 		end
 		else begin

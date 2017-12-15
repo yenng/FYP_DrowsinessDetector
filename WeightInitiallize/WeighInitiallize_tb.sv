@@ -15,10 +15,10 @@ module WeighInitiallize_tb();
 #100	Rst = 1;
 	end
 	
-	DrowsinessDetector wi(Clock,Rst,dataRead,data,count);
+	DrowsinessDetector wi(Clock,Rst,dataRead,data);
 	
 	initial begin
-		$monitor("Data Read = %d\nData = %d\nCount = %d", dataRead,data,count);
+		$monitor("Data Read = %d\nData = %d\n", dataRead,data);
 	end 
 	
 endmodule
