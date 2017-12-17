@@ -5,15 +5,15 @@ module	WeightRAM(
 	input 	WE,//'1' write data, '0' read data
 	output reg	signed[9:0] Q);
 
-	reg [479:0] REGISTER [639:0];//data should be 480*640*30bits.
+	reg [9:0] REGISTER [64:0];//data should be 480*640*30bits.
 	wire clk;
 	wire signed[9:0] data;
 	integer count = 0;
 	
 	always @(posedge Clock or negedge Rst)begin
 		if(~Rst) begin
-			for(count=0;count<639;count=count+1) 
-				REGISTER[count] <= 479'b0;
+			for(count=0;count<65;count=count+1) 
+				REGISTER[count] <= 64'b0;
 		end
 		else begin
 				if(!WE)	begin

@@ -1,6 +1,6 @@
 module HiddenLayer_top(
 	input Clock, Clear, 
-	input [9:0]weight,
+	input signed [9:0]weight,
 	input [9:0]inVal,
 	output reg [9:0]outVal);
 	
@@ -10,9 +10,10 @@ module HiddenLayer_top(
 		if(Clear) begin
 			outVal = 10'b0;
 		end
-		else begin
-			outVal = outVal + mulVal;
-		end
+	end
+	
+	always@(mulVal)begin 
+		outVal = outVal + mulVal;
 	end
 	
 	multiply mul(inVal,weight,mulVal);
