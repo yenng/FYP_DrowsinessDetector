@@ -2,184 +2,184 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'Clock'
-Slack : -7.670
-TNS   : -6747.046
+Type  : Slow 1200mV 85C Model Setup 'state.hiddenLayer_sum'
+Slack : -129.589
+TNS   : -1327.693
 
-Type  : Slow 1200mV 85C Model Setup 'state.weightInitiallize'
-Slack : -0.517
-TNS   : -0.984
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -46.846
+TNS   : -7480.684
 
 Type  : Slow 1200mV 85C Model Setup 'state.halt'
-Slack : -0.376
-TNS   : -0.686
+Slack : -0.214
+TNS   : -0.214
 
-Type  : Slow 1200mV 85C Model Setup 'state.hiddenLayer_top'
-Slack : -0.120
-TNS   : -0.120
+Type  : Slow 1200mV 85C Model Setup 'state.weightInitiallize'
+Slack : -0.180
+TNS   : -0.394
 
 Type  : Slow 1200mV 85C Model Setup 'counter:count65|stop'
-Slack : 0.601
-TNS   : 0.000
+Slack : -0.170
+TNS   : -0.170
 
-Type  : Slow 1200mV 85C Model Hold 'counter:count65|stop'
-Slack : -1.419
-TNS   : -3.913
-
-Type  : Slow 1200mV 85C Model Hold 'state.weightInitiallize'
-Slack : -1.141
-TNS   : -10.588
-
-Type  : Slow 1200mV 85C Model Hold 'state.hiddenLayer_top'
-Slack : -1.103
-TNS   : -2.175
-
-Type  : Slow 1200mV 85C Model Hold 'state.halt'
-Slack : -0.687
-TNS   : -2.131
+Type  : Slow 1200mV 85C Model Hold 'state.hiddenLayer_sum'
+Slack : -3.350
+TNS   : -19.277
 
 Type  : Slow 1200mV 85C Model Hold 'Clock'
-Slack : 0.029
-TNS   : 0.000
+Slack : -2.861
+TNS   : -2.861
+
+Type  : Slow 1200mV 85C Model Hold 'counter:count65|stop'
+Slack : -2.766
+TNS   : -8.292
+
+Type  : Slow 1200mV 85C Model Hold 'state.weightInitiallize'
+Slack : -2.255
+TNS   : -15.397
+
+Type  : Slow 1200mV 85C Model Hold 'state.halt'
+Slack : -1.810
+TNS   : -4.472
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
-TNS   : -1691.490
+TNS   : -1706.910
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.weightInitiallize'
-Slack : 0.337
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.hiddenLayer_top'
-Slack : 0.403
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.halt'
-Slack : 0.409
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.hiddenLayer_sum'
+Slack : 0.384
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counter:count65|stop'
-Slack : 0.434
+Slack : 0.394
 TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.weightInitiallize'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'state.halt'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'state.hiddenLayer_sum'
+Slack : -116.711
+TNS   : -1197.274
 
 Type  : Slow 1200mV 0C Model Setup 'Clock'
-Slack : -6.962
-TNS   : -6138.865
-
-Type  : Slow 1200mV 0C Model Setup 'state.weightInitiallize'
-Slack : -0.483
-TNS   : -0.962
-
-Type  : Slow 1200mV 0C Model Setup 'state.halt'
-Slack : -0.286
-TNS   : -0.561
-
-Type  : Slow 1200mV 0C Model Setup 'state.hiddenLayer_top'
-Slack : -0.093
-TNS   : -0.093
+Slack : -42.246
+TNS   : -6759.356
 
 Type  : Slow 1200mV 0C Model Setup 'counter:count65|stop'
-Slack : 0.430
-TNS   : 0.000
+Slack : -0.330
+TNS   : -0.330
 
-Type  : Slow 1200mV 0C Model Hold 'counter:count65|stop'
-Slack : -1.248
-TNS   : -3.407
+Type  : Slow 1200mV 0C Model Setup 'state.halt'
+Slack : -0.231
+TNS   : -0.231
 
-Type  : Slow 1200mV 0C Model Hold 'state.hiddenLayer_top'
-Slack : -1.054
-TNS   : -2.017
+Type  : Slow 1200mV 0C Model Setup 'state.weightInitiallize'
+Slack : -0.152
+TNS   : -0.401
 
-Type  : Slow 1200mV 0C Model Hold 'state.weightInitiallize'
-Slack : -1.022
-TNS   : -8.287
-
-Type  : Slow 1200mV 0C Model Hold 'state.halt'
-Slack : -0.530
-TNS   : -1.655
+Type  : Slow 1200mV 0C Model Hold 'state.hiddenLayer_sum'
+Slack : -2.987
+TNS   : -16.613
 
 Type  : Slow 1200mV 0C Model Hold 'Clock'
-Slack : 0.032
-TNS   : 0.000
+Slack : -2.608
+TNS   : -2.608
+
+Type  : Slow 1200mV 0C Model Hold 'counter:count65|stop'
+Slack : -2.390
+TNS   : -7.112
+
+Type  : Slow 1200mV 0C Model Hold 'state.weightInitiallize'
+Slack : -2.003
+TNS   : -12.111
+
+Type  : Slow 1200mV 0C Model Hold 'state.halt'
+Slack : -1.499
+TNS   : -3.779
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
-TNS   : -1691.490
+TNS   : -1706.910
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counter:count65|stop'
-Slack : 0.364
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'state.hiddenLayer_sum'
+Slack : 0.264
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'state.weightInitiallize'
-Slack : 0.399
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counter:count65|stop'
+Slack : 0.359
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'state.halt'
-Slack : 0.419
+Slack : 0.446
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'state.hiddenLayer_top'
-Slack : 0.424
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'state.hiddenLayer_sum'
+Slack : -63.851
+TNS   : -648.803
 
 Type  : Fast 1200mV 0C Model Setup 'Clock'
-Slack : -3.479
-TNS   : -2884.760
+Slack : -23.112
+TNS   : -3274.551
 
 Type  : Fast 1200mV 0C Model Setup 'state.weightInitiallize'
-Slack : 0.034
-TNS   : 0.000
+Slack : -0.051
+TNS   : -0.051
 
 Type  : Fast 1200mV 0C Model Setup 'state.halt'
-Slack : 0.071
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'state.hiddenLayer_top'
-Slack : 0.207
+Slack : 0.211
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'counter:count65|stop'
-Slack : 0.605
+Slack : 0.390
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Hold 'state.hiddenLayer_sum'
+Slack : -1.774
+TNS   : -10.775
+
 Type  : Fast 1200mV 0C Model Hold 'counter:count65|stop'
-Slack : -0.975
-TNS   : -2.394
-
-Type  : Fast 1200mV 0C Model Hold 'state.halt'
-Slack : -0.664
-TNS   : -1.647
-
-Type  : Fast 1200mV 0C Model Hold 'state.weightInitiallize'
-Slack : -0.633
-TNS   : -4.619
-
-Type  : Fast 1200mV 0C Model Hold 'state.hiddenLayer_top'
-Slack : -0.524
-TNS   : -1.049
+Slack : -1.695
+TNS   : -4.629
 
 Type  : Fast 1200mV 0C Model Hold 'Clock'
-Slack : -0.150
-TNS   : -1.540
+Slack : -1.571
+TNS   : -1.571
+
+Type  : Fast 1200mV 0C Model Hold 'state.weightInitiallize'
+Slack : -1.162
+TNS   : -7.730
+
+Type  : Fast 1200mV 0C Model Hold 'state.halt'
+Slack : -1.099
+TNS   : -2.667
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
-TNS   : -2579.515
+TNS   : -2602.860
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state.weightInitiallize'
-Slack : 0.260
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state.hiddenLayer_sum'
+Slack : 0.146
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counter:count65|stop'
-Slack : 0.274
+Slack : 0.175
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state.weightInitiallize'
+Slack : 0.241
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state.halt'
-Slack : 0.343
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'state.hiddenLayer_top'
-Slack : 0.369
+Slack : 0.390
 TNS   : 0.000
 
 ------------------------------------------------------------

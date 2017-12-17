@@ -1,16 +1,15 @@
 module LFSR(
-  input  clk,
-  input  rst_n,
-
-  output reg signed [9:0] data
+  input  clk, rst_n, on,
+  output reg signed [639:0] data
 );
 
-wire feedback = data[9] ^ data[6] ;
+wire feedback = data[9] ^ data[6];
 
 always @(posedge clk or negedge rst_n)
-  if (~rst_n) 
-    data <= 10'hF;
-  else
-    data <= {data[8:0], feedback} ;
-
+	if (~rst_n) 
+		data <= 10'hF;
+	else begin
+		if(on)
+			data <= {data[638:0], feedback} ;
+	end
 endmodule

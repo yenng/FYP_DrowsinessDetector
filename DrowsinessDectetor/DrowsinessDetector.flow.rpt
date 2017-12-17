@@ -1,5 +1,5 @@
 Flow report for DrowsinessDetector
-Fri Dec 15 16:09:27 2017
+Sun Dec 17 16:15:51 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +------------------------------------+------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 15 16:09:27 2017    ;
+; Flow Status                        ; Successful - Sun Dec 17 16:15:07 2017    ;
 ; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
 ; Revision Name                      ; DrowsinessDetector                       ;
 ; Top-level Entity Name              ; DrowsinessDetector                       ;
@@ -46,14 +46,14 @@ applicable agreement for further details.
 ; Device                             ; EP4CE115F29C7                            ;
 ; Timing Models                      ; Final                                    ;
 ; Met timing requirements            ; N/A                                      ;
-; Total logic elements               ; 1,690 / 114,480 ( 1 % )                  ;
-;     Total combinational functions  ; 1,049 / 114,480 ( < 1 % )                ;
-;     Dedicated logic registers      ; 1,314 / 114,480 ( 1 % )                  ;
-; Total registers                    ; 1314                                     ;
+; Total logic elements               ; 3,584 / 114,480 ( 3 % )                  ;
+;     Total combinational functions  ; 2,943 / 114,480 ( 3 % )                  ;
+;     Dedicated logic registers      ; 1,326 / 114,480 ( 1 % )                  ;
+; Total registers                    ; 1326                                     ;
 ; Total pins                         ; 133 / 529 ( 25 % )                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                    ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                          ;
+; Embedded Multiplier 9-bit elements ; 2 / 532 ( < 1 % )                        ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                            ;
 +------------------------------------+------------------------------------------+
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/15/2017 16:08:54 ;
+; Start date & time ; 12/17/2017 15:55:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DrowsinessDetector  ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 238177193657852.151332533405828       ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 8995263175637.151349731306124         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --         ;
@@ -91,11 +91,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 616 MB              ; 00:00:07                           ;
-; Fitter                    ; 00:00:17     ; 1.0                     ; 516 MB              ; 00:00:17                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 382 MB              ; 00:00:04                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 523 MB              ; 00:00:05                           ;
-; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Synthesis      ; 00:18:48     ; 1.0                     ; 2985 MB             ; 00:18:46                           ;
+; Fitter                    ; 00:00:46     ; 1.0                     ; 530 MB              ; 00:00:46                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 529 MB              ; 00:00:11                           ;
+; TimeQuest Timing Analyzer ; 00:00:55     ; 1.0                     ; 613 MB              ; 00:00:54                           ;
+; Total                     ; 00:20:41     ; --                      ; --                  ; 00:20:37                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -104,10 +104,10 @@ applicable agreement for further details.
 +---------------------------+------------------+---------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
 +---------------------------+------------------+---------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-UMCRV6R  ; Windows Vista ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-UMCRV6R  ; Windows Vista ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-UMCRV6R  ; Windows Vista ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-UMCRV6R  ; Windows Vista ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-AAQOIV3  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-AAQOIV3  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-AAQOIV3  ; Windows Vista ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-AAQOIV3  ; Windows Vista ; 6.2        ; x86_64         ;
 +---------------------------+------------------+---------------+------------+----------------+
 
 
@@ -116,8 +116,8 @@ applicable agreement for further details.
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off DrowsinessDetector -c DrowsinessDetector
 quartus_fit --read_settings_files=off --write_settings_files=off DrowsinessDetector -c DrowsinessDetector
-quartus_sta DrowsinessDetector -c DrowsinessDetector
 quartus_asm --read_settings_files=off --write_settings_files=off DrowsinessDetector -c DrowsinessDetector
+quartus_sta DrowsinessDetector -c DrowsinessDetector
 
 
 

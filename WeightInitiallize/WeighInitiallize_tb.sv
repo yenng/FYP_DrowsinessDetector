@@ -2,8 +2,8 @@ module WeighInitiallize_tb();
 	reg Clock,Rst,Start;
 	reg [9:0]in[0:9];
 	wire signed[9:0] dataRead;
-	wire signed[9:0] data, outVal;
-	wire [9:0]count;
+	wire signed[9:0] data;
+	wire [9:0]count, outVal;
 	
 	initial begin
 		Clock = 0;

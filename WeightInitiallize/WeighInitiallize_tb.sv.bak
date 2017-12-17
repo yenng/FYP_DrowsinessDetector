@@ -31,7 +31,7 @@ module WeighInitiallize_tb();
 	DrowsinessDetector wi(Clock,Rst,Start,in,dataRead,data,outVal);
 	
 	initial begin
-		$monitor("Data Read = %d\nData = %d\n", dataRead,data);
+		$monitor("In = %p\nData Read = %d\nData = %d\nOutVal = %d", in, dataRead, data, outVal);
 	end 
 	
 endmodule
