@@ -1,15 +1,21 @@
 module DrowsinessDetector(
 	input Clock,Rst,Start,
 	input [9:0]in[0:9],
-	output reg signed[9:0] dataRead,dataIn,
+	output reg signed[9:0] weight,dataIn,
 	output reg [9:0] outVal);
 	
-	reg [639:0]testVal[0:479];
+	//reg [639:0]testVal[0:479];
+	
+	// Slow Clock.
+	reg Clock_slow;
 	
 	// For counter.
-	reg [9:0]count;		// The number that count in counter.
-	reg startCounter;		// To start the counter.
-	wire stopCounter;		// To stop the counter.
+	reg [9:0]count0;		// The number that count in counter.
+	reg [9:0]count1;
+	reg startCounter0;		// To start the counter.
+	reg startCounter1;
+	wire stopCounter0;		// To stop the counter.
+	wire stopCounter1;
 	reg [9:0]max;			// Max value for counter.
 	
 	// For RAM to write/read weight. 
@@ -32,8 +38,9 @@ module DrowsinessDetector(
 	
 	// The variable for hidden layer.
 	reg Clear;
-	reg signed[9:0]weight, sum, AF_in;
-	reg unsigned[9:0]inVal, AF;
+	reg signed[9:0]sum;
+	//reg [9:0]
+	reg unsigned[9:0]inVal;
 	
 	always@(posedge Clock, negedge Rst) begin
 		if(~Rst) begin
@@ -44,14 +51,15 @@ module DrowsinessDetector(
 		end
 	end
 	
-	always@(stopCounter, Start, state,data,sum) begin
+	always@(stopCounter0, Start, state,data,sum) begin
 		case(state)
 		  // The following state is for weightInitiallize module.
 			halt: begin
-				startCounter = 0;	// Off and clear counter
+				startCounter0 = 0;	// Off and clear counter
+				startCounter1 = 0;	// Off and clear counter
 				on = 0;				// Off LFSR
 				Clear = 1;
-				if(Start) 
+				if(Start)
 					nextState = hiddenLayer_sum;
 				else
 					nextState = weightInitiallize;
@@ -61,8 +69,8 @@ module DrowsinessDetector(
 				on = 1;				// Start LFSR
 				dataIn = data;
 				max = 10'd65;
-				startCounter = 1;
-				if (stopCounter) begin
+				startCounter0 = 1;
+				if (stopCounter0) begin
 					nextState = halt;
 				end
 			end
@@ -70,10 +78,10 @@ module DrowsinessDetector(
 			readWeight: begin
 				WE = 0;
 				on = 1;
-				startCounter = 1;	// Start counter
+				startCounter0 = 1;	// Start counter
 			end
 			halt1: begin
-				startCounter = 0;	// Off and clear counter
+				startCounter0 = 0;	// Off and clear counter
 				on = 0;
 				Clear = 1;
 				//nextState = readWeight;
@@ -81,23 +89,25 @@ module DrowsinessDetector(
 			// The states above used to initiallize the weight.
 			// ****************************************************************//
 			// Hidden Layer for sum calculation
-			hiddenLayer_sum: begin // Calculate the 
+			hiddenLayer_sum: begin // Calculate the sum of weight*in
 				max = $size(in);
-				startCounter = 1;
+				startCounter0 = 1;
+				startCounter1 = 1;
 				Clear = 0;
 				WE = 0;
-				inVal = in[count];
+				inVal = in[count0];
+				Address = count0 + count1* 6'd10;
 				outVal = sum;
 				AF_in = sum;
 				//weight = dataRead;
-				if (stopCounter) begin
+				if (stopCounter0) begin
 					nextState = hiddenLayer_AF;
 				end
 			end
 			// Hidden Layer for Activation Function.
 			hiddenLayer_AF: begin
 				Clear = 1;
-				startCounter = 0;
+				startCounter0 = 0;
 				on = 0;
 				outVal = AF;
 				nextState = halt1;
@@ -105,14 +115,18 @@ module DrowsinessDetector(
 		endcase
 	end
 	
+	// For a slower clock.
+	clk_div createSlowClk(Clock, Clock_slow);
+	
 	// For hidden layer calculation.
-	HiddenLayer_top getMul(Clock, Clear, dataRead, inVal,testVal, sum);
+	HiddenLayer_top getMul(Clock, Clear, weight, inVal, sum);
 	ActivationFunc actFun(AF_in, AF);
 	
 	// For weight initiallize.
 	LFSR rndnm(Clock, Rst, on, data);
-	counter count65(Clock, startCounter, max, stopCounter, count);
-	WeightRAM ram(Clock, Rst, dataIn, count, WE, dataRead);
+	counter counter0(Clock, startCounter0, max, stopCounter0, count0);
+	counter counter1(Clock_slow, startCounter1, 10'd10, stopCounter1, count1);
+	WeightRAM ram(Clock, Rst, dataIn, Address, WE, weight);
 	
 	
 endmodule 

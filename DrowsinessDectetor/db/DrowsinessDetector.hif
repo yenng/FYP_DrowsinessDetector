@@ -20,72 +20,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-DrowsinessDetector
-# storage
-db|DrowsinessDetector.(0).cnf
-db|DrowsinessDetector.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-drowsinessdetector.sv
-1e51196694b3c5d93f890a18bef03b
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-halt
-0
-PARAMETER_SIGNED_DEC
-DEF
-weightInitiallize
-1
-PARAMETER_SIGNED_DEC
-DEF
-readWeight
-2
-PARAMETER_SIGNED_DEC
-DEF
-halt1
-3
-PARAMETER_SIGNED_DEC
-DEF
-hiddenLayer_sum
-4
-PARAMETER_SIGNED_DEC
-DEF
-hiddenLayer_AF
-5
-PARAMETER_SIGNED_DEC
-DEF
-}
-# include_file {
-|users|yen|desktop|fyp_drowsinessdetector|hiddenlayer|hiddenlayer_top.sv
-49e366a34c0311fc8a1304b4e894b1
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 HiddenLayer_top
 # storage
 db|DrowsinessDetector.(1).cnf
@@ -96,8 +30,8 @@ ON
 }
 # case_sensitive
 # source_file
-|users|yen|desktop|fyp_drowsinessdetector|hiddenlayer|hiddenlayer_top.sv
-49e366a34c0311fc8a1304b4e894b1
+|users|user3|desktop|fyp_drowsinessdetector|hiddenlayer|hiddenlayer_top.sv
+e94090554eaf24533bd9a924dbb3fd9
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -132,7 +66,7 @@ ON
 }
 # case_sensitive
 # source_file
-|users|yen|desktop|fyp_drowsinessdetector|hiddenlayer|multiply.sv
+|users|user3|desktop|fyp_drowsinessdetector|hiddenlayer|multiply.sv
 7e92588616d0f9598d759ca7d5dc461
 9
 # internal_option {
@@ -168,8 +102,8 @@ ON
 }
 # case_sensitive
 # source_file
-|users|yen|desktop|fyp_drowsinessdetector|hiddenlayer|activationfunc.sv
-7db3546bb2417e072d939b2610d3db
+|users|user3|desktop|fyp_drowsinessdetector|hiddenlayer|activationfunc.sv
+5f7ea34b188a64d1103df6041a1a354
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -204,7 +138,7 @@ ON
 }
 # case_sensitive
 # source_file
-|users|yen|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
+|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
 9b25b9c343f66cdc6eea84f41fc49df
 9
 # internal_option {
@@ -240,8 +174,8 @@ ON
 }
 # case_sensitive
 # source_file
-|users|yen|desktop|fyp_drowsinessdetector|weightoptimization|counter.sv
-a9ce7b3c5f9f87abdfba16ecb8e51cfa
+|users|user3|desktop|fyp_drowsinessdetector|weightoptimization|counter.sv
+4845f779f40b37da47ffe7fabef604b
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -260,7 +194,8 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-counter:count65
+counter:counter0
+counter:counter1
 }
 # macro_sequence
 
@@ -276,8 +211,8 @@ ON
 }
 # case_sensitive
 # source_file
-|users|yen|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
-acd166b5a5da92c8cd6657a65247263c
+|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|weightram.sv
+49e4ec8aad28feab60e6f08699e3d86e
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -304,8 +239,8 @@ WeightRAM:ram
 # entity
 lpm_mult
 # storage
-db|DrowsinessDetector.(31).cnf
-db|DrowsinessDetector.(31).cnf
+db|DrowsinessDetector.(7).cnf
+db|DrowsinessDetector.(7).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_mult.tdf
@@ -536,8 +471,8 @@ datab3
 # entity
 multcore
 # storage
-db|DrowsinessDetector.(32).cnf
-db|DrowsinessDetector.(32).cnf
+db|DrowsinessDetector.(8).cnf
+db|DrowsinessDetector.(8).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|multcore.tdf
@@ -747,8 +682,8 @@ dataa0
 # entity
 mpar_add
 # storage
-db|DrowsinessDetector.(33).cnf
-db|DrowsinessDetector.(33).cnf
+db|DrowsinessDetector.(9).cnf
+db|DrowsinessDetector.(9).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|mpar_add.tdf
@@ -1010,8 +945,8 @@ data0_0
 # entity
 lpm_add_sub
 # storage
-db|DrowsinessDetector.(34).cnf
-db|DrowsinessDetector.(34).cnf
+db|DrowsinessDetector.(10).cnf
+db|DrowsinessDetector.(10).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
@@ -1238,8 +1173,8 @@ dataa0
 # entity
 add_sub_l9h
 # storage
-db|DrowsinessDetector.(35).cnf
-db|DrowsinessDetector.(35).cnf
+db|DrowsinessDetector.(11).cnf
+db|DrowsinessDetector.(11).cnf
 # case_insensitive
 # source_file
 db|add_sub_l9h.tdf
@@ -1388,8 +1323,8 @@ dataa0
 # entity
 mpar_add
 # storage
-db|DrowsinessDetector.(36).cnf
-db|DrowsinessDetector.(36).cnf
+db|DrowsinessDetector.(12).cnf
+db|DrowsinessDetector.(12).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|mpar_add.tdf
@@ -1636,8 +1571,8 @@ data0_0
 # entity
 lpm_add_sub
 # storage
-db|DrowsinessDetector.(37).cnf
-db|DrowsinessDetector.(37).cnf
+db|DrowsinessDetector.(13).cnf
+db|DrowsinessDetector.(13).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
@@ -1903,8 +1838,8 @@ cin
 # entity
 add_sub_jkh
 # storage
-db|DrowsinessDetector.(38).cnf
-db|DrowsinessDetector.(38).cnf
+db|DrowsinessDetector.(14).cnf
+db|DrowsinessDetector.(14).cnf
 # case_insensitive
 # source_file
 db|add_sub_jkh.tdf
@@ -2092,8 +2027,8 @@ cin
 # entity
 altshift
 # storage
-db|DrowsinessDetector.(39).cnf
-db|DrowsinessDetector.(39).cnf
+db|DrowsinessDetector.(15).cnf
+db|DrowsinessDetector.(15).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|altshift.tdf
@@ -2243,8 +2178,8 @@ data0
 # entity
 lpm_divide
 # storage
-db|DrowsinessDetector.(40).cnf
-db|DrowsinessDetector.(40).cnf
+db|DrowsinessDetector.(16).cnf
+db|DrowsinessDetector.(16).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_divide.tdf
@@ -2538,8 +2473,8 @@ numer0
 # entity
 lpm_divide_72p
 # storage
-db|DrowsinessDetector.(41).cnf
-db|DrowsinessDetector.(41).cnf
+db|DrowsinessDetector.(17).cnf
+db|DrowsinessDetector.(17).cnf
 # case_insensitive
 # source_file
 db|lpm_divide_72p.tdf
@@ -2775,8 +2710,8 @@ denom0
 # entity
 abs_divider_4dg
 # storage
-db|DrowsinessDetector.(42).cnf
-db|DrowsinessDetector.(42).cnf
+db|DrowsinessDetector.(18).cnf
+db|DrowsinessDetector.(18).cnf
 # case_insensitive
 # source_file
 db|abs_divider_4dg.tdf
@@ -3141,8 +3076,8 @@ denominator0
 # entity
 alt_u_div_6af
 # storage
-db|DrowsinessDetector.(43).cnf
-db|DrowsinessDetector.(43).cnf
+db|DrowsinessDetector.(19).cnf
+db|DrowsinessDetector.(19).cnf
 # case_insensitive
 # source_file
 db|alt_u_div_6af.tdf
@@ -3540,8 +3475,8 @@ denominator0
 # entity
 add_sub_7pc
 # storage
-db|DrowsinessDetector.(44).cnf
-db|DrowsinessDetector.(44).cnf
+db|DrowsinessDetector.(20).cnf
+db|DrowsinessDetector.(20).cnf
 # case_insensitive
 # source_file
 db|add_sub_7pc.tdf
@@ -3567,8 +3502,8 @@ cout
 # entity
 add_sub_8pc
 # storage
-db|DrowsinessDetector.(45).cnf
-db|DrowsinessDetector.(45).cnf
+db|DrowsinessDetector.(21).cnf
+db|DrowsinessDetector.(21).cnf
 # case_insensitive
 # source_file
 db|add_sub_8pc.tdf
@@ -3603,8 +3538,8 @@ cout
 # entity
 lpm_abs_i0a
 # storage
-db|DrowsinessDetector.(46).cnf
-db|DrowsinessDetector.(46).cnf
+db|DrowsinessDetector.(22).cnf
+db|DrowsinessDetector.(22).cnf
 # case_insensitive
 # source_file
 db|lpm_abs_i0a.tdf
@@ -3810,8 +3745,8 @@ data0
 # entity
 lpm_mult
 # storage
-db|DrowsinessDetector.(47).cnf
-db|DrowsinessDetector.(47).cnf
+db|DrowsinessDetector.(23).cnf
+db|DrowsinessDetector.(23).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_mult.tdf
@@ -4051,8 +3986,8 @@ dataa0
 # entity
 mult_oct
 # storage
-db|DrowsinessDetector.(48).cnf
-db|DrowsinessDetector.(48).cnf
+db|DrowsinessDetector.(24).cnf
+db|DrowsinessDetector.(24).cnf
 # case_insensitive
 # source_file
 db|mult_oct.tdf
@@ -4186,8 +4121,8 @@ dataa0
 # entity
 lpm_divide
 # storage
-db|DrowsinessDetector.(49).cnf
-db|DrowsinessDetector.(49).cnf
+db|DrowsinessDetector.(25).cnf
+db|DrowsinessDetector.(25).cnf
 # case_insensitive
 # source_file
 |altera|10.0|quartus|libraries|megafunctions|lpm_divide.tdf
@@ -4379,8 +4314,8 @@ denom3
 # entity
 lpm_divide_akm
 # storage
-db|DrowsinessDetector.(50).cnf
-db|DrowsinessDetector.(50).cnf
+db|DrowsinessDetector.(26).cnf
+db|DrowsinessDetector.(26).cnf
 # case_insensitive
 # source_file
 db|lpm_divide_akm.tdf
@@ -4544,8 +4479,8 @@ denom0
 # entity
 sign_div_unsign_2nh
 # storage
-db|DrowsinessDetector.(51).cnf
-db|DrowsinessDetector.(51).cnf
+db|DrowsinessDetector.(27).cnf
+db|DrowsinessDetector.(27).cnf
 # case_insensitive
 # source_file
 db|sign_div_unsign_2nh.tdf
@@ -4739,8 +4674,8 @@ denominator0
 # entity
 alt_u_div_o9f
 # storage
-db|DrowsinessDetector.(52).cnf
-db|DrowsinessDetector.(52).cnf
+db|DrowsinessDetector.(28).cnf
+db|DrowsinessDetector.(28).cnf
 # case_insensitive
 # source_file
 db|alt_u_div_o9f.tdf
@@ -4927,6 +4862,114 @@ denominator1
 denominator0
 -1
 3
+}
+# macro_sequence
+
+# end
+# entity
+DrowsinessDetector
+# storage
+db|DrowsinessDetector.(0).cnf
+db|DrowsinessDetector.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+drowsinessdetector.sv
+11f85ddacd3caee857f279cc97c3f65
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+halt
+0
+PARAMETER_SIGNED_DEC
+DEF
+weightInitiallize
+1
+PARAMETER_SIGNED_DEC
+DEF
+readWeight
+2
+PARAMETER_SIGNED_DEC
+DEF
+halt1
+3
+PARAMETER_SIGNED_DEC
+DEF
+hiddenLayer_sum
+4
+PARAMETER_SIGNED_DEC
+DEF
+hiddenLayer_AF
+5
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|DrowsinessDetector.(29).cnf
+db|DrowsinessDetector.(29).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|user3|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+2d47919dc1415853cf0643c8ebe5755
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+clk_div:createSlowClk
 }
 # macro_sequence
 
