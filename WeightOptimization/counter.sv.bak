@@ -1,7 +1,7 @@
 module counter(
 	input clk,start,
 	input [9:0]max,
-	inout reg stop,
+	output reg stop,
 	output reg[9:0]count
 );
 

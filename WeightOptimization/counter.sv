@@ -6,7 +6,7 @@ module counter(
 );
 
 
-always@(posedge clk) begin
+always@(posedge clk or negedge start) begin
 	if (start) begin
 		if(count == max-1)begin
 			stop = 1;

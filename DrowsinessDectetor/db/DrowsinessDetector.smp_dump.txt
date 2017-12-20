@@ -1,9 +1,9 @@
 
 State Machine - |DrowsinessDetector|state
-Name state.hiddenLayer_AF state.hiddenLayer_sum state.halt1 state.readWeight state.weightInitiallize state.halt 
+Name state.outputLayer state.hiddenLayer state.halt1 state.readWeight state.weightInitiallize state.halt 
 state.halt 0 0 0 0 0 0 
 state.weightInitiallize 0 0 0 0 1 1 
 state.readWeight 0 0 0 1 0 1 
 state.halt1 0 0 1 0 0 1 
-state.hiddenLayer_sum 0 1 0 0 0 1 
-state.hiddenLayer_AF 1 0 0 0 0 1 
+state.hiddenLayer 0 1 0 0 0 1 
+state.outputLayer 1 0 0 0 0 1 

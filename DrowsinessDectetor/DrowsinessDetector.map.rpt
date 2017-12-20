@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DrowsinessDetector
-Mon Dec 18 11:26:51 2017
+Wed Dec 20 19:09:55 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -21,15 +21,11 @@ Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
  13. Inverted Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
  15. Parameter Settings for User Entity Instance: Top-level Entity: |DrowsinessDetector
- 16. Parameter Settings for User Entity Instance: clk_div:createSlowClk
- 17. Parameter Settings for Inferred Entity Instance: HiddenLayer_top:getMul|multiply:mul|lpm_mult:Mult0
- 18. Parameter Settings for Inferred Entity Instance: HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0
- 19. lpm_mult Parameter Settings by Entity Instance
- 20. Port Connectivity Checks: "counter:counter1"
- 21. Port Connectivity Checks: "counter:counter0"
- 22. Port Connectivity Checks: "ActivationFunc:actFun"
- 23. Port Connectivity Checks: "clk_div:createSlowClk"
- 24. Analysis & Synthesis Messages
+ 16. Parameter Settings for Inferred Entity Instance: HiddenLayer_top:getMul|multiply:mul|lpm_mult:Mult0
+ 17. Parameter Settings for Inferred Entity Instance: HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0
+ 18. lpm_mult Parameter Settings by Entity Instance
+ 19. Port Connectivity Checks: "ActivationFunc:actFun"
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -55,16 +51,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 18 11:26:51 2017    ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 20 19:09:55 2017    ;
 ; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
 ; Revision Name                      ; DrowsinessDetector                       ;
 ; Top-level Entity Name              ; DrowsinessDetector                       ;
 ; Family                             ; Cyclone IV E                             ;
-; Total logic elements               ; 1,638                                    ;
-;     Total combinational functions  ; 990                                      ;
-;     Dedicated logic registers      ; 696                                      ;
-; Total registers                    ; 696                                      ;
-; Total pins                         ; 133                                      ;
+; Total logic elements               ; 1,758                                    ;
+;     Total combinational functions  ; 1,110                                    ;
+;     Dedicated logic registers      ; 685                                      ;
+; Total registers                    ; 685                                      ;
+; Total pins                         ; 153                                      ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
 ; Embedded Multiplier 9-bit elements ; 2                                        ;
@@ -166,28 +162,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+-----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path  ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ;
-+-----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+
-; ../WeightInitiallize/clk_div.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv                  ;
-; ../HiddenLayer/ActivationFunc.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv                 ;
-; ../HiddenLayer/multiply.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv                       ;
-; ../HiddenLayer/HiddenLayer_Top.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenLayer_Top.sv                ;
-; ../WeightOptimization/counter.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightOptimization/counter.sv                 ;
-; ../WeightInitiallize/LFSR.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv                     ;
-; ../WeightInitiallize/WeightRAM.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv                ;
-; DrowsinessDetector.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/DrowsinessDetector.sv      ;
-; lpm_mult.tdf                      ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_mult.tdf                                 ;
-; db/mult_oct.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/mult_oct.tdf            ;
-; lpm_divide.tdf                    ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_divide.tdf                               ;
-; db/lpm_divide_akm.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/lpm_divide_akm.tdf      ;
-; db/sign_div_unsign_2nh.tdf        ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/sign_div_unsign_2nh.tdf ;
-; db/alt_u_div_o9f.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/alt_u_div_o9f.tdf       ;
-; db/add_sub_7pc.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/add_sub_7pc.tdf         ;
-; db/add_sub_8pc.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/user3/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/add_sub_8pc.tdf         ;
-+-----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++-----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path  ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                  ;
++-----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+
+; ../HiddenLayer/ActivationFunc.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv                 ;
+; ../HiddenLayer/multiply.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv                       ;
+; ../HiddenLayer/HiddenLayer_Top.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/HiddenLayer/HiddenLayer_Top.sv                ;
+; ../WeightInitiallize/LFSR.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv                     ;
+; ../WeightInitiallize/WeightRAM.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/WeightRAM.sv                ;
+; DrowsinessDetector.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/DrowsinessDetector.sv      ;
+; lpm_mult.tdf                      ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_mult.tdf                                   ;
+; db/mult_oct.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/mult_oct.tdf            ;
+; lpm_divide.tdf                    ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_divide.tdf                                 ;
+; db/lpm_divide_akm.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/lpm_divide_akm.tdf      ;
+; db/sign_div_unsign_2nh.tdf        ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/sign_div_unsign_2nh.tdf ;
+; db/alt_u_div_o9f.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/alt_u_div_o9f.tdf       ;
+; db/add_sub_7pc.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/add_sub_7pc.tdf         ;
+; db/add_sub_8pc.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDectetor/db/add_sub_8pc.tdf         ;
++-----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------+
@@ -195,28 +189,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,638       ;
+; Estimated Total logic elements              ; 1,758       ;
 ;                                             ;             ;
-; Total combinational functions               ; 990         ;
+; Total combinational functions               ; 1110        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 579         ;
-;     -- 3 input functions                    ; 244         ;
-;     -- <=2 input functions                  ; 167         ;
+;     -- 4 input functions                    ; 601         ;
+;     -- 3 input functions                    ; 282         ;
+;     -- <=2 input functions                  ; 227         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 867         ;
-;     -- arithmetic mode                      ; 123         ;
+;     -- normal mode                          ; 970         ;
+;     -- arithmetic mode                      ; 140         ;
 ;                                             ;             ;
-; Total registers                             ; 696         ;
-;     -- Dedicated logic registers            ; 696         ;
+; Total registers                             ; 685         ;
+;     -- Dedicated logic registers            ; 685         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 133         ;
+; I/O pins                                    ; 153         ;
 ; Embedded Multiplier 9-bit elements          ; 2           ;
 ; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 696         ;
-; Total fan-out                               ; 6287        ;
-; Average fan-out                             ; 3.22        ;
+; Maximum fan-out                             ; 685         ;
+; Total fan-out                               ; 6616        ;
+; Average fan-out                             ; 3.15        ;
 +---------------------------------------------+-------------+
 
 
@@ -225,18 +219,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                     ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |DrowsinessDetector                          ; 990 (137)         ; 696 (5)      ; 0           ; 0          ; 2            ; 0       ; 1         ; 133  ; 0            ; |DrowsinessDetector                                                                                                                                     ;              ;
-;    |HiddenLayer_top:getMul|                  ; 326 (14)          ; 10 (10)      ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul                                                                                                              ;              ;
-;       |multiply:mul|                         ; 312 (30)          ; 0 (0)        ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul                                                                                                 ;              ;
-;          |lpm_divide:Div0|                   ; 282 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0                                                                                 ;              ;
-;             |lpm_divide_akm:auto_generated|  ; 282 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0|lpm_divide_akm:auto_generated                                                   ;              ;
-;                |sign_div_unsign_2nh:divider| ; 282 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0|lpm_divide_akm:auto_generated|sign_div_unsign_2nh:divider                       ;              ;
-;                   |alt_u_div_o9f:divider|    ; 282 (282)         ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0|lpm_divide_akm:auto_generated|sign_div_unsign_2nh:divider|alt_u_div_o9f:divider ;              ;
+; |DrowsinessDetector                          ; 1110 (223)        ; 685 (5)      ; 0           ; 0          ; 2            ; 0       ; 1         ; 153  ; 0            ; |DrowsinessDetector                                                                                                                                     ;              ;
+;    |HiddenLayer_top:getMul|                  ; 376 (43)          ; 10 (10)      ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul                                                                                                              ;              ;
+;       |multiply:mul|                         ; 333 (30)          ; 0 (0)        ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul                                                                                                 ;              ;
+;          |lpm_divide:Div0|                   ; 303 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0                                                                                 ;              ;
+;             |lpm_divide_akm:auto_generated|  ; 303 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0|lpm_divide_akm:auto_generated                                                   ;              ;
+;                |sign_div_unsign_2nh:divider| ; 303 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0|lpm_divide_akm:auto_generated|sign_div_unsign_2nh:divider                       ;              ;
+;                   |alt_u_div_o9f:divider|    ; 303 (303)         ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0|lpm_divide_akm:auto_generated|sign_div_unsign_2nh:divider|alt_u_div_o9f:divider ;              ;
 ;          |lpm_mult:Mult0|                    ; 0 (0)             ; 0 (0)        ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_mult:Mult0                                                                                  ;              ;
 ;             |mult_oct:auto_generated|        ; 0 (0)             ; 0 (0)        ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; |DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_mult:Mult0|mult_oct:auto_generated                                                          ;              ;
 ;    |LFSR:rndnm|                              ; 2 (2)             ; 10 (10)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|LFSR:rndnm                                                                                                                          ;              ;
-;    |WeightRAM:ram|                           ; 510 (510)         ; 660 (660)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|WeightRAM:ram                                                                                                                       ;              ;
-;    |counter:counter0|                        ; 15 (15)           ; 11 (11)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|counter:counter0                                                                                                                    ;              ;
+;    |WeightRAM:ram|                           ; 509 (509)         ; 660 (660)    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |DrowsinessDetector|WeightRAM:ram                                                                                                                       ;              ;
 +----------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -260,18 +253,18 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 
 
 Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |DrowsinessDetector|state                                                                                                      ;
-+-------------------------+----------------------+-----------------------+-------------+------------------+-------------------------+------------+
-; Name                    ; state.hiddenLayer_AF ; state.hiddenLayer_sum ; state.halt1 ; state.readWeight ; state.weightInitiallize ; state.halt ;
-+-------------------------+----------------------+-----------------------+-------------+------------------+-------------------------+------------+
-; state.halt              ; 0                    ; 0                     ; 0           ; 0                ; 0                       ; 0          ;
-; state.weightInitiallize ; 0                    ; 0                     ; 0           ; 0                ; 1                       ; 1          ;
-; state.readWeight        ; 0                    ; 0                     ; 0           ; 1                ; 0                       ; 1          ;
-; state.halt1             ; 0                    ; 0                     ; 1           ; 0                ; 0                       ; 1          ;
-; state.hiddenLayer_sum   ; 0                    ; 1                     ; 0           ; 0                ; 0                       ; 1          ;
-; state.hiddenLayer_AF    ; 1                    ; 0                     ; 0           ; 0                ; 0                       ; 1          ;
-+-------------------------+----------------------+-----------------------+-------------+------------------+-------------------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |DrowsinessDetector|state                                                                                               ;
++-------------------------+-------------------+-------------------+-------------+------------------+-------------------------+------------+
+; Name                    ; state.outputLayer ; state.hiddenLayer ; state.halt1 ; state.readWeight ; state.weightInitiallize ; state.halt ;
++-------------------------+-------------------+-------------------+-------------+------------------+-------------------------+------------+
+; state.halt              ; 0                 ; 0                 ; 0           ; 0                ; 0                       ; 0          ;
+; state.weightInitiallize ; 0                 ; 0                 ; 0           ; 0                ; 1                       ; 1          ;
+; state.readWeight        ; 0                 ; 0                 ; 0           ; 1                ; 0                       ; 1          ;
+; state.halt1             ; 0                 ; 0                 ; 1           ; 0                ; 0                       ; 1          ;
+; state.hiddenLayer       ; 0                 ; 1                 ; 0           ; 0                ; 0                       ; 1          ;
+; state.outputLayer       ; 1                 ; 0                 ; 0           ; 0                ; 0                       ; 1          ;
++-------------------------+-------------------+-------------------+-------------+------------------+-------------------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------+
@@ -279,6 +272,16 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+-------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal     ; Free of Timing Hazards ;
 +-----------------------------------------------------+-------------------------+------------------------+
+; weight[0]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; weight[1]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; weight[2]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; weight[3]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; weight[4]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; weight[5]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; weight[6]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; weight[7]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; weight[8]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; weight[9]$latch                                     ; state.hiddenLayer       ; yes                    ;
 ; dataIn[0]$latch                                     ; state.weightInitiallize ; yes                    ;
 ; dataIn[1]$latch                                     ; state.weightInitiallize ; yes                    ;
 ; dataIn[2]$latch                                     ; state.weightInitiallize ; yes                    ;
@@ -289,63 +292,78 @@ Encoding Type:  One-Hot
 ; dataIn[7]$latch                                     ; state.weightInitiallize ; yes                    ;
 ; dataIn[8]$latch                                     ; state.weightInitiallize ; yes                    ;
 ; dataIn[9]$latch                                     ; state.weightInitiallize ; yes                    ;
-; outVal[0]$latch                                     ; WideOr4                 ; yes                    ;
-; outVal[1]$latch                                     ; WideOr4                 ; yes                    ;
-; outVal[2]$latch                                     ; WideOr4                 ; yes                    ;
-; outVal[3]$latch                                     ; WideOr4                 ; yes                    ;
-; outVal[4]$latch                                     ; WideOr4                 ; yes                    ;
-; outVal[5]$latch                                     ; WideOr4                 ; yes                    ;
-; outVal[6]$latch                                     ; WideOr4                 ; yes                    ;
-; outVal[7]$latch                                     ; WideOr4                 ; yes                    ;
-; outVal[8]$latch                                     ; WideOr4                 ; yes                    ;
-; outVal[9]$latch                                     ; WideOr4                 ; yes                    ;
-; Address[4]                                          ; state.hiddenLayer_sum   ; yes                    ;
-; Address[5]                                          ; state.hiddenLayer_sum   ; yes                    ;
-; Address[2]                                          ; state.hiddenLayer_sum   ; yes                    ;
-; Address[3]                                          ; state.hiddenLayer_sum   ; yes                    ;
-; Address[0]                                          ; state.hiddenLayer_sum   ; yes                    ;
-; Address[1]                                          ; state.hiddenLayer_sum   ; yes                    ;
-; Address[6]                                          ; state.hiddenLayer_sum   ; yes                    ;
-; WE                                                  ; WideOr2                 ; yes                    ;
-; on                                                  ; state.hiddenLayer_sum   ; yes                    ;
-; nextState.weightInitiallize_559                     ; Selector23              ; yes                    ;
-; nextState.hiddenLayer_AF_529                        ; Selector22              ; yes                    ;
-; Clear                                               ; state.weightInitiallize ; yes                    ;
-; nextState.hiddenLayer_sum_539                       ; Selector23              ; yes                    ;
-; max[6]                                              ; WideOr3                 ; yes                    ;
-; max[3]                                              ; WideOr3                 ; yes                    ;
-; max[0]                                              ; WideOr3                 ; yes                    ;
-; max[1]                                              ; WideOr3                 ; yes                    ;
-; nextState.halt_569                                  ; Selector22              ; yes                    ;
-; nextState.halt1_549                                 ; Selector23              ; yes                    ;
-; inVal[0]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; inVal[1]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; inVal[2]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; inVal[3]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; inVal[4]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; inVal[5]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; inVal[6]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; inVal[7]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; inVal[8]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; inVal[9]                                            ; state.hiddenLayer_sum   ; yes                    ;
-; Number of user-specified and inferred latches = 49  ;                         ;                        ;
+; outVal[0]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; outVal[1]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; outVal[2]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; outVal[3]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; outVal[4]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; outVal[5]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; outVal[6]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; outVal[7]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; outVal[8]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; outVal[9]$latch                                     ; state.hiddenLayer       ; yes                    ;
+; count0[0]$latch                                     ; Selector36              ; yes                    ;
+; count0[1]$latch                                     ; Selector36              ; yes                    ;
+; count0[2]$latch                                     ; Selector36              ; yes                    ;
+; count0[3]$latch                                     ; Selector36              ; yes                    ;
+; count0[4]$latch                                     ; Selector36              ; yes                    ;
+; count0[5]$latch                                     ; Selector36              ; yes                    ;
+; count0[6]$latch                                     ; Selector36              ; yes                    ;
+; count0[7]$latch                                     ; Selector36              ; yes                    ;
+; count0[8]$latch                                     ; Selector36              ; yes                    ;
+; count0[9]$latch                                     ; Selector36              ; yes                    ;
+; count1[0]$latch                                     ; Selector38              ; yes                    ;
+; count1[1]$latch                                     ; Selector38              ; yes                    ;
+; count1[2]$latch                                     ; Selector38              ; yes                    ;
+; count1[3]$latch                                     ; Selector38              ; yes                    ;
+; count1[4]$latch                                     ; Selector38              ; yes                    ;
+; count1[5]$latch                                     ; Selector38              ; yes                    ;
+; count1[6]$latch                                     ; Selector38              ; yes                    ;
+; count1[7]$latch                                     ; Selector38              ; yes                    ;
+; count1[8]$latch                                     ; Selector38              ; yes                    ;
+; count1[9]$latch                                     ; Selector38              ; yes                    ;
+; Address[4]                                          ; WideOr4                 ; yes                    ;
+; Address[5]                                          ; WideOr4                 ; yes                    ;
+; Address[2]                                          ; WideOr4                 ; yes                    ;
+; Address[3]                                          ; WideOr4                 ; yes                    ;
+; Address[0]                                          ; WideOr4                 ; yes                    ;
+; Address[1]                                          ; WideOr4                 ; yes                    ;
+; Address[6]                                          ; WideOr4                 ; yes                    ;
+; WE                                                  ; WideOr3                 ; yes                    ;
+; nextState.hiddenLayer_774                           ; Selector25              ; yes                    ;
+; on                                                  ; WE                      ; yes                    ;
+; nextState.weightInitiallize_813                     ; Selector25              ; yes                    ;
+; Clear                                               ; WideOr4                 ; yes                    ;
+; nextState.halt_826                                  ; Selector26              ; yes                    ;
+; nextState.readWeight_800                            ; Selector25              ; yes                    ;
+; nextState.halt1_787                                 ; Selector26              ; yes                    ;
+; inVal[0]                                            ; state.hiddenLayer       ; yes                    ;
+; inVal[1]                                            ; state.hiddenLayer       ; yes                    ;
+; inVal[2]                                            ; state.hiddenLayer       ; yes                    ;
+; inVal[3]                                            ; state.hiddenLayer       ; yes                    ;
+; inVal[4]                                            ; state.hiddenLayer       ; yes                    ;
+; inVal[5]                                            ; state.hiddenLayer       ; yes                    ;
+; inVal[6]                                            ; state.hiddenLayer       ; yes                    ;
+; inVal[7]                                            ; state.hiddenLayer       ; yes                    ;
+; inVal[8]                                            ; state.hiddenLayer       ; yes                    ;
+; inVal[9]                                            ; state.hiddenLayer       ; yes                    ;
+; Number of user-specified and inferred latches = 75  ;                         ;                        ;
 +-----------------------------------------------------+-------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                            ;
-+----------------------------------------+--------------------------------------+
-; Register name                          ; Reason for Removal                   ;
-+----------------------------------------+--------------------------------------+
-; counter:counter1|count[0..9]           ; Stuck at GND due to stuck port clock ;
-; state.readWeight                       ; Lost fanout                          ;
-; state~4                                ; Lost fanout                          ;
-; state~5                                ; Lost fanout                          ;
-; state~6                                ; Lost fanout                          ;
-; state~7                                ; Lost fanout                          ;
-; Total Number of Removed Registers = 15 ;                                      ;
-+----------------------------------------+--------------------------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; state.outputLayer                     ; Lost fanout        ;
+; state~4                               ; Lost fanout        ;
+; state~5                               ; Lost fanout        ;
+; state~6                               ; Lost fanout        ;
+; state~7                               ; Lost fanout        ;
+; Total Number of Removed Registers = 5 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -353,10 +371,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 696   ;
-; Number of registers using Synchronous Clear  ; 20    ;
+; Total registers                              ; 685   ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 665   ;
+; Number of registers using Asynchronous Clear ; 675   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 670   ;
 ; Number of registers using Preset             ; 0     ;
@@ -376,15 +394,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DrowsinessDetector|HiddenLayer_top:getMul|outVal[0] ;
-; 128:1              ; 10 bits   ; 850 LEs       ; 440 LEs              ; 410 LEs                ; Yes        ; |DrowsinessDetector|WeightRAM:ram|Q[0]               ;
-; 16:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; No         ; |DrowsinessDetector|Mux2                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 128:1              ; 10 bits   ; 850 LEs       ; 440 LEs              ; 410 LEs                ; Yes        ; |DrowsinessDetector|WeightRAM:ram|Q[3] ;
+; 16:1               ; 10 bits   ; 100 LEs       ; 70 LEs               ; 30 LEs                 ; No         ; |DrowsinessDetector|Mux1               ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 10 LEs               ; 20 LEs                 ; No         ; |DrowsinessDetector|Selector34         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
 +------------------------------------------------------------------------------------+
@@ -396,20 +414,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; weightInitiallize ; 1     ; Signed Integer                                         ;
 ; readWeight        ; 2     ; Signed Integer                                         ;
 ; halt1             ; 3     ; Signed Integer                                         ;
-; hiddenLayer_sum   ; 4     ; Signed Integer                                         ;
-; hiddenLayer_AF    ; 5     ; Signed Integer                                         ;
+; hiddenLayer       ; 4     ; Signed Integer                                         ;
+; outputLayer       ; 5     ; Signed Integer                                         ;
 +-------------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: clk_div:createSlowClk ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                            ;
-; N              ; 5     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -491,48 +498,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+----------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "counter:counter1"                                                                        ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; max[9..4] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; max[3]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; max[2]    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; max[1]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; max[0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; stop      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------+
-; Port Connectivity Checks: "counter:counter0" ;
-+-----------+-------+----------+---------------+
-; Port      ; Type  ; Severity ; Details       ;
-+-----------+-------+----------+---------------+
-; max[9..7] ; Input ; Info     ; Stuck at GND  ;
-; max[5..4] ; Input ; Info     ; Stuck at GND  ;
-; max[2]    ; Input ; Info     ; Stuck at GND  ;
-+-----------+-------+----------+---------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ActivationFunc:actFun"                                                                                                                      ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                                     ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; in   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (10 bits) it drives.  Extra input bit(s) "in[9..1]" will be connected to GND. ;
-; out  ; Output ; Warning  ; Output or bidir port (10 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[9..1]" have no fanouts                     ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clk_div:createSlowClk"                                                                                      ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; clk_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ActivationFunc:actFun"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -541,116 +513,142 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Mon Dec 18 11:26:47 2017
+    Info: Processing started: Wed Dec 20 19:09:49 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DrowsinessDetector -c DrowsinessDetector
-Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/weightinitiallize/clk_div.sv
-    Info: Found entity 1: clk_div
-Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/hiddenlayer/activationfunc.sv
+Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/hiddenlayer/activationfunc.sv
     Info: Found entity 1: ActivationFunc
-Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/hiddenlayer/multiply.sv
+Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/hiddenlayer/multiply.sv
     Info: Found entity 1: multiply
-Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/hiddenlayer/hiddenlayer_top.sv
+Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/hiddenlayer/hiddenlayer_top.sv
     Info: Found entity 1: HiddenLayer_top
-Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/weightoptimization/counter.sv
-    Info: Found entity 1: counter
-Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/weightinitiallize/lfsr.sv
+Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/weightinitiallize/lfsr.sv
     Info: Found entity 1: LFSR
-Info: Found 1 design units, including 1 entities, in source file /users/user3/desktop/fyp_drowsinessdetector/weightinitiallize/weightram.sv
+Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/weightinitiallize/weightram.sv
     Info: Found entity 1: WeightRAM
 Info: Found 1 design units, including 1 entities, in source file drowsinessdetector.sv
     Info: Found entity 1: DrowsinessDetector
-Warning (10236): Verilog HDL Implicit Net warning at DrowsinessDetector.sv(123): created implicit net for "AF_in"
-Warning (10236): Verilog HDL Implicit Net warning at DrowsinessDetector.sv(123): created implicit net for "AF"
 Info: Elaborating entity "DrowsinessDetector" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector.sv(93): truncated value with size 32 to match size of target (10)
-Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(98): variable "count0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10036): Verilog HDL or VHDL warning at DrowsinessDetector.sv(32): object "out0" assigned a value but never read
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(61): variable "count0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector.sv(61): truncated value with size 10 to match size of target (7)
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(62): variable "count0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(67): variable "count0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(72): variable "count0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(72): variable "count1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector.sv(72): truncated value with size 10 to match size of target (7)
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(86): variable "count0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(89): variable "AF" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(89): variable "count1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(90): variable "count1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(94): variable "count0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(95): variable "count1" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(99): variable "count0" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(99): variable "count1" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector.sv(99): truncated value with size 10 to match size of target (7)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector.sv(101): truncated value with size 10 to match size of target (1)
-Warning (10235): Verilog HDL Always Construct warning at DrowsinessDetector.sv(112): variable "AF" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "startCounter1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "on", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "Clear", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "nextState", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "WE", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "dataIn", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "max", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "inVal", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "Address", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "outVal", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(54): inferring latch(es) for variable "AF_in", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "AF_in" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[0]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[1]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[2]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[3]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[4]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[5]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[6]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[7]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[8]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "outVal[9]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "Address[0]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "Address[1]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "Address[2]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "Address[3]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "Address[4]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "Address[5]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "Address[6]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[0]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[1]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[2]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[3]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[4]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[5]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[6]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[7]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[8]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "inVal[9]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[0]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[1]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[2]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[3]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[4]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[5]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[6]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[7]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[8]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "max[9]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[0]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[1]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[2]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[3]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[4]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[5]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[6]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[7]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[8]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "dataIn[9]" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "WE" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "nextState.hiddenLayer_AF" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "nextState.hiddenLayer_sum" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "nextState.halt1" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "nextState.weightInitiallize" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "nextState.halt" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "Clear" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "on" at DrowsinessDetector.sv(54)
-Info (10041): Inferred latch for "startCounter1" at DrowsinessDetector.sv(54)
-Info: Elaborating entity "clk_div" for hierarchy "clk_div:createSlowClk"
-Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "on", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "Clear", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "count1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "count0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "nextState", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "WE", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "dataIn", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "Address", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "weight", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "inVal", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "outVal", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at DrowsinessDetector.sv(44): inferring latch(es) for variable "AF_in", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "AF_in[0]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "AF_in[1]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "AF_in[2]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "AF_in[3]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "AF_in[4]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "AF_in[5]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "AF_in[6]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "AF_in[7]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "AF_in[8]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "AF_in[9]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[0]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[1]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[2]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[3]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[4]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[5]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[6]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[7]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[8]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "outVal[9]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[0]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[1]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[2]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[3]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[4]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[5]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[6]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[7]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[8]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "inVal[9]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[0]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[1]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[2]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[3]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[4]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[5]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[6]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[7]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[8]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "weight[9]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "Address[0]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "Address[1]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "Address[2]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "Address[3]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "Address[4]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "Address[5]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "Address[6]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[0]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[1]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[2]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[3]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[4]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[5]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[6]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[7]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[8]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "dataIn[9]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "WE" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "nextState.hiddenLayer" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "nextState.halt1" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "nextState.readWeight" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "nextState.weightInitiallize" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "nextState.halt" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[0]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[1]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[2]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[3]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[4]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[5]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[6]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[7]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[8]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count0[9]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[0]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[1]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[2]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[3]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[4]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[5]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[6]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[7]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[8]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "count1[9]" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "Clear" at DrowsinessDetector.sv(44)
+Info (10041): Inferred latch for "on" at DrowsinessDetector.sv(44)
 Info: Elaborating entity "HiddenLayer_top" for hierarchy "HiddenLayer_top:getMul"
 Info: Elaborating entity "multiply" for hierarchy "HiddenLayer_top:getMul|multiply:mul"
 Warning (10230): Verilog HDL assignment warning at multiply.sv(9): truncated value with size 32 to match size of target (10)
 Info: Elaborating entity "ActivationFunc" for hierarchy "ActivationFunc:actFun"
 Warning (10230): Verilog HDL assignment warning at ActivationFunc.sv(13): truncated value with size 32 to match size of target (10)
 Info: Elaborating entity "LFSR" for hierarchy "LFSR:rndnm"
-Info: Elaborating entity "counter" for hierarchy "counter:counter0"
 Info: Elaborating entity "WeightRAM" for hierarchy "WeightRAM:ram"
 Warning (10230): Verilog HDL assignment warning at WeightRAM.sv(16): truncated value with size 64 to match size of target (10)
 Warning (10240): Verilog HDL Always Construct warning at WeightRAM.sv(13): inferring latch(es) for variable "count", which holds its previous value in one or more paths through the always construct
-Warning: Net is missing source, defaulting to GND
-    Warning (12110): Net "Clock_slow" is missing source, defaulting to GND
 Info: Inferred 2 megafunctions from design logic
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "HiddenLayer_top:getMul|multiply:mul|Mult0"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "HiddenLayer_top:getMul|multiply:mul|Div0"
@@ -683,57 +681,94 @@ Info: Found 1 design units, including 1 entities, in source file db/add_sub_7pc.
     Info: Found entity 1: add_sub_7pc
 Info: Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
     Info: Found entity 1: add_sub_8pc
-Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Duplicate LATCH primitives merged into single LATCH primitive
-    Info: Duplicate LATCH primitive "max[0]" merged with LATCH primitive "max[6]"
-    Info: Duplicate LATCH primitive "max[1]" merged with LATCH primitive "max[3]"
-Warning: Latch outVal[0]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch outVal[1]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch outVal[2]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch outVal[3]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch outVal[4]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch outVal[5]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch outVal[6]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch outVal[7]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch outVal[8]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch outVal[9]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_AF
-Warning: Latch nextState.hiddenLayer_AF_529 has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_sum
-Warning: Latch max[6] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_sum
-Warning: Latch max[3] has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer_sum
-Warning: Latch nextState.halt_569 has unsafe behavior
+Warning: Latch count0[0]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count0[1]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count0[2]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count0[3]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count0[4]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count0[5]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count0[6]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count0[7]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count0[8]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count0[9]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[0]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[1]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[2]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[3]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[4]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[5]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[6]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[7]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[8]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch count1[9]$latch has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch Address[4] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.readWeight
+Warning: Latch Address[5] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.readWeight
+Warning: Latch Address[2] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.readWeight
+Warning: Latch Address[3] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.readWeight
+Warning: Latch Address[1] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.readWeight
+Warning: Latch Address[6] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.readWeight
+Warning: Latch nextState.halt_826 has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal state.weightInitiallize
+Warning: Latch nextState.readWeight_800 has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
+Warning: Latch nextState.halt1_787 has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal state.hiddenLayer
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning: Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[0]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[0]~_emulated" and latch "HiddenLayer_top:getMul|outVal[0]~latch"
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[1]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[1]~_emulated" and latch "HiddenLayer_top:getMul|outVal[1]~latch"
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[2]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[2]~_emulated" and latch "HiddenLayer_top:getMul|outVal[2]~latch"
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[3]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[3]~_emulated" and latch "HiddenLayer_top:getMul|outVal[3]~latch"
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[4]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[4]~_emulated" and latch "HiddenLayer_top:getMul|outVal[4]~latch"
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[5]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[5]~_emulated" and latch "HiddenLayer_top:getMul|outVal[5]~latch"
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[6]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[6]~_emulated" and latch "HiddenLayer_top:getMul|outVal[6]~latch"
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[7]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[7]~_emulated" and latch "HiddenLayer_top:getMul|outVal[7]~latch"
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[8]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[8]~_emulated" and latch "HiddenLayer_top:getMul|outVal[8]~latch"
+    Warning (13310): Register "HiddenLayer_top:getMul|outVal[9]" is converted into an equivalent circuit using register "HiddenLayer_top:getMul|outVal[9]~_emulated" and latch "HiddenLayer_top:getMul|outVal[9]~latch"
 Info: Timing-Driven Synthesis is running
 Info: 5 registers lost all their fanouts during netlist optimizations. The first 5 are displayed below.
-    Info: Register "state.readWeight" lost all its fanouts during netlist optimizations.
+    Info: Register "state.outputLayer" lost all its fanouts during netlist optimizations.
     Info: Register "state~4" lost all its fanouts during netlist optimizations.
     Info: Register "state~5" lost all its fanouts during netlist optimizations.
     Info: Register "state~6" lost all its fanouts during netlist optimizations.
     Info: Register "state~7" lost all its fanouts during netlist optimizations.
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Info: Implemented 1787 device resources after synthesis - the final resource count might be different
+Info: Implemented 1937 device resources after synthesis - the final resource count might be different
     Info: Implemented 103 input pins
-    Info: Implemented 30 output pins
-    Info: Implemented 1652 logic cells
+    Info: Implemented 50 output pins
+    Info: Implemented 1782 logic cells
     Info: Implemented 2 DSP elements
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 295 megabytes
-    Info: Processing ended: Mon Dec 18 11:26:51 2017
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 100 warnings
+    Info: Peak virtual memory: 333 megabytes
+    Info: Processing ended: Wed Dec 20 19:09:55 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

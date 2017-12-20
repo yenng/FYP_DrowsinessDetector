@@ -3,7 +3,7 @@ module WeighInitiallize_tb();
 	reg [9:0]in[0:9];
 	wire signed[9:0] dataRead;
 	wire signed[9:0] data;
-	wire [9:0]count, outVal;
+	wire [9:0]count, outVal,count0,count1;
 	
 	initial begin
 		Clock = 0;
@@ -28,10 +28,10 @@ module WeighInitiallize_tb();
 #100 Start = 1;
 	end
 	
-	DrowsinessDetector wi(Clock,Rst,Start,in,dataRead,data,outVal);
+	DrowsinessDetector wi(Clock,Rst,Start,in,dataRead,data,outVal,count0,count1);
 	
 	initial begin
-		$monitor("In = %p\nData Read = %d\nData = %d\nOutVal = %d", in, dataRead, data, outVal);
+		$monitor("In = %p\nData Read = %d\nData = %d\nOutVal = %d\nCount0 = %d\nCount1 = %d", in, dataRead, data, outVal,count0,count1);
 	end 
 	
 endmodule

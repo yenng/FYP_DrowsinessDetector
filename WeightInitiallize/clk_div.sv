@@ -12,7 +12,7 @@ reg clk_track;
 always @(posedge clk or negedge rst)begin
 	if (~rst)begin
 		r_reg <= 0;
-		clk_track <= 1'b0;
+		clk_track <= 1'b1;
 	end
 	else if (r_nxt == N)begin
 		r_reg <= 0;
