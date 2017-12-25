@@ -1,5 +1,5 @@
 Assembler report for DrowsinessDetector
-Wed Dec 20 19:10:22 2017
+Sun Dec 24 16:46:32 2017
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Dec 20 19:10:22 2017 ;
+; Assembler Status      ; Successful - Sun Dec 24 16:46:32 2017 ;
 ; Revision Name         ; DrowsinessDetector                    ;
 ; Top-level Entity Name ; DrowsinessDetector                    ;
 ; Family                ; Cyclone IV E                          ;
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +----------------+----------------------------------------------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                                                      ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                                         ;
-; Checksum       ; 0x0065A200                                                                                         ;
+; Checksum       ; 0x0069ABCD                                                                                         ;
 +----------------+----------------------------------------------------------------------------------------------------+
 
 
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Wed Dec 20 19:10:16 2017
+    Info: Processing started: Sun Dec 24 16:46:16 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DrowsinessDetector -c DrowsinessDetector
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 522 megabytes
-    Info: Processing ended: Wed Dec 20 19:10:22 2017
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 523 megabytes
+    Info: Processing ended: Sun Dec 24 16:46:32 2017
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:06
 
 

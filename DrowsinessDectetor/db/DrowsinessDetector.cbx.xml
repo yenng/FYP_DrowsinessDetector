@@ -1,7 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="DrowsinessDetector">
-		<CBX_INST_ENTRY INSTANCE_NAME="|DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DrowsinessDetector|HiddenLayer_top:getMul|multiply:mul|lpm_mult:Mult0" CBX_FILE_NAME="mult_oct.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

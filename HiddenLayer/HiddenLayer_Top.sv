@@ -1,11 +1,11 @@
 module HiddenLayer_top(
 	input Clock, Clear, 
 	input signed [9:0]weight,
-	input [9:0]inVal,
+	input [319:0]inVal,
 	//input [639:0]testVal[0:479],
-	output reg [9:0]outVal);
+	output reg signed[319:0]outVal);
 	
-	reg [9:0]mulVal;
+	reg [319:0]mulVal;
 	reg [9:0]addVal;
 	
 	always@(posedge Clock, negedge Clear)begin 
@@ -13,10 +13,10 @@ module HiddenLayer_top(
 			if(mulVal)
 				outVal = outVal + mulVal;
 			else
-				outVal = 0;
+				outVal = outVal + 0;
 			end
 		else begin
-			outVal = 10'd0;
+			outVal = 320'd0;
 		end
 	end
 	

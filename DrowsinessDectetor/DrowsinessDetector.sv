@@ -1,10 +1,12 @@
 module DrowsinessDetector(
 	input Clock,Rst,Start,
-	input [9:0]in[0:9],
+	input [319:0] in1 [0:29],
 	output reg signed[9:0] weight,dataIn,
-	output reg [9:0] outVal,count0,count1);
+	output reg [319:0] outVal,
+	output reg [9:0] count0,count1);
 	
-	//reg [639:0]testVal[0:479];
+	// Input
+	//reg [319:0] in1 [0:29];
 	
 	// For RAM to write/read weight. 
 	reg WE;
@@ -15,7 +17,7 @@ module DrowsinessDetector(
 	reg on;
 	
 	// The address of RAM to call the weight.
-	reg [6:0] Address;
+	reg [7:0] Address;
 	
 	// The variable that represent the state and nextState.
 	reg [3:0] state;
@@ -23,14 +25,15 @@ module DrowsinessDetector(
 	
 	// Parameter for the state.
 	parameter 	halt = 0, weightInitiallize = 1, readWeight = 2, halt1 = 3, hiddenLayer = 4,
-	           outputLayer = 5;
+	           outputLayer = 5, readWeight1 = 6;
 	
 	// The variable for hidden layer.
 	reg Clear;
-	reg signed[9:0]sum;
-	reg [9:0]AF_in,AF;
+	reg signed[319:0]sum;
+	reg [319:0]AF_in;
+	reg [9:0] AF;
 	reg [9:0]out0[4:0];
-	reg unsigned[9:0]inVal;
+	reg unsigned[319:0]inVal;
 	
 	always@(posedge Clock, negedge Rst) begin
 		if(~Rst) begin
@@ -46,7 +49,7 @@ module DrowsinessDetector(
 		  // The following state is for weightInitiallize module.
 			halt: begin
 				on = 0;				// Off LFSR
-				Clear = 1;
+				Clear = 1;			// Clear the data of sum in hiddenlayer_top
 				count1 = 0;
 				count0 = 0;
 				if(Start)
@@ -59,7 +62,7 @@ module DrowsinessDetector(
 				on = 1;				// Start LFSR
 				dataIn = data;
 				Address = count0;
-				if (count0 == 10'd65) begin
+				if (count0 == 10'd165) begin
 					nextState = halt;
 					count0 = 0;
 				end
@@ -69,21 +72,21 @@ module DrowsinessDetector(
 			// For reading weight in test bench.
 			readWeight: begin
 				WE = 0;
-				Address = count0+count1*10'd10;
+				Clear = 0;
+				Address = count0+count1*10'd30;
+				weight = dataOut;
 				nextState = hiddenLayer;
+				inVal = in1[count0];
 			end
 			halt1: begin
 				on = 0;
 				Clear = 1;
+				nextState = readWeight1;
 			end
 			// The states above used to initiallize the weight.
 			// ****************************************************************//
 			// Hidden Layer for sum calculation
 			hiddenLayer: begin // Calculate the output value of hiddenLayer
-				weight = dataOut;
-				Clear = 0;
-				WE = 0;
-				inVal = in[count0];
 				outVal = sum;
 				AF_in = sum;
 				out0[count1] = AF;
@@ -91,9 +94,10 @@ module DrowsinessDetector(
 				  nextState = halt1;
 				end
 				else begin
-				  if (count0 == 9) begin
+				  if (count0 == 29) begin
 				    count1++;
 				    count0 = 0;
+				    Clear = 1;
 				  end
 				  else begin
 				    count0++;
@@ -103,6 +107,14 @@ module DrowsinessDetector(
 			end
 			outputLayer: begin
 				Clear = 0;
+				WE = 0;
+				weight = dataOut;
+				
+			end
+			readWeight1: begin
+				WE = 0;
+				Address = count0 + 8'd150 + count1*8'd5;
+				nextState = outputLayer;
 			end
 		endcase
 	end
