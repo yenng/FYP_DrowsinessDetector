@@ -1,1 +1,5 @@
 v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,DrowsinessDetector:main|HiddenLayer_top:getMul|multiply:mul|lpm_mult:Mult0|mult_mbt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,DrowsinessDetector:main|Delta:delta1_2|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,DrowsinessDetector:main|Delta:delta1_0|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,DrowsinessDetector:main|Delta:delta1_1|lpm_mult:Mult0|mult_oct:auto_generated|mac_out2,

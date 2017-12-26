@@ -1,7 +1,7 @@
 module multiply(
-input	[319:0] in1,
+input	[9:0] in1,
 input	signed[9:0] in2,
-output reg signed [319:0]mulVal
+output reg signed [9:0]mulVal
 );
 reg [9:0] in2_abs,mulVal_t;
 //in2 is the value of weight, the data might be negative.

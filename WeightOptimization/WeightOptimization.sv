@@ -27,7 +27,7 @@ module WeightOptimization(
 	wire	signed[9:0] weight0_3_new[0:9];
 	wire	signed[9:0] weight0_4_new[0:9];
 	
-	// Weight for output layer
+	// Weight for output layer.  
 	wire	signed[9:0] weight1_0[0:4];
 	wire	signed[9:0] weight1_1[0:4];
 	wire	signed[9:0] weight1_2[0:4];

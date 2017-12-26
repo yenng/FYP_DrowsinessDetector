@@ -38,20 +38,15 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY DrowsinessDetector
+set_global_assignment -name TOP_LEVEL_ENTITY topModule
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 10.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:15:47  DECEMBER 14, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 10.0
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_location_assignment PIN_D2 -to AUD_ADCDAT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to AUD_ADCDAT
 set_location_assignment PIN_C2 -to AUD_ADCLRCK
@@ -1102,10 +1097,20 @@ set_location_assignment PIN_V24 -to HSMC_CLKOUT_N2
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_N2
 set_location_assignment PIN_G24 -to HSMC_CLKOUT_N1
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_N1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightOptimization/Delta.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightOptimization/SigmoidPrime.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../WeightOptimization/Substraction.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../HiddenLayer/ActivationFunc.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../HiddenLayer/multiply.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../HiddenLayer/HiddenLayer_Top.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/LFSR.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/WeightRAM.sv
 set_global_assignment -name SYSTEMVERILOG_FILE DrowsinessDetector.sv
+set_global_assignment -name SYSTEMVERILOG_FILE topModule.sv
+set_global_assignment -name SYSTEMVERILOG_FILE outVerify.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

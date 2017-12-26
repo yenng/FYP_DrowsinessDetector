@@ -1,8 +1,8 @@
 module Subtraction(
 	input [9:0]in1,
 	input [9:0]in2, 	//input will always be positive.
-	output reg [9:0] out,		//output has one more bit to determine negativity.
-	output reg sign);	
+	output reg [9:0] out,		
+	output reg sign);	// 0 positive, 1 negative.
 	
 
 	
