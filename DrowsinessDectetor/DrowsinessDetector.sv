@@ -146,6 +146,8 @@ module DrowsinessDetector(
 				out1[count1] = AF;
 				if(count1 ==2) begin
 					nextState = halt2;
+				  count0 = 0;
+				  count1 = 0;
 				end
 				else begin
 					if(count0 == 4) begin
@@ -173,9 +175,8 @@ module DrowsinessDetector(
 			end
 			halt2: begin
 				Clear = 1;
-				count0 = 0;
-				count1 = 0;
 				out_ann = out1;
+				Address = count0 + 8'd150 + count1*8'd5;
 				if(training)
 					nextState = weightOptimize;
 				else
@@ -183,11 +184,10 @@ module DrowsinessDetector(
 			end
 			weightOptimize: begin //read weight first.
 				WE = 0;
-				Address = count0 + 8'd150 + count1*8'd5;
 				if(dataOut) 
       				nextState = weightUpdate;
   				else
-  				  nextState = weightOptimize;
+  				  nextState = halt2;
 			end
 			weightUpdate: begin
 				if(sign1[count1])
@@ -210,11 +210,11 @@ module DrowsinessDetector(
 					if(count0 == 4)begin
 						count1++;
 						count0 = 0;
-						nextState = weightOptimize;
+						nextState = halt2;
 					end
 					else begin
 						count0++;
-						nextState = weightOptimize;
+						nextState = halt2;
 					end
 				end
 			end

@@ -76,6 +76,7 @@ module DrowsinessDetector(
 		    nextState = weightInitiallize;
 		  end
 			halt: begin
+			  WE = 0;
 				on = 0;				// Off LFSR
 				Address = count0+count1*10'd30;
 				if(Start)
@@ -145,6 +146,8 @@ module DrowsinessDetector(
 				out1[count1] = AF;
 				if(count1 ==2) begin
 					nextState = halt2;
+				  count0 = 0;
+				  count1 = 0;
 				end
 				else begin
 					if(count0 == 4) begin
@@ -172,9 +175,8 @@ module DrowsinessDetector(
 			end
 			halt2: begin
 				Clear = 1;
-				count0 = 0;
-				count1 = 0;
 				out_ann = out1;
+				Address = count0 + 8'd150 + count1*8'd5;
 				if(training)
 					nextState = weightOptimize;
 				else
@@ -182,11 +184,10 @@ module DrowsinessDetector(
 			end
 			weightOptimize: begin //read weight first.
 				WE = 0;
-				Address = count0 + 8'd150 + count1*8'd5;
 				if(dataOut) 
       				nextState = weightUpdate;
   				else
-  				  nextState = weightOptimize;
+  				  nextState = halt2;
 			end
 			weightUpdate: begin
 				if(sign1[count1])

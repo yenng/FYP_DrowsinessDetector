@@ -14,17 +14,17 @@ module	WeightRAM(
 	wire signed[9:0] data;
 	integer count = 0;
 	
-	always @(posedge Clock or negedge Rst)begin
+	always @(Address)begin
 		if(~Rst) begin
 			for(count=0;count<65;count=count+1) 
-				REGISTER[count] <= 64'b0;
+				REGISTER[count] = 64'b0;
 		end
 		else begin
 				if(!WE)	begin
-					Q <= REGISTER[Address];
+					Q = REGISTER[Address];
 				end
 				else	begin 
-					REGISTER[Address]<= D;
+					REGISTER[Address]= D;
 				end
 			end
 	end

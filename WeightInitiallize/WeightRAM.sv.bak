@@ -9,12 +9,12 @@ module	WeightRAM(
 	// Hidden Layer has 5 hidden neurons.
 	// Output Layer has 3 output neurons.
 	// So the total weights needed is 165. (150 for in->hidden, 15 for hidden->out)
-	reg [9:0] REGISTER [164:];
+	reg [9:0] REGISTER [164:0];
 	wire clk;
 	wire signed[9:0] data;
 	integer count = 0;
 	
-	always @(posedge Clock or negedge Rst)begin
+	always @(Address)begin
 		if(~Rst) begin
 			for(count=0;count<65;count=count+1) 
 				REGISTER[count] <= 64'b0;
