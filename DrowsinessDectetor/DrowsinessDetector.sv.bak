@@ -1,10 +1,12 @@
 module DrowsinessDetector(
 	input Clock,Rst,Start,training,
-	input [9:0] in1 [0:29],
+	input [9:0] in1 [29:0],
 	input [9:0] out_ann_real[2:0],
 	output reg [9:0] out_ann[2:0],
 	output reg [9:0] out_hid[4:0],
-	output reg [3:0] state);
+	output reg [3:0] state,
+	output [9:0]delta1[2:0],
+	output [2:0]sign1);
 	
 	//reg training; // Used to make decision whether train or detect.
 	
@@ -41,10 +43,10 @@ module DrowsinessDetector(
 	reg [9:0] out1[2:0];
 	
 	// The variable for weight optimization
-	wire [9:0]out1_err[0:2];
-	wire [9:0]sig_prime_1[0:2];
-	wire [9:0]delta1[0:2];
-	wire [2:0]sign1;
+	wire [9:0]out1_err[2:0];
+	wire [9:0]sig_prime_1[2:0];
+	//wire [9:0]delta1[0:2];
+	//wire [2:0]sign1;
 	
 	always@(posedge Clock, negedge Rst) begin
 		if(~Rst) begin
@@ -55,7 +57,7 @@ module DrowsinessDetector(
 		end
 	end
 	
-	always@( Start, AF, state,data,sum,dataOut,count0,count1) begin
+	always@( Start, state, training, data, dataOut) begin
 		case(state)
 		  // The following state is for weightInitiallize module.
 		  halt0: begin 
@@ -63,13 +65,6 @@ module DrowsinessDetector(
 		    Clear = 1;
 		    count0 = 0;
 		    count1 = 0;
-		    nextState = weightInitiallize;
-		  end
-			halt: begin
-				on = 0;				// Off LFSR
-				Clear = 1;			// Clear the data of sum in hiddenlayer_top
-				count1 = 0;
-				count0 = 0;
 				out0[0] = 10'd0;
 				out0[1] = 10'd0;
 				out0[2] = 10'd0;
@@ -78,17 +73,26 @@ module DrowsinessDetector(
 				out1[0] = 10'd0;
 				out1[1] = 10'd0;
 				out1[2] = 10'd0;
+		    nextState = weightInitiallize;
+		  end
+			halt: begin
+				on = 0;				// Off LFSR
+				Address = count0+count1*10'd30;
 				if(Start)
 					nextState = readWeight;
+				else 
+				  nextState = halt;
 			end
 			weightInitiallize: begin
 				WE = 1;				// Write in random data
 				on = 1;				// Start LFSR
 				Address = count0;
 				dataIn = data;
-				if (count0 == 10'd165) begin
+				if (count0 == 10'd164) begin
 					nextState = halt;
 					count0 = 0;
+					count1 = 0;
+				  Clear = 1;			// Clear the data of sum in hiddenlayer_top
 				end
 				else
 				  count0++;
@@ -97,15 +101,18 @@ module DrowsinessDetector(
 			readWeight: begin
 				WE = 0;
 				Clear = 0;
-				Address = count0+count1*10'd30;
-				nextState = hiddenLayer;
 				inVal = in1[count0];
+				if(dataOut) begin
+      				weight = dataOut;
+      				nextState = hiddenLayer;
+  				end
+  				else
+  				  nextState = halt;
 			end
 			halt1: begin
 				on = 0;
-				Clear = 1;
-				count0 = 0;
-				count1 = 0;
+				out_hid = out0;
+				Address = count0 + 8'd150 + count1*8'd5;
 				nextState = readWeight1;
 			end
 			// The states above used to initiallize the weight.
@@ -113,27 +120,28 @@ module DrowsinessDetector(
 			// Hidden Layer for sum calculation
 			hiddenLayer: begin // Calculate the output value of hiddenLayer
 				AF_in = sum;
-				weight = dataOut;
 				out0[count1] = AF;
-				if (count1 == 5) begin
+				if (count1 == 4) begin
 				  nextState = halt1;
+				  Clear = 1;
+				  count0 = 0;
+				  count1 = 0;
 				end
 				else begin
 				  if (count0 == 29) begin
 				    count1++;
 				    count0 = 0;
 				    Clear = 1;
-				    nextState = readWeight;
+				    nextState = halt;
 				  end
 				  else begin
 				    count0++;
-				    nextState = readWeight;
+				    nextState = halt;
 				  end
 				end
 			end
 			outputLayer: begin
 				AF_in = sum;
-				weight = dataOut;
 				out1[count1] = AF;
 				if(count1 ==2) begin
 					nextState = halt2;
@@ -143,27 +151,30 @@ module DrowsinessDetector(
 						count1++;
 						count0 = 0;
 						Clear = 1;
-						nextState = readWeight1;
+						nextState = halt1;
 					end
 					else begin
 						count0++;
-						nextState = readWeight1;
+						nextState = halt1;
 					end
 				end
 			end
 			readWeight1: begin
 				WE = 0;
 				Clear = 0;
-				Address = count0 + 8'd150 + count1*8'd5;
-				nextState = outputLayer;
-				inVal1 = out0[count0];
+				inVal1 = out_hid[count0];
+				if(dataOut) begin
+      				weight = dataOut;
+      				nextState = outputLayer;
+  				end
+				else
+				  nextState = halt1;
 			end
 			halt2: begin
 				Clear = 1;
 				count0 = 0;
 				count1 = 0;
 				out_ann = out1;
-				out_hid = out0;
 				if(training)
 					nextState = weightOptimize;
 				else
@@ -172,14 +183,25 @@ module DrowsinessDetector(
 			weightOptimize: begin //read weight first.
 				WE = 0;
 				Address = count0 + 8'd150 + count1*8'd5;
-				nextState = weightUpdate;
+				if(dataOut) 
+      				nextState = weightUpdate;
+  				else
+  				  nextState = weightOptimize;
 			end
 			weightUpdate: begin
 				if(sign1[count1])
 					dataIn = dataOut-delta1[count1];
 				else
 					dataIn = dataOut+delta1[count1];
-				nextState = writeWeight;
+				if(dataIn) 
+      				nextState = writeWeight;
+  				else if(dataIn == 0)
+  				  nextState = writeWeight;
+				else 
+				  nextState = weightUpdate;
+			end
+			writeWeight: begin
+			  WE = 1;
 				if(count1 == 2) begin
 					nextState = halt;
 				end
