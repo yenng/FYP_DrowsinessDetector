@@ -11,18 +11,33 @@ reg [3:0] nextState, state;
 reg [9:0]weight_hid [149:0];
 reg [9:0]weight_out [14:0];
 
-reg [9:0] weight,mulVal;
-reg [14:0] addVal_hid[4:0];
+reg [9:0] weight0,mulVal0,inVal,inVal1;
+reg [9:0] weight1,mulVal1;
+reg [9:0] weight2,mulVal2;
+reg [9:0] weight3,mulVal3;
+reg [9:0] weight4,mulVal4;
+reg [9:0] weight5,mulVal5;
+reg [9:0] weight6,mulVal6;
+reg [9:0] weight7,mulVal7;
+reg [9:0] af_in [4:0];
+reg [9:0] af_out [4:0];
+reg [9:0] af_in1 [2:0];
+reg [9:0] af_out1 [2:0];
+
+reg [9:0] addVal_hid[4:0];
 reg [9:0] mulVal_hid[4:0][29:0];
+
+reg [9:0] addVal_out[2:0];
+reg [9:0] mulVal_out[2:0][4:0];
 reg [9:0] count,data,count0,count2;
 reg [7:0] Address;
 reg on;
 
 integer i;
 
-parameter 	halt = 0, weightInitiallize = 1, multiply_hid = 2, halt1 = 3, hiddenLayer = 4,
-           outputLayer = 5, readWeight1 = 6, halt2 = 7, weightOptimize = 8, weightUpdate = 9,
-           halt0 = 10, writeWeight = 11;
+parameter 	halt = 0, weightInitiallize = 1, multiply_hid = 2, hiddenOut = 3, hiddenLayer = 4,
+           multiply_out = 5, storeMulOut = 6, outputLayer = 7, AnnOut = 8, weightUpdate = 9,
+           storeMul = 10, writeWeight = 11;
            
 always@(posedge Clock or negedge Rst) begin
   if(~Rst) begin
@@ -34,20 +49,33 @@ always@(posedge Clock or negedge Rst) begin
   end
 end
 
-always@(state,count0) begin
+always@(state,data,mulVal0) begin
   case(state)
     halt:begin
       on = 1;
       count = 0;
       count2 = 0;
       addVal_hid[0] = 0;
+      addVal_hid[1] = 0;
+      addVal_hid[2] = 0;
+      addVal_hid[3] = 0;
+      addVal_hid[4] = 0;
+      addVal_out[0] = 0;
+      addVal_out[1] = 0;
+      addVal_out[2] = 0;
       nextState = weightInitiallize;
     end
     weightInitiallize: begin
       if (count > 149) begin
-        count = 0;
-        nextState = multiply_hid;
-        end
+        if(count > 165) begin
+          count = 0;
+          nextState = multiply_hid;
+        end  
+        else begin
+          weight_out[count-150] = data;
+          count++;
+        end 
+      end
       else begin
         weight_hid[count] = data;
         count++;
@@ -58,56 +86,114 @@ always@(state,count0) begin
         count = 0;
         nextState = hiddenLayer;
       end
-      else
-        weight = weight_hid[count];
-        //mulVal_hid[0][count] = mulVal;
-        count++;
+      else begin
+        weight0 = weight_hid[count];
+        weight1 = weight_hid[count+30];
+        weight2 = weight_hid[count+60];
+        weight3 = weight_hid[count+90];
+        weight4 = weight_hid[count+120];
+        inVal = in1[count];
+        nextState = storeMul;
+      end
+    end
+    storeMul: begin
+      mulVal_hid[0][count] = mulVal0;
+      mulVal_hid[1][count] = mulVal1;
+      mulVal_hid[2][count] = mulVal2;
+      mulVal_hid[3][count] = mulVal3;
+      mulVal_hid[4][count] = mulVal4;
+      count++;
+      nextState = multiply_hid;
     end
     hiddenLayer:begin
       if(count > 29) begin
         count = 0;
-        nextState = halt1;
+        af_in[0] = addVal_hid[0];
+        af_in[1] = addVal_hid[1];
+        af_in[2] = addVal_hid[2];
+        af_in[3] = addVal_hid[3];
+        af_in[4] = addVal_hid[4];
+        nextState = hiddenOut;
         end
       else begin
         addVal_hid[0] = addVal_hid[0] + mulVal_hid[0][count];
+        addVal_hid[1] = addVal_hid[1] + mulVal_hid[1][count];
+        addVal_hid[2] = addVal_hid[2] + mulVal_hid[2][count];
+        addVal_hid[3] = addVal_hid[3] + mulVal_hid[3][count];
+        addVal_hid[4] = addVal_hid[4] + mulVal_hid[4][count];
         count++;
       end
+    end
+    hiddenOut: begin
+      out_hid[0] = af_out[0];
+      out_hid[1] = af_out[1];
+      out_hid[2] = af_out[2];
+      out_hid[3] = af_out[3];
+      out_hid[4] = af_out[4];
+      nextState = multiply_out;
+    end
+    multiply_out: begin
+      if (count >4) begin
+        count = 0;
+        nextState = outputLayer;
+      end
+      else begin
+        weight5 = weight_out[count];
+        weight6 = weight_out[count+5];
+        weight7 = weight_out[count+10];
+        inVal1 = out_hid[count];
+        nextState = storeMulOut;
+      end
+    end
+    storeMulOut: begin
+      mulVal_out[0][count] = mulVal5;
+      mulVal_out[1][count] = mulVal6;
+      mulVal_out[2][count] = mulVal7;
+      count++;
+      nextState = multiply_out;
+    end
+    outputLayer:begin
+      if(count > 4) begin
+        count = 0;
+        af_in1[0] = addVal_out[0];
+        af_in1[1] = addVal_out[1];
+        af_in1[2] = addVal_out[2];
+        nextState = AnnOut;
+        end
+      else begin
+        addVal_out[0] = addVal_out[0] + mulVal_out[0][count];
+        addVal_out[1] = addVal_out[1] + mulVal_out[1][count];
+        addVal_out[2] = addVal_out[2] + mulVal_out[2][count];
+        count++;
+      end
+    end
+    AnnOut: begin
+      out_ann[0] = af_out1[0];
+      out_ann[1] = af_out1[1];
+      out_ann[2] = af_out1[2];
+      nextState = multiply_out;
     end
   endcase
 end
 
-multiply mul0(in1[0],weight,mulVal);
-/*
-multiply mul0(in1[0],weight_hid[0],mulVal_hid[0][0]);
-multiply mul1(in1[0],weight_hid[1],mulVal_hid[0][1]);
-multiply mul2(in1[0],weight_hid[2],mulVal_hid[0][2]);
-multiply mul3(in1[0],weight_hid[3],mulVal_hid[0][3]);
-multiply mul4(in1[0],weight_hid[4],mulVal_hid[0][4]);
-multiply mul5(in1[0],weight_hid[5],mulVal_hid[0][5]);
-multiply mul6(in1[0],weight_hid[6],mulVal_hid[0][6]);
-multiply mul7(in1[0],weight_hid[7],mulVal_hid[0][7]);
-multiply mul8(in1[0],weight_hid[8],mulVal_hid[0][8]);
-multiply mul9(in1[0],weight_hid[9],mulVal_hid[0][9]);
-multiply mul10(in1[0],weight_hid[10],mulVal_hid[0][10]);
-multiply mul11(in1[0],weight_hid[11],mulVal_hid[0][11]);
-multiply mul12(in1[0],weight_hid[12],mulVal_hid[0][12]);
-multiply mul13(in1[0],weight_hid[13],mulVal_hid[0][13]);
-multiply mul14(in1[0],weight_hid[14],mulVal_hid[0][14]);
-multiply mul15(in1[0],weight_hid[15],mulVal_hid[0][15]);
-multiply mul16(in1[0],weight_hid[16],mulVal_hid[0][16]);
-multiply mul17(in1[0],weight_hid[17],mulVal_hid[0][17]);
-multiply mul18(in1[0],weight_hid[18],mulVal_hid[0][18]);
-multiply mul19(in1[0],weight_hid[19],mulVal_hid[0][19]);
-multiply mul20(in1[0],weight_hid[20],mulVal_hid[0][20]);
-multiply mul21(in1[0],weight_hid[21],mulVal_hid[0][21]);
-multiply mul22(in1[0],weight_hid[22],mulVal_hid[0][22]);
-multiply mul23(in1[0],weight_hid[23],mulVal_hid[0][23]);
-multiply mul24(in1[0],weight_hid[24],mulVal_hid[0][24]);
-multiply mul25(in1[0],weight_hid[25],mulVal_hid[0][25]);
-multiply mul26(in1[0],weight_hid[26],mulVal_hid[0][26]);
-multiply mul27(in1[0],weight_hid[27],mulVal_hid[0][27]);
-multiply mul28(in1[0],weight_hid[28],mulVal_hid[0][28]);
-multiply mul29(in1[0],weight_hid[29],mulVal_hid[0][29]);
-*/
+multiply mul_hid0(inVal,weight0,mulVal0);
+multiply mul_hid1(inVal,weight1,mulVal1);
+multiply mul_hid2(inVal,weight2,mulVal2);
+multiply mul_hid3(inVal,weight3,mulVal3);
+multiply mul_hid4(inVal,weight4,mulVal4);
+
+multiply mul_out0(inVal1,weight5,mulVal5);
+multiply mul_out1(inVal1,weight6,mulVal6);
+multiply mul_out2(inVal1,weight7,mulVal7);
+
+ActivationFunc AF_hid0(af_in[0],af_out[0]);
+ActivationFunc AF_hid1(af_in[1],af_out[1]);
+ActivationFunc AF_hid2(af_in[2],af_out[2]);
+ActivationFunc AF_hid3(af_in[3],af_out[3]);
+ActivationFunc AF_hid4(af_in[4],af_out[4]);
+
+ActivationFunc AF_out0(af_in1[0],af_out1[0]);
+ActivationFunc AF_out1(af_in1[1],af_out1[1]);
+ActivationFunc AF_out2(af_in1[2],af_out1[2]);
 LFSR rndnm(Clock, Rst, on, data);
 endmodule
