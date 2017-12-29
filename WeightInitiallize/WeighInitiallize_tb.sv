@@ -7,6 +7,7 @@ module WeighInitiallize_tb();
 	reg [9:0]out_ann_real[2:0];
 	wire [2:0]sign1;
 	wire [9:0]delta1[2:0];
+	wire done;
 	initial begin
 		Clock = 0;
 		forever #5 Clock = ~Clock;
@@ -15,9 +16,9 @@ module WeighInitiallize_tb();
 	initial begin
 		Rst = 1;
 		Start = 0; 
-		out_ann_real[0] = 10'd2;
-		out_ann_real[1] = 10'd999;
-		out_ann_real[2] = 10'd2;
+		out_ann_real[0] = 10'd999;
+		out_ann_real[1] = 10'd3;
+		out_ann_real[2] = 10'd999;
 		in[0] = 10'd284;
 		in[1] = 10'd281;
 		in[2] = 10'd279;
@@ -87,7 +88,7 @@ module WeighInitiallize_tb();
 		end
 	
 	//DrowsinessDetector wi(Clock,Rst,Start,training,in,out_ann_real,out1,out0,state,delta1,sign1);
-	DrowsinessDetector1 wi1(Clock,Rst,Start,training,in,out_ann_real,out1,out0);
+	DrowsinessDetector1 wi1(Clock,Rst,Start,training,in,out_ann_real,out1,out0,done);
 	
 	initial begin
 		$monitor("In = %p\nOut0 = %p\nOut1 = %p", in, out0, out1);
