@@ -4,7 +4,7 @@ module DrowsinessDetector1(
 	input [9:0] out_ann_real[2:0],
 	output reg [9:0] out_ann[2:0],
 	output reg [9:0] out_hid[4:0],
-	output reg done
+	output reg done, doneTraining
 );
 
 reg [4:0] nextState, state;
@@ -61,7 +61,8 @@ always@(state,data,mulVal0) begin
       on = 1;
       count = 0;
       count2 = 0;
-      done = 1;
+      done = 0;
+      doneTraining = 0;
       addVal_hid[0] = 0;
       addVal_hid[1] = 0;
       addVal_hid[2] = 0;
@@ -239,8 +240,10 @@ always@(state,data,mulVal0) begin
       end
     end
     stopTraining: begin
-      if(delta1[0] < 5 && delta1[1] < 5 && delta1[2] < 5)
+      if(delta1[0] < 5 && delta1[1] < 5 && delta1[2] < 5) begin
         nextState = stop;
+        doneTraining = 1;
+      end
       else
         nextState = multiply_hid;
     end
