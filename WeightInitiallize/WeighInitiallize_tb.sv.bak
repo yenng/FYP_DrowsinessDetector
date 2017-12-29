@@ -66,7 +66,7 @@ module WeighInitiallize_tb();
 #100	Rst = 1;
     Start = 1;
     training = 1;
-#3000
+#30000
 		in[0] = 10'd123;
 		in[1] = 10'd4;
 		in[2] = 10'd512;

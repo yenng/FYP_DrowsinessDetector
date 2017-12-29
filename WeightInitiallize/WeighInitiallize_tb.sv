@@ -100,6 +100,7 @@ module WeighInitiallize_tb();
 		end
 	
 	DrowsinessDetector wi(Clock,Rst,Start,training,in,out_ann_real,out1,out0,state,delta1,sign1);
+	DrowsinessDetector1 wi1(Clock,Rst,Start,training,in,out_ann_real,out1,out0);
 	
 	initial begin
 		$monitor("In = %p\nOut0 = %p\nOut1 = %p", in, out0, out1);
