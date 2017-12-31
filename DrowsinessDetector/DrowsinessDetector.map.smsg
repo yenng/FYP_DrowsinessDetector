@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at DrowsinessDetector.sv(39): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at DrowsinessDetector1.sv(32): object "af_out1" differs only in case from object "AF_out1" in the same scope

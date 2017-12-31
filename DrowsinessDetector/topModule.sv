@@ -3,6 +3,7 @@ module topModule(
 	input [3:0]KEY, 
 	input [17:0]SW, 
 	output [17:0]LEDR, 
+	output [8:0]LEDG,
 	output [6:0]HEX0, 
 	output [6:0]HEX1, 
 	output [6:0]HEX2, 
@@ -16,13 +17,14 @@ module topModule(
 	reg [9:0] in1 [0:29];
 	wire [9:0] out1[2:0];
 	wire [9:0] out0[4:0];
-	wire [3:0] state;
-	reg [4:0] count;
+	wire [4:0] state;
 	reg [9:0] out_ann_real[2:0];
+	wire [9:0]weight_out [14:0];
+	wire [9:0] count;
 	
 	
 	always@(SW) begin
-		if(SW[2:1]==2'b10) begin
+		if(SW[3:2]==2'b10) begin
 			in1[0] = 10'd00;
 			in1[1] = 10'd00;
 			in1[2] = 10'd00;
@@ -88,17 +90,22 @@ module topModule(
 		end
 	end
 	
-	assign LEDR[3:0] = state;
-	assign LEDR[17:8] = in1[0];
-
-	outVerify test0(CLOCK_50, out0[0], HEX0);
-	outVerify test1(CLOCK_50, out0[1], HEX1);
-	outVerify test2(CLOCK_50, out0[2], HEX2);
-	outVerify test3(CLOCK_50, out1[0], HEX3);
-	outVerify test4(CLOCK_50, out1[1], HEX4);
-	outVerify test5(CLOCK_50, out1[2], HEX5);
-	outVerify test6(CLOCK_50, out1[3], HEX6);
-	outVerify test7(CLOCK_50, out1[4], HEX7);
+	assign LEDG[7:3] = state;
+	assign LEDR[17:8] = weight_out[SW[17:14]];
+	assign out_ann_real[0] = 10'd0;
+	assign out_ann_real[1] = 10'd0;
+	assign out_ann_real[2] = 10'd1000;
+	//assign LEDR[17:8] = in1[0];
 	
-	DrowsinessDetector main(CLOCK_50, KEY[0], SW[0],SW[1], in1, out_ann_real,out1, out0, state );
+	
+	outVerify test0(CLOCK_50, out1[0], HEX0);
+	outVerify test1(CLOCK_50, out1[1], HEX1);
+	outVerify test2(CLOCK_50, out1[2], HEX2);
+	outVerify test3(CLOCK_50, out0[0], HEX3);
+	outVerify test4(CLOCK_50, out0[1], HEX4);
+	outVerify test5(CLOCK_50, out0[2], HEX5);
+	outVerify test6(CLOCK_50, out0[3], HEX6);
+	_7SegmentDisplay asdf(count,HEX7);
+	
+	DrowsinessDetector1 main(CLOCK_50, KEY[0], SW[0],SW[1], in1, out_ann_real, out1,out0, LEDG[0],LEDG[1],state,weight_out,count);
 endmodule
