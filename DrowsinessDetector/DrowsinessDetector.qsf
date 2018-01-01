@@ -1114,7 +1114,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE ../HiddenLayer/multiply.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../HiddenLayer/HiddenLayer_Top.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/LFSR.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../WeightInitiallize/WeightRAM.sv
-set_global_assignment -name SYSTEMVERILOG_FILE DrowsinessDetector.sv
 set_global_assignment -name SYSTEMVERILOG_FILE topModule.sv
 set_global_assignment -name SYSTEMVERILOG_FILE outVerify.sv
 set_global_assignment -name SYSTEMVERILOG_FILE getRealOut.sv

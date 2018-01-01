@@ -6,14 +6,14 @@ module DrowsinessDetector1(
 	output reg [9:0] out_hid[4:0],
 	output reg done, doneTraining,
 	output reg [4:0] state,
-  output	reg [9:0]weight_out [14:0],
-  output reg [9:0] count
+	output reg [9:0]weight_out [14:0]
 );
 
 reg [4:0] nextState;
 reg startCount,Clock_slow;
 wire stopCount;
 reg [9:0] max;
+reg [9:0] count;
 
 reg [9:0]weight_hid [149:0];
 //reg [9:0]weight_out [14:0];
@@ -49,15 +49,20 @@ integer i;
 
 parameter 	halt = 0, weightInitiallize = 1, multiply_hid = 2, storeMul = 3, hiddenLayer = 4,
            hiddenOut = 5, multiply_ann = 6, storeMulAnn = 7, outputLayer = 8, AnnOut = 9,
-           weightOptimization = 10, getDelta = 11, stopTraining = 12, stop = 31;
+           weightOptimization = 10, getDelta = 11, stopTraining = 12, waitState = 13,
+           waitTrain = 14, stop = 31;
            
-always@(posedge Clock or negedge Rst) begin
+always@(posedge Clock or negedge Rst or posedge done or negedge Start) begin
   if(~Rst) begin
     state <= halt;
   end
   else begin
-    state <= nextState;
-  end
+	if(~Start) begin
+		state = waitState;
+	end
+	else
+		state <= nextState;
+	end
 end
 
 always@(negedge Clock) begin
@@ -66,6 +71,7 @@ always@(negedge Clock) begin
       on = 1;
       count2 = 0;
       done = 0;
+		  startCount = 0;
       doneTraining = 0;
       addVal_hid[0] = 0;
       addVal_hid[1] = 0;
@@ -79,14 +85,10 @@ always@(negedge Clock) begin
     end
     weightInitiallize: begin
 		  startCount = 1;
+		  doneTraining = 1;
 		  max = 165;
       if(stopCount) begin
-			 if(Start) begin
-			   nextState = multiply_hid;
-			   startCount = 0;
-			 end
-			 else
-				  nextState = weightInitiallize;
+			   nextState = weightInitiallize;
         end 
       else begin
         if (count > 149) begin
@@ -99,6 +101,18 @@ always@(negedge Clock) begin
         end
       end
     end
+	 waitState:begin
+		startCount = 0;
+        addVal_hid[0] = 0;
+        addVal_hid[1] = 0;
+        addVal_hid[2] = 0;
+        addVal_hid[3] = 0;
+        addVal_hid[4] = 0;
+        addVal_out[0] = 0;
+        addVal_out[1] = 0;
+        addVal_out[2] = 0;
+		nextState = multiply_hid;
+	 end
     
     // The state below is for hiddenLayer block (block 2)
     // Hidden Layer
@@ -142,7 +156,7 @@ always@(negedge Clock) begin
         af_in[2] = addVal_hid[2];
         af_in[3] = addVal_hid[3];
         af_in[4] = addVal_hid[4];
-		    startCount = 0;
+		  startCount = 0;
         nextState = hiddenOut;
         end
       else begin
@@ -213,12 +227,18 @@ always@(negedge Clock) begin
     // Get the output data from output layer.
     AnnOut: begin
       done = 1;
-		if(training)
-			nextState = getDelta;
-		else 
-			nextState = multiply_hid;
+		startCount = 0;
+		  out_ann[0] = af_out1[0];
+		  out_ann[1] = af_out1[1];
+		  out_ann[2] = af_out1[2];
+		  if(training) 
+		    nextState = getDelta;
+		  else
+    		  nextState = AnnOut;
     end
-    
+    waitTrain: begin
+      nextState = getDelta;
+    end
     // The following state is for weightOptimization block (block 3).
     // Get the error by substracting real output and calculated output.
     getDelta:begin
@@ -261,23 +281,12 @@ always@(negedge Clock) begin
     stopTraining: begin
       if(delta1[0] < 5 && delta1[1] < 5 && delta1[2] < 5) begin
         nextState = stop;
-        doneTraining = 1;
+        doneTraining = 0;
       end
       else
         nextState = multiply_hid;
     end
-	 stop:begin
-		if(~training)
-			nextState = multiply_hid;
-	 end
   endcase
-end
-
-always@(posedge done)begin
-	out_ann[0] = af_out1[0];
-	out_ann[1] = af_out1[1];
-	out_ann[2] = af_out1[2];
-
 end
 
 

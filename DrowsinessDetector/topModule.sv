@@ -107,5 +107,5 @@ module topModule(
 	outVerify test6(CLOCK_50, out0[3], HEX6);
 	_7SegmentDisplay asdf(count,HEX7);
 	
-	DrowsinessDetector1 main(CLOCK_50, KEY[0], SW[0],SW[1], in1, out_ann_real, out1,out0, LEDG[0],LEDG[1],state,weight_out,count);
+	DrowsinessDetector1 main(CLOCK_50, KEY[0], KEY[1],SW[1], in1, out_ann_real, out1,out0, LEDG[0],LEDG[1],state,weight_out);
 endmodule
