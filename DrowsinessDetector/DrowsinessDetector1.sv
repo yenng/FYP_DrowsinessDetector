@@ -67,9 +67,6 @@ always@(negedge Clock) begin
       count2 = 0;
       done = 0;
       doneTraining = 0;
-		  out_ann[0] = 0;
-		  out_ann[1] = 0;
-		  out_ann[2] = 0;
       addVal_hid[0] = 0;
       addVal_hid[1] = 0;
       addVal_hid[2] = 0;
@@ -109,6 +106,7 @@ always@(negedge Clock) begin
     multiply_hid: begin
 		startCount = 1;
 		max = 30;
+      done = 0;
       if (stopCount) begin
 			startCount = 0;
 			nextState = hiddenLayer;
@@ -214,9 +212,6 @@ always@(negedge Clock) begin
     
     // Get the output data from output layer.
     AnnOut: begin
-      out_ann[0] = af_out1[0];
-      out_ann[1] = af_out1[1];
-      out_ann[2] = af_out1[2];
       done = 1;
 		if(training)
 			nextState = getDelta;
@@ -271,8 +266,23 @@ always@(negedge Clock) begin
       else
         nextState = multiply_hid;
     end
+	 stop:begin
+		if(~training)
+			nextState = multiply_hid;
+	 end
   endcase
 end
+
+always@(posedge done)begin
+	out_ann[0] = af_out1[0];
+	out_ann[1] = af_out1[1];
+	out_ann[2] = af_out1[2];
+
+end
+
+
+
+
 LFSR rndnm(Clock_slow, Rst, on, data);
 clk_div slow(Clock,Rst,Clock_slow);
 counter c1(Clock_slow,startCount,max,stopCount,count);
