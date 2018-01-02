@@ -92,11 +92,29 @@ module topModule(
 	
 	assign LEDG[7:3] = state;
 	assign LEDR[17:8] = weight_out[SW[17:14]];
-	assign out_ann_real[0] = 10'd0;
-	assign out_ann_real[1] = 10'd0;
-	assign out_ann_real[2] = 10'd1000;
 	//assign LEDR[17:8] = in1[0];
 	
+always@(SW[8:6])begin
+	if (SW[8])
+		out_ann_real[2] = 10'd1000;
+	else
+		out_ann_real[2] = 10'd0;
+	if (SW[7])
+		out_ann_real[1] = 10'd1000;
+	else
+		out_ann_real[1] = 10'd0;
+	if (SW[6])
+		out_ann_real[0] = 10'd1000;
+	else
+		out_ann_real[0] = 10'd0;
+		
+end
+	wire clock1sec;
+Clock_Delay			u19	(
+              .iCLK(CLOCK_50),
+              .iRST(KEY[0]),
+              .oCLK_0(clock1sec),
+						);
 	
 	outVerify test0(CLOCK_50, out1[0], HEX0);
 	outVerify test1(CLOCK_50, out1[1], HEX1);
@@ -107,5 +125,17 @@ module topModule(
 	outVerify test6(CLOCK_50, out0[3], HEX6);
 	_7SegmentDisplay asdf(count,HEX7);
 	
-	DrowsinessDetector1 main(CLOCK_50, KEY[0], KEY[1],SW[1], in1, out_ann_real, out1,out0, LEDG[0],LEDG[1],state,weight_out);
+	DrowsinessDetector1 main(	.Clock(CLOCK_50), 
+										.Rst(KEY[0]), 
+										.Start(KEY[1]),
+										.train(SW[0]),
+										.clock1sec(clock1sec), 
+										.in1(in1), 
+										.out_ann_real(out_ann_real), 
+										.out_ann(out1),
+										.out_hid(out0), 
+										.done(LEDG[0]),
+										.doneTraining(LEDG[1]),
+										.state(state),
+										.weight_out(weight_out));
 endmodule

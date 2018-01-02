@@ -3,96 +3,132 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -162.788
-TNS   : -125265.203
+Slack : -141.624
+TNS   : -109522.097
 
 Type  : Slow 1200mV 85C Model Setup 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : -2.124
-TNS   : -23.520
+Slack : -3.321
+TNS   : -33.062
+
+Type  : Slow 1200mV 85C Model Setup 'Clock_Delay:u19|oCLK_0'
+Slack : -0.668
+TNS   : -10.614
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.056
+Slack : -0.225
+TNS   : -0.338
+
+Type  : Slow 1200mV 85C Model Hold 'Clock_Delay:u19|oCLK_0'
+Slack : 0.339
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : 0.386
+Slack : 0.385
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : -0.209
-TNS   : -0.724
+Slack : -0.138
+TNS   : -0.207
 
 Type  : Slow 1200mV 85C Model Removal 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : 0.364
-TNS   : 0.000
+Slack : -0.018
+TNS   : -0.162
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -4962.780
+TNS   : -4848.810
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock_Delay:u19|oCLK_0'
+Slack : -1.285
+TNS   : -38.550
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DrowsinessDetector1:main|clk_div:slow|clk_track'
 Slack : -1.285
 TNS   : -26.985
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -147.411
-TNS   : -113553.187
+Slack : -128.151
+TNS   : -99188.336
 
 Type  : Slow 1200mV 0C Model Setup 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : -1.867
-TNS   : -20.343
+Slack : -2.898
+TNS   : -28.786
+
+Type  : Slow 1200mV 0C Model Setup 'Clock_Delay:u19|oCLK_0'
+Slack : -0.591
+TNS   : -8.926
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.126
-TNS   : 0.000
+Slack : -0.155
+TNS   : -0.233
 
 Type  : Slow 1200mV 0C Model Hold 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : 0.336
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock_Delay:u19|oCLK_0'
+Slack : 0.366
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : -0.144
-TNS   : -0.288
+Slack : -0.089
+TNS   : -0.127
 
 Type  : Slow 1200mV 0C Model Removal 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : 0.393
+Slack : 0.044
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -4962.780
+TNS   : -4848.810
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock_Delay:u19|oCLK_0'
+Slack : -1.285
+TNS   : -38.550
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DrowsinessDetector1:main|clk_div:slow|clk_track'
 Slack : -1.285
 TNS   : -26.985
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -80.884
-TNS   : -61404.330
+Slack : -69.625
+TNS   : -52611.887
 
 Type  : Fast 1200mV 0C Model Setup 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : -0.575
-TNS   : -6.155
+Slack : -1.175
+TNS   : -11.235
+
+Type  : Fast 1200mV 0C Model Setup 'Clock_Delay:u19|oCLK_0'
+Slack : -0.533
+TNS   : -11.303
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : -0.032
-TNS   : -0.032
+Slack : -0.223
+TNS   : -0.428
 
 Type  : Fast 1200mV 0C Model Hold 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : 0.162
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock_Delay:u19|oCLK_0'
+Slack : 0.795
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : 0.039
+Slack : 0.075
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'DrowsinessDetector1:main|clk_div:slow|clk_track'
-Slack : 0.470
+Slack : 0.258
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -8347.534
+TNS   : -8228.270
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock_Delay:u19|oCLK_0'
+Slack : -1.899
+TNS   : -56.970
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DrowsinessDetector1:main|clk_div:slow|clk_track'
 Slack : -1.899

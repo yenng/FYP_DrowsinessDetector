@@ -1,5 +1,6 @@
 module DrowsinessDetector1(
-  input Clock, Rst, Start, training,
+  input Clock, Rst, Start, train,
+  input clock1sec,
   input [9:0] in1 [29:0],
 	input [9:0] out_ann_real[2:0],
 	output reg [9:0] out_ann[2:0],
@@ -9,7 +10,9 @@ module DrowsinessDetector1(
 	output reg [9:0]weight_out [14:0]
 );
 
+reg [9:0] out_ann_t[2:0];
 reg [4:0] nextState;
+//reg train;
 reg startCount,Clock_slow;
 wire stopCount;
 reg [9:0] max;
@@ -44,23 +47,18 @@ wire [9:0]out1_err[2:0];
 wire [2:0]sign1;
 wire [9:0]sig_prime_1[2:0];
 reg [9:0]delta1[2:0];
-
+reg doneInitiallize;
 integer i;
 
 parameter 	halt = 0, weightInitiallize = 1, multiply_hid = 2, storeMul = 3, hiddenLayer = 4,
            hiddenOut = 5, multiply_ann = 6, storeMulAnn = 7, outputLayer = 8, AnnOut = 9,
-           weightOptimization = 10, getDelta = 11, stopTraining = 12, waitState = 13,
-           waitTrain = 14, stop = 31;
+           weightOptimization = 10, getDelta = 11, stopTraining = 12, waitState = 13, stop = 31;
            
-always@(posedge Clock or negedge Rst or posedge done or negedge Start) begin
-  if(~Rst) begin
-    state <= halt;
-  end
-  else begin
-	if(~Start) begin
-		state = waitState;
+always@(posedge Clock or negedge Rst) begin
+	if(~Rst) begin
+		state <= halt;
 	end
-	else
+	else begin
 		state <= nextState;
 	end
 end
@@ -71,7 +69,9 @@ always@(negedge Clock) begin
       on = 1;
       count2 = 0;
       done = 0;
-		  startCount = 0;
+		doneTraining = 0;
+		doneInitiallize = 0;
+		startCount = 0;
       doneTraining = 0;
       addVal_hid[0] = 0;
       addVal_hid[1] = 0;
@@ -85,32 +85,35 @@ always@(negedge Clock) begin
     end
     weightInitiallize: begin
 		  startCount = 1;
-		  doneTraining = 1;
 		  max = 165;
       if(stopCount) begin
-			   nextState = weightInitiallize;
+			doneInitiallize = 1;
+			if(Start)
+				nextState = weightInitiallize;
+			else
+				nextState = waitState;
         end 
       else begin
         if (count > 149) begin
           weight_out[count-150] = data;
-			     nextState = weightInitiallize;
+			 nextState = weightInitiallize;
         end
         else begin
           weight_hid[count] = data;
-		      nextState = weightInitiallize;
+		    nextState = weightInitiallize;
         end
       end
     end
 	 waitState:begin
 		startCount = 0;
-        addVal_hid[0] = 0;
-        addVal_hid[1] = 0;
-        addVal_hid[2] = 0;
-        addVal_hid[3] = 0;
-        addVal_hid[4] = 0;
-        addVal_out[0] = 0;
-        addVal_out[1] = 0;
-        addVal_out[2] = 0;
+      addVal_hid[0] = 0;
+      addVal_hid[1] = 0;
+      addVal_hid[2] = 0;
+      addVal_hid[3] = 0;
+      addVal_hid[4] = 0;
+      addVal_out[0] = 0;
+      addVal_out[1] = 0;
+      addVal_out[2] = 0;
 		nextState = multiply_hid;
 	 end
     
@@ -148,25 +151,37 @@ always@(negedge Clock) begin
     
     // This state add all the multiplication value and ready the add value for activation function.
     hiddenLayer:begin
-		startCount = 1;
-		max = 30;
-      if(stopCount) begin
-        af_in[0] = addVal_hid[0];
-        af_in[1] = addVal_hid[1];
-        af_in[2] = addVal_hid[2];
-        af_in[3] = addVal_hid[3];
-        af_in[4] = addVal_hid[4];
-		  startCount = 0;
+        af_in[0] = mulVal_hid[0][0]+mulVal_hid[0][1]+mulVal_hid[0][2]+mulVal_hid[0][3]+mulVal_hid[0][4]
+						+mulVal_hid[0][5]+mulVal_hid[0][6]+mulVal_hid[0][7]+mulVal_hid[0][8]+mulVal_hid[0][9]
+						+mulVal_hid[0][10]+mulVal_hid[0][11]+mulVal_hid[0][12]+mulVal_hid[0][13]+mulVal_hid[0][14]
+						+mulVal_hid[0][15]+mulVal_hid[0][16]+mulVal_hid[0][17]+mulVal_hid[0][18]+mulVal_hid[0][19]
+						+mulVal_hid[0][20]+mulVal_hid[0][21]+mulVal_hid[0][22]+mulVal_hid[0][23]+mulVal_hid[0][24]
+						+mulVal_hid[0][25]+mulVal_hid[0][26]+mulVal_hid[0][27]+mulVal_hid[0][28]+mulVal_hid[0][29];
+        af_in[1] =mulVal_hid[1][0]+mulVal_hid[1][1]+mulVal_hid[1][2]+mulVal_hid[1][3]+mulVal_hid[1][4]
+						+mulVal_hid[1][5]+mulVal_hid[1][6]+mulVal_hid[1][7]+mulVal_hid[1][8]+mulVal_hid[1][9]
+						+mulVal_hid[1][10]+mulVal_hid[1][11]+mulVal_hid[1][12]+mulVal_hid[1][13]+mulVal_hid[1][14]
+						+mulVal_hid[1][15]+mulVal_hid[1][16]+mulVal_hid[1][17]+mulVal_hid[1][18]+mulVal_hid[1][19]
+						+mulVal_hid[1][20]+mulVal_hid[1][21]+mulVal_hid[1][22]+mulVal_hid[1][23]+mulVal_hid[1][24]
+						+mulVal_hid[1][25]+mulVal_hid[1][26]+mulVal_hid[1][27]+mulVal_hid[1][28]+mulVal_hid[1][29];
+        af_in[2] = mulVal_hid[2][0]+mulVal_hid[2][1]+mulVal_hid[2][2]+mulVal_hid[2][3]+mulVal_hid[2][4]
+						+mulVal_hid[2][5]+mulVal_hid[2][6]+mulVal_hid[2][7]+mulVal_hid[2][8]+mulVal_hid[2][9]
+						+mulVal_hid[2][10]+mulVal_hid[2][11]+mulVal_hid[2][12]+mulVal_hid[2][13]+mulVal_hid[2][14]
+						+mulVal_hid[2][15]+mulVal_hid[2][16]+mulVal_hid[2][17]+mulVal_hid[2][18]+mulVal_hid[2][19]
+						+mulVal_hid[2][20]+mulVal_hid[2][21]+mulVal_hid[2][22]+mulVal_hid[2][23]+mulVal_hid[2][24]
+						+mulVal_hid[2][25]+mulVal_hid[2][26]+mulVal_hid[2][27]+mulVal_hid[2][28]+mulVal_hid[2][29];
+        af_in[3] = mulVal_hid[3][0]+mulVal_hid[3][1]+mulVal_hid[3][2]+mulVal_hid[3][3]+mulVal_hid[3][4]
+						+mulVal_hid[3][5]+mulVal_hid[3][6]+mulVal_hid[3][7]+mulVal_hid[3][8]+mulVal_hid[3][9]
+						+mulVal_hid[3][10]+mulVal_hid[3][11]+mulVal_hid[3][12]+mulVal_hid[3][13]+mulVal_hid[3][14]
+						+mulVal_hid[3][15]+mulVal_hid[3][16]+mulVal_hid[3][17]+mulVal_hid[3][18]+mulVal_hid[3][19]
+						+mulVal_hid[3][20]+mulVal_hid[3][21]+mulVal_hid[3][22]+mulVal_hid[3][23]+mulVal_hid[3][24]
+						+mulVal_hid[3][25]+mulVal_hid[3][26]+mulVal_hid[3][27]+mulVal_hid[3][28]+mulVal_hid[3][29];
+        af_in[4] = mulVal_hid[4][0]+mulVal_hid[4][1]+mulVal_hid[4][2]+mulVal_hid[4][3]+mulVal_hid[4][4]
+						+mulVal_hid[4][5]+mulVal_hid[4][6]+mulVal_hid[4][7]+mulVal_hid[4][8]+mulVal_hid[4][9]
+						+mulVal_hid[4][10]+mulVal_hid[4][11]+mulVal_hid[4][12]+mulVal_hid[4][13]+mulVal_hid[4][14]
+						+mulVal_hid[4][15]+mulVal_hid[4][16]+mulVal_hid[4][17]+mulVal_hid[4][18]+mulVal_hid[4][19]
+						+mulVal_hid[4][20]+mulVal_hid[4][21]+mulVal_hid[4][22]+mulVal_hid[4][23]+mulVal_hid[4][24]
+						+mulVal_hid[4][25]+mulVal_hid[4][26]+mulVal_hid[4][27]+mulVal_hid[4][28]+mulVal_hid[4][29];
         nextState = hiddenOut;
-        end
-      else begin
-        addVal_hid[0] = addVal_hid[0] + mulVal_hid[0][count];
-        addVal_hid[1] = addVal_hid[1] + mulVal_hid[1][count];
-        addVal_hid[2] = addVal_hid[2] + mulVal_hid[2][count];
-        addVal_hid[3] = addVal_hid[3] + mulVal_hid[3][count];
-        addVal_hid[4] = addVal_hid[4] + mulVal_hid[4][count];
-        nextState = hiddenLayer;
-      end
     end
     
     // Get the output value of hidden layer from activation function.
@@ -207,37 +222,23 @@ always@(negedge Clock) begin
     
     // Add all the multiplication data and ready the input for activation function.
     outputLayer:begin
-		startCount = 1;
-		max = 5;
-      if(stopCount) begin
-        startCount = 0;
-        af_in1[0] = addVal_out[0];
-        af_in1[1] = addVal_out[1];
-        af_in1[2] = addVal_out[2];
-        nextState = AnnOut;
-        end
-      else begin
-        addVal_out[0] = addVal_out[0] + mulVal_out[0][count];
-        addVal_out[1] = addVal_out[1] + mulVal_out[1][count];
-        addVal_out[2] = addVal_out[2] + mulVal_out[2][count];
-        nextState = outputLayer;
-      end
+		af_in1[0] = mulVal_out[0][0]+mulVal_out[0][1]+mulVal_out[0][2]+mulVal_out[0][3]+mulVal_out[0][4];
+		af_in1[1] = mulVal_out[1][0]+mulVal_out[1][1]+mulVal_out[1][2]+mulVal_out[1][3]+mulVal_out[1][4];
+		af_in1[2] = mulVal_out[2][0]+mulVal_out[2][1]+mulVal_out[2][2]+mulVal_out[2][3]+mulVal_out[2][4];
+		nextState = AnnOut;
     end
     
     // Get the output data from output layer.
-    AnnOut: begin
+	AnnOut: begin
       done = 1;
 		startCount = 0;
-		  out_ann[0] = af_out1[0];
-		  out_ann[1] = af_out1[1];
-		  out_ann[2] = af_out1[2];
-		  if(training) 
-		    nextState = getDelta;
-		  else
-    		  nextState = AnnOut;
-    end
-    waitTrain: begin
-      nextState = getDelta;
+		out_ann_t[0] = af_out1[0];
+		out_ann_t[1] = af_out1[1];
+		out_ann_t[2] = af_out1[2];
+		if(train) 
+			nextState = getDelta;
+		else
+			nextState = AnnOut;
     end
     // The following state is for weightOptimization block (block 3).
     // Get the error by substracting real output and calculated output.
@@ -281,15 +282,21 @@ always@(negedge Clock) begin
     stopTraining: begin
       if(delta1[0] < 5 && delta1[1] < 5 && delta1[2] < 5) begin
         nextState = stop;
-        doneTraining = 0;
+        doneTraining = 1;
       end
       else
         nextState = multiply_hid;
     end
+	 stop:begin
+		if(~train)
+			nextState = AnnOut;
+	 end
+	 default: 
+		nextState = waitState;
   endcase
 end
 
-
+dff_ann getOutAnn(out_ann_t, clock1sec,Rst,out_ann);
 
 
 LFSR rndnm(Clock_slow, Rst, on, data);
@@ -317,11 +324,11 @@ ActivationFunc AF_out1(af_in1[1],af_out1[1]);
 ActivationFunc AF_out2(af_in1[2],af_out1[2]);
 
 // Get the error between calculated output and actual output.
-Subtraction sub1_0(out_ann_real[0],out_ann[0],out1_err[0],sign1[0]);
-Subtraction sub1_1(out_ann_real[1],out_ann[1],out1_err[1],sign1[1]);
-Subtraction sub1_2(out_ann_real[2],out_ann[2],out1_err[2],sign1[2]);
+Subtraction sub1_0(out_ann_real[0],out_ann_t[0],out1_err[0],sign1[0]);
+Subtraction sub1_1(out_ann_real[1],out_ann_t[1],out1_err[1],sign1[1]);
+Subtraction sub1_2(out_ann_real[2],out_ann_t[2],out1_err[2],sign1[2]);
 
-SigmoidPrime sig1_0(out_ann[0],sig_prime_1[0]);
-SigmoidPrime sig1_1(out_ann[1],sig_prime_1[1]);
-SigmoidPrime sig1_2(out_ann[2],sig_prime_1[2]);
+SigmoidPrime sig1_0(out_ann_t[0],sig_prime_1[0]);
+SigmoidPrime sig1_1(out_ann_t[1],sig_prime_1[1]);
+SigmoidPrime sig1_2(out_ann_t[2],sig_prime_1[2]);
 endmodule

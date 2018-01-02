@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DrowsinessDetector
-Tue Jan 02 00:07:11 2018
+Tue Jan 02 21:39:35 2018
 Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
 
 
@@ -20,56 +20,59 @@ Quartus II Version 10.0 Build 218 06/27/2010 SJ Web Edition
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: DrowsinessDetector1:main
  14. Parameter Settings for User Entity Instance: DrowsinessDetector1:main|clk_div:slow
- 15. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_add_sub:Add20
- 16. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div0
- 17. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1
- 18. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_mult:Mult2
- 19. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_divide:Div2
- 20. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0
- 21. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div1
- 22. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_mult:Mult0
- 23. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_divide:Div0
- 24. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div0
- 25. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div1
- 26. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_mult:Mult1
- 27. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_divide:Div1
- 28. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0
- 29. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_divide:Div0
- 30. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_mult:Mult0
- 31. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_divide:Div0
- 32. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_mult:Mult0
- 33. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_divide:Div0
- 34. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0
- 35. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_divide:Div0
- 36. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid1|lpm_mult:Mult0
- 37. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid1|lpm_divide:Div0
- 38. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid2|lpm_mult:Mult0
- 39. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid2|lpm_divide:Div0
- 40. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid3|lpm_mult:Mult0
- 41. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid3|lpm_divide:Div0
- 42. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out0|lpm_mult:Mult0
- 43. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out0|lpm_divide:Div0
- 44. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out1|lpm_mult:Mult0
- 45. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out1|lpm_divide:Div0
- 46. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out2|lpm_mult:Mult0
- 47. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out2|lpm_divide:Div0
- 48. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid0|lpm_mult:Mult0
- 49. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid0|lpm_divide:Div0
- 50. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid1|lpm_mult:Mult0
- 51. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid1|lpm_divide:Div0
- 52. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid2|lpm_mult:Mult0
- 53. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid2|lpm_divide:Div0
- 54. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid3|lpm_mult:Mult0
- 55. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid3|lpm_divide:Div0
- 56. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid4|lpm_mult:Mult0
- 57. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid4|lpm_divide:Div0
- 58. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid4|lpm_mult:Mult0
- 59. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid4|lpm_divide:Div0
- 60. lpm_mult Parameter Settings by Entity Instance
- 61. Port Connectivity Checks: "DrowsinessDetector1:main"
- 62. Port Connectivity Checks: "_7SegmentDisplay:asdf"
- 63. Analysis & Synthesis Messages
- 64. Analysis & Synthesis Suppressed Messages
+ 15. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_add_sub:Add163
+ 16. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_add_sub:Add166
+ 17. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_add_sub:Add169
+ 18. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0
+ 19. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div1
+ 20. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_mult:Mult0
+ 21. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_divide:Div0
+ 22. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div0
+ 23. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div1
+ 24. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_mult:Mult1
+ 25. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_divide:Div1
+ 26. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div0
+ 27. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1
+ 28. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_mult:Mult2
+ 29. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_divide:Div2
+ 30. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0
+ 31. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_divide:Div0
+ 32. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid1|lpm_mult:Mult0
+ 33. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid1|lpm_divide:Div0
+ 34. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid2|lpm_mult:Mult0
+ 35. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid2|lpm_divide:Div0
+ 36. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid3|lpm_mult:Mult0
+ 37. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid3|lpm_divide:Div0
+ 38. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0
+ 39. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_divide:Div0
+ 40. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_mult:Mult0
+ 41. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_divide:Div0
+ 42. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_mult:Mult0
+ 43. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_divide:Div0
+ 44. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out0|lpm_mult:Mult0
+ 45. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out0|lpm_divide:Div0
+ 46. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out1|lpm_mult:Mult0
+ 47. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out1|lpm_divide:Div0
+ 48. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out2|lpm_mult:Mult0
+ 49. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_out2|lpm_divide:Div0
+ 50. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid0|lpm_mult:Mult0
+ 51. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid0|lpm_divide:Div0
+ 52. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid1|lpm_mult:Mult0
+ 53. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid1|lpm_divide:Div0
+ 54. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid2|lpm_mult:Mult0
+ 55. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid2|lpm_divide:Div0
+ 56. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid3|lpm_mult:Mult0
+ 57. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid3|lpm_divide:Div0
+ 58. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid4|lpm_mult:Mult0
+ 59. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid4|lpm_divide:Div0
+ 60. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid4|lpm_mult:Mult0
+ 61. Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|multiply:mul_hid4|lpm_divide:Div0
+ 62. lpm_mult Parameter Settings by Entity Instance
+ 63. Port Connectivity Checks: "DrowsinessDetector1:main"
+ 64. Port Connectivity Checks: "_7SegmentDisplay:asdf"
+ 65. Port Connectivity Checks: "Clock_Delay:u19"
+ 66. Analysis & Synthesis Messages
+ 67. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -95,15 +98,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 02 00:07:11 2018    ;
+; Analysis & Synthesis Status        ; Successful - Tue Jan 02 21:39:34 2018    ;
 ; Quartus II Version                 ; 10.0 Build 218 06/27/2010 SJ Web Edition ;
 ; Revision Name                      ; DrowsinessDetector                       ;
 ; Top-level Entity Name              ; topModule                                ;
 ; Family                             ; Cyclone IV E                             ;
-; Total logic elements               ; 26,506                                   ;
-;     Total combinational functions  ; 23,920                                   ;
-;     Dedicated logic registers      ; 3,740                                    ;
-; Total registers                    ; 3740                                     ;
+; Total logic elements               ; 26,972                                   ;
+;     Total combinational functions  ; 24,431                                   ;
+;     Dedicated logic registers      ; 3,728                                    ;
+; Total registers                    ; 3728                                     ;
 ; Total pins                         ; 106                                      ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
@@ -206,47 +209,49 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path         ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                  ;
-+------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+
-; ../WeightInitiallize/clk_div.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv                  ;
-; ../WeightOptimization/counter.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/counter.sv                 ;
-; ../WeightInitiallize/_7SegmentDisplay.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/_7SegmentDisplay.sv         ;
-; DrowsinessDetector1.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/DrowsinessDetector1.sv     ;
-; ../WeightOptimization/SigmoidPrime.sv    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime.sv            ;
-; ../WeightOptimization/Substraction.sv    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/Substraction.sv            ;
-; ../HiddenLayer/ActivationFunc.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv                 ;
-; ../HiddenLayer/multiply.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv                       ;
-; ../WeightInitiallize/LFSR.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv                     ;
-; topModule.sv                             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/topModule.sv               ;
-; outVerify.sv                             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/outVerify.sv               ;
-; lpm_add_sub.tdf                          ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_add_sub.tdf                                ;
-; db/add_sub_lvi.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_lvi.tdf         ;
-; lpm_divide.tdf                           ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_divide.tdf                                 ;
-; db/lpm_divide_kkm.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/lpm_divide_kkm.tdf      ;
-; db/sign_div_unsign_cnh.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/sign_div_unsign_cnh.tdf ;
-; db/alt_u_div_caf.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/alt_u_div_caf.tdf       ;
-; db/add_sub_7pc.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_7pc.tdf         ;
-; db/add_sub_8pc.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_8pc.tdf         ;
-; lpm_mult.tdf                             ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_mult.tdf                                   ;
-; db/mult_oct.tdf                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/mult_oct.tdf            ;
-; db/lpm_divide_akm.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/lpm_divide_akm.tdf      ;
-; db/sign_div_unsign_2nh.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/sign_div_unsign_2nh.tdf ;
-; db/alt_u_div_o9f.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/alt_u_div_o9f.tdf       ;
-; multcore.tdf                             ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/multcore.tdf                                   ;
-; mpar_add.tdf                             ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/mpar_add.tdf                                   ;
-; db/add_sub_l9h.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_l9h.tdf         ;
-; db/add_sub_jkh.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_jkh.tdf         ;
-; altshift.tdf                             ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/altshift.tdf                                   ;
-; db/lpm_divide_72p.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/lpm_divide_72p.tdf      ;
-; db/abs_divider_4dg.tdf                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/abs_divider_4dg.tdf     ;
-; db/alt_u_div_6af.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/alt_u_div_6af.tdf       ;
-; db/lpm_abs_i0a.tdf                       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/lpm_abs_i0a.tdf         ;
-; db/mult_mbt.tdf                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/mult_mbt.tdf            ;
-; db/mult_nbt.tdf                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/mult_nbt.tdf            ;
-+------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
++---------------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path                                    ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                  ;
++---------------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+
+; ../../FYP(WongJangSing)/CODES/Image_Capture_verilog/v/Clock_Delay.v ; yes             ; User Verilog HDL File        ; C:/Users/Yenrong/Desktop/FYP(WongJangSing)/CODES/Image_Capture_verilog/v/Clock_Delay.v        ;
+; ../WeightInitiallize/clk_div.sv                                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/clk_div.sv                  ;
+; ../WeightOptimization/counter.sv                                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/counter.sv                 ;
+; ../WeightInitiallize/_7SegmentDisplay.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/_7SegmentDisplay.sv         ;
+; DrowsinessDetector1.sv                                              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/DrowsinessDetector1.sv     ;
+; ../WeightOptimization/SigmoidPrime.sv                               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/SigmoidPrime.sv            ;
+; ../WeightOptimization/Substraction.sv                               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightOptimization/Substraction.sv            ;
+; ../HiddenLayer/ActivationFunc.sv                                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/HiddenLayer/ActivationFunc.sv                 ;
+; ../HiddenLayer/multiply.sv                                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/HiddenLayer/multiply.sv                       ;
+; ../WeightInitiallize/LFSR.sv                                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/WeightInitiallize/LFSR.sv                     ;
+; topModule.sv                                                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/topModule.sv               ;
+; outVerify.sv                                                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/outVerify.sv               ;
+; dff.sv                                                              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/dff.sv                     ;
+; lpm_add_sub.tdf                                                     ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_add_sub.tdf                                ;
+; db/add_sub_lvi.tdf                                                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_lvi.tdf         ;
+; lpm_divide.tdf                                                      ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_divide.tdf                                 ;
+; db/lpm_divide_kkm.tdf                                               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/lpm_divide_kkm.tdf      ;
+; db/sign_div_unsign_cnh.tdf                                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/sign_div_unsign_cnh.tdf ;
+; db/alt_u_div_caf.tdf                                                ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/alt_u_div_caf.tdf       ;
+; db/add_sub_7pc.tdf                                                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_7pc.tdf         ;
+; db/add_sub_8pc.tdf                                                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_8pc.tdf         ;
+; lpm_mult.tdf                                                        ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/lpm_mult.tdf                                   ;
+; db/mult_oct.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/mult_oct.tdf            ;
+; db/lpm_divide_akm.tdf                                               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/lpm_divide_akm.tdf      ;
+; db/sign_div_unsign_2nh.tdf                                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/sign_div_unsign_2nh.tdf ;
+; db/alt_u_div_o9f.tdf                                                ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/alt_u_div_o9f.tdf       ;
+; multcore.tdf                                                        ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/multcore.tdf                                   ;
+; mpar_add.tdf                                                        ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/mpar_add.tdf                                   ;
+; db/add_sub_l9h.tdf                                                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_l9h.tdf         ;
+; db/add_sub_jkh.tdf                                                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/add_sub_jkh.tdf         ;
+; altshift.tdf                                                        ; yes             ; Megafunction                 ; c:/altera/10.0/quartus/libraries/megafunctions/altshift.tdf                                   ;
+; db/lpm_divide_72p.tdf                                               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/lpm_divide_72p.tdf      ;
+; db/abs_divider_4dg.tdf                                              ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/abs_divider_4dg.tdf     ;
+; db/alt_u_div_6af.tdf                                                ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/alt_u_div_6af.tdf       ;
+; db/lpm_abs_i0a.tdf                                                  ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/lpm_abs_i0a.tdf         ;
+; db/mult_mbt.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/mult_mbt.tdf            ;
+; db/mult_nbt.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/db/mult_nbt.tdf            ;
++---------------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -254,28 +259,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 26,506         ;
+; Estimated Total logic elements              ; 26,972         ;
 ;                                             ;                ;
-; Total combinational functions               ; 23920          ;
+; Total combinational functions               ; 24431          ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 6768           ;
-;     -- 3 input functions                    ; 11298          ;
-;     -- <=2 input functions                  ; 5854           ;
+;     -- 4 input functions                    ; 5811           ;
+;     -- 3 input functions                    ; 12569          ;
+;     -- <=2 input functions                  ; 6051           ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 15977          ;
-;     -- arithmetic mode                      ; 7943           ;
+;     -- normal mode                          ; 15084          ;
+;     -- arithmetic mode                      ; 9347           ;
 ;                                             ;                ;
-; Total registers                             ; 3740           ;
-;     -- Dedicated logic registers            ; 3740           ;
+; Total registers                             ; 3728           ;
+;     -- Dedicated logic registers            ; 3728           ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 106            ;
 ; Embedded Multiplier 9-bit elements          ; 22             ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 3719           ;
-; Total fan-out                               ; 82881          ;
-; Average fan-out                             ; 2.97           ;
+; Maximum fan-out                             ; 3677           ;
+; Total fan-out                               ; 83179          ;
+; Average fan-out                             ; 2.93           ;
 +---------------------------------------------+----------------+
 
 
@@ -284,8 +289,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                               ; Library Name ;
 +------------------------------------------------------+-------------------+--------------+-------------+------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |topModule                                           ; 23920 (103)       ; 3740 (0)     ; 0           ; 0          ; 22           ; 0       ; 11        ; 106  ; 0            ; |topModule                                                                                                                                                                        ;              ;
-;    |DrowsinessDetector1:main|                        ; 23775 (5279)      ; 3698 (3672)  ; 0           ; 0          ; 22           ; 0       ; 11        ; 0    ; 0            ; |topModule|DrowsinessDetector1:main                                                                                                                                               ;              ;
+; |topModule                                           ; 24431 (103)       ; 3728 (0)     ; 0           ; 0          ; 22           ; 0       ; 11        ; 106  ; 0            ; |topModule                                                                                                                                                                        ;              ;
+;    |Clock_Delay:u19|                                 ; 42 (42)           ; 33 (33)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|Clock_Delay:u19                                                                                                                                                        ;              ;
+;    |DrowsinessDetector1:main|                        ; 24246 (5645)      ; 3653 (3597)  ; 0           ; 0          ; 22           ; 0       ; 11        ; 0    ; 0            ; |topModule|DrowsinessDetector1:main                                                                                                                                               ;              ;
 ;       |ActivationFunc:AF_hid0|                       ; 1448 (48)         ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|ActivationFunc:AF_hid0                                                                                                                        ;              ;
 ;          |lpm_divide:Div0|                           ; 1357 (0)          ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_divide:Div0                                                                                                        ;              ;
 ;             |lpm_divide_72p:auto_generated|          ; 1357 (0)          ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_divide:Div0|lpm_divide_72p:auto_generated                                                                          ;              ;
@@ -434,11 +440,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |lpm_divide_kkm:auto_generated|          ; 584 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1|lpm_divide_kkm:auto_generated                                                                             ;              ;
 ;                |sign_div_unsign_cnh:divider|         ; 584 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider                                                 ;              ;
 ;                   |alt_u_div_caf:divider|            ; 584 (584)         ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider                           ;              ;
-;       |Subtraction:sub1_2|                           ; 27 (27)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|Subtraction:sub1_2                                                                                                                            ;              ;
+;       |Subtraction:sub1_0|                           ; 30 (30)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|Subtraction:sub1_0                                                                                                                            ;              ;
+;       |Subtraction:sub1_1|                           ; 30 (30)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|Subtraction:sub1_1                                                                                                                            ;              ;
+;       |Subtraction:sub1_2|                           ; 30 (30)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|Subtraction:sub1_2                                                                                                                            ;              ;
 ;       |clk_div:slow|                                 ; 6 (6)             ; 5 (5)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|clk_div:slow                                                                                                                                  ;              ;
 ;       |counter:c1|                                   ; 17 (17)           ; 11 (11)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|counter:c1                                                                                                                                    ;              ;
-;       |lpm_add_sub:Add20|                            ; 21 (0)            ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_add_sub:Add20                                                                                                                             ;              ;
-;          |add_sub_lvi:auto_generated|                ; 21 (21)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_add_sub:Add20|add_sub_lvi:auto_generated                                                                                                  ;              ;
+;       |dff_ann:getOutAnn|                            ; 0 (0)             ; 30 (30)      ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|dff_ann:getOutAnn                                                                                                                             ;              ;
+;       |lpm_add_sub:Add163|                           ; 21 (0)            ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_add_sub:Add163                                                                                                                            ;              ;
+;          |add_sub_lvi:auto_generated|                ; 21 (21)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_add_sub:Add163|add_sub_lvi:auto_generated                                                                                                 ;              ;
+;       |lpm_add_sub:Add166|                           ; 21 (0)            ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_add_sub:Add166                                                                                                                            ;              ;
+;          |add_sub_lvi:auto_generated|                ; 21 (21)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_add_sub:Add166|add_sub_lvi:auto_generated                                                                                                 ;              ;
+;       |lpm_add_sub:Add169|                           ; 21 (0)            ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_add_sub:Add169                                                                                                                            ;              ;
+;          |add_sub_lvi:auto_generated|                ; 21 (21)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_add_sub:Add169|add_sub_lvi:auto_generated                                                                                                 ;              ;
 ;       |lpm_divide:Div0|                              ; 300 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_divide:Div0                                                                                                                               ;              ;
 ;          |lpm_divide_akm:auto_generated|             ; 300 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_divide:Div0|lpm_divide_akm:auto_generated                                                                                                 ;              ;
 ;             |sign_div_unsign_2nh:divider|            ; 300 (0)           ; 0 (0)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|lpm_divide:Div0|lpm_divide_akm:auto_generated|sign_div_unsign_2nh:divider                                                                     ;              ;
@@ -514,8 +527,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |lpm_mult:Mult0|                            ; 0 (0)             ; 0 (0)        ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|multiply:mul_out2|lpm_mult:Mult0                                                                                                              ;              ;
 ;             |mult_oct:auto_generated|                ; 0 (0)             ; 0 (0)        ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; |topModule|DrowsinessDetector1:main|multiply:mul_out2|lpm_mult:Mult0|mult_oct:auto_generated                                                                                      ;              ;
 ;    |outVerify:test0|                                 ; 6 (6)             ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|outVerify:test0                                                                                                                                                        ;              ;
-;    |outVerify:test1|                                 ; 6 (6)             ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|outVerify:test1                                                                                                                                                        ;              ;
-;    |outVerify:test2|                                 ; 6 (6)             ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|outVerify:test2                                                                                                                                                        ;              ;
+;    |outVerify:test1|                                 ; 5 (5)             ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|outVerify:test1                                                                                                                                                        ;              ;
+;    |outVerify:test2|                                 ; 5 (5)             ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|outVerify:test2                                                                                                                                                        ;              ;
 ;    |outVerify:test3|                                 ; 6 (6)             ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|outVerify:test3                                                                                                                                                        ;              ;
 ;    |outVerify:test4|                                 ; 6 (6)             ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|outVerify:test4                                                                                                                                                        ;              ;
 ;    |outVerify:test5|                                 ; 6 (6)             ; 6 (6)        ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; |topModule|outVerify:test5                                                                                                                                                        ;              ;
@@ -571,12 +584,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3740  ;
-; Number of registers using Synchronous Clear  ; 110   ;
-; Number of registers using Synchronous Load   ; 185   ;
-; Number of registers using Asynchronous Clear ; 26    ;
+; Total registers                              ; 3728  ;
+; Number of registers using Synchronous Clear  ; 64    ;
+; Number of registers using Synchronous Load   ; 184   ;
+; Number of registers using Asynchronous Clear ; 94    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3673  ;
+; Number of registers using Clock Enable       ; 3596  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -601,48 +614,43 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 ; 8:1                ; 10 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |topModule|DrowsinessDetector1:main|weight7[0]        ;
-; 16:1               ; 10 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; Yes        ; |topModule|DrowsinessDetector1:main|weight6[6]        ;
-; 32:1               ; 3 bits    ; 63 LEs        ; 9 LEs                ; 54 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|max[5]            ;
-; 34:1               ; 50 bits   ; 1100 LEs      ; 50 LEs               ; 1050 LEs               ; Yes        ; |topModule|DrowsinessDetector1:main|addVal_hid[1][5]  ;
-; 34:1               ; 30 bits   ; 660 LEs       ; 30 LEs               ; 630 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|addVal_out[0][3]  ;
-; 13:1               ; 10 bits   ; 80 LEs        ; 70 LEs               ; 10 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight1[8]        ;
-; 13:1               ; 10 bits   ; 80 LEs        ; 70 LEs               ; 10 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight2[0]        ;
-; 13:1               ; 10 bits   ; 80 LEs        ; 70 LEs               ; 10 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight3[6]        ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[14][9] ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[13][9] ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[12][6] ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[11][6] ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[10][4] ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[9][9]  ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[8][1]  ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[7][3]  ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[6][5]  ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[5][3]  ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[4][3]  ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[3][7]  ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[2][8]  ;
+; 16:1               ; 10 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; Yes        ; |topModule|DrowsinessDetector1:main|weight6[9]        ;
+; 32:1               ; 3 bits    ; 63 LEs        ; 6 LEs                ; 57 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|max[1]            ;
+; 13:1               ; 10 bits   ; 80 LEs        ; 70 LEs               ; 10 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight1[2]        ;
+; 13:1               ; 10 bits   ; 80 LEs        ; 70 LEs               ; 10 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight2[6]        ;
+; 13:1               ; 10 bits   ; 80 LEs        ; 70 LEs               ; 10 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight3[5]        ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[14][0] ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[13][0] ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[12][0] ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[11][0] ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[10][0] ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[9][0]  ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[8][0]  ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[7][0]  ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[6][0]  ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[5][0]  ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[4][0]  ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[3][0]  ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[2][0]  ;
 ; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[1][7]  ;
-; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[0][2]  ;
-; 28:1               ; 10 bits   ; 180 LEs       ; 160 LEs              ; 20 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight4[7]        ;
-; 28:1               ; 10 bits   ; 180 LEs       ; 160 LEs              ; 20 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight0[3]        ;
-; 8:1                ; 10 bits   ; 50 LEs        ; 40 LEs               ; 10 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|inVal1[0]         ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux7              ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux6              ;
-; 3:1                ; 80 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux6              ;
-; 3:1                ; 80 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux5              ;
+; 37:1               ; 10 bits   ; 240 LEs       ; 20 LEs               ; 220 LEs                ; Yes        ; |topModule|DrowsinessDetector1:main|weight_out[0][7]  ;
+; 28:1               ; 10 bits   ; 180 LEs       ; 160 LEs              ; 20 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight4[6]        ;
+; 28:1               ; 10 bits   ; 180 LEs       ; 160 LEs              ; 20 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|weight0[5]        ;
+; 8:1                ; 10 bits   ; 50 LEs        ; 40 LEs               ; 10 LEs                 ; Yes        ; |topModule|DrowsinessDetector1:main|inVal1[5]         ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux3              ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux0              ;
+; 3:1                ; 80 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux2              ;
+; 3:1                ; 80 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux9              ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux6              ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|state[2]          ;
-; 8:1                ; 10 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux170            ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux8              ;
+; 8:1                ; 10 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux94             ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux9              ;
 ; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux2              ;
-; 4:1                ; 40 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux3              ;
-; 4:1                ; 40 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux3              ;
-; 8:1                ; 30 bits   ; 150 LEs       ; 120 LEs              ; 30 LEs                 ; No         ; |topModule|DrowsinessDetector1:main|Mux153            ;
-; 4:1                ; 190 bits  ; 380 LEs       ; 380 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux3              ;
-; 16:1               ; 10 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |topModule|Mux3                                       ;
-; 16:1               ; 10 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux197            ;
-; 16:1               ; 10 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux189            ;
-; 32:1               ; 50 bits   ; 1050 LEs      ; 1000 LEs             ; 50 LEs                 ; No         ; |topModule|DrowsinessDetector1:main|Mux63             ;
+; 4:1                ; 40 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux4              ;
+; 4:1                ; 40 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux9              ;
+; 4:1                ; 190 bits  ; 380 LEs       ; 380 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux1              ;
+; 16:1               ; 10 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |topModule|Mux9                                       ;
+; 16:1               ; 10 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux119            ;
+; 16:1               ; 10 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |topModule|DrowsinessDetector1:main|Mux109            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 
 
@@ -665,7 +673,6 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; getDelta           ; 11    ; Signed Integer                           ;
 ; stopTraining       ; 12    ; Signed Integer                           ;
 ; waitState          ; 13    ; Signed Integer                           ;
-; waitTrain          ; 14    ; Signed Integer                           ;
 ; stop               ; 31    ; Signed Integer                           ;
 +--------------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -682,135 +689,87 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_add_sub:Add20 ;
-+------------------------+--------------+-----------------------------------------------------+
-; Parameter Name         ; Value        ; Type                                                ;
-+------------------------+--------------+-----------------------------------------------------+
-; LPM_WIDTH              ; 10           ; Untyped                                             ;
-; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                             ;
-; LPM_DIRECTION          ; DEFAULT      ; Untyped                                             ;
-; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                             ;
-; LPM_PIPELINE           ; 0            ; Untyped                                             ;
-; MAXIMIZE_SPEED         ; 5            ; Untyped                                             ;
-; REGISTERED_AT_END      ; 0            ; Untyped                                             ;
-; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                                             ;
-; USE_CS_BUFFERS         ; 1            ; Untyped                                             ;
-; CARRY_CHAIN            ; MANUAL       ; Untyped                                             ;
-; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                  ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                             ;
-; USE_WYS                ; OFF          ; Untyped                                             ;
-; STYLE                  ; FAST         ; Untyped                                             ;
-; CBXI_PARAMETER         ; add_sub_lvi  ; Untyped                                             ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                        ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                      ;
-+------------------------+--------------+-----------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_add_sub:Add163 ;
++------------------------+--------------+------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                 ;
++------------------------+--------------+------------------------------------------------------+
+; LPM_WIDTH              ; 10           ; Untyped                                              ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                              ;
+; LPM_DIRECTION          ; DEFAULT      ; Untyped                                              ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                              ;
+; LPM_PIPELINE           ; 0            ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5            ; Untyped                                              ;
+; REGISTERED_AT_END      ; 0            ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                                              ;
+; USE_CS_BUFFERS         ; 1            ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                              ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                   ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                              ;
+; USE_WYS                ; OFF          ; Untyped                                              ;
+; STYLE                  ; FAST         ; Untyped                                              ;
+; CBXI_PARAMETER         ; add_sub_lvi  ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                       ;
++------------------------+--------------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div0 ;
-+------------------------+----------------+---------------------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                                ;
-+------------------------+----------------+---------------------------------------------------------------------+
-; LPM_WIDTHN             ; 29             ; Untyped                                                             ;
-; LPM_WIDTHD             ; 11             ; Untyped                                                             ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                             ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                             ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                             ;
-; CBXI_PARAMETER         ; lpm_divide_kkm ; Untyped                                                             ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                             ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                             ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                        ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                      ;
-+------------------------+----------------+---------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_add_sub:Add166 ;
++------------------------+--------------+------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                 ;
++------------------------+--------------+------------------------------------------------------+
+; LPM_WIDTH              ; 10           ; Untyped                                              ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                              ;
+; LPM_DIRECTION          ; DEFAULT      ; Untyped                                              ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                              ;
+; LPM_PIPELINE           ; 0            ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5            ; Untyped                                              ;
+; REGISTERED_AT_END      ; 0            ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                                              ;
+; USE_CS_BUFFERS         ; 1            ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                              ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                   ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                              ;
+; USE_WYS                ; OFF          ; Untyped                                              ;
+; STYLE                  ; FAST         ; Untyped                                              ;
+; CBXI_PARAMETER         ; add_sub_lvi  ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                       ;
++------------------------+--------------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1 ;
-+------------------------+----------------+---------------------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                                ;
-+------------------------+----------------+---------------------------------------------------------------------+
-; LPM_WIDTHN             ; 29             ; Untyped                                                             ;
-; LPM_WIDTHD             ; 11             ; Untyped                                                             ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                             ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                             ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                             ;
-; CBXI_PARAMETER         ; lpm_divide_kkm ; Untyped                                                             ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                             ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                             ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                        ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                      ;
-+------------------------+----------------+---------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_mult:Mult2 ;
-+------------------------------------------------+--------------+--------------------------+
-; Parameter Name                                 ; Value        ; Type                     ;
-+------------------------------------------------+--------------+--------------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY               ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY             ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE             ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE           ;
-; LPM_WIDTHA                                     ; 10           ; Untyped                  ;
-; LPM_WIDTHB                                     ; 10           ; Untyped                  ;
-; LPM_WIDTHP                                     ; 20           ; Untyped                  ;
-; LPM_WIDTHR                                     ; 20           ; Untyped                  ;
-; LPM_WIDTHS                                     ; 1            ; Untyped                  ;
-; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                  ;
-; LPM_PIPELINE                                   ; 0            ; Untyped                  ;
-; LATENCY                                        ; 0            ; Untyped                  ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                  ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                  ;
-; USE_EAB                                        ; OFF          ; Untyped                  ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped                  ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                  ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped                  ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K      ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                  ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                  ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                  ;
-; CBXI_PARAMETER                                 ; mult_oct     ; Untyped                  ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                  ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                  ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                  ;
-+------------------------------------------------+--------------+--------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_divide:Div2 ;
-+------------------------+----------------+-------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                            ;
-+------------------------+----------------+-------------------------------------------------+
-; LPM_WIDTHN             ; 20             ; Untyped                                         ;
-; LPM_WIDTHD             ; 10             ; Untyped                                         ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
-; LPM_PIPELINE           ; 0              ; Untyped                                         ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                         ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                         ;
-; CBXI_PARAMETER         ; lpm_divide_akm ; Untyped                                         ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                         ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                         ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                  ;
-+------------------------+----------------+-------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_add_sub:Add169 ;
++------------------------+--------------+------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                 ;
++------------------------+--------------+------------------------------------------------------+
+; LPM_WIDTH              ; 10           ; Untyped                                              ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                              ;
+; LPM_DIRECTION          ; DEFAULT      ; Untyped                                              ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                              ;
+; LPM_PIPELINE           ; 0            ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5            ; Untyped                                              ;
+; REGISTERED_AT_END      ; 0            ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 5            ; Untyped                                              ;
+; USE_CS_BUFFERS         ; 1            ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                              ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                   ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                              ;
+; USE_WYS                ; OFF          ; Untyped                                              ;
+; STYLE                  ; FAST         ; Untyped                                              ;
+; CBXI_PARAMETER         ; add_sub_lvi  ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                       ;
++------------------------+--------------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1022,177 +981,107 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0 ;
-+------------------------------------------------+--------------+-------------------------------------------------+
-; Parameter Name                                 ; Value        ; Type                                            ;
-+------------------------------------------------+--------------+-------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                  ;
-; LPM_WIDTHA                                     ; 10           ; Untyped                                         ;
-; LPM_WIDTHB                                     ; 11           ; Untyped                                         ;
-; LPM_WIDTHP                                     ; 21           ; Untyped                                         ;
-; LPM_WIDTHR                                     ; 21           ; Untyped                                         ;
-; LPM_WIDTHS                                     ; 1            ; Untyped                                         ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                         ;
-; LPM_PIPELINE                                   ; 0            ; Untyped                                         ;
-; LATENCY                                        ; 0            ; Untyped                                         ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                         ;
-; INPUT_B_IS_CONSTANT                            ; YES          ; Untyped                                         ;
-; USE_EAB                                        ; OFF          ; Untyped                                         ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                         ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                         ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                         ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                             ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                         ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                         ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                         ;
-; CBXI_PARAMETER                                 ; NOTHING      ; Untyped                                         ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                         ;
-+------------------------------------------------+--------------+-------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div0 ;
++------------------------+----------------+---------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                ;
++------------------------+----------------+---------------------------------------------------------------------+
+; LPM_WIDTHN             ; 29             ; Untyped                                                             ;
+; LPM_WIDTHD             ; 11             ; Untyped                                                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                             ;
+; CBXI_PARAMETER         ; lpm_divide_kkm ; Untyped                                                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                      ;
++------------------------+----------------+---------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_divide:Div0 ;
-+------------------------+----------------+------------------------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                                   ;
-+------------------------+----------------+------------------------------------------------------------------------+
-; LPM_WIDTHN             ; 21             ; Untyped                                                                ;
-; LPM_WIDTHD             ; 32             ; Untyped                                                                ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                                ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                ;
-; CBXI_PARAMETER         ; lpm_divide_72p ; Untyped                                                                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                         ;
-+------------------------+----------------+------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1 ;
++------------------------+----------------+---------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                ;
++------------------------+----------------+---------------------------------------------------------------------+
+; LPM_WIDTHN             ; 29             ; Untyped                                                             ;
+; LPM_WIDTHD             ; 11             ; Untyped                                                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                             ;
+; CBXI_PARAMETER         ; lpm_divide_kkm ; Untyped                                                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                      ;
++------------------------+----------------+---------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_mult:Mult0 ;
-+------------------------------------------------+--------------+-------------------------------------------------+
-; Parameter Name                                 ; Value        ; Type                                            ;
-+------------------------------------------------+--------------+-------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                  ;
-; LPM_WIDTHA                                     ; 10           ; Untyped                                         ;
-; LPM_WIDTHB                                     ; 11           ; Untyped                                         ;
-; LPM_WIDTHP                                     ; 21           ; Untyped                                         ;
-; LPM_WIDTHR                                     ; 21           ; Untyped                                         ;
-; LPM_WIDTHS                                     ; 1            ; Untyped                                         ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                         ;
-; LPM_PIPELINE                                   ; 0            ; Untyped                                         ;
-; LATENCY                                        ; 0            ; Untyped                                         ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                         ;
-; INPUT_B_IS_CONSTANT                            ; YES          ; Untyped                                         ;
-; USE_EAB                                        ; OFF          ; Untyped                                         ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                         ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                         ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                         ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                             ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                         ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                         ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                         ;
-; CBXI_PARAMETER                                 ; NOTHING      ; Untyped                                         ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                         ;
-+------------------------------------------------+--------------+-------------------------------------------------+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_mult:Mult2 ;
++------------------------------------------------+--------------+--------------------------+
+; Parameter Name                                 ; Value        ; Type                     ;
++------------------------------------------------+--------------+--------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY               ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY             ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE             ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE           ;
+; LPM_WIDTHA                                     ; 10           ; Untyped                  ;
+; LPM_WIDTHB                                     ; 10           ; Untyped                  ;
+; LPM_WIDTHP                                     ; 20           ; Untyped                  ;
+; LPM_WIDTHR                                     ; 20           ; Untyped                  ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                  ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                  ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                  ;
+; LATENCY                                        ; 0            ; Untyped                  ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                  ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                  ;
+; USE_EAB                                        ; OFF          ; Untyped                  ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped                  ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                  ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                  ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K      ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                  ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                  ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                  ;
+; CBXI_PARAMETER                                 ; mult_oct     ; Untyped                  ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                  ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                  ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                  ;
++------------------------------------------------+--------------+--------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_divide:Div0 ;
-+------------------------+----------------+------------------------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                                   ;
-+------------------------+----------------+------------------------------------------------------------------------+
-; LPM_WIDTHN             ; 21             ; Untyped                                                                ;
-; LPM_WIDTHD             ; 32             ; Untyped                                                                ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                                ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                ;
-; CBXI_PARAMETER         ; lpm_divide_72p ; Untyped                                                                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                         ;
-+------------------------+----------------+------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_mult:Mult0 ;
-+------------------------------------------------+--------------+-------------------------------------------------+
-; Parameter Name                                 ; Value        ; Type                                            ;
-+------------------------------------------------+--------------+-------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                      ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                    ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                    ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                  ;
-; LPM_WIDTHA                                     ; 10           ; Untyped                                         ;
-; LPM_WIDTHB                                     ; 11           ; Untyped                                         ;
-; LPM_WIDTHP                                     ; 21           ; Untyped                                         ;
-; LPM_WIDTHR                                     ; 21           ; Untyped                                         ;
-; LPM_WIDTHS                                     ; 1            ; Untyped                                         ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                         ;
-; LPM_PIPELINE                                   ; 0            ; Untyped                                         ;
-; LATENCY                                        ; 0            ; Untyped                                         ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                         ;
-; INPUT_B_IS_CONSTANT                            ; YES          ; Untyped                                         ;
-; USE_EAB                                        ; OFF          ; Untyped                                         ;
-; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                         ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                         ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                         ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                             ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                         ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                         ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                         ;
-; CBXI_PARAMETER                                 ; NOTHING      ; Untyped                                         ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                         ;
-+------------------------------------------------+--------------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_divide:Div0 ;
-+------------------------+----------------+------------------------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                                   ;
-+------------------------+----------------+------------------------------------------------------------------------+
-; LPM_WIDTHN             ; 21             ; Untyped                                                                ;
-; LPM_WIDTHD             ; 32             ; Untyped                                                                ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                                ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                ;
-; CBXI_PARAMETER         ; lpm_divide_72p ; Untyped                                                                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                         ;
-+------------------------+----------------+------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|lpm_divide:Div2 ;
++------------------------+----------------+-------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                            ;
++------------------------+----------------+-------------------------------------------------+
+; LPM_WIDTHN             ; 20             ; Untyped                                         ;
+; LPM_WIDTHD             ; 10             ; Untyped                                         ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                         ;
+; LPM_PIPELINE           ; 0              ; Untyped                                         ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                         ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                         ;
+; CBXI_PARAMETER         ; lpm_divide_akm ; Untyped                                         ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                         ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                         ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                  ;
++------------------------+----------------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1407,6 +1296,180 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_hid3|lpm_divide:Div0 ;
++------------------------+----------------+------------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                   ;
++------------------------+----------------+------------------------------------------------------------------------+
+; LPM_WIDTHN             ; 21             ; Untyped                                                                ;
+; LPM_WIDTHD             ; 32             ; Untyped                                                                ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                                ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                ;
+; CBXI_PARAMETER         ; lpm_divide_72p ; Untyped                                                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                         ;
++------------------------+----------------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+-------------------------------------------------+
+; Parameter Name                                 ; Value        ; Type                                            ;
++------------------------------------------------+--------------+-------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                  ;
+; LPM_WIDTHA                                     ; 10           ; Untyped                                         ;
+; LPM_WIDTHB                                     ; 11           ; Untyped                                         ;
+; LPM_WIDTHP                                     ; 21           ; Untyped                                         ;
+; LPM_WIDTHR                                     ; 21           ; Untyped                                         ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                                         ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                         ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                                         ;
+; LATENCY                                        ; 0            ; Untyped                                         ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                         ;
+; INPUT_B_IS_CONSTANT                            ; YES          ; Untyped                                         ;
+; USE_EAB                                        ; OFF          ; Untyped                                         ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                         ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                         ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                         ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                             ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                         ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                         ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                         ;
+; CBXI_PARAMETER                                 ; NOTHING      ; Untyped                                         ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                         ;
++------------------------------------------------+--------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_divide:Div0 ;
++------------------------+----------------+------------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                   ;
++------------------------+----------------+------------------------------------------------------------------------+
+; LPM_WIDTHN             ; 21             ; Untyped                                                                ;
+; LPM_WIDTHD             ; 32             ; Untyped                                                                ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                                ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                ;
+; CBXI_PARAMETER         ; lpm_divide_72p ; Untyped                                                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                         ;
++------------------------+----------------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+-------------------------------------------------+
+; Parameter Name                                 ; Value        ; Type                                            ;
++------------------------------------------------+--------------+-------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                  ;
+; LPM_WIDTHA                                     ; 10           ; Untyped                                         ;
+; LPM_WIDTHB                                     ; 11           ; Untyped                                         ;
+; LPM_WIDTHP                                     ; 21           ; Untyped                                         ;
+; LPM_WIDTHR                                     ; 21           ; Untyped                                         ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                                         ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                         ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                                         ;
+; LATENCY                                        ; 0            ; Untyped                                         ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                         ;
+; INPUT_B_IS_CONSTANT                            ; YES          ; Untyped                                         ;
+; USE_EAB                                        ; OFF          ; Untyped                                         ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                         ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                         ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                         ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                             ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                         ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                         ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                         ;
+; CBXI_PARAMETER                                 ; NOTHING      ; Untyped                                         ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                         ;
++------------------------------------------------+--------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_divide:Div0 ;
++------------------------+----------------+------------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                   ;
++------------------------+----------------+------------------------------------------------------------------------+
+; LPM_WIDTHN             ; 21             ; Untyped                                                                ;
+; LPM_WIDTHD             ; 32             ; Untyped                                                                ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                                ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                ;
+; CBXI_PARAMETER         ; lpm_divide_72p ; Untyped                                                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                         ;
++------------------------+----------------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+-------------------------------------------------+
+; Parameter Name                                 ; Value        ; Type                                            ;
++------------------------------------------------+--------------+-------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                                  ;
+; LPM_WIDTHA                                     ; 10           ; Untyped                                         ;
+; LPM_WIDTHB                                     ; 11           ; Untyped                                         ;
+; LPM_WIDTHP                                     ; 21           ; Untyped                                         ;
+; LPM_WIDTHR                                     ; 21           ; Untyped                                         ;
+; LPM_WIDTHS                                     ; 1            ; Untyped                                         ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                                         ;
+; LPM_PIPELINE                                   ; 0            ; Untyped                                         ;
+; LATENCY                                        ; 0            ; Untyped                                         ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped                                         ;
+; INPUT_B_IS_CONSTANT                            ; YES          ; Untyped                                         ;
+; USE_EAB                                        ; OFF          ; Untyped                                         ;
+; MAXIMIZE_SPEED                                 ; 6            ; Untyped                                         ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                                         ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped                                         ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K                             ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                                         ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                                         ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                                         ;
+; CBXI_PARAMETER                                 ; NOTHING      ; Untyped                                         ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                                         ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                                         ;
++------------------------------------------------+--------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_divide:Div0 ;
 +------------------------+----------------+------------------------------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                                                   ;
 +------------------------+----------------+------------------------------------------------------------------------+
@@ -1956,17 +2019,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Name                                  ; Value                                                          ;
 +---------------------------------------+----------------------------------------------------------------+
 ; Number of entity instances            ; 19                                                             ;
-; Entity Instance                       ; DrowsinessDetector1:main|lpm_mult:Mult2                        ;
-;     -- LPM_WIDTHA                     ; 10                                                             ;
-;     -- LPM_WIDTHB                     ; 10                                                             ;
-;     -- LPM_WIDTHP                     ; 20                                                             ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED                                                       ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                             ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                             ;
-;     -- USE_EAB                        ; OFF                                                            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                             ;
 ; Entity Instance                       ; DrowsinessDetector1:main|lpm_mult:Mult0                        ;
 ;     -- LPM_WIDTHA                     ; 10                                                             ;
 ;     -- LPM_WIDTHB                     ; 10                                                             ;
@@ -1989,35 +2041,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                           ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                             ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                             ;
-; Entity Instance                       ; DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0 ;
+; Entity Instance                       ; DrowsinessDetector1:main|lpm_mult:Mult2                        ;
 ;     -- LPM_WIDTHA                     ; 10                                                             ;
-;     -- LPM_WIDTHB                     ; 11                                                             ;
-;     -- LPM_WIDTHP                     ; 21                                                             ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                         ;
+;     -- LPM_WIDTHB                     ; 10                                                             ;
+;     -- LPM_WIDTHP                     ; 20                                                             ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                       ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                             ;
-;     -- INPUT_B_IS_CONSTANT            ; YES                                                            ;
-;     -- USE_EAB                        ; OFF                                                            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                             ;
-; Entity Instance                       ; DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 10                                                             ;
-;     -- LPM_WIDTHB                     ; 11                                                             ;
-;     -- LPM_WIDTHP                     ; 21                                                             ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                         ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                             ;
-;     -- INPUT_B_IS_CONSTANT            ; YES                                                            ;
-;     -- USE_EAB                        ; OFF                                                            ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                           ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                             ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                             ;
-; Entity Instance                       ; DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 10                                                             ;
-;     -- LPM_WIDTHB                     ; 11                                                             ;
-;     -- LPM_WIDTHP                     ; 21                                                             ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                         ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                             ;
-;     -- INPUT_B_IS_CONSTANT            ; YES                                                            ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                             ;
 ;     -- USE_EAB                        ; OFF                                                            ;
 ;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                           ;
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                             ;
@@ -2056,6 +2086,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- INPUT_A_FIXED_VALUE            ; Bx                                                             ;
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                             ;
 ; Entity Instance                       ; DrowsinessDetector1:main|ActivationFunc:AF_hid3|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 10                                                             ;
+;     -- LPM_WIDTHB                     ; 11                                                             ;
+;     -- LPM_WIDTHP                     ; 21                                                             ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                         ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                             ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                                                            ;
+;     -- USE_EAB                        ; OFF                                                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                             ;
+; Entity Instance                       ; DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 10                                                             ;
+;     -- LPM_WIDTHB                     ; 11                                                             ;
+;     -- LPM_WIDTHP                     ; 21                                                             ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                         ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                             ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                                                            ;
+;     -- USE_EAB                        ; OFF                                                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                             ;
+; Entity Instance                       ; DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 10                                                             ;
+;     -- LPM_WIDTHB                     ; 11                                                             ;
+;     -- LPM_WIDTHP                     ; 21                                                             ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                         ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                             ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                                                            ;
+;     -- USE_EAB                        ; OFF                                                            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                             ;
+; Entity Instance                       ; DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_mult:Mult0 ;
 ;     -- LPM_WIDTHA                     ; 10                                                             ;
 ;     -- LPM_WIDTHB                     ; 11                                                             ;
 ;     -- LPM_WIDTHP                     ; 21                                                             ;
@@ -2263,11 +2326,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; in1[0][9..8]          ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; in1[0][5..4]          ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; in1[0][2..0]          ; Input  ; Info     ; Stuck at GND                                                                        ;
-; out_ann_real[1..0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; out_ann_real[2][9..5] ; Input  ; Info     ; Stuck at VCC                                                                        ;
 ; out_ann_real[2][2..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; out_ann_real[2][4]    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; out_ann_real[2][3]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; out_ann_real[1][2..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out_ann_real[1][4]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out_ann_real[0][2..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out_ann_real[0][4]    ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; out_hid[4]            ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -2281,14 +2345,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Clock_Delay:u19"                                                                                           ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; oCLK_1 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; oCLK_2 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; oCLK_3 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; oCLK_4 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 10.0 Build 218 06/27/2010 SJ Web Edition
-    Info: Processing started: Tue Jan 02 00:04:27 2018
+    Info: Processing started: Tue Jan 02 21:38:19 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DrowsinessDetector -c DrowsinessDetector
+Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp(wongjangsing)/codes/image_capture_verilog/v/clock_delay.v
+    Info: Found entity 1: Clock_Delay
 Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/weightinitiallize/clk_div.sv
     Info: Found entity 1: clk_div
 Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/weightoptimization/counter.sv
@@ -2313,52 +2391,66 @@ Info: Found 1 design units, including 1 entities, in source file /users/yenrong/
     Info: Found entity 1: LFSR
 Info: Found 1 design units, including 1 entities, in source file /users/yenrong/desktop/fyp_drowsinessdetector/weightinitiallize/weightram.sv
     Info: Found entity 1: WeightRAM
+Warning (10275): Verilog HDL Module Instantiation warning at topModule.sv(117): ignored dangling comma in List of Port Connections
 Info: Found 1 design units, including 1 entities, in source file topmodule.sv
     Info: Found entity 1: topModule
 Info: Found 1 design units, including 1 entities, in source file outverify.sv
     Info: Found entity 1: outVerify
 Info: Found 1 design units, including 1 entities, in source file getrealout.sv
     Info: Found entity 1: getRealOut
+Info: Found 1 design units, including 1 entities, in source file dff.sv
+    Info: Found entity 1: dff_ann
 Info: Elaborating entity "topModule" for the top level hierarchy
 Warning (10034): Output port "LEDR[7..0]" at topModule.sv(5) has no driver
 Warning (10034): Output port "LEDG[8]" at topModule.sv(6) has no driver
 Warning (10034): Output port "LEDG[2]" at topModule.sv(6) has no driver
+Info: Elaborating entity "Clock_Delay" for hierarchy "Clock_Delay:u19"
+Warning (10240): Verilog HDL Always Construct warning at Clock_Delay.v(54): inferring latch(es) for variable "oCLK_1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Clock_Delay.v(54): inferring latch(es) for variable "oCLK_2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Clock_Delay.v(54): inferring latch(es) for variable "oCLK_3", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Clock_Delay.v(54): inferring latch(es) for variable "oCLK_4", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "oCLK_4" at Clock_Delay.v(54)
+Info (10041): Inferred latch for "oCLK_3" at Clock_Delay.v(54)
+Info (10041): Inferred latch for "oCLK_2" at Clock_Delay.v(54)
+Info (10041): Inferred latch for "oCLK_1" at Clock_Delay.v(54)
 Info: Elaborating entity "outVerify" for hierarchy "outVerify:test0"
 Info: Elaborating entity "_7SegmentDisplay" for hierarchy "_7SegmentDisplay:asdf"
 Info: Elaborating entity "DrowsinessDetector1" for hierarchy "DrowsinessDetector1:main"
-Warning (10036): Verilog HDL or VHDL warning at DrowsinessDetector1.sv(39): object "count2" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(57): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(61): truncated value with size 32 to match size of target (5)
-Critical Warning (10237): Verilog HDL warning at DrowsinessDetector1.sv(64): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead
+Warning (10036): Verilog HDL or VHDL warning at DrowsinessDetector1.sv(37): object "addVal_hid" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DrowsinessDetector1.sv(40): object "addVal_out" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DrowsinessDetector1.sv(42): object "count2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DrowsinessDetector1.sv(50): object "doneInitiallize" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(59): truncated value with size 32 to match size of target (5)
 Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(84): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(91): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(96): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(100): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(114): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(126): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(135): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(146): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(160): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(168): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(179): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(189): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(196): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(205): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(217): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(223): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(235): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(237): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(240): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(245): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(92): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(94): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(99): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(103): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(117): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(129): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(138): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(149): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(184): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(194): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(204): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(211): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(220): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(228): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(239): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(241): truncated value with size 32 to match size of target (5)
 Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(246): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(247): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(248): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(263): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(278): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(283): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(287): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(248): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(249): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(264): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(279): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(284): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(288): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(292): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at DrowsinessDetector1.sv(295): truncated value with size 32 to match size of target (5)
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "mulVal_hid" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "mulVal_out" into its bus
+Info: Elaborating entity "dff_ann" for hierarchy "DrowsinessDetector1:main|dff_ann:getOutAnn"
 Info: Elaborating entity "LFSR" for hierarchy "DrowsinessDetector1:main|LFSR:rndnm"
 Info: Elaborating entity "clk_div" for hierarchy "DrowsinessDetector1:main|clk_div:slow"
 Warning (10230): Verilog HDL assignment warning at clk_div.sv(25): truncated value with size 32 to match size of target (4)
@@ -2370,12 +2462,10 @@ Warning (10230): Verilog HDL assignment warning at ActivationFunc.sv(13): trunca
 Info: Elaborating entity "Subtraction" for hierarchy "DrowsinessDetector1:main|Subtraction:sub1_0"
 Info: Elaborating entity "SigmoidPrime" for hierarchy "DrowsinessDetector1:main|SigmoidPrime:sig1_0"
 Warning (10230): Verilog HDL assignment warning at SigmoidPrime.sv(7): truncated value with size 32 to match size of target (10)
-Info: Inferred 45 megafunctions from design logic
-    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "DrowsinessDetector1:main|Add20"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|SigmoidPrime:sig1_2|Div0"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|SigmoidPrime:sig1_2|Div1"
-    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|Mult2"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|Div2"
+Info: Inferred 47 megafunctions from design logic
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "DrowsinessDetector1:main|Add163"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "DrowsinessDetector1:main|Add166"
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "DrowsinessDetector1:main|Add169"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|SigmoidPrime:sig1_0|Div0"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|SigmoidPrime:sig1_0|Div1"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|Mult0"
@@ -2384,12 +2474,10 @@ Info: Inferred 45 megafunctions from design logic
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|SigmoidPrime:sig1_1|Div1"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|Mult1"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|Div1"
-    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out0|Mult0"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out0|Div0"
-    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out1|Mult0"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out1|Div0"
-    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out2|Mult0"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out2|Div0"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|SigmoidPrime:sig1_2|Div0"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|SigmoidPrime:sig1_2|Div1"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|Mult2"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|Div2"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_hid0|Mult0"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_hid0|Div0"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_hid1|Mult0"
@@ -2398,6 +2486,12 @@ Info: Inferred 45 megafunctions from design logic
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_hid2|Div0"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_hid3|Mult0"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_hid3|Div0"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out0|Mult0"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out0|Div0"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out1|Mult0"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out1|Div0"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out2|Mult0"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_out2|Div0"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|multiply:mul_out0|Mult0"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|multiply:mul_out0|Div0"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|multiply:mul_out1|Mult0"
@@ -2416,16 +2510,16 @@ Info: Inferred 45 megafunctions from design logic
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|ActivationFunc:AF_hid4|Div0"
     Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "DrowsinessDetector1:main|multiply:mul_hid4|Mult0"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DrowsinessDetector1:main|multiply:mul_hid4|Div0"
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|lpm_add_sub:Add20"
-Info: Instantiated megafunction "DrowsinessDetector1:main|lpm_add_sub:Add20" with the following parameter:
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|lpm_add_sub:Add163"
+Info: Instantiated megafunction "DrowsinessDetector1:main|lpm_add_sub:Add163" with the following parameter:
     Info: Parameter "LPM_WIDTH" = "10"
     Info: Parameter "LPM_DIRECTION" = "DEFAULT"
     Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
     Info: Parameter "ONE_INPUT_IS_CONSTANT" = "NO"
 Info: Found 1 design units, including 1 entities, in source file db/add_sub_lvi.tdf
     Info: Found entity 1: add_sub_lvi
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div0"
-Info: Instantiated megafunction "DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div0" with the following parameter:
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0"
+Info: Instantiated megafunction "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0" with the following parameter:
     Info: Parameter "LPM_WIDTHN" = "29"
     Info: Parameter "LPM_WIDTHD" = "11"
     Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2440,14 +2534,14 @@ Info: Found 1 design units, including 1 entities, in source file db/add_sub_7pc.
     Info: Found entity 1: add_sub_7pc
 Info: Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
     Info: Found entity 1: add_sub_8pc
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1"
-Info: Instantiated megafunction "DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1" with the following parameter:
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div1"
+Info: Instantiated megafunction "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div1" with the following parameter:
     Info: Parameter "LPM_WIDTHN" = "29"
     Info: Parameter "LPM_WIDTHD" = "11"
     Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info: Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|lpm_mult:Mult2"
-Info: Instantiated megafunction "DrowsinessDetector1:main|lpm_mult:Mult2" with the following parameter:
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|lpm_mult:Mult0"
+Info: Instantiated megafunction "DrowsinessDetector1:main|lpm_mult:Mult0" with the following parameter:
     Info: Parameter "LPM_WIDTHA" = "10"
     Info: Parameter "LPM_WIDTHB" = "10"
     Info: Parameter "LPM_WIDTHP" = "20"
@@ -2459,8 +2553,8 @@ Info: Instantiated megafunction "DrowsinessDetector1:main|lpm_mult:Mult2" with t
     Info: Parameter "MAXIMIZE_SPEED" = "6"
 Info: Found 1 design units, including 1 entities, in source file db/mult_oct.tdf
     Info: Found entity 1: mult_oct
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|lpm_divide:Div2"
-Info: Instantiated megafunction "DrowsinessDetector1:main|lpm_divide:Div2" with the following parameter:
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|lpm_divide:Div0"
+Info: Instantiated megafunction "DrowsinessDetector1:main|lpm_divide:Div0" with the following parameter:
     Info: Parameter "LPM_WIDTHN" = "20"
     Info: Parameter "LPM_WIDTHD" = "10"
     Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2471,8 +2565,8 @@ Info: Found 1 design units, including 1 entities, in source file db/sign_div_uns
     Info: Found entity 1: sign_div_unsign_2nh
 Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_o9f.tdf
     Info: Found entity 1: alt_u_div_o9f
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0"
-Info: Instantiated megafunction "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0" with the following parameter:
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0"
+Info: Instantiated megafunction "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0" with the following parameter:
     Info: Parameter "LPM_WIDTHA" = "10"
     Info: Parameter "LPM_WIDTHB" = "11"
     Info: Parameter "LPM_WIDTHP" = "21"
@@ -2482,18 +2576,18 @@ Info: Instantiated megafunction "DrowsinessDetector1:main|ActivationFunc:AF_out0
     Info: Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info: Parameter "INPUT_B_IS_CONSTANT" = "YES"
     Info: Parameter "MAXIMIZE_SPEED" = "6"
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0"
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0"
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0"
 Info: Found 1 design units, including 1 entities, in source file db/add_sub_l9h.tdf
     Info: Found entity 1: add_sub_l9h
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0"
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0"
 Info: Found 1 design units, including 1 entities, in source file db/add_sub_jkh.tdf
     Info: Found entity 1: add_sub_jkh
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_mult:Mult0"
-Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_divide:Div0"
-Info: Instantiated megafunction "DrowsinessDetector1:main|ActivationFunc:AF_out0|lpm_divide:Div0" with the following parameter:
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_divide:Div0"
+Info: Instantiated megafunction "DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_divide:Div0" with the following parameter:
     Info: Parameter "LPM_WIDTHN" = "21"
     Info: Parameter "LPM_WIDTHD" = "32"
     Info: Parameter "LPM_NREPRESENTATION" = "SIGNED"
@@ -2539,7 +2633,7 @@ Info: Instantiated megafunction "DrowsinessDetector1:main|multiply:mul_hid1|lpm_
     Info: Parameter "MAXIMIZE_SPEED" = "6"
 Info: Found 1 design units, including 1 entities, in source file db/mult_nbt.tdf
     Info: Found entity 1: mult_nbt
-Warning: 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning: 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning: Output pins are stuck at VCC or GND
@@ -2580,17 +2674,6 @@ Info: Found the following redundant logic cells in design
     Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_15_result_int[0]~24"
     Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_18_result_int[0]~24"
     Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_20_result_int[0]~24"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_2_result_int[0]~6"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_4_result_int[0]~10"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_5_result_int[0]~12"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_6_result_int[0]~14"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_9_result_int[0]~20"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_10_result_int[0]~22"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_12_result_int[0]~24"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_14_result_int[0]~24"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_15_result_int[0]~24"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_18_result_int[0]~24"
-    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_20_result_int[0]~24"
     Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_2_result_int[0]~6"
     Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_4_result_int[0]~10"
     Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_5_result_int[0]~12"
@@ -2602,6 +2685,17 @@ Info: Found the following redundant logic cells in design
     Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_15_result_int[0]~24"
     Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_18_result_int[0]~24"
     Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_20_result_int[0]~24"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_2_result_int[0]~6"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_4_result_int[0]~10"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_5_result_int[0]~12"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_6_result_int[0]~14"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_9_result_int[0]~20"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_10_result_int[0]~22"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_12_result_int[0]~24"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_14_result_int[0]~24"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_15_result_int[0]~24"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_18_result_int[0]~24"
+    Info (17048): Logic cell "DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div0|lpm_divide_kkm:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_caf:divider|add_sub_20_result_int[0]~24"
     Info (17048): Logic cell "DrowsinessDetector1:main|multiply:mul_hid0|lpm_divide:Div0|lpm_divide_akm:auto_generated|sign_div_unsign_2nh:divider|alt_u_div_o9f:divider|add_sub_11_result_int[2]~18"
     Info (17048): Logic cell "DrowsinessDetector1:main|multiply:mul_hid0|lpm_divide:Div0|lpm_divide_akm:auto_generated|sign_div_unsign_2nh:divider|alt_u_div_o9f:divider|add_sub_11_result_int[1]~20"
     Info (17048): Logic cell "DrowsinessDetector1:main|multiply:mul_hid1|lpm_divide:Div0|lpm_divide_akm:auto_generated|sign_div_unsign_2nh:divider|alt_u_div_o9f:divider|add_sub_11_result_int[2]~18"
@@ -2614,30 +2708,27 @@ Info: Found the following redundant logic cells in design
     Info (17048): Logic cell "DrowsinessDetector1:main|multiply:mul_hid4|lpm_divide:Div0|lpm_divide_akm:auto_generated|sign_div_unsign_2nh:divider|alt_u_div_o9f:divider|add_sub_11_result_int[1]~20"
 Info: Generated suppressed messages file C:/Users/Yenrong/Desktop/FYP_DrowsinessDetector/DrowsinessDetector/DrowsinessDetector.map.smsg
 Info: Generating hard_block partition "hard_block:auto_generated_inst"
-Warning: Design contains 13 input pin(s) that do not drive logic
+Warning: Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
-    Warning (15610): No output dependent on input pin "SW[0]"
+    Warning (15610): No output dependent on input pin "SW[1]"
     Warning (15610): No output dependent on input pin "SW[4]"
     Warning (15610): No output dependent on input pin "SW[5]"
-    Warning (15610): No output dependent on input pin "SW[6]"
-    Warning (15610): No output dependent on input pin "SW[7]"
-    Warning (15610): No output dependent on input pin "SW[8]"
     Warning (15610): No output dependent on input pin "SW[9]"
     Warning (15610): No output dependent on input pin "SW[10]"
     Warning (15610): No output dependent on input pin "SW[11]"
     Warning (15610): No output dependent on input pin "SW[12]"
     Warning (15610): No output dependent on input pin "SW[13]"
-Info: Implemented 26749 device resources after synthesis - the final resource count might be different
+Info: Implemented 27215 device resources after synthesis - the final resource count might be different
     Info: Implemented 23 input pins
     Info: Implemented 83 output pins
-    Info: Implemented 26621 logic cells
+    Info: Implemented 27087 logic cells
     Info: Implemented 22 DSP elements
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 78 warnings
-    Info: Peak virtual memory: 409 megabytes
-    Info: Processing ended: Tue Jan 02 00:07:12 2018
-    Info: Elapsed time: 00:02:45
-    Info: Total CPU time (on all processors): 00:01:21
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 81 warnings
+    Info: Peak virtual memory: 422 megabytes
+    Info: Processing ended: Tue Jan 02 21:39:35 2018
+    Info: Elapsed time: 00:01:16
+    Info: Total CPU time (on all processors): 00:01:09
 
 
 +------------------------------------------+

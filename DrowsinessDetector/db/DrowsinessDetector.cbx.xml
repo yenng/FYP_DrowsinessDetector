@@ -12,6 +12,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|ActivationFunc:AF_hid2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|ActivationFunc:AF_hid4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_l9h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|ActivationFunc:AF_out1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_l9h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|lpm_add_sub:Add166" CBX_FILE_NAME="add_sub_lvi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|ActivationFunc:AF_hid2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_72p.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|ActivationFunc:AF_hid3|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jkh.tdf"/>
@@ -29,6 +30,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jkh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|SigmoidPrime:sig1_0|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_kkm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_kkm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|lpm_add_sub:Add169" CBX_FILE_NAME="add_sub_lvi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|ActivationFunc:AF_hid0|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_l9h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|ActivationFunc:AF_out2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_72p.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|SigmoidPrime:sig1_1|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_kkm.tdf"/>
@@ -39,7 +41,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|multiply:mul_out1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|ActivationFunc:AF_hid1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_l9h.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|SigmoidPrime:sig1_2|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_kkm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|lpm_add_sub:Add20" CBX_FILE_NAME="add_sub_lvi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|lpm_add_sub:Add163" CBX_FILE_NAME="add_sub_lvi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|lpm_mult:Mult1" CBX_FILE_NAME="mult_oct.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|multiply:mul_hid1|lpm_mult:Mult0" CBX_FILE_NAME="mult_nbt.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|topModule|DrowsinessDetector1:main|multiply:mul_out2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_akm.tdf"/>
