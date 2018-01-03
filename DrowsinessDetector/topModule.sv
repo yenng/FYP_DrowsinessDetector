@@ -91,6 +91,7 @@ module topModule(
 	end
 	
 	assign LEDG[7:3] = state;
+	assign LEDG[2] = clock1sec;
 	assign LEDR[17:8] = weight_out[SW[17:14]];
 	//assign LEDR[17:8] = in1[0];
 	

@@ -39,9 +39,8 @@ reg [9:0] mulVal_hid[4:0][29:0];
 
 reg [9:0] addVal_out[2:0];
 reg [9:0] mulVal_out[2:0][4:0];
-reg [9:0] data,count0,count2;
-reg [7:0] Address;
-reg on;
+reg [9:0] data,count0;
+reg on, go;
 
 wire [9:0]out1_err[2:0];
 wire [2:0]sign1;
@@ -59,7 +58,14 @@ always@(posedge Clock or negedge Rst) begin
 		state <= halt;
 	end
 	else begin
-		state <= nextState;
+		if(~train) begin
+			if(clock1sec)
+				state <= waitState;
+			else
+				state <= nextState;
+		end
+		else
+			state <= nextState;
 	end
 end
 
@@ -67,7 +73,6 @@ always@(negedge Clock) begin
   case(state)
     halt:begin
       on = 1;
-      count2 = 0;
       done = 0;
 		doneTraining = 0;
 		doneInitiallize = 0;
@@ -105,6 +110,7 @@ always@(negedge Clock) begin
       end
     end
 	 waitState:begin
+      done = 0;
 		startCount = 0;
       addVal_hid[0] = 0;
       addVal_hid[1] = 0;
@@ -238,7 +244,7 @@ always@(negedge Clock) begin
 		if(train) 
 			nextState = getDelta;
 		else
-			nextState = AnnOut;
+			nextState = AnnOut;//*********************************************************************************************************
     end
     // The following state is for weightOptimization block (block 3).
     // Get the error by substracting real output and calculated output.

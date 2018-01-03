@@ -4650,194 +4650,6 @@ denominator0
 
 # end
 # entity
-LFSR
-# storage
-db|DrowsinessDetector.(4).cnf
-db|DrowsinessDetector.(4).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
-9b25b9c343f66cdc6eea84f41fc49df
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-DrowsinessDetector1:main|LFSR:rndnm
-}
-# macro_sequence
-
-# end
-# entity
-HiddenLayer_top
-# storage
-db|DrowsinessDetector.(1).cnf
-db|DrowsinessDetector.(1).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|hiddenlayer|hiddenlayer_top.sv
-cfbda84748582235dd623017d39546
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
-multiply
-# storage
-db|DrowsinessDetector.(2).cnf
-db|DrowsinessDetector.(2).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|hiddenlayer|multiply.sv
-8d73879bcaaf342696e29ed452106c
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-DrowsinessDetector1:main|multiply:mul_hid0
-DrowsinessDetector1:main|multiply:mul_hid1
-DrowsinessDetector1:main|multiply:mul_hid2
-DrowsinessDetector1:main|multiply:mul_hid3
-DrowsinessDetector1:main|multiply:mul_hid4
-DrowsinessDetector1:main|multiply:mul_out0
-DrowsinessDetector1:main|multiply:mul_out1
-DrowsinessDetector1:main|multiply:mul_out2
-}
-# macro_sequence
-
-# end
-# entity
-ActivationFunc
-# storage
-db|DrowsinessDetector.(3).cnf
-db|DrowsinessDetector.(3).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|hiddenlayer|activationfunc.sv
-82e917472cc82320b0c58615a71ec0
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-DrowsinessDetector1:main|ActivationFunc:AF_hid0
-DrowsinessDetector1:main|ActivationFunc:AF_hid1
-DrowsinessDetector1:main|ActivationFunc:AF_hid2
-DrowsinessDetector1:main|ActivationFunc:AF_hid3
-DrowsinessDetector1:main|ActivationFunc:AF_hid4
-DrowsinessDetector1:main|ActivationFunc:AF_out0
-DrowsinessDetector1:main|ActivationFunc:AF_out1
-DrowsinessDetector1:main|ActivationFunc:AF_out2
-}
-# macro_sequence
-
-# end
-# entity
-SEG7_LUT
-# storage
-db|DrowsinessDetector.(29).cnf
-db|DrowsinessDetector.(29).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp(wongjangsing)|codes|image_capture_verilog|v|seg7_lut.v
-5cb77d22596ef97bedfe4796862e7afa
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# macro_sequence
-
-# end
-# entity
 lpm_mult
 # storage
 db|DrowsinessDetector.(30).cnf
@@ -5378,157 +5190,6 @@ denom5
 denom3
 -1
 2
-}
-# macro_sequence
-
-# end
-# entity
-outVerify
-# storage
-db|DrowsinessDetector.(33).cnf
-db|DrowsinessDetector.(33).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-outverify.sv
-7a5b94a04d4149bd5f4891601ee6a6e0
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-outVerify:test0
-outVerify:test1
-outVerify:test2
-outVerify:test3
-outVerify:test4
-outVerify:test5
-outVerify:test6
-}
-# macro_sequence
-
-# end
-# entity
-Subtraction
-# storage
-db|DrowsinessDetector.(34).cnf
-db|DrowsinessDetector.(34).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightoptimization|substraction.sv
-a77b1f5222dcf217d4adb67854dd22
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-DrowsinessDetector1:main|Subtraction:sub1_0
-DrowsinessDetector1:main|Subtraction:sub1_1
-DrowsinessDetector1:main|Subtraction:sub1_2
-}
-# macro_sequence
-
-# end
-# entity
-SigmoidPrime
-# storage
-db|DrowsinessDetector.(35).cnf
-db|DrowsinessDetector.(35).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightoptimization|sigmoidprime.sv
-6694443da9be2afc648b44c7d7dbd
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-DrowsinessDetector1:main|SigmoidPrime:sig1_0
-DrowsinessDetector1:main|SigmoidPrime:sig1_1
-DrowsinessDetector1:main|SigmoidPrime:sig1_2
-}
-# macro_sequence
-
-# end
-# entity
-Delta
-# storage
-db|DrowsinessDetector.(36).cnf
-db|DrowsinessDetector.(36).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightoptimization|delta.sv
-defefa9e7ad451f055af6298337af7f
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
 }
 # macro_sequence
 
@@ -6769,42 +6430,6 @@ denom0
 
 # end
 # entity
-_7SegmentDisplay
-# storage
-db|DrowsinessDetector.(6).cnf
-db|DrowsinessDetector.(6).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|_7segmentdisplay.sv
-9c1d19ddd0de13e780452578ed699b68
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-_7SegmentDisplay:asdf
-}
-# macro_sequence
-
-# end
-# entity
 lpm_mult
 # storage
 db|DrowsinessDetector.(42).cnf
@@ -7561,52 +7186,6 @@ dataa0
 
 # end
 # entity
-clk_div
-# storage
-db|DrowsinessDetector.(47).cnf
-db|DrowsinessDetector.(47).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
-f84e1161f2bf36e03eb7e392f54b78f
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# user_parameter {
-WIDTH
-4
-PARAMETER_SIGNED_DEC
-DEF
-N
-5
-PARAMETER_SIGNED_DEC
-DEF
-}
-# hierarchies {
-DrowsinessDetector1:main|clk_div:slow
-}
-# macro_sequence
-
-# end
-# entity
 lpm_mult
 # storage
 db|DrowsinessDetector.(48).cnf
@@ -8080,42 +7659,6 @@ denom3
 
 # end
 # entity
-counter
-# storage
-db|DrowsinessDetector.(46).cnf
-db|DrowsinessDetector.(46).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-|users|yenrong|desktop|fyp_drowsinessdetector|weightoptimization|counter.sv
-cc8426eda823312c49359bc2822b5029
-9
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-DrowsinessDetector1:main|counter:c1
-}
-# macro_sequence
-
-# end
-# entity
 lpm_add_sub
 # storage
 db|DrowsinessDetector.(51).cnf
@@ -8410,54 +7953,18 @@ add_sub
 
 # end
 # entity
-Clock_Delay
+outVerify
 # storage
-db|DrowsinessDetector.(5).cnf
-db|DrowsinessDetector.(5).cnf
+db|DrowsinessDetector.(1).cnf
+db|DrowsinessDetector.(1).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
 }
 # case_sensitive
 # source_file
-|users|yenrong|desktop|fyp(wongjangsing)|codes|image_capture_verilog|v|clock_delay.v
-954f20f577a46c3f87231d80366b8bbe
-8
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-IGNORE_VERILOG_INITIAL_CONSTRUCTS
-OFF
-VERILOG_CONSTANT_LOOP_LIMIT
-5000
-VERILOG_NON_CONSTANT_LOOP_LIMIT
-250
-}
-# hierarchies {
-Clock_Delay:u19
-}
-# macro_sequence
-
-# end
-# entity
-dff_ann
-# storage
-db|DrowsinessDetector.(54).cnf
-db|DrowsinessDetector.(54).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_sensitive
-# source_file
-dff.sv
-c3534ecbbff146281d20df07bd32b6a
+outverify.sv
+e369730355ec1b9aca9da8e1e46e2
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8476,7 +7983,49 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-DrowsinessDetector1:main|dff_ann:getOutAnn
+outVerify:test0
+outVerify:test1
+outVerify:test2
+outVerify:test3
+outVerify:test4
+outVerify:test5
+outVerify:test6
+}
+# macro_sequence
+
+# end
+# entity
+_7SegmentDisplay
+# storage
+db|DrowsinessDetector.(2).cnf
+db|DrowsinessDetector.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|new folder (2)|fyp_drowsinessdetector|weightinitiallize|_7segmentdisplay.sv
+8e29f76c69aa832744913e9cca7a97
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+_7SegmentDisplay:asdf
 }
 # macro_sequence
 
@@ -8484,8 +8033,8 @@ DrowsinessDetector1:main|dff_ann:getOutAnn
 # entity
 DrowsinessDetector1
 # storage
-db|DrowsinessDetector.(53).cnf
-db|DrowsinessDetector.(53).cnf
+db|DrowsinessDetector.(3).cnf
+db|DrowsinessDetector.(3).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -8493,7 +8042,7 @@ ON
 # case_sensitive
 # source_file
 drowsinessdetector1.sv
-1e2791a6e2ce32f11c3c1ad945aecde
+bfb47390d6175c7874b6dd20ce4df77f
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8575,10 +8124,362 @@ DEF
 }
 # include_file {
 dff.sv
-c3534ecbbff146281d20df07bd32b6a
+b261ebb4265bc06a62a398cb46bc3893
 }
 # hierarchies {
 DrowsinessDetector1:main
+}
+# macro_sequence
+
+# end
+# entity
+dff_ann
+# storage
+db|DrowsinessDetector.(4).cnf
+db|DrowsinessDetector.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+dff.sv
+b261ebb4265bc06a62a398cb46bc3893
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+DrowsinessDetector1:main|dff_ann:getOutAnn
+}
+# macro_sequence
+
+# end
+# entity
+LFSR
+# storage
+db|DrowsinessDetector.(5).cnf
+db|DrowsinessDetector.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|new folder (2)|fyp_drowsinessdetector|weightinitiallize|lfsr.sv
+9b25b9c343f66cdc6eea84f41fc49df
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+DrowsinessDetector1:main|LFSR:rndnm
+}
+# macro_sequence
+
+# end
+# entity
+clk_div
+# storage
+db|DrowsinessDetector.(6).cnf
+db|DrowsinessDetector.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|new folder (2)|fyp_drowsinessdetector|weightinitiallize|clk_div.sv
+163b6a17b2e5413a02c49ebc1e023c5
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+WIDTH
+4
+PARAMETER_SIGNED_DEC
+DEF
+N
+5
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+DrowsinessDetector1:main|clk_div:slow
+}
+# macro_sequence
+
+# end
+# entity
+counter
+# storage
+db|DrowsinessDetector.(29).cnf
+db|DrowsinessDetector.(29).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|new folder (2)|fyp_drowsinessdetector|weightoptimization|counter.sv
+e92449648967aaf2ef222cf8fa7907e
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+DrowsinessDetector1:main|counter:c1
+}
+# macro_sequence
+
+# end
+# entity
+multiply
+# storage
+db|DrowsinessDetector.(33).cnf
+db|DrowsinessDetector.(33).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|new folder (2)|fyp_drowsinessdetector|hiddenlayer|multiply.sv
+7e92588616d0f9598d759ca7d5dc461
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+DrowsinessDetector1:main|multiply:mul_hid0
+DrowsinessDetector1:main|multiply:mul_hid1
+DrowsinessDetector1:main|multiply:mul_hid2
+DrowsinessDetector1:main|multiply:mul_hid3
+DrowsinessDetector1:main|multiply:mul_hid4
+DrowsinessDetector1:main|multiply:mul_out0
+DrowsinessDetector1:main|multiply:mul_out1
+DrowsinessDetector1:main|multiply:mul_out2
+}
+# macro_sequence
+
+# end
+# entity
+ActivationFunc
+# storage
+db|DrowsinessDetector.(34).cnf
+db|DrowsinessDetector.(34).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|new folder (2)|fyp_drowsinessdetector|hiddenlayer|activationfunc.sv
+3b2a50b81bc3a8fcbc7a8ed49447f79
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+DrowsinessDetector1:main|ActivationFunc:AF_hid0
+DrowsinessDetector1:main|ActivationFunc:AF_hid1
+DrowsinessDetector1:main|ActivationFunc:AF_hid2
+DrowsinessDetector1:main|ActivationFunc:AF_hid3
+DrowsinessDetector1:main|ActivationFunc:AF_hid4
+DrowsinessDetector1:main|ActivationFunc:AF_out0
+DrowsinessDetector1:main|ActivationFunc:AF_out1
+DrowsinessDetector1:main|ActivationFunc:AF_out2
+}
+# macro_sequence
+
+# end
+# entity
+Subtraction
+# storage
+db|DrowsinessDetector.(35).cnf
+db|DrowsinessDetector.(35).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|new folder (2)|fyp_drowsinessdetector|weightoptimization|substraction.sv
+dee853c3aac2aad8af05850ff22137a
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+DrowsinessDetector1:main|Subtraction:sub1_0
+DrowsinessDetector1:main|Subtraction:sub1_1
+DrowsinessDetector1:main|Subtraction:sub1_2
+}
+# macro_sequence
+
+# end
+# entity
+SigmoidPrime
+# storage
+db|DrowsinessDetector.(36).cnf
+db|DrowsinessDetector.(36).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|new folder (2)|fyp_drowsinessdetector|weightoptimization|sigmoidprime.sv
+6694443da9be2afc648b44c7d7dbd
+9
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+DrowsinessDetector1:main|SigmoidPrime:sig1_0
+DrowsinessDetector1:main|SigmoidPrime:sig1_1
+DrowsinessDetector1:main|SigmoidPrime:sig1_2
+}
+# macro_sequence
+
+# end
+# entity
+Clock_Delay
+# storage
+db|DrowsinessDetector.(46).cnf
+db|DrowsinessDetector.(46).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|med203-8|desktop|new folder (2)|new folder (3)|new folder (2)|image_capture_verilog|v|clock_delay.v
+954f20f577a46c3f87231d80366b8bbe
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Clock_Delay:u19
 }
 # macro_sequence
 
@@ -8595,7 +8496,7 @@ ON
 # case_sensitive
 # source_file
 topmodule.sv
-225fe38c4380fe61b2ef22f62e6a3a0
+8cb26f1184327c6160b62dc9d0b19577
 9
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -8614,10 +8515,10 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # include_file {
-drowsinessdetector1.sv
-1e2791a6e2ce32f11c3c1ad945aecde
 dff.sv
-c3534ecbbff146281d20df07bd32b6a
+b261ebb4265bc06a62a398cb46bc3893
+drowsinessdetector1.sv
+bfb47390d6175c7874b6dd20ce4df77f
 }
 # hierarchies {
 |

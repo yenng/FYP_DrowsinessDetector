@@ -93,7 +93,7 @@ LEDR[16] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 LEDR[17] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 LEDG[0] <= DrowsinessDetector1:main.done
 LEDG[1] <= DrowsinessDetector1:main.doneTraining
-LEDG[2] <= <GND>
+LEDG[2] <= Clock_Delay:u19.oCLK_0
 LEDG[3] <= DrowsinessDetector1:main.state[0]
 LEDG[4] <= DrowsinessDetector1:main.state[1]
 LEDG[5] <= DrowsinessDetector1:main.state[2]
@@ -233,6 +233,7 @@ oCLK_4 <= <GND>
 
 
 |topModule|outVerify:test0
+clock => out1~reg0.CLK
 clock => out[0]~reg0.CLK
 clock => out[1]~reg0.CLK
 clock => out[2]~reg0.CLK
@@ -267,9 +268,11 @@ out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topModule|outVerify:test1
+clock => out1~reg0.CLK
 clock => out[0]~reg0.CLK
 clock => out[1]~reg0.CLK
 clock => out[2]~reg0.CLK
@@ -304,9 +307,11 @@ out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topModule|outVerify:test2
+clock => out1~reg0.CLK
 clock => out[0]~reg0.CLK
 clock => out[1]~reg0.CLK
 clock => out[2]~reg0.CLK
@@ -341,9 +346,11 @@ out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topModule|outVerify:test3
+clock => out1~reg0.CLK
 clock => out[0]~reg0.CLK
 clock => out[1]~reg0.CLK
 clock => out[2]~reg0.CLK
@@ -378,9 +385,11 @@ out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topModule|outVerify:test4
+clock => out1~reg0.CLK
 clock => out[0]~reg0.CLK
 clock => out[1]~reg0.CLK
 clock => out[2]~reg0.CLK
@@ -415,9 +424,11 @@ out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topModule|outVerify:test5
+clock => out1~reg0.CLK
 clock => out[0]~reg0.CLK
 clock => out[1]~reg0.CLK
 clock => out[2]~reg0.CLK
@@ -452,9 +463,11 @@ out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topModule|outVerify:test6
+clock => out1~reg0.CLK
 clock => out[0]~reg0.CLK
 clock => out[1]~reg0.CLK
 clock => out[2]~reg0.CLK
@@ -489,6 +502,7 @@ out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out1 <= out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |topModule|_7SegmentDisplay:asdf
@@ -677,11 +691,21 @@ Clock => Clock.IN1
 Rst => Rst.IN2
 Start => nextState.DATAB
 train => Mux123.IN31
+train => state.OUTPUTSELECT
+train => state.OUTPUTSELECT
+train => state.OUTPUTSELECT
+train => state.OUTPUTSELECT
+train => state.OUTPUTSELECT
 train => nextState.OUTPUTSELECT
 train => nextState.OUTPUTSELECT
 train => nextState.OUTPUTSELECT
 train => nextState.OUTPUTSELECT
 train => nextState.OUTPUTSELECT
+clock1sec => state.OUTPUTSELECT
+clock1sec => state.OUTPUTSELECT
+clock1sec => state.OUTPUTSELECT
+clock1sec => state.OUTPUTSELECT
+clock1sec => state.OUTPUTSELECT
 clock1sec => dff_ann:getOutAnn.clk
 in1[0][0] => Mux59.IN31
 in1[0][1] => Mux58.IN31
