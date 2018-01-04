@@ -22,7 +22,8 @@ module WeighInitiallize_tb();
 	initial begin
 		Rst = 1;
 		Start = 0; 
-		in_ann = 3'b111;
+		training = 1;
+		in_ann = 3'b110;
 		in[0] = 10'd200;
 		in[1] = 10'd200;
 		in[2] = 10'd200;

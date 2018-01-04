@@ -58,13 +58,6 @@ always@(posedge Clock or negedge Rst) begin
 		state <= halt;
 	end
 	else begin
-		if(~train) begin
-			if(clock1sec)
-				state <= waitState;
-			else
-				state <= nextState;
-		end
-		else
 			state <= nextState;
 	end
 end
@@ -244,7 +237,10 @@ always@(negedge Clock) begin
 		if(train) 
 			nextState = getDelta;
 		else
-			nextState = AnnOut;//*********************************************************************************************************
+			if(clock1sec)
+				nextState = waitState;//*********************************************************************************************************
+			else
+				nextState = AnnOut;
     end
     // The following state is for weightOptimization block (block 3).
     // Get the error by substracting real output and calculated output.
@@ -286,7 +282,7 @@ always@(negedge Clock) begin
       end
     end
     stopTraining: begin
-      if(delta1[0] < 5 && delta1[1] < 5 && delta1[2] < 5) begin
+      if(delta1[0] < 30 && delta1[1] < 30 && delta1[2] < 30) begin
         nextState = stop;
         doneTraining = 1;
       end
